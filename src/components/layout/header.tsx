@@ -19,7 +19,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-md dark:border-neutral-800 dark:bg-neutral-950/80">
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
+        {/* 图标 */}
         <div className="flex items-center flex-1">
           <Link href={locale === 'en' ? '/' : `/${locale}/`} className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">

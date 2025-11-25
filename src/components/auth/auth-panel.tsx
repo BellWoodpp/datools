@@ -191,3 +191,4 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
     </section>
   );
 }
+

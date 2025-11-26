@@ -11,6 +11,11 @@
 将 CSS 变量（--background）映射给 Tailwind 的“color.XXX” 或 “radius.XXX”
 Tailwind 会把 bg-background 解析成：background-color: var(--background)
 因为你定义了：--color-background: var(--background) */
+
+/* var(--card) 是什么？全称是什么？
+var() 是 CSS 内置函数，全称：CSS Variable（CSS 自定义属性）
+var(--card) 的意思就是：“去取一个叫 --card 的 CSS 变量的值”
+就像 JavaScript 里的 const cardColor = getCssVar("--card") */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -58,7 +63,8 @@ Tailwind 会把 bg-background 解析成：background-color: var(--background)
 例如：
 --background: oklch(1 0 0);   // 白色
 --foreground: oklch(0.145 0 0); // 几乎黑色
-这些变量会被映射到 @theme inline 里的 Tailwind 颜色。*/
+这些变量会被映射到 @theme inline 里的 Tailwind 颜色。
+:root伪类选择器（pseudo-class）代表「当前文档的最顶级元素」＝<html>相当于“房子的地基”*/
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -102,7 +108,8 @@ Tailwind 会把 bg-background 解析成：background-color: var(--background)
 }
 当 HTML 上出现 .dark class：
 <html class="dark">
-就会覆盖颜色，让网页变成 Dark Mode。 */
+就会覆盖颜色，让网页变成 Dark Mode。
+.dark类选择器（class selector）代表「所有带 class="dark" 的元素」相当于“房子墙上贴的深色壁纸” */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

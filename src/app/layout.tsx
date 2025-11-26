@@ -8,6 +8,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header, FooterWrapper } from "@/components/layout";
 
+
+
 // 声明常量geistSans
 const geistSans = Geist({
   variable: "--font-geist-sans",

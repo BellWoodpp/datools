@@ -65,6 +65,10 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
         // 你甚至可以不传，它默认就是 window.location.origin
       }),
     });
+    // 加这三行！！
+    console.log("Status:", response.status);
+    console.log("Status Text:", response.statusText);
+    console.log("Response Body:", await response.text()); // 看真实返回了什么！
 
       const data = await response.json();
 

@@ -5,7 +5,7 @@ import { toNextJsHandler } from "better-auth/next-js";
 
 // 导入你在项目中已经配置好的 Better Auth 实例
 // 通常在 src/lib/auth/server.ts（或类似路径）里
-import { auth } from "@/lib/auth/server";
+import { auth } from "../../../../lib/auth/server";
 
 // 使用 toNextJsHandler(auth) 把上面的 auth 实例转换成 Next.js 需要的格式
 // 它会返回一个对象，里面包含 GET、POST（有时候还有 PUT、DELETE 等）这些方法

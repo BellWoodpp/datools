@@ -51,6 +51,9 @@ export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "pg",
   }),
+  email: {
+    magicLink: true,
+  },
   socialProviders,
   plugins: [
     nextCookies(),

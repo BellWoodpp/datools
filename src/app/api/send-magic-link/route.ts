@@ -16,7 +16,7 @@ export async function POST(request: Request) {
 
   try {
     await resend.emails.send({
-      from: "Shipbase <login@onboarding@resend.dev>",   // ← 生产环境要换成你自己的域名！
+      from: "Shipbase <onboarding@resend.dev>",   // ← 生产环境要换成你自己的域名！
       to: email,
       subject: subject,
       html: `

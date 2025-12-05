@@ -19,8 +19,7 @@ const resend =
   resendApiKey && resendApiKey.trim().length > 0
     ? new Resend(resendApiKey)
     : null;
-const magicLinkFrom =
-  process.env.MAGIC_LINK_FROM_EMAIL ?? "Magic Links <no-reply@example.com>";
+const magicLinkFrom = process.env.MAGIC_LINK_FROM_EMAIL;
 
 const googleClientId = process.env.GOOGLE_CLIENT_ID;
 const googleClientSecret = process.env.GOOGLE_CLIENT_SECRET;
@@ -92,6 +91,10 @@ export const auth = betterAuth({
 
         // 2) Resend 邮件发送
         if (resend) {
+          if (!magicLinkFrom) {
+            console.error("[Better Auth] MAGIC_LINK_FROM_EMAIL 未配置，无法通过 Resend 发送魔法链接");
+            throw new Error("MAGIC_LINK_FROM_EMAIL is required to send magic link via Resend");
+          }
           try {
             const subject = "您的登录魔法链接";
             const buttonText = "点击登录";

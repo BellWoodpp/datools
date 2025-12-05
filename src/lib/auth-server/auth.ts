@@ -20,6 +20,7 @@ const resend =
     ? new Resend(resendApiKey)
     : null;
 const magicLinkFrom = process.env.MAGIC_LINK_FROM_EMAIL;
+const resetPasswordFrom = process.env.RESET_PASSWORD_FROM_EMAIL ?? magicLinkFrom;
 
 const googleClientId = process.env.GOOGLE_CLIENT_ID;
 const googleClientSecret = process.env.GOOGLE_CLIENT_SECRET;
@@ -64,6 +65,38 @@ export const auth = betterAuth({
   }),
   email: {
     magicLink: true,
+  },
+  emailAndPassword: {
+    enabled: true,
+    minPasswordLength: 8,
+    sendResetPassword: async ({ user, url }) => {
+      // 使用 Resend 发送重置密码邮件；如果未配置则仅打印链接
+      if (!resend || !resetPasswordFrom) {
+        console.info(`[Better Auth] Password reset link for ${user.email}: ${url}`);
+        return;
+      }
+      const subject = "重置您的密码";
+      const buttonText = "重置密码";
+      await resend.emails.send({
+        from: resetPasswordFrom,
+        to: user.email,
+        subject,
+        html: `
+          <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 480px; margin: 32px auto; padding: 32px; border: 1px solid #e5e7eb; border-radius: 12px; text-align: center; background: #fff;">
+            <h1 style="font-size: 22px; margin-bottom: 12px; color: #111;">重置密码</h1>
+            <p style="color: #555; margin-bottom: 24px; font-size: 15px;">
+              点击下方按钮设置一个新的密码。
+            </p>
+            <a href="${url}" style="display: inline-block; background: #111; color: #fff; padding: 14px 28px; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 16px;">
+              ${buttonText}
+            </a>
+            <p style="color: #999; font-size: 12px; margin-top: 24px;">
+              链接 1 小时内有效。如非本人操作请忽略此邮件。
+            </p>
+          </div>
+        `,
+      });
+    },
   },
   socialProviders,
   plugins: [

@@ -71,24 +71,26 @@ export const auth = betterAuth({
     nextCookies(),
     magicLink({
       sendMagicLink: async ({ email, url, token }, ctx) => {
-        
-        if (process.env.MAGIC_LINK_WEBHOOK_URL) {
+        const webhookUrl = process.env.MAGIC_LINK_WEBHOOK_URL;
+
+        // 1) 可选 webhook：成功与否都记录，但不再阻断 Resend
+        if (webhookUrl) {
           try {
-            await fetch(process.env.MAGIC_LINK_WEBHOOK_URL, {
+            await fetch(webhookUrl, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ email, url, token }),
             });
-            return;
+            console.info(`[Better Auth] Magic link webhook sent for ${email}`);
           } catch (error) {
             console.error(
               "[Better Auth] Failed to send magic link webhook:",
               error,
             );
-            throw error;
           }
         }
 
+        // 2) Resend 邮件发送
         if (resend) {
           try {
             const subject = "您的登录魔法链接";
@@ -118,6 +120,7 @@ export const auth = betterAuth({
                 </div>
               `,
             });
+            console.info(`[Better Auth] Magic link sent via Resend for ${email}`);
             return;
           } catch (error) {
             console.error("[Better Auth] Failed to send magic link email:", error);
@@ -125,6 +128,7 @@ export const auth = betterAuth({
           }
         }
 
+        // 3) Fallback：没有 Resend，用控制台输出
         console.info(`[Better Auth] Magic link for ${email}: ${url}`);
       },
     }),

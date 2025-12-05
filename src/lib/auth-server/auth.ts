@@ -29,6 +29,24 @@ const githubClientId = process.env.GITHUB_CLIENT_ID;
 const githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
 const xClientId = process.env.X_CLIENT_ID;
 const xClientSecret = process.env.X_CLIENT_SECRET;
+const xOAuthConfig =
+  xClientId && xClientSecret
+    ? {
+        providerId: "x",
+        authorizationUrl: "https://twitter.com/i/oauth2/authorize",
+        tokenUrl: "https://api.twitter.com/2/oauth2/token",
+        userInfoUrl: "https://api.twitter.com/2/users/me",
+        clientId: xClientId,
+        clientSecret: xClientSecret,
+        scopes: ["tweet.read", "users.read", "offline.access", "email"],
+        mapProfileToUser: (raw: any) => ({
+          id: raw?.data?.id,
+          name: raw?.data?.name ?? "",
+          email: raw?.data?.email,
+          image: raw?.data?.profile_image_url,
+        }),
+      }
+    : null;
 
 const socialProviders = {
   ...(googleClientId && googleClientSecret
@@ -46,29 +64,6 @@ const socialProviders = {
           clientSecret: githubClientSecret,
           scope: ["read:user", "user:email"],
         },
-      }
-    : {}),
-  ...(xClientId && xClientSecret
-    ? {
-        x: genericOAuth({
-          config: [
-            {
-              providerId: "x",
-              authorizationUrl: "https://twitter.com/i/oauth2/authorize",
-              tokenUrl: "https://api.twitter.com/2/oauth2/token",
-              userInfoUrl: "https://api.twitter.com/2/users/me",
-              clientId: xClientId,
-              clientSecret: xClientSecret,
-              scopes: ["tweet.read", "users.read", "offline.access", "email"],
-              mapProfileToUser: (raw) => ({
-                id: raw?.data?.id,
-                name: raw?.data?.name ?? "",
-                email: raw?.data?.email,
-                image: raw?.data?.profile_image_url,
-              }),
-            },
-          ],
-        }),
       }
     : {}),
 } satisfies NonNullable<
@@ -127,6 +122,13 @@ export const auth = betterAuth({
   socialProviders,
   plugins: [
     nextCookies(),
+    ...(xOAuthConfig
+      ? [
+          genericOAuth({
+            config: [xOAuthConfig],
+          }),
+        ]
+      : []),
     magicLink({
       sendMagicLink: async ({ email, url, token }, ctx) => {
         const webhookUrl = process.env.MAGIC_LINK_WEBHOOK_URL;

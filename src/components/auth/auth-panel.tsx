@@ -20,6 +20,7 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
   const [pendingProvider, setPendingProvider] = useState<OAuthProvider | null>(
     null,
   );
+  const [oauthError, setOauthError] = useState<string | null>(null);
   const [magicEmail, setMagicEmail] = useState("");
   const [magicStatus, setMagicStatus] = useState<
     "idle" | "sending" | "sent" | "error"
@@ -31,6 +32,7 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
   // 认证处理
   const handleOAuth = (provider: OAuthProvider) => {
     setPendingProvider(provider);
+    setOauthError(null);
     void authClient
       .signIn.social({
         provider,
@@ -39,10 +41,9 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
       })
       .catch((error) => {
         console.error(`[Better Auth] ${provider} sign-in failed`, error);
+        setPendingProvider(null); // 登录失败时才释放按钮
+        setOauthError("登录失败，请稍后重试");
       })
-      .finally(() => {
-        setPendingProvider(null);
-      });
   };
   
   // 处理登出
@@ -129,6 +130,9 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
                 {pendingProvider === "x" ? "Connecting..." : "Continue with X"}
               </button>
             </div>
+            {oauthError ? (
+              <p className="text-sm text-red-600 dark:text-red-400">{oauthError}</p>
+            ) : null}
 
             <div className="space-y-3 border-t border-neutral-200 pt-4 dark:border-neutral-800">
               {/* 或发送 Magic Link */}

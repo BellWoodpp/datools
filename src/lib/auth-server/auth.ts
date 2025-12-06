@@ -38,6 +38,7 @@ const xOAuthConfig =
         userInfoUrl: "https://api.twitter.com/2/users/me",
         clientId: xClientId,
         clientSecret: xClientSecret,
+        pkce: true,
         scopes: ["tweet.read", "users.read", "offline.access", "email"],
         mapProfileToUser: (raw: any) => ({
           id: raw?.data?.id,

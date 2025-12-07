@@ -150,8 +150,8 @@ export function Header() {
           </a>
           {/* 语言切换器 currentLocale={locale}：给LanguageSwitcher传递一个props(属性)，名字叫LanguageSwitcher，值是locale*/}
           <LanguageSwitcher currentLocale={locale} />
-          {/* 主题切换器 */}
-          <ThemeSwitcher dictionary={dictionary.header} />
+          {/* 主题切换器 删了*/}
+         
           {/* 登陆认证 */}
           {/* 如果isAuthenticated为真则用UserMenu,否则继续显示登陆按钮 */}
           {isAuthenticated ? (

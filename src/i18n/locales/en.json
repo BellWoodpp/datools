@@ -275,52 +275,7 @@
         "items": ["Airflow", "Dagster", "Prefect", "dbt", "Superset", "Metabase", "Airbyte", "Great Expectations", "PostHog"]
       }
     ],
-    "tools": [
-      {
-        "name": "InsightFlow",
-        "summary": "AI-powered visualization, charts in 10 seconds",
-        "tags": ["Visualization", "AI assistant", "SaaS"],
-        "pricing": "Free trial",
-        "deployment": "Cloud",
-        "link": "#",
-        "votes": 324,
-        "comments": 42,
-        "image": "/api/placeholder/600/360"
-      },
-      {
-        "name": "CubeStack",
-        "summary": "Open-source warehouse with one-click deploy, Postgres compatible",
-        "tags": ["Open source", "Self-hosted", "Warehouse"],
-        "pricing": "OSS / Support",
-        "deployment": "Self-hosted",
-        "link": "#",
-        "votes": 271,
-        "comments": 30,
-        "image": "/api/placeholder/600/360"
-      },
-      {
-        "name": "DataPilot",
-        "summary": "Run SQL with natural language and auto dashboards",
-        "tags": ["BI", "AI SQL", "Visualization"],
-        "pricing": "Free / Pro",
-        "deployment": "Cloud",
-        "link": "#",
-        "votes": 198,
-        "comments": 24,
-        "image": "/api/placeholder/600/360"
-      },
-      {
-        "name": "ETL Forge",
-        "summary": "No-code ETL with 80+ connectors and scheduling",
-        "tags": ["ETL", "No code", "Scheduling"],
-        "pricing": "Free trial",
-        "deployment": "Cloud / Self-hosted",
-        "link": "#",
-        "votes": 156,
-        "comments": 18,
-        "image": "/api/placeholder/600/360"
-      }
-    ],
+    "tools": [],
     "collections": [
       {
         "title": "AI data assistants",

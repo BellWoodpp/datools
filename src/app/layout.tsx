@@ -40,7 +40,13 @@ export default function RootLayout({
   return (
     // suppressHydrationWarning：抑制水和警告
     <html lang="en" className="dark" suppressHydrationWarning>
-      <head />
+      <head>
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="c31qQEYvGp/28tgAFpJaPQ"
+          async
+        ></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

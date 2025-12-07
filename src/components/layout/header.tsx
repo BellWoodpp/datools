@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { LanguageSwitcher } from "./language-switcher";
-import { ThemeSwitcher } from "./theme-switcher";
 import { UserMenu } from "./user-menu";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -48,7 +47,7 @@ export function Header() {
   const isAuthenticated = Boolean(session.data?.user);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#0f1f3f]/80 bg-gradient-to-r from-[#0a0f1f]/90 via-[#0c1e3c]/85 to-[#0a0f1f]/90 backdrop-blur-md shadow-[0_6px_30px_-12px_rgba(18,194,233,0.45)]">
+    <header className="dark sticky top-0 z-50 w-full border-b border-[#0f1f3f]/80 bg-gradient-to-r from-[#0a0f1f]/90 via-[#0c1e3c]/85 to-[#0a0f1f]/90 backdrop-blur-md shadow-[0_6px_30px_-12px_rgba(18,194,233,0.45)]">
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* 首页图标 */}
         <div className="flex items-center flex-1">
@@ -150,8 +149,6 @@ export function Header() {
           </a>
           {/* 语言切换器 currentLocale={locale}：给LanguageSwitcher传递一个props(属性)，名字叫LanguageSwitcher，值是locale*/}
           <LanguageSwitcher currentLocale={locale} />
-          {/* 主题切换器 删了*/}
-         
           {/* 登陆认证 */}
           {/* 如果isAuthenticated为真则用UserMenu,否则继续显示登陆按钮 */}
           {isAuthenticated ? (
@@ -239,7 +236,6 @@ export function Header() {
                   <span>GitHub</span>
                 </a>
                 <LanguageSwitcher currentLocale={locale} />
-                <ThemeSwitcher dictionary={dictionary.header} />
               </div>
             </div>
             

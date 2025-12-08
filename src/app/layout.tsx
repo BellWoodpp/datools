@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   title: "ShipBase - Enable secure sign-in methods for Shipbase",
   description: "Integrate Google and GitHub OAuth plus Magic Link email sign-in through Better Auth. Sessions stay on the server and automatically sync via HTTP-only cookies.",
   icons: {
-    icon: "https://datools.org/data-a-tools.ico",
-    shortcut: "https://datools.org/data-a-tools.ico",
-    apple: "https://datools.org/data-a-tools.png",
+    icon: [{ url: "https://r2.datools.org/data-a-tools.ico" }],
+    shortcut: [{ url: "https://r2.datools.org/data-a-tools.ico" }],
+    apple: [{ url: "https://r2.datools.org/data-a-tools.ico" }],
   },
   metadataBase,
 };
@@ -48,6 +48,10 @@ export default function RootLayout({
           data-key="c31qQEYvGp/28tgAFpJaPQ"
           async
         ></script>
+        {/* 显式声明远程 favicon，避免浏览器回退到 Next 默认图标 */}
+        <link rel="icon" href="https://r2.datools.org/data-a-tools.ico" sizes="any" />
+        <link rel="shortcut icon" href="https://r2.datools.org/data-a-tools.ico" />
+        <link rel="apple-touch-icon" href="https://r2.datools.org/data-a-tools.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

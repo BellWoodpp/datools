@@ -28,9 +28,20 @@ interface ToolCardProps {
   viewDetailsLabel: string;
   visitSiteLabel: string;
   highlightTerm?: string;
+  detailHref: string;
+  officialHref?: string;
 }
 
-export function ToolCard({ tool, viewDetailsLabel, visitSiteLabel, highlightTerm = "" }: ToolCardProps) {
+export function ToolCard({
+  tool,
+  viewDetailsLabel,
+  visitSiteLabel,
+  highlightTerm = "",
+  detailHref,
+  officialHref = "#",
+}: ToolCardProps) {
+  const isExternal = /^https?:\/\//i.test(officialHref);
+
   return (
     <Card className="overflow-hidden border border-[#1e5bff]/30 bg-[#0b162e]/90 shadow-[0_15px_40px_-18px_rgba(30,91,255,0.65)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(18,194,233,0.7)]">
       {tool.image ? (
@@ -74,7 +85,7 @@ export function ToolCard({ tool, viewDetailsLabel, visitSiteLabel, highlightTerm
 
       <CardContent className="flex items-center justify-between px-6 pb-6 pt-0">
         <Link
-          href={tool.link}
+          href={detailHref}
           className="inline-flex items-center text-sm font-semibold text-[#12c2e9] hover:text-[#f8a13c]"
         >
           {viewDetailsLabel}
@@ -83,8 +94,11 @@ export function ToolCard({ tool, viewDetailsLabel, visitSiteLabel, highlightTerm
         <Button
           size="sm"
           className="bg-gradient-to-r from-[#12c2e9] to-[#1e5bff] text-white shadow-[0_10px_25px_-12px_rgba(30,91,255,0.75)] hover:from-[#1e5bff] hover:to-[#12c2e9]"
+          asChild
         >
-          {visitSiteLabel}
+          <Link href={officialHref} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}>
+            {visitSiteLabel}
+          </Link>
         </Button>
       </CardContent>
     </Card>

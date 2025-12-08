@@ -66,6 +66,7 @@ export interface HomeFeedTool {
   votes: number;
   comments: number;
   image?: string;
+  officialUrl?: string;
 }
 
 export interface HomeFeedCollection {

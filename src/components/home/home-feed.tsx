@@ -1,11 +1,13 @@
 'use client';
 
-import type { HomeFeedDictionary } from "@/i18n/types";
+import type { HomeFeedDictionary, HomeFeedTool } from "@/i18n/types";
 import { ToolCard } from "@/components/ui/tool-card";
 import Search from "@/components/ui/search";
 import { CategoryFilter } from "@/components/home/category-filter";
 import { useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useLocale } from "@/hooks";
+import { defaultLocale } from "@/i18n";
 import {
   Pagination,
   PaginationContent,
@@ -26,6 +28,7 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
+  const { locale } = useLocale();
   const query = (searchParams.get("query") ?? "").toLowerCase().trim();
 
   const categoryIndex = useMemo(() => {
@@ -119,6 +122,23 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
     replace(makePageHref(page));
   };
 
+  const buildDetailHref = useMemo(() => {
+    return (tool: HomeFeedTool) => {
+      const base = (tool.link ?? "").trim();
+      if (!base || base === "#") return "#";
+      if (/^https?:\/\//i.test(base)) return base;
+      const normalized = base.startsWith("/") ? base.slice(1) : base;
+      if (!normalized) {
+        return locale === defaultLocale ? "/" : `/${locale}`;
+      }
+      return locale === defaultLocale ? `/${normalized}` : `/${locale}/${normalized}`;
+    };
+  }, [locale]);
+
+  const buildOfficialHref = useMemo(() => {
+    return (tool: HomeFeedTool) => tool.officialUrl ?? tool.link ?? "#";
+  }, []);
+
   return (
     <main className="bg-gradient-to-b from-[#0a0f1f] via-[#0c1e3c] to-[#0a0f1f]">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 lg:flex-row lg:gap-10">
@@ -159,6 +179,8 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
                 viewDetailsLabel={data.viewDetailsLabel}
                 visitSiteLabel={data.visitSiteLabel}
                 highlightTerm={query}
+                detailHref={buildDetailHref(tool)}
+                officialHref={buildOfficialHref(tool)}
               />
             ))}
           </div>

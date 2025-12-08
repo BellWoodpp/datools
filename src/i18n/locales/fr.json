@@ -1,4 +1,10 @@
 {
+  "homeFeed": {
+    "heading": "Outils d’analyse de données tendance",
+    "subheading": "Data Analysis Tools · Aujourd’hui",
+    "searchPlaceholder": "Rechercher des outils de données…",
+    "filterHint": "Filtrer rapidement par nom, étiquettes, tarification ou déploiement."
+  },
   "home": {
     "badgeLabel": "2025🚀 Expédiez maintenant",
     "heroTitle": "ShipBase, expédiez plus.",

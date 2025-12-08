@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Amazon SageMaker — Managed ML & AutoML",
   description:
-    "SageMaker 覆盖 Studio、Autopilot、训练推理与 Model Registry/MLOps，提供在 AWS 上的端到端机器学习。",
+    "AWS managed ML platform with Studio/Notebooks, Autopilot AutoML, built-in training/inference, Pipelines, and Model Registry.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "AI-assistants", "sagemaker"),
   },

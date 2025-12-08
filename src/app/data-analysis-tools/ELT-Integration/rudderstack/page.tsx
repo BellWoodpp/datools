@@ -4,8 +4,9 @@ import { RudderStackPageContent } from "@/components/pages/rudderstack-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "RudderStack — 开源 CDP / 事件管道",
-  description: "RudderStack 兼容 Segment API，支持自托管或云端，将事件送仓库与下游工具。",
+  title: "RudderStack — Data analysis tool",
+  description:
+    "Open-source CDP/event pipeline compatible with Segment API; self-hosted or cloud to route events to warehouses and SaaS.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "ELT-Integration", "rudderstack"),
   },

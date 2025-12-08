@@ -60,6 +60,28 @@ const copyByLocale: Record<string, Copy> = {
     ctaVisit: "Visit Power BI",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Power BI",
+    title: "Power BI：Microsoft のセルフサービス BI",
+    subtitle: "Power Query で整形、DAX モデル、対話型ダッシュボード、Microsoft 連携",
+    description:
+      "Power BI は Microsoft の BI/可視化スイートで、セルフサービス分析とエンタープライズダッシュボードを提供します。Power Query によるローコード整形、DAX モデリングと Tabular セマンティック層、豊富なビジュアル、オンプレ・クラウド接続用データゲートウェイを備え、Microsoft 365/Azure/Teams/SharePoint/Excel と深く統合されています。",
+    highlights: [
+      { title: "Power Query 整形", description: "M 言語によるローコード ETL でデータを素早く整形・結合。" },
+      { title: "DAX & セマンティックモデル", description: "指標・階層・行レベルセキュリティを持つ Tabular モデルで一貫した指標を提供。" },
+      { title: "対話型レポート/ダッシュボード", description: "スライサー、ドリルスルー、クロスフィルタ、豊富なツールチップで探索。" },
+      { title: "コネクタ & ゲートウェイ", description: "DB/倉庫/SaaS への広い接続性、ゲートウェイでオンプレデータも更新。" },
+      { title: "Microsoft エコシステム", description: "Excel/Teams/SharePoint/PowerPoint 連携、サブスクや埋め込みも容易。" },
+    ],
+    modules: [
+      { title: "Power BI Desktop", description: "ローカルでモデル/レポートを作成。DAX・Power Query・ビジュアル・プレビュー。" },
+      { title: "Power BI Service", description: "クラウドで公開、データセット/セマンティックモデル管理、計画更新、権限、RLS/OLS。" },
+      { title: "Embedded / Mobile", description: "アプリ埋め込み、モバイル閲覧とアラート、Azure AD によるセキュアアクセス。" },
+    ],
+    useCases: ["営業/財務/運用ダッシュボード", "セルフサービス分析と探索", "統一指標のエンタープライズレポートとサブスク", "Office/Teams 連携での共有"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 const getCopy = (locale?: string) => copyByLocale[locale ?? defaultLocale] ?? copyByLocale.en;

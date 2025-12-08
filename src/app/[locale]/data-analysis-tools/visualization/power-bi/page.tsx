@@ -12,11 +12,18 @@ interface LocalePageProps {
 
 const getMeta = (locale?: string) => {
   const isZh = locale === "zh";
+  const isJa = locale === "ja";
   return {
-    title: isZh ? "Power BI — 微软自助式 BI 与可视化" : "Power BI — Microsoft self-service BI & visualization",
+    title: isZh
+      ? "Power BI — 微软自助式 BI 与可视化"
+      : isJa
+        ? "Power BI — Microsoft のセルフサービス BI"
+        : "Power BI — Microsoft self-service BI & visualization",
     description: isZh
       ? "Power BI 提供 Power Query 清洗、DAX 语义模型与交互式仪表板，连接本地与云端多源数据，深度集成 Microsoft 生态。"
-      : "Power BI delivers Power Query prep, DAX semantic models, and interactive dashboards with on-prem and cloud connectors, integrated with the Microsoft stack.",
+      : isJa
+        ? "Power BI は Power Query 整形、DAX セマンティックモデル、対話型ダッシュボード、オンプレ/クラウドの多彩な接続を備え、Microsoft スタックと統合されています。"
+        : "Power BI delivers Power Query prep, DAX semantic models, and interactive dashboards with on-prem and cloud connectors, integrated with the Microsoft stack.",
   };
 };
 

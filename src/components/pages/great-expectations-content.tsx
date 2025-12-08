@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Great Expectations",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "データ品質 / ガバナンス · Great Expectations",
+    title: "Great Expectations：オープンソースのデータ品質",
+    subtitle: "Expectation ベースの検証、ドキュメント化、パイプライン連携",
+    description:
+      "Great Expectations はオープンソースのデータ品質フレームワークで、Expectation に基づく検証、ドキュメント生成、パイプラインへの組み込みを提供します。",
+    highlights: [
+      { title: "Expectation で検証", description: "宣言的な Expectation で品質チェックを管理。" },
+      { title: "ドキュメント生成", description: "検証結果をドキュメント化して共有。" },
+      { title: "パイプライン統合", description: "ETL/ELT と組み合わせて CI/CD に組み込み可能。" },
+      { title: "オープンソース", description: "自社ホストやクラウドで柔軟に利用可能。" },
+    ],
+    useCases: ["データ品質検証", "ドキュメント化と共有", "パイプラインへの組み込み", "オープンソースによる拡張"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function GreatExpectationsPageContent({ locale }: { locale?: string }) {

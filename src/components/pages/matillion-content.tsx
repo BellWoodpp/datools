@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Matillion",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "ELT / 統合 · Matillion",
+    title: "Matillion：クラウド倉庫向け ELT/ETL",
+    subtitle: "ビジュアル変換とスケジュールで Snowflake/BigQuery/Redshift などに対応",
+    description:
+      "Matillion はクラウド倉庫向けの ELT/ETL を提供し、ビジュアルオーケストレーション、変換、スケジュールで Snowflake/BigQuery/Redshift などをサポートします。",
+    highlights: [
+      { title: "ビジュアルフロー", description: "UI でジョブを組み、オーケストレーションを簡単に。" },
+      { title: "変換コンポーネント", description: "一般的な変換をドラッグ＆ドロップで設定。" },
+      { title: "スケジュール", description: "定期ジョブでデータを更新。" },
+      { title: "クラウド倉庫対応", description: "主要なクラウド倉庫と連携。" },
+    ],
+    useCases: ["倉庫向け ETL/ELT", "ビジュアルでの変換ジョブ作成", "定期データ更新", "クラウド倉庫の近代化"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function MatillionPageContent({ locale }: { locale?: string }) {

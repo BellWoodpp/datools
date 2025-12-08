@@ -4,8 +4,9 @@ import { RedashPageContent } from "@/components/pages/redash-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Redash — SQL 驱动的轻量 BI",
-  description: "Redash 支持多数据源 SQL、可视化与仪表板，提供调度与告警，适合快速取数与分享。",
+  title: "Redash — Data analysis tool",
+  description:
+    "SQL-first lightweight BI connecting many sources, with parameterized queries, visuals, dashboards, schedules, and alerts.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "redash"),
   },

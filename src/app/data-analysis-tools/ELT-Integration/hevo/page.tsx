@@ -4,8 +4,9 @@ import { HevoPageContent } from "@/components/pages/hevo-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Hevo — 无代码数据管道",
-  description: "Hevo 支持多源到仓库/湖的实时与批量同步，内置监控告警与无代码配置。",
+  title: "Hevo — Data analysis tool",
+  description:
+    "No-code data pipeline/ELT for real-time and batch sync from many sources to warehouses/lakes with monitoring.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "ELT-Integration", "hevo"),
   },

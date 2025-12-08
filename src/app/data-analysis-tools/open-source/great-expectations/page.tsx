@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Great Expectations — Open-source data quality",
   description:
-    "Great Expectations 提供基于期望的开源数据质量校验与文档，支持自托管与云端。",
+    "Open-source data quality framework using Expectations for validation, docs, and pipeline checks.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "open-source", "great-expectations"),
   },

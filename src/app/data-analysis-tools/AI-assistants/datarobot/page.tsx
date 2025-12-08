@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "DataRobot — Enterprise AutoML & MLOps",
   description:
-    "DataRobot 提供自动特征工程、模型搜索与部署监控的企业级 AutoML/MLOps 平台，支持多云与本地治理。",
+    "Enterprise AutoML and MLOps platform with automated feature engineering, leaderboards, explainability, and monitored deployments across cloud/on-prem.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "AI-assistants", "datarobot"),
   },

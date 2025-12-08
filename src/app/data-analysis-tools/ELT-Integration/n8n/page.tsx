@@ -4,8 +4,9 @@ import { N8nPageContent } from "@/components/pages/n8n-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "n8n — 开源低代码自动化",
-  description: "n8n 提供可视化流程、Webhook 与丰富节点，支持自托管或云端。",
+  title: "N8n — Data analysis tool",
+  description:
+    "Open-source low-code automation/integration with visual workflows, webhooks, and rich nodes; self-hostable.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "ELT-Integration", "n8n"),
   },

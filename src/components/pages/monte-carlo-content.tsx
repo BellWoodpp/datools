@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Monte Carlo",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "データ品質 / ガバナンス · Monte Carlo",
+    title: "Monte Carlo：データオブザーバビリティ",
+    subtitle: "データ品質、血統、SLA と影響アラートでパイプラインを監視",
+    description:
+      "Monte Carlo はデータオブザーバビリティを提供し、品質チェック、血統、SLA、影響アラートでデータパイプラインを監視します。",
+    highlights: [
+      { title: "品質監視", description: "メトリクスとチェックで異常を検知。" },
+      { title: "データ血統", description: "上流・下流の影響を可視化し、影響範囲を把握。" },
+      { title: "SLA/アラート", description: "SLA を設定し、逸脱時に通知。" },
+      { title: "パイプライン統合", description: "既存のツールと連携し、監査可能。" },
+    ],
+    useCases: ["データ品質と稼働監視", "影響分析", "SLA 準拠", "異常検知による信頼性向上"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function MonteCarloPageContent({ locale }: { locale?: string }) {

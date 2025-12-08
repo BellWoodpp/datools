@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Castor",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "データカタログ / ガバナンス · Castor",
+    title: "Castor：データカタログと発見",
+    subtitle: "血統、ドキュメント、スコアリング、ガバナンス協働を提供",
+    description:
+      "Castor はデータカタログ/ディスカバリーツールで、血統、ドキュメント、アセットのスコアリング、ガバナンス協働を提供します。",
+    highlights: [
+      { title: "血統とドキュメント", description: "データの血統と説明を管理・共有。" },
+      { title: "アセットスコアリング", description: "品質や利用状況をスコアで可視化。" },
+      { title: "ガバナンス協働", description: "権限やコメントでチームの連携を支援。" },
+      { title: "検索と発見", description: "メタデータ検索で必要なデータを素早く見つける。" },
+    ],
+    useCases: ["データ発見とカタログ化", "血統と品質可視化", "チームでのガバナンス", "データ資産のスコアリングと共有"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function CastorPageContent({ locale }: { locale?: string }) {

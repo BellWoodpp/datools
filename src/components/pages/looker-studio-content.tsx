@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Looker Studio",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Looker Studio",
+    title: "Looker Studio：無料のダッシュボードツール",
+    subtitle: "豊富なコネクタ、共有と埋め込みで軽量レポートに最適",
+    description:
+      "Looker Studio（旧 Data Studio）は Google の無料ダッシュボードツールで、豊富なコネクタ、共有、埋め込みを備え、軽量レポートに適しています。",
+    highlights: [
+      { title: "無料ツール", description: "基本利用が無料で、素早くダッシュボードを作成。" },
+      { title: "豊富なコネクタ", description: "多くの SaaS やデータソースに接続可能。" },
+      { title: "共有と埋め込み", description: "URL 共有や埋め込みで配信が簡単。" },
+      { title: "軽量レポート", description: "シンプルなレポーティングや可視化に最適。" },
+    ],
+    useCases: ["軽量レポートとダッシュボード", "SaaS データの可視化", "共有・埋め込み用途", "低コストでのデータ可視化"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function LookerStudioPageContent({ locale }: { locale?: string }) {

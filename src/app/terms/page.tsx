@@ -7,45 +7,45 @@ export default function TermsPage() {
             Terms of Service
           </p>
           <h1 className="text-3xl font-bold tracking-tight">
-            服务条款 / Terms of Service
+            Terms of Service
           </h1>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            最新更新：2025-02-15
+            Last updated: 2025-02-15
           </p>
         </header>
 
         <section className="space-y-4 rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-          <h2 className="text-xl font-semibold">1. 服务范围</h2>
+          <h2 className="text-xl font-semibold">1. Scope of service</h2>
           <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-            我们提供账号登录与管理功能，支持邮箱/密码、魔法链接以及第三方社交登录（如 X/Twitter）。本服务不代表用户发布内容，也不访问或操作用户的私信。
+            We provide account sign-in and management features, supporting email/password, magic links, and third-party social login (e.g., X/Twitter). We do not publish on behalf of users or access/operate on their direct messages.
           </p>
         </section>
 
         <section className="space-y-4 rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-          <h2 className="text-xl font-semibold">2. 数据使用</h2>
+          <h2 className="text-xl font-semibold">2. Data use</h2>
           <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-            为了完成注册与登录，我们会使用用户提供的邮箱、昵称等基本资料；在用户授权的情况下，可能从第三方获取公开资料和邮箱。我们不会用于广告或与登录无关的用途。
+            To complete registration and sign-in, we use the email, display name, and other basic details you provide; with permission we may fetch public profile info and email from third parties. We do not use this data for ads or unrelated purposes.
           </p>
         </section>
 
         <section className="space-y-4 rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-          <h2 className="text-xl font-semibold">3. 用户责任</h2>
+          <h2 className="text-xl font-semibold">3. User responsibilities</h2>
           <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-            用户应妥善保管账号凭据，不得使用服务从事违法、侵权或违反第三方平台政策的行为。如因用户原因导致的账号风险或损失，由用户自行承担。
+            You must safeguard your credentials and not use the service for illegal, infringing, or policy-violating activities. Any risks or losses caused by user actions are the user’s responsibility.
           </p>
         </section>
 
         <section className="space-y-4 rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-          <h2 className="text-xl font-semibold">4. 免责声明</h2>
+          <h2 className="text-xl font-semibold">4. Disclaimer</h2>
           <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-            我们不保证服务的绝对可用性，第三方平台变更、网络或不可抗力导致的服务中断或数据丢失不承担责任。若发现安全风险，我们可能暂停或终止相关账号的使用。
+            We do not guarantee uninterrupted availability. We are not liable for outages or data loss caused by third-party changes, network issues, or force majeure. If security risks are detected, we may suspend or terminate access.
           </p>
         </section>
 
         <section className="space-y-4 rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-          <h2 className="text-xl font-semibold">5. 联系方式</h2>
+          <h2 className="text-xl font-semibold">5. Contact</h2>
           <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-            如有问题或权利主张，请通过站点底部的联系渠道与我们取得联系。
+            If you have questions or rights requests, please reach us via the contact methods in the site footer.
           </p>
         </section>
       </div>

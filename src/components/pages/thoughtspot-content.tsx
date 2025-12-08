@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit ThoughtSpot",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · ThoughtSpot",
+    title: "ThoughtSpot：検索ドリブン分析",
+    subtitle: "検索と AI サジェスト、埋め込み、きめ細かなセキュリティ",
+    description:
+      "ThoughtSpot はビジネスユーザー向けの検索ドリブン分析を提供し、AI サジェスト、埋め込み、行粒度のセキュリティを備えています。",
+    highlights: [
+      { title: "検索ベースの体験", description: "自然言語に近い検索で指標や可視化を即座に生成。" },
+      { title: "AI サジェスト", description: "関連する質問やチャートを提案し、探索を支援。" },
+      { title: "埋め込み", description: "アプリやポータルに分析を組み込める." },
+      { title: "セキュリティ", description: "細粒度の権限と監査でエンタープライズ要求に対応。" },
+    ],
+    useCases: ["ビジネスユーザーのセルフサービス分析", "検索主導のダッシュボード", "埋め込み分析", "ガバナンスが必要な組織向け"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function ThoughtSpotPageContent({ locale }: { locale?: string }) {

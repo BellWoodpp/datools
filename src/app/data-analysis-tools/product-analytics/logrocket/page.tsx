@@ -4,8 +4,9 @@ import { LogRocketPageContent } from "@/components/pages/logrocket-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "LogRocket — 前端监控与体验分析",
-  description: "LogRocket 结合 Session 回放、性能监控与行为分析，定位前端与体验问题。",
+  title: "LogRocket — Data analysis tool",
+  description:
+    "Front-end monitoring and product experience analytics combining session replay, performance, and behavior insights.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "product-analytics", "logrocket"),
   },

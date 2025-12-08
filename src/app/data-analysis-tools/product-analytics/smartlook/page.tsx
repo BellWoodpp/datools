@@ -4,8 +4,9 @@ import { SmartlookPageContent } from "@/components/pages/smartlook-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Smartlook — 体验回放与行为分析",
-  description: "Smartlook 提供 Session 回放、漏斗、热力图与事件追踪，定位体验与转化问题。",
+  title: "Smartlook — Data analysis tool",
+  description:
+    "Experience and behavior analytics with session replay, funnels, heatmaps, and event tracking to find UX and conversion issues.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "product-analytics", "smartlook"),
   },

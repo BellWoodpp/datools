@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Lightdash",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Lightdash",
+    title: "Lightdash：dbt 向けオープンソース BI",
+    subtitle: "dbt モデルから Looker 風 Explore とダッシュボードを生成",
+    description:
+      "Lightdash は dbt 向けのオープンソース BI で、Looker スタイルの Explore やダッシュボードを dbt モデルから生成し、自社ホストまたはクラウドで利用できます。",
+    highlights: [
+      { title: "dbt ネイティブ", description: "dbt モデルを直接活用し、指標/ディメンションを再利用。" },
+      { title: "Looker 風 Explore", description: "探索画面でセルフサービス分析を提供。" },
+      { title: "オープンソース/クラウド", description: "自社ホストもクラウドも選択できる。" },
+      { title: "コラボレーション", description: "共有やガバナンスを備え、チームで利用可能。" },
+    ],
+    useCases: ["dbt を活用した BI", "セルフサービス探索", "自社ホスト BI", "クラウドでの軽量レポート"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function LightdashPageContent({ locale }: { locale?: string }) {

@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit dbt tests",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "データ品質 / ガバナンス · dbt tests",
+    title: "dbt tests：モデルレベルの品質検証",
+    subtitle: "組み込み/カスタムテストでデータ品質をチェックし、ドキュメントと CI に統合",
+    description:
+      "dbt tests は組み込み/カスタムテストでモデルレベルのデータ品質を検証し、ドキュメント生成や CI 統合を支援します。",
+    highlights: [
+      { title: "組み込みテスト", description: "一意性・非 null などの基本チェックを簡単に追加。" },
+      { title: "カスタムテスト", description: "要件に応じて独自のチェックを定義可能。" },
+      { title: "ドキュメント化", description: "スキーマとテストを合わせて記述し、共有できる。" },
+      { title: "CI 統合", description: "パイプラインに組み込んで自動検証。" },
+    ],
+    useCases: ["モデル品質の確保", "ドキュメント生成", "CI/CD での自動チェック", "dbt プロジェクトの品質ガードレール"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function DbtTestsPageContent({ locale }: { locale?: string }) {

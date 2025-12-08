@@ -4,8 +4,8 @@ import { MetabasePageContent } from "@/components/pages/metabase-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Metabase — 开源自助式 BI",
-  description: "Metabase 提供零门槛问答、SQL、仪表板与告警，开源且易自托管，适合团队快速搭建 BI。",
+  title: "Metabase — Open-source self-service BI",
+  description: "Metabase offers GUI/SQL questions, dashboards, alerts, and embedding with easy self-hosting for teams.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "metabase"),
   },

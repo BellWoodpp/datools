@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Hevo",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "ELT / 統合 · Hevo",
+    title: "Hevo：ノーコードの ELT パイプライン",
+    subtitle: "リアルタイム/バッチ同期、監視付きのノーコード統合",
+    description:
+      "Hevo はノーコードのデータパイプライン/ELT で、多数のソースから倉庫/レイクへリアルタイムおよびバッチ同期し、監視も提供します。",
+    highlights: [
+      { title: "ノーコード", description: "UI で設定し、コードなしで接続と同期が可能。" },
+      { title: "リアルタイム + バッチ", description: "用途に応じてリアルタイムとバッチを選択。" },
+      { title: "監視とアラート", description: "同期状況を監視し、問題を通知。" },
+      { title: "倉庫/レイク対応", description: "主要倉庫・データレイクに接続。" },
+    ],
+    useCases: ["リアルタイム分析", "ノーコードでのパイプライン構築", "運用監視付きの ELT", "複数ソースの統合"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function HevoPageContent({ locale }: { locale?: string }) {

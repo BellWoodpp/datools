@@ -4,8 +4,9 @@ import { LightdashPageContent } from "@/components/pages/lightdash-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Lightdash — 面向 dbt 的开源 BI",
-  description: "Lightdash 直接读取 dbt 模型提供 Looker 风格探索与仪表板，支持自托管与云版本。",
+  title: "Lightdash — Data analysis tool",
+  description:
+    "Open-source BI for dbt, providing Looker-style explores and dashboards from dbt models; self-hosted or cloud.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "lightdash"),
   },

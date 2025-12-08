@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Pendo",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "プロダクト分析 · Pendo",
+    title: "Pendo：プロダクト体験と分析",
+    subtitle: "インアプリガイド、フィードバック、行動分析で採用とリテンションを向上",
+    description:
+      "Pendo はインアプリガイド、フィードバック、行動分析を提供し、プロダクトの採用とリテンションを高めます。",
+    highlights: [
+      { title: "インアプリガイド", description: "アプリ内でチュートリアルやバナーを表示。" },
+      { title: "フィードバック収集", description: "ユーザーの声を集め、改善に活用。" },
+      { title: "行動分析", description: "イベントや機能利用を把握し、改善箇所を特定。" },
+      { title: "セグメント/配信", description: "対象ユーザーを絞り、適切なタイミングで案内。" },
+    ],
+    useCases: ["採用/リテンション向上", "オンボーディング改善", "ユーザーフィードバック収集", "機能利用の分析"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function PendoPageContent({ locale }: { locale?: string }) {

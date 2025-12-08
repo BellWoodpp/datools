@@ -47,6 +47,22 @@ const copyByLocale: Record<string, Copy> = {
     ctaVisit: "Visit Qlik",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Qlik",
+    title: "Qlik Sense：連想インメモリ分析",
+    subtitle: "連想エンジンでセルフサービス可視化、データ統合も提供",
+    description:
+      "Qlik Sense は連想型インメモリエンジンでセルフサービス分析と可視化を実現し、Qlik Cloud Data Integration によるデータ統合も提供します。自助探索やインメモリ計算を得意とします。",
+    highlights: [
+      { title: "連想インメモリ", description: "データ間の関係を連想的に探索し、高速なインメモリ計算を実現。" },
+      { title: "セルフサービス可視化", description: "ドラッグ＆ドロップでビジュアル作成、フィルタやドリルで探索。" },
+      { title: "データ統合", description: "Qlik Cloud Data Integration で多源データの取り込みと統合を支援。" },
+      { title: "展開柔軟性", description: "クラウドや自社ホストで利用でき、権限とガバナンスを提供。" },
+    ],
+    useCases: ["セルフサービス探索", "インメモリ高速可視化", "統合データのダッシュボード", "複数チームでの共有とガバナンス"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 const getCopy = (locale?: string) => copyByLocale[locale ?? defaultLocale] ?? copyByLocale.en;

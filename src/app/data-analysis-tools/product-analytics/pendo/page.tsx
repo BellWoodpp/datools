@@ -4,8 +4,9 @@ import { PendoPageContent } from "@/components/pages/pendo-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Pendo — 产品体验与分析",
-  description: "Pendo 提供行为分析、应用内引导与反馈收集，助力功能采用与留存。",
+  title: "Pendo — Data analysis tool",
+  description:
+    "Product experience and analytics with in-app guides, feedback, and behavior insights to drive adoption and retention.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "product-analytics", "pendo"),
   },

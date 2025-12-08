@@ -47,6 +47,22 @@ const copyByLocale: Record<string, Copy> = {
     ctaVisit: "Visit Looker",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Looker",
+    title: "Looker：LookML セマンティック層と分析",
+    subtitle: "LookML で指標をモデル化し、ダッシュボード、埋め込み、ガバナンスを提供",
+    description:
+      "Looker（Google Cloud）は LookML によるセマンティック層でディメンションと指標をモデル化し、ガバナンスされたダッシュボード、探索、埋め込み分析、きめ細かな権限を提供します。統一指標とプロダクト内インサイトに適しています。",
+    highlights: [
+      { title: "LookML セマンティック層", description: "ディメンション/指標/権限を宣言的に管理し、統一指標を再利用。" },
+      { title: "探索とダッシュボード", description: "セルフサービス探索、パラメータ化フィルタ、ドリル、可視化コンポーネント。" },
+      { title: "埋め込みと API", description: "Embed SDK と API で製品にインサイトやチャートを組み込み。" },
+      { title: "ガバナンスと権限", description: "細粒度アクセス、行・列レベルセキュリティ、監査とバージョン管理。" },
+    ],
+    useCases: ["統一指標プラットフォーム", "プロダクト埋め込み分析", "セルフサービス探索と可視化", "複数チームでのデータガバナンス"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 const getCopy = (locale?: string) => copyByLocale[locale ?? defaultLocale] ?? copyByLocale.en;

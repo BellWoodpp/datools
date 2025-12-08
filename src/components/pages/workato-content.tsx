@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Workato",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "自動化 / iPaaS · Workato",
+    title: "Workato：エンタープライズ iPaaS/オートメーション",
+    subtitle: "トリガー、ワークフロー、データ同期、ガバナンスで部門横断の統合",
+    description:
+      "Workato はエンタープライズ向け iPaaS/自動化基盤で、トリガーとワークフロー、データ同期、ガバナンスを備え、部門横断の統合を支援します。",
+    highlights: [
+      { title: "トリガーとワークフロー", description: "イベント/スケジュール/条件で処理を実行。" },
+      { title: "データ同期", description: "アプリ間でデータを連携・同期。" },
+      { title: "ガバナンス", description: "権限、監査、ポリシーで企業要件に対応。" },
+      { title: "統合加速", description: "レシピとテンプレートで実装を高速化。" },
+    ],
+    useCases: ["部門横断の統合", "業務プロセス自動化", "データ同期", "ガバナンス重視の iPaaS"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function WorkatoPageContent({ locale }: { locale?: string }) {

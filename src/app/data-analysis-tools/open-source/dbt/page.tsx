@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "dbt — Open-source analytics engineering",
   description:
-    "dbt 用 SQL 定义模型、测试与文档，支持仓库/Lakehouse 上的可维护转换与语义层。",
+    "Open-source analytics engineering framework using SQL/Jinja for models, tests, and docs across warehouses and Lakehouse.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "open-source", "dbt"),
   },

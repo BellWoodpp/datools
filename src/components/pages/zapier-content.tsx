@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Zapier",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "自動化 · Zapier",
+    title: "Zapier：ノーコード自動化",
+    subtitle: "数千の SaaS をトリガー型マルチステップで連携",
+    description:
+      "Zapier はビジネスユーザー向けのノーコード自動化プラットフォームで、数千の SaaS をトリガーベースのマルチステップワークフローでつなげます。",
+    highlights: [
+      { title: "ノーコード", description: "コード不要で自動化を作成。" },
+      { title: "豊富なコネクタ", description: "多数の SaaS/サービスに対応。" },
+      { title: "マルチステップ", description: "複数アクションを組み合わせて実行。" },
+      { title: "ビジネスユーザー向け", description: "わかりやすい UI で業務自動化を促進。" },
+    ],
+    useCases: ["SaaS 連携の自動化", "バックオフィスの効率化", "通知/同期フロー", "ビジネスユーザーのセルフサービス自動化"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function ZapierPageContent({ locale }: { locale?: string }) {

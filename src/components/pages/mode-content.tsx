@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Mode",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Mode",
+    title: "Mode：アナリスト向け BI",
+    subtitle: "SQL、Python/R ノートブック、可視化でコラボと共有",
+    description:
+      "Mode はアナリスト向けの BI で、SQL・Python/R ノートブック・可視化を組み合わせ、コラボレーションと共有を容易にします。",
+    highlights: [
+      { title: "SQL + Notebook", description: "SQL と Python/R を組み合わせて分析し、再利用可能に共有。" },
+      { title: "可視化", description: "クエリ結果をチャート化し、ダッシュボードで配信。" },
+      { title: "コラボレーション", description: "コメントや共有でチーム作業を円滑にし、アプリ化も可能。" },
+      { title: "クラウド提供", description: "クラウドで管理され、セットアップが容易。" },
+    ],
+    useCases: ["アナリストの探索と共有", "SQL/Notebook を組み合わせた分析", "チーム向けダッシュボード", "簡易アプリ配信"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function ModePageContent({ locale }: { locale?: string }) {

@@ -4,8 +4,9 @@ import { LookerPageContent } from "@/components/pages/looker-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Looker — LookML 语义层与可视化",
-  description: "Looker 提供 LookML 语义层、仪表板、嵌入式分析与权限治理，适合统一指标与内嵌分析场景。",
+  title: "Looker — Data analysis tool",
+  description:
+    "Google Cloud semantic layer and BI platform using LookML to model metrics; supports governed dashboards and embedded analytics.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "looker"),
   },

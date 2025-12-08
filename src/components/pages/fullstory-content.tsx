@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit FullStory",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "プロダクト分析 · FullStory",
+    title: "FullStory：デジタル体験分析",
+    subtitle: "セッションリプレイ、ジャーニー、ファネル、リテンション、アラート",
+    description:
+      "FullStory はセッションリプレイ、ジャーニーインサイト、ファネル、リテンション、アラートで UX 課題を特定するデジタル体験分析を提供します。",
+    highlights: [
+      { title: "セッションリプレイ", description: "ユーザー行動を再生し、問題箇所を把握。" },
+      { title: "ジャーニー/ファネル", description: "行動パスと離脱を分析。" },
+      { title: "リテンション", description: "継続率を把握し、改善を検討。" },
+      { title: "アラート", description: "異常やエラーを通知。" },
+    ],
+    useCases: ["UX 改善", "コンバージョン改善", "不具合の発見", "行動分析による施策立案"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function FullStoryPageContent({ locale }: { locale?: string }) {

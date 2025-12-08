@@ -4,8 +4,9 @@ import { MotherDuckPageContent } from "@/components/pages/motherduck-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "MotherDuck — DuckDB 的云协作",
-  description: "MotherDuck 为 DuckDB 提供云端持久化、共享与混合查询，方便团队协作与扩展。",
+  title: "MotherDuck — Data analysis tool",
+  description:
+    "DuckDB-backed cloud collaboration and storage, enabling shared, persisted, and hybrid queries.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "warehouse", "motherduck"),
   },

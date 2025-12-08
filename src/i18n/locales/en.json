@@ -233,10 +233,12 @@
     "submitLabel": "Submit a tool",
     "ctaLogin": "Log in / Sign up",
     "ctaSubscribe": "Subscribe",
+    "searchPlaceholder": "Search data tools…",
     "viewDetailsLabel": "View details",
     "visitSiteLabel": "Visit site",
     "collectionsTitle": "Curated collections",
     "latestTitle": "Latest",
+    "filterHint": "Filter quickly by name, tags, pricing, or deployment",
     "categories": [
       {
         "title": "BI / Visualization",
@@ -282,7 +284,7 @@
         "tags": ["BI", "Visualization", "Self-service", "Dashboard"],
         "pricing": "Commercial / Trial",
         "deployment": "Desktop / Cloud / Self-hosted",
-        "link": "tableau",
+        "link": "data-analysis-tools/visualization/tableau",
         "officialUrl": "https://www.tableau.com/",
         "votes": 128,
         "comments": 12

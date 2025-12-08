@@ -4,8 +4,9 @@ import { MixpanelPageContent } from "@/components/pages/mixpanel-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Mixpanel — 事件与留存分析",
-  description: "Mixpanel 提供事件、漏斗、留存、分群与信号分析，用于产品优化与增长。",
+  title: "Mixpanel — Data analysis tool",
+  description:
+    "Event-based product analytics with funnels, retention, cohorts, and signal analysis for optimization and growth.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "product-analytics", "mixpanel"),
   },

@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Mixpanel",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "プロダクト分析 · Mixpanel",
+    title: "Mixpanel：イベントベースのプロダクト分析",
+    subtitle: "ファネル、リテンション、コホート、シグナル分析で最適化",
+    description:
+      "Mixpanel はイベントベースのプロダクト分析で、ファネル、リテンション、コホート、シグナル分析を提供し、最適化を支援します。",
+    highlights: [
+      { title: "イベント & ファネル", description: "行動をイベントで追跡し、ファネルで課題を可視化。" },
+      { title: "リテンション", description: "継続率を分析し、改善策を検討。" },
+      { title: "コホート/シグナル", description: "セグメント別の変化や兆候を把握。" },
+      { title: "データ連携", description: "他サービスとのインテグレーションを多数サポート。" },
+    ],
+    useCases: ["オンボーディングと成長の改善", "機能評価", "セグメント分析", "プロダクト最適化"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function MixpanelPageContent({ locale }: { locale?: string }) {

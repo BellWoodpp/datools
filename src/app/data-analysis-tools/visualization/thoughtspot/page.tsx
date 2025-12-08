@@ -4,8 +4,9 @@ import { ThoughtSpotPageContent } from "@/components/pages/thoughtspot-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "ThoughtSpot — 搜索驱动分析",
-  description: "ThoughtSpot 提供搜索式自助分析与 AI 推荐，支持嵌入式分析与权限治理。",
+  title: "ThoughtSpot — Data analysis tool",
+  description:
+    "Search-driven analytics with AI suggestions, embedding, and granular security for business users.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "thoughtspot"),
   },

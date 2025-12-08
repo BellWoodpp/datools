@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Superset",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Apache Superset",
+    title: "Superset：オープンソース BI",
+    subtitle: "SQL Lab、可視化プラグイン、ダッシュボード、権限管理を提供",
+    description:
+      "Superset は Apache のオープンソース BI で、SQL Lab、拡張可能な可視化プラグイン、ダッシュボード、権限管理を備え、自社ホストやクラウドネイティブ展開に適しています。",
+    highlights: [
+      { title: "SQL Lab", description: "SQL 作成とプレビュー、結果を可視化へ連携。" },
+      { title: "拡張可視化", description: "プラグインでチャートを拡張し、カスタムも可能。" },
+      { title: "ダッシュボード", description: "ドラッグでレイアウトし、フィルタや相互作用を設定。" },
+      { title: "権限とガバナンス", description: "ロール/権限、データセット制御で安全に共有。" },
+    ],
+    useCases: ["自社ホスト BI", "クラウドネイティブ可視化", "SQL ドリブン分析", "拡張可能なダッシュボード"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function SupersetPageContent({ locale }: { locale?: string }) {

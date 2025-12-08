@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Smartlook",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "プロダクト分析 · Smartlook",
+    title: "Smartlook：体験・行動分析",
+    subtitle: "セッションリプレイ、ファネル、ヒートマップ、イベント追跡で UX を改善",
+    description:
+      "Smartlook はセッションリプレイ、ファネル、ヒートマップ、イベント追跡を提供し、UX とコンバージョンの課題を発見します。",
+    highlights: [
+      { title: "セッションリプレイ", description: "行動を再生し、問題箇所を把握。" },
+      { title: "ファネル", description: "離脱ポイントを特定。" },
+      { title: "ヒートマップ", description: "クリック/スクロールの分布を可視化。" },
+      { title: "イベント追跡", description: "重要イベントをトラッキングし、変化を検知。" },
+    ],
+    useCases: ["UX 改善", "コンバージョン最適化", "バグ・摩擦点の発見", "行動変化のモニタリング"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function SmartlookPageContent({ locale }: { locale?: string }) {

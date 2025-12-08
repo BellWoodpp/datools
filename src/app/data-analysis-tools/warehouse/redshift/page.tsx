@@ -4,8 +4,9 @@ import { RedshiftPageContent } from "@/components/pages/redshift-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Amazon Redshift — 云数据仓库",
-  description: "Redshift 支持 RA3 存算分离与 Spectrum 联邦查询，兼容 PostgreSQL，适合 AWS 生态。",
+  title: "Redshift — Data analysis tool",
+  description:
+    "AWS cloud warehouse with Spectrum federation and RA3 storage/compute separation, PostgreSQL-compatible.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "warehouse", "redshift"),
   },

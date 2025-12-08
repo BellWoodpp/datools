@@ -4,8 +4,9 @@ import { TrayIoPageContent } from "@/components/pages/tray-io-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Tray.io — 低代码 iPaaS 与自动化",
-  description: "Tray.io 提供可视化集成与事件/定时触发，连接多 SaaS 构建多步工作流。",
+  title: "Tray.io — Data analysis tool",
+  description:
+    "Low-code iPaaS with visual integration and automation for business/engineering teams to orchestrate APIs and events.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "ELT-Integration", "tray-io"),
   },

@@ -4,8 +4,9 @@ import { JunePageContent } from "@/components/pages/june-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "June — SaaS 指标仪表板",
-  description: "June 基于事件数据提供 SaaS 指标报表，涵盖漏斗、留存、活跃与增长看板。",
+  title: "June — Data analysis tool",
+  description:
+    "SaaS product metrics dashboards and reports on top of event data: funnels, retention, activation, and growth KPIs.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "product-analytics", "june"),
   },

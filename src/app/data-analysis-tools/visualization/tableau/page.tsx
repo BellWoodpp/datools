@@ -4,9 +4,9 @@ import { TableauPageContent } from "@/components/pages/tableau-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Tableau 数据可视化与 BI 介绍",
+  title: "Tableau BI & visualization overview",
   description:
-    "Tableau：拖拽式交互 BI，连接数据库、表格和云服务，覆盖 Prep 清洗、Desktop/Cloud 分析与 Server/Cloud 协作。",
+    "Tableau: drag-and-drop BI with connections to databases, spreadsheets, and cloud services, spanning Prep, Desktop/Cloud analytics, and Server/Cloud collaboration.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "tableau"),
   },

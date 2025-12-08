@@ -4,8 +4,9 @@ import { DeepnotePageContent } from "@/components/pages/deepnote-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Deepnote — 协作型云 Notebook",
-  description: "Deepnote 支持 SQL 与 Python，提供实时协作、评论与分享，便于团队共建分析。",
+  title: "Deepnote — Data analysis tool",
+  description:
+    "Collaborative cloud notebook with SQL and Python, real-time coauthoring, comments, and data source integrations.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "collaborative-analytics", "deepnote"),
   },

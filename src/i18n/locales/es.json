@@ -1,4 +1,10 @@
 {
+  "homeFeed": {
+    "heading": "Herramientas de análisis de datos en tendencia",
+    "subheading": "Data Analysis Tools · Hoy",
+    "searchPlaceholder": "Buscar herramientas de datos…",
+    "filterHint": "Filtra rápido por nombre, etiquetas, precio o despliegue."
+  },
   "home": {
     "badgeLabel": "2025🚀 Envía ya",
     "heroTitle": "ShipBase, envía más.",

@@ -1,4 +1,10 @@
 {
+  "homeFeed": {
+    "heading": "Alat analitik data terpopuler",
+    "subheading": "Data Analysis Tools · Hari ini",
+    "searchPlaceholder": "Cari alat data…",
+    "filterHint": "Saring cepat berdasarkan nama, tag, harga, atau penyebaran."
+  },
   "home": {
     "badgeLabel": "2025🚀 Kirim Sekarang",
     "heroTitle": "ShipBase, Kirim Lebih Banyak.",

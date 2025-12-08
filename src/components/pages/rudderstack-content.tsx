@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit RudderStack",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "CDP / イベント · RudderStack",
+    title: "RudderStack：オープンソース CDP/イベントパイプライン",
+    subtitle: "Segment API 互換で自社ホスト/クラウドを選択、倉庫や SaaS へ配信",
+    description:
+      "RudderStack はオープンソースの CDP/イベントパイプラインで、Segment API 互換。自社ホストとクラウドを選び、倉庫や SaaS ツールへイベントをルーティングできます。",
+    highlights: [
+      { title: "オープンソース/自社ホスト", description: "プライバシーやコストに合わせてホスティングを選択。" },
+      { title: "Segment 互換", description: "既存の Segment API を活用しやすい。" },
+      { title: "倉庫/下流配信", description: "倉庫や各種ツールへ柔軟にイベントを配信。" },
+      { title: "ガバナンス", description: "権限や設定管理で安全に運用。" },
+    ],
+    useCases: ["自社ホストの CDP", "Segment 互換の移行/併用", "倉庫中心のイベント連携", "SaaS へのイベント配信"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function RudderStackPageContent({ locale }: { locale?: string }) {

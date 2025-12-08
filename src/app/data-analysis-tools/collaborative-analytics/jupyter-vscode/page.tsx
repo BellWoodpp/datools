@@ -4,8 +4,9 @@ import { JupyterVSCodePageContent } from "@/components/pages/jupyter-vscode-cont
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Jupyter / VS Code — 经典 Notebook 与本地/云开发",
-  description: "Jupyter Notebook/Lab 与 VS Code 提供多语言、本地与远程的灵活分析与开发体验。",
+  title: "Jupyter / VS Code — Data analysis tool",
+  description:
+    "Jupyter Notebook/Lab plus VS Code (Python) for local/cloud analytics, supporting Python/R/Julia and more.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "collaborative-analytics", "jupyter-vscode"),
   },

@@ -4,8 +4,9 @@ import { ZapierPageContent } from "@/components/pages/zapier-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Zapier — 无代码自动化",
-  description: "Zapier 连接数千 SaaS，通过触发器执行多步工作流，适合业务与个人效率。",
+  title: "Zapier — Data analysis tool",
+  description:
+    "No-code automation for business users connecting thousands of SaaS apps with trigger-based multi-step workflows.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "ELT-Integration", "zapier"),
   },

@@ -4,8 +4,9 @@ import { HeapPageContent } from "@/components/pages/heap-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Heap — 自动采集的产品分析",
-  description: "Heap 通过自动采集提供漏斗、留存与路径分析，快速获得产品洞察。",
+  title: "Heap — Data analysis tool",
+  description:
+    "Autocapture product analytics; no-code event collection with funnels, retention, and pathing for fast insights.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "product-analytics", "heap"),
   },

@@ -4,8 +4,9 @@ import { ClickHousePageContent } from "@/components/pages/clickhouse-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "ClickHouse — 开源实时分析数据库",
-  description: "ClickHouse 提供列式存储与高性能查询，适合日志、监控与实时产品分析，可自托管或云服务。",
+  title: "ClickHouse — Data analysis tool",
+  description:
+    "Open-source columnar database for real-time/near-real-time analytics with self-hosted and cloud options.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "warehouse", "clickhouse"),
   },

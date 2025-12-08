@@ -60,6 +60,28 @@ const copyByLocale: Record<string, TableauCopy> = {
     ctaVisit: "Visit Tableau.com",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Tableau",
+    title: "Tableau：ドラッグ＆ドロップのインタラクティブ BI",
+    subtitle: "Prep で整形、Desktop/Cloud で分析、Server/Cloud で共有",
+    description:
+      "Tableau はドラッグ＆ドロップでグラフとダッシュボードを作れる BI/可視化プラットフォームです。データベースやスプレッドシート、クラウドサービスに接続し、Prep で整形、Desktop/Cloud で分析、Server/Cloud でコラボレーションが可能。セルフサービス分析、データ探索、運用ダッシュボード、データストーリーテリングに適しています。",
+    highlights: [
+      { title: "ドラッグ＆ドロップで可視化", description: "フィールドとパラメータ、計算や LOD で素早くチャート作成。" },
+      { title: "豊富なデータソース", description: "DB、スプレッドシート、クラウド倉庫や SaaS に接続し、ブレンドや抽出も柔軟。" },
+      { title: "インタラクティブダッシュボード", description: "フィルタ連動、ドリルダウン、ハイライトやツールチップで探索性を高める。" },
+      { title: "強力なマップ機能", description: "地理情報とマップレイヤーを内蔵し、密度図や塗り分け、デュアル軸をサポート。" },
+      { title: "コラボとガバナンス", description: "Server/Cloud へ公開し、サブスク、リフレッシュ、権限、行レベルセキュリティを提供。" },
+    ],
+    modules: [
+      { title: "Prep（データ整形）", description: "ビジュアル ETL でクレンジング/結合/サンプリング/重複排除し、Tableau や DB に渡す。" },
+      { title: "Desktop / Cloud 分析", description: "ドラッグ分析、パラメータ、LOD、ダッシュボード/ストーリー、抽出エンジンを利用。" },
+      { title: "Server / Cloud 協働", description: "権限、サブスク、リフレッシュ計画、コメント、Ask Data/Explain Data で共同分析。" },
+    ],
+    useCases: ["セルフサービス分析と探索", "運用ダッシュボード", "地理可視化", "データストーリーテリングと共有"],
+    ctaVisit: "Tableau を見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 const getCopy = (locale?: string) => copyByLocale[locale ?? defaultLocale] ?? copyByLocale.en;

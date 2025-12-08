@@ -4,8 +4,9 @@ import { FireboltPageContent } from "@/components/pages/firebolt-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Firebolt — 高性能云原生数仓",
-  description: "Firebolt 主打低延迟查询与索引/存储优化，适合交互式分析与高并发场景。",
+  title: "Firebolt — Data analysis tool",
+  description:
+    "Cloud-native MPP warehouse focused on high-performance queries with indexing and storage optimizations.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "warehouse", "firebolt"),
   },

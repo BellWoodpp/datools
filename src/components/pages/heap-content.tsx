@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Heap",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "プロダクト分析 · Heap",
+    title: "Heap：自動キャプチャ型のプロダクト分析",
+    subtitle: "ノーコードイベント収集でファネル、リテンション、パス分析",
+    description:
+      "Heap は自動キャプチャ型のプロダクト分析で、ノーコードでイベント収集し、ファネル・リテンション・パス分析を高速に行えます。",
+    highlights: [
+      { title: "自動キャプチャ", description: "イベントを自動で収集し、設定コストを削減。" },
+      { title: "ファネル/パス", description: "行動経路を可視化し、離脱点を特定。" },
+      { title: "リテンション", description: "継続率を分析して改善ポイントを発見。" },
+      { title: "クエリとダッシュボード", description: "分析結果を共有・モニタリング。" },
+    ],
+    useCases: ["ノーコードでの行動分析", "離脱ポイントの特定", "継続率改善", "UX 改善の仮説検証"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function HeapPageContent({ locale }: { locale?: string }) {

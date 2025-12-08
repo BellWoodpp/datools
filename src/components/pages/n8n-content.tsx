@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit n8n",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "自動化 / 統合 · n8n",
+    title: "n8n：オープンソースのローコード自動化",
+    subtitle: "ビジュアルワークフロー、Webhook、豊富なノード、自社ホスト可能",
+    description:
+      "n8n はオープンソースのローコード自動化/統合ツールで、ビジュアルワークフロー、Webhook、豊富なノードを備え、自社ホストやクラウドで利用できます。",
+    highlights: [
+      { title: "ビジュアルフロー", description: "ノードをつないでワークフローを構築。" },
+      { title: "Webhook / イベント", description: "トリガーや Webhook で自動実行。" },
+      { title: "多数のノード", description: "多くのサービスや DB と連携可能。" },
+      { title: "自社ホスト/クラウド", description: "プライバシーや要件に合わせてデプロイ。" },
+    ],
+    useCases: ["ローコード自動化", "API/サービス連携", "イベント駆動フロー", "自社ホストの iPaaS"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function N8nPageContent({ locale }: { locale?: string }) {

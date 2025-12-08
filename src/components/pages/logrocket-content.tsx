@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit LogRocket",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "プロダクト分析 · LogRocket",
+    title: "LogRocket：フロントエンド監視 + 体験分析",
+    subtitle: "セッションリプレイ、パフォーマンス、行動インサイトを統合",
+    description:
+      "LogRocket はフロントエンド監視とプロダクト体験分析を組み合わせ、セッションリプレイ、パフォーマンス計測、行動インサイトを提供します。",
+    highlights: [
+      { title: "セッションリプレイ", description: "UI 上の行動を再生し、問題を特定。" },
+      { title: "パフォーマンス監視", description: "性能指標を計測し、劣化を検知。" },
+      { title: "行動インサイト", description: "ユーザー行動を分析し、改善点を抽出。" },
+      { title: "アラートと共有", description: "異常を通知し、チームで共有できる。" },
+    ],
+    useCases: ["UX/性能改善", "バグ調査", "コンバージョン改善", "フロントエンドの品質モニタリング"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function LogRocketPageContent({ locale }: { locale?: string }) {

@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Dagster — Open-source data orchestrator",
   description:
-    "Dagster 以软件定义资产管理数据依赖，提供类型检查、可观测与混合执行，适合现代数据管道。",
+    "Open-source orchestrator centered on software-defined assets with typing/validation, lineage, observability, and hybrid execution.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "open-source", "dagster"),
   },

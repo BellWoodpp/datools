@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Vertex AI — Unified ML/AutoML/GenAI on Google Cloud",
   description:
-    "Vertex AI 提供 AutoML、生成式模型、Pipelines、Feature Store 与监控，深度集成 BigQuery 的统一 ML 平台。",
+    "Google Cloud unified ML/AutoML/GenAI platform with Model Garden, Pipelines, Feature Store, and monitoring integrated with BigQuery.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "AI-assistants", "vertex-ai"),
   },

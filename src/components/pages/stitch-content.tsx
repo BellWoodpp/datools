@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Stitch",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "ELT / 統合 · Stitch",
+    title: "Stitch：軽量クラウド ELT",
+    subtitle: "人気コネクタとスケジュールで倉庫にロード",
+    description:
+      "Stitch は Talend 傘下の軽量クラウド ELT で、よく使われるコネクタとスケジュール機能を備え、データを倉庫にロードします。",
+    highlights: [
+      { title: "軽量サービス", description: "セットアップが簡単なクラウド ELT。" },
+      { title: "主要コネクタ", description: "一般的なソースに対応し、素早く連携。" },
+      { title: "スケジュール", description: "定期実行でデータを自動ロード。" },
+      { title: "倉庫出力", description: "主要クラウド倉庫へロード可能。" },
+    ],
+    useCases: ["素早い ELT 立ち上げ", "軽量なデータ同期", "レポーティング用のデータロード", "SaaS/DB の定期取り込み"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function StitchPageContent({ locale }: { locale?: string }) {

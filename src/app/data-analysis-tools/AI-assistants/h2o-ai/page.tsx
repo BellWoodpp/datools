@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "H2O.ai — AutoML & Driverless AI",
   description:
-    "H2O.ai 结合开源 H2O-3 与 Driverless AI，提供自动特征工程、可解释性与 MLOps 的自托管/云端方案。",
+    "Open-source H2O-3 plus Driverless AI for automated feature engineering, time series, explainability, and self-hosted or cloud AutoML.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "AI-assistants", "h2o-ai"),
   },

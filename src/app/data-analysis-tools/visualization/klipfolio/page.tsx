@@ -4,8 +4,9 @@ import { KlipfolioPageContent } from "@/components/pages/klipfolio-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Klipfolio — KPI 仪表板与监控",
-  description: "Klipfolio 以拖拽方式构建 KPI 仪表板，提供丰富连接器、刷新与告警、分享与嵌入。",
+  title: "Klipfolio — Data analysis tool",
+  description:
+    "KPI dashboard and monitoring tool with drag-and-drop builder, rich SaaS/database/API connectors, refresh, and alerts.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "klipfolio"),
   },

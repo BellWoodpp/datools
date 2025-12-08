@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Bigeye",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "データ品質 / ガバナンス · Bigeye",
+    title: "Bigeye：データ品質モニタリング",
+    subtitle: "セルフサービスのルール、SLA、異常検知とアラート",
+    description:
+      "Bigeye はデータ品質モニタリングを提供し、セルフサービスのルール設定、SLA、異常検知とアラートでパイプラインの健全性を保ちます。",
+    highlights: [
+      { title: "セルフサービスルール", description: "チームが自分で品質チェックを定義・管理。" },
+      { title: "SLA とメトリクス", description: "データの SLO/SLA を可視化し、逸脱を検知。" },
+      { title: "異常検知とアラート", description: "自動検知で問題を早期通知。" },
+      { title: "統合", description: "既存のデータ基盤と連携し、監査と権限を提供。" },
+    ],
+    useCases: ["品質監視", "SLA 管理", "異常検知・通知", "パイプライン健全性の可視化"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function BigeyePageContent({ locale }: { locale?: string }) {

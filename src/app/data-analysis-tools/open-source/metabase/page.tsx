@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Metabase — Open-source self-service BI",
   description:
-    "Metabase 提供图形问答/SQL、仪表板与嵌入，开源易自托管，适合团队自助 BI。",
+    "Open-source BI and visualization with SQL/GUI querying, dashboards, and embedding; easy to self-host with broad database support.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "open-source", "metabase"),
   },

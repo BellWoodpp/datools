@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Amplitude",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "プロダクト分析 · Amplitude",
+    title: "Amplitude：プロダクト分析プラットフォーム",
+    subtitle: "イベント、ファネル、リテンション、コホート、実験で成長インサイト",
+    description:
+      "Amplitude はイベントトラッキング、ファネル、リテンション、コホート、実験を備えたプロダクト分析プラットフォームで、成長の洞察を提供します。",
+    highlights: [
+      { title: "イベント & ファネル", description: "ユーザー行動を計測し、離脱ポイントを把握。" },
+      { title: "リテンションとコホート", description: "継続率やセグメント別の動向を分析。" },
+      { title: "実験/実証", description: "A/B や機能の影響を測定。" },
+      { title: "データ連携", description: "多くのデータソースと統合可能。" },
+    ],
+    useCases: ["成長分析", "オンボーディング/活性化の改善", "機能の影響測定", "顧客セグメント分析"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function AmplitudePageContent({ locale }: { locale?: string }) {

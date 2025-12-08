@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Segment",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "CDP / イベント · Segment",
+    title: "Segment：CDP & イベントパイプライン",
+    subtitle: "マルチプラットフォームデータを倉庫や下流ツールへルーティング",
+    description:
+      "Segment は CDP とイベントパイプラインを提供し、マルチプラットフォームのデータを倉庫や下流ツールへルーティングします。ID 解決やオーディエンスもサポートします。",
+    highlights: [
+      { title: "豊富な接続", description: "多様な SDK と接続先でイベントを収集し配信。" },
+      { title: "ID 解決/オーディエンス", description: "ユーザーを統合し、セグメントを作成して配信。" },
+      { title: "倉庫/下流ツール連携", description: "データを倉庫やマーケ/プロダクトツールへルーティング。" },
+      { title: "管理とガバナンス", description: "設定管理、コントロールや監査で品質を維持。" },
+    ],
+    useCases: ["イベントデータの一元化", "マーケ/プロダクトツールへの配信", "倉庫へのルーティング", "ID 解決で顧客ビュー構築"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function SegmentPageContent({ locale }: { locale?: string }) {

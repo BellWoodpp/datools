@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Klipfolio",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Klipfolio",
+    title: "Klipfolio：KPI ダッシュボードとモニタリング",
+    subtitle: "ドラッグ＆ドロップビルダーと豊富なコネクタ、更新とアラートを提供",
+    description:
+      "Klipfolio は KPI 指標に特化したダッシュボード/モニタリングツールで、ドラッグ＆ドロップのビルダーと豊富な SaaS/DB/API コネクタ、リフレッシュやアラートを備えています。",
+    highlights: [
+      { title: "KPI ダッシュボード", description: "指標を素早く可視化し、チームで共有。" },
+      { title: "ドラッグ＆ドロップ", description: "ビルダーでウィジェット配置や計算を直感的に設定。" },
+      { title: "豊富なコネクタ", description: "SaaS/DB/API に広く接続し、データ更新を自動化。" },
+      { title: "リフレッシュとアラート", description: "定期更新としきい値アラートで異常を検知。" },
+    ],
+    useCases: ["KPI 監視", "経営/運用ダッシュボード", "SaaS データの集約", "チーム共有とアラート"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function KlipfolioPageContent({ locale }: { locale?: string }) {

@@ -47,6 +47,22 @@ const copyByLocale: Record<string, Copy> = {
     ctaVisit: "Visit Metabase",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Metabase",
+    title: "Metabase：オープンソースのセルフサービス BI",
+    subtitle: "ポイント＆クリック/SQL 質問、ダッシュボードとアラート、自社ホストも容易",
+    description:
+      "Metabase はオープンソースの BI/可視化ツールで、GUI 質問と SQL、ダッシュボード、スケジュール配信、アラート、埋め込みを提供します。主要 DB に接続でき、自社ホストが簡単で、チームのセルフサービス分析に適します。",
+    highlights: [
+      { title: "ノーコード質問", description: "GUI（および一部 NL）で SQL なしにグラフ作成。" },
+      { title: "SQL & モデル", description: "SQL エディタと保存質問/モデルの再利用で指標を共有。" },
+      { title: "ダッシュボードとアラート", description: "ダッシュボード構築、メール/Slack 送信、しきい値アラート。" },
+      { title: "簡単デプロイ", description: "自社ホストが容易で、リレーショナル/倉庫系 DB に広く対応。" },
+    ],
+    useCases: ["チームのセルフサービス分析", "運用/プロダクトダッシュボード", "軽量な埋め込みレポート", "小規模チームの BI 立ち上げ"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 const getCopy = (locale?: string) => copyByLocale[locale ?? defaultLocale] ?? copyByLocale.en;

@@ -233,10 +233,12 @@
     "submitLabel": "提交新工具",
     "ctaLogin": "登录 / 注册",
     "ctaSubscribe": "订阅更新",
+    "searchPlaceholder": "搜索数据分析工具…",
     "viewDetailsLabel": "查看详情",
     "visitSiteLabel": "访问官网",
     "collectionsTitle": "精选合集",
     "latestTitle": "最新上架",
+    "filterHint": "支持按名称、标签、价格和部署方式快速筛选。",
     "categories": [
       {
         "title": "BI / 可视化",
@@ -282,7 +284,7 @@
         "tags": ["BI", "可视化", "自助分析", "仪表板"],
         "pricing": "商业版 / 试用",
         "deployment": "桌面 / 云端 / 私有部署",
-        "link": "tableau",
+        "link": "data-analysis-tools/visualization/tableau",
         "officialUrl": "https://www.tableau.com/",
         "votes": 128,
         "comments": 12

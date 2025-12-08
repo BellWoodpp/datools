@@ -157,10 +157,10 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
 
           <div className="flex flex-col gap-3 rounded-xl border border-[#1e5bff]/30 bg-[#0f172a]/80 p-4 shadow-[0_15px_40px_-20px_rgba(18,194,233,0.55)]">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
-              <Search placeholder="搜索数据分析工具工具…" />
+              <Search placeholder={data.searchPlaceholder ?? "Search data tools…"} />
             </div>
             <p className="text-xs text-slate-300">
-              支持按名称、标签、价格和部署方式快速筛选。
+              {data.filterHint ?? "Quickly filter by name, tags, pricing, and deployment."}
             </p>
             {data.categories?.length ? (
               <CategoryFilter

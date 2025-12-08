@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Redash",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Redash",
+    title: "Redash：SQL ファーストの軽量 BI",
+    subtitle: "多くのソースに接続し、パラメータクエリ、可視化、ダッシュボード、アラートを提供",
+    description:
+      "Redash は SQL を中心とした軽量 BI で、多数のデータソース接続、パラメータ化クエリ、可視化、ダッシュボード、スケジュールやアラートを提供します。自社ホストとクラウドに対応し、SQL ベースのチームに適します。",
+    highlights: [
+      { title: "SQL 中心", description: "SQL でクエリを作成し、結果を可視化やダッシュボードに活用。" },
+      { title: "多様な接続", description: "多数の DB/倉庫/SaaS に接続し、パラメータクエリも可能。" },
+      { title: "ダッシュボード", description: "複数チャートを組み合わせて共有、スケジュール配信も対応。" },
+      { title: "オープンソース/クラウド", description: "自社ホスト版とクラウド版を選択可能。" },
+    ],
+    useCases: ["SQL ドリブンのダッシュボード", "軽量なチーム BI", "スケジュール配信とアラート", "多ソースのクエリと可視化"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function RedashPageContent({ locale }: { locale?: string }) {

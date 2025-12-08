@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Fivetran",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "ELT / 統合 · Fivetran",
+    title: "Fivetran：フルマネージド ELT パイプライン",
+    subtitle: "豊富なコネクタ、スケジューリング、増分同期で倉庫へ直送",
+    description:
+      "Fivetran は DB・SaaS・イベントソースからクラウド倉庫/レイクにデータを送るマネージド ELT を提供し、増分/ログ同期、自動スキーマ追従、モニタリングとアラートでパイプライン運用を軽減します。",
+    highlights: [
+      { title: "マネージドコネクタ", description: "主要 DB・SaaS・イベント・ファイルを広くカバーし、保守込みで提供。" },
+      { title: "増分 & スキーマ変化対応", description: "CDC/増分同期でスキーマ変更も自動追従。" },
+      { title: "スケジュールと監視", description: "リフレッシュ頻度設定、失敗アラート、ステータス監視を搭載。" },
+      { title: "倉庫ネイティブ", description: "Snowflake/BigQuery/Redshift/Databricks など主要倉庫に対応。" },
+    ],
+    useCases: ["業務データの集約", "パイプライン運用負荷の削減", "リアルタイムに近い分析", "BI・指標・モデルのデータ供給"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function FivetranPageContent({ locale }: { locale?: string }) {

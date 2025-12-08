@@ -29,8 +29,8 @@ export default async function NewBlogPage() {
 
 export async function generateMetadata() {
   return {
-    title: "创建博客 - ShipBase",
-    description: "创建新的博客文章",
+    title: "Create blog - ShipBase",
+    description: "Create a new blog post",
     alternates: {
       canonical: buildCanonicalPath(undefined, "admin", "blogs", "new"),
     },

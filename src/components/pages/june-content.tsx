@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit June",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "プロダクト分析 · June",
+    title: "June：SaaS メトリクスのダッシュボード/レポート",
+    subtitle: "ファネル、リテンション、アクティベーション、成長 KPI を提供",
+    description:
+      "June は SaaS プロダクト向けのメトリクスダッシュボード/レポートを提供し、ファネル、リテンション、アクティベーション、成長 KPI を可視化します。",
+    highlights: [
+      { title: "SaaS 指標テンプレート", description: "主要な SaaS KPI を素早く把握。" },
+      { title: "ファネル/リテンション", description: "行動の変化と継続率を分析。" },
+      { title: "レポート", description: "自動レポートでチームと共有。" },
+      { title: "イベント連携", description: "イベントデータを活用して指標を生成。" },
+    ],
+    useCases: ["SaaS 成長の可視化", "ファネル分析", "リテンション改善", "経営ダッシュボード"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function JunePageContent({ locale }: { locale?: string }) {

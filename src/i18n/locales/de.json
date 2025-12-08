@@ -1,4 +1,10 @@
 {
+  "homeFeed": {
+    "heading": "Aktuelle Datenanalyse-Tools",
+    "subheading": "Data Analysis Tools · Heute",
+    "searchPlaceholder": "Datentools suchen…",
+    "filterHint": "Schnell nach Name, Tags, Preis oder Bereitstellung filtern."
+  },
   "home": {
     "badgeLabel": "2025🚀 Jetzt starten",
     "heroTitle": "ShipBase – mehr ausliefern.",

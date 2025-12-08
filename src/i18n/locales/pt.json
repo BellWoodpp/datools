@@ -1,4 +1,10 @@
 {
+  "homeFeed": {
+    "heading": "Ferramentas de análise de dados em alta",
+    "subheading": "Data Analysis Tools · Hoje",
+    "searchPlaceholder": "Buscar ferramentas de dados…",
+    "filterHint": "Filtre rapidamente por nome, tags, preço ou implantação."
+  },
   "home": {
     "badgeLabel": "2025🚀 Lance agora",
     "heroTitle": "ShipBase, lance mais.",

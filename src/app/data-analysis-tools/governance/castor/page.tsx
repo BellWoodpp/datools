@@ -4,8 +4,9 @@ import { CastorPageContent } from "@/components/pages/castor-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Castor — 数据目录与发现",
-  description: "Castor 提供血缘、文档、资产评分与协作，提升数据可发现性与治理。",
+  title: "Castor — Data analysis tool",
+  description:
+    "Data catalog and discovery with lineage, documentation, asset scoring, and governance collaboration.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "governance", "castor"),
   },

@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Power BI — Microsoft self-service BI & visualization",
   description:
-    "Power BI 提供 Power Query 清洗、DAX 语义模型与交互式仪表板，连接本地与云端多源数据，深度集成 Microsoft 生态。",
+    "Microsoft self-service BI suite with Power Query prep, DAX modeling, interactive dashboards, and broad data connectors; tightly integrated with the Microsoft stack.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "power-bi"),
   },

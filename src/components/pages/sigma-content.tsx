@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Sigma",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "BI / 可視化 · Sigma",
+    title: "Sigma：倉庫直結のクラウド BI（スプレッドシート感覚）",
+    subtitle: "表計算 UX + 倉庫計算でビジネスユーザーのセルフサービスを実現",
+    description:
+      "Sigma Computing は倉庫計算を背後に持つスプレッドシート/ピボット型のインターフェースを提供し、ユーザーは Excel 感覚でドラッグや数式、ドリルを行えます。計算は倉庫で実行され、権限とガバナンスを維持。リアルタイムダッシュボードや共有、監査が可能です。",
+    highlights: [
+      { title: "スプレッドシート UX", description: "Excel に近いテーブル、ピボット、数式で早く馴染める。" },
+      { title: "倉庫コンピュート", description: "クエリは倉庫で実行され、セキュリティや RLS を維持。" },
+      { title: "ライブダッシュボード", description: "リアルタイムクエリ、キャッシュ制御、パラメータやドリルをサポート。" },
+      { title: "コラボ/ガバナンス", description: "共有、権限、バージョン、監査を備え、チームで利用可能。" },
+    ],
+    useCases: ["ビジネスのセルフサービス分析", "財務/オペレーションのライブ指標", "複雑な Excel レポートの代替", "倉庫ネイティブの探索"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function SigmaPageContent({ locale }: { locale?: string }) {

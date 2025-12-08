@@ -12,11 +12,18 @@ interface LocalePageProps {
 
 const getMeta = (locale?: string) => {
   const isZh = locale === "zh";
+  const isJa = locale === "ja";
   return {
-    title: isZh ? "Tableau 数据可视化与 BI 介绍" : "Tableau BI & visualization overview",
+    title: isZh
+      ? "Tableau 数据可视化与 BI 介绍"
+      : isJa
+        ? "Tableau BI・可視化の概要"
+        : "Tableau BI & visualization overview",
     description: isZh
       ? "Tableau：拖拽式交互 BI，连接数据库、表格和云服务，覆盖 Prep 清洗、Desktop/Cloud 分析与 Server/Cloud 协作。"
-      : "Tableau: drag-and-drop BI with connections to databases, spreadsheets, and cloud services, spanning Prep, Desktop/Cloud analytics, and Server/Cloud collaboration.",
+      : isJa
+        ? "Tableau はドラッグ＆ドロップの BI で、データベースやスプレッドシート、クラウドに接続し、Prep/ Desktop・Cloud 分析/ Server・Cloud 共有を提供します。"
+        : "Tableau: drag-and-drop BI with connections to databases, spreadsheets, and cloud services, spanning Prep, Desktop/Cloud analytics, and Server/Cloud collaboration.",
   };
 };
 

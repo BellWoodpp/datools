@@ -82,10 +82,12 @@ export interface HomeFeedDictionary {
   submitLabel: string;
   ctaLogin: string;
   ctaSubscribe: string;
+  searchPlaceholder?: string;
   viewDetailsLabel: string;
   visitSiteLabel: string;
   collectionsTitle: string;
   latestTitle: string;
+  filterHint?: string;
   tools: HomeFeedTool[];
   collections: HomeFeedCollection[];
   latestTools: HomeFeedTool[];

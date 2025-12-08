@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Airbyte",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "ELT / 統合 · Airbyte",
+    title: "Airbyte：オープンソース ELT コネクタ",
+    subtitle: "コミュニティ製コネクタ、増分同期、自社ホスト/クラウドに対応",
+    description:
+      "Airbyte はオープンソースの ELT プラットフォームで、豊富なコミュニティコネクタ、増分同期を提供し、自社ホストもクラウドも選べます。",
+    highlights: [
+      { title: "オープンソース", description: "自社ホストでき、API 互換の柔軟な拡張が可能。" },
+      { title: "コミュニティコネクタ", description: "多様なソースをサポートし、Connector Dev Kit で追加も容易。" },
+      { title: "増分同期", description: "CDC/増分で効率よくデータを同期。" },
+      { title: "クラウド/自社ホスト", description: "運用要件に応じてデプロイを選べる。" },
+    ],
+    useCases: ["多様なソースの取り込み", "自社ホストの ELT 基盤", "増分同期でコスト最適化", "SaaS/DB から倉庫への集約"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function AirbytePageContent({ locale }: { locale?: string }) {

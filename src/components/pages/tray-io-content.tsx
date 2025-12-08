@@ -35,6 +35,22 @@ const copyByLocale: BiPageCopyMap = {
     ctaVisit: "Visit Tray.io",
     ctaBack: "Back to home",
   },
+  ja: {
+    badge: "自動化 / iPaaS · Tray.io",
+    title: "Tray.io：ローコード iPaaS",
+    subtitle: "ビジュアル統合と自動化で API/イベントをオーケストレーション",
+    description:
+      "Tray.io はローコードの iPaaS で、ビジュアル統合と自動化により API やイベントをオーケストレーションし、ビジネス/エンジニア双方のチームに対応します。",
+    highlights: [
+      { title: "ローコード統合", description: "ドラッグ＆ドロップでワークフローを設計。" },
+      { title: "豊富なコネクタ", description: "多くの SaaS/API と連携しやすい。" },
+      { title: "オーケストレーション", description: "イベント駆動・条件分岐・マルチステップ処理をサポート。" },
+      { title: "チーム対応", description: "権限や監査でチーム運用に対応。" },
+    ],
+    useCases: ["SaaS/DB 間の統合", "業務自動化", "API オーケストレーション", "イベント駆動のワークフロー"],
+    ctaVisit: "公式サイトを見る",
+    ctaBack: "ホームへ戻る",
+  },
 };
 
 export function TrayIoPageContent({ locale }: { locale?: string }) {

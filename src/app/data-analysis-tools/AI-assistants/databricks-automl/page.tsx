@@ -6,7 +6,7 @@ import { buildCanonicalPath } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Databricks AutoML — Lakehouse automation",
   description:
-    "Databricks AutoML 自动生成 Notebook、特征工程与 MLflow 部署，基于 Lakehouse/Delta 的 AutoML 工作流。",
+    "Lakehouse AutoML that generates editable notebooks, feature engineering, and MLflow-tracked experiments for classification, regression, and time series.",
   alternates: {
     canonical: buildCanonicalPath(undefined, "data-analysis-tools", "AI-assistants", "databricks-automl"),
   },

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleTermsPageProps {
   params: Promise<{
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: LocaleTermsPageProps) {
     return {
       title: "Terms of Service - ShipBase",
       description: "Our terms and conditions",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "terms"),
+      },
     };;
   }
 
@@ -42,5 +46,8 @@ export async function generateMetadata({ params }: LocaleTermsPageProps) {
   return {
     title: `${dictionary.pages.terms.title} - ShipBase`,
     description: dictionary.pages.terms.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "terms"),
+    },
   };;
 }

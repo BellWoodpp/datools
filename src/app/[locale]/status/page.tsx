@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleStatusPageProps {
   params: Promise<{
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: LocaleStatusPageProps) {
     return {
       title: "Service Status - ShipBase",
       description: "Real-time system status",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "status"),
+      },
     };;
   }
 
@@ -42,5 +46,8 @@ export async function generateMetadata({ params }: LocaleStatusPageProps) {
   return {
     title: `${dictionary.pages.status.title} - ShipBase`,
     description: dictionary.pages.status.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "status"),
+    },
   };;
 }

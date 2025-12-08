@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleContactPageProps {
   params: Promise<{
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: LocaleContactPageProps) {
     return {
       title: "Contact Us - ShipBase",
       description: "We're here to help",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "contact"),
+      },
     };;
   }
 
@@ -42,5 +46,8 @@ export async function generateMetadata({ params }: LocaleContactPageProps) {
   return {
     title: `${dictionary.pages.contact.title} - ShipBase`,
     description: dictionary.pages.contact.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "contact"),
+    },
   };;
 }

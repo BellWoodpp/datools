@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePrivacyPageProps {
   params: Promise<{
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: LocalePrivacyPageProps) {
     return {
       title: "Privacy Policy - ShipBase",
       description: "Your privacy matters",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "privacy"),
+      },
     };;
   }
 
@@ -42,5 +46,8 @@ export async function generateMetadata({ params }: LocalePrivacyPageProps) {
   return {
     title: `${dictionary.pages.privacy.title} - ShipBase`,
     description: dictionary.pages.privacy.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "privacy"),
+    },
   };;
 }

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { AuthPanel } from "@/components/auth/auth-panel";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleSignupPageProps {
   params: Promise<{
@@ -57,6 +58,9 @@ export async function generateMetadata({ params }: LocaleSignupPageProps) {
     return {
       title: "Get Started - ShipBase",
       description: "Join thousands of developers building amazing applications with ShipBase.",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "signup"),
+      },
     };;
   }
 
@@ -65,5 +69,8 @@ export async function generateMetadata({ params }: LocaleSignupPageProps) {
   return {
     title: `${dictionary.pages.signup.title} - ShipBase`,
     description: dictionary.pages.signup.description,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "signup"),
+    },
   };;
 }

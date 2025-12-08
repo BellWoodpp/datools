@@ -6,6 +6,7 @@ import { isAdmin } from "@/lib/auth-server/admin";
 // 重定向
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
+import { buildCanonicalPath } from "@/lib/seo";
 
 export default async function AdminBlogsPage() {
   // auth.api.getSession 是 Better Auth SDK 提供的动态方法，不是你自己手动定义的。
@@ -32,6 +33,8 @@ export async function generateMetadata() {
   return {
     title: "博客管理 - ShipBase",
     description: "管理博客文章",
+    alternates: {
+      canonical: buildCanonicalPath(undefined, "admin", "blogs"),
+    },
   };
 }
-

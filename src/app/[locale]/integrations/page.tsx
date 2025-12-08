@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleIntegrationsPageProps {
   params: Promise<{
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: LocaleIntegrationsPageProps) 
     return {
       title: "Integrations - ShipBase",
       description: "Connect with your favorite tools",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "integrations"),
+      },
     };;
   }
 
@@ -42,5 +46,8 @@ export async function generateMetadata({ params }: LocaleIntegrationsPageProps) 
   return {
     title: `${dictionary.pages.integrations.title} - ShipBase`,
     description: dictionary.pages.integrations.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "integrations"),
+    },
   };;
 }

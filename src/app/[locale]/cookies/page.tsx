@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleCookiesPageProps {
   params: Promise<{
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: LocaleCookiesPageProps) {
     return {
       title: "Cookie Policy - ShipBase",
       description: "How we use cookies",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "cookies"),
+      },
     };;
   }
 
@@ -42,5 +46,8 @@ export async function generateMetadata({ params }: LocaleCookiesPageProps) {
   return {
     title: `${dictionary.pages.cookies.title} - ShipBase`,
     description: dictionary.pages.cookies.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "cookies"),
+    },
   };;
 }

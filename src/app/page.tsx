@@ -24,4 +24,7 @@ export const metadata: Metadata = {
   title: "Data Analysis Tools – 今日精选导航",
   description:
     "Discover trending data analysis tools: BI, ETL, AI 助手、自托管与云端解决方案的每日精选导航。",
+  alternates: {
+    canonical: "/",
+  },
 };

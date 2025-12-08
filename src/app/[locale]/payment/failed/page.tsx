@@ -3,6 +3,7 @@ import { locales } from "@/i18n";
 import Link from "next/link";
 import { getPaymentFailedDictionary, type PaymentFailedDictionary } from "@/i18n/pages/payment";
 import type { Locale } from "@/i18n/types";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface PaymentFailedPageProps {
   params: Promise<{
@@ -114,6 +115,9 @@ export async function generateMetadata({ params }: PaymentFailedPageProps) {
     return {
       title: "Payment Failed - ShipBase",
       description: "There was an issue processing your payment",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "payment", "failed"),
+      },
     };
   }
 
@@ -123,5 +127,8 @@ export async function generateMetadata({ params }: PaymentFailedPageProps) {
   return {
     title: `${title} - ShipBase`,
     description,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "payment", "failed"),
+    },
   };
 }

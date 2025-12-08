@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { HomeFeed } from "@/components/home/home-feed";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 import { Suspense } from "react";
 
 interface LocalePageProps {
@@ -51,11 +52,17 @@ export async function generateMetadata({ params }: LocalePageProps) {
     return {
       title: "Data Analysis Tools – 每日导航",
       description: "精选数据分析工具导航，覆盖 BI、ETL、AI 助手与自托管方案。",
+      alternates: {
+        canonical: "/",
+      },
     };
   }
 
   return {
     title: "Data Analysis Tools – 每日导航",
     description: "精选数据分析工具导航，覆盖 BI、ETL、AI 助手与自托管方案。",
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale),
+    },
   };
 }

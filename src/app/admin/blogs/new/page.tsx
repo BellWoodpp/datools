@@ -5,6 +5,7 @@ import { auth } from "@/lib/auth-server/auth";
 import { isAdmin } from "@/lib/auth-server/admin";
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
+import { buildCanonicalPath } from "@/lib/seo";
 
 export default async function NewBlogPage() {
   const session = await auth.api.getSession({
@@ -30,6 +31,8 @@ export async function generateMetadata() {
   return {
     title: "创建博客 - ShipBase",
     description: "创建新的博客文章",
+    alternates: {
+      canonical: buildCanonicalPath(undefined, "admin", "blogs", "new"),
+    },
   };
 }
-

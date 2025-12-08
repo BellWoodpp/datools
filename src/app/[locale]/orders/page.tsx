@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { getDictionary, locales } from "@/i18n";
 import { OrdersPage } from "@/components/orders/orders-page";
+import { buildCanonicalPath } from "@/lib/seo";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({
@@ -16,6 +17,9 @@ export async function generateMetadata({
     return {
       title: "Orders - ShipBase",
       description: "View your orders",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "orders"),
+      },
     };
   }
   
@@ -24,6 +28,9 @@ export async function generateMetadata({
   return {
     title: dict.pages.orders.title,
     description: dict.pages.orders.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "orders"),
+    },
   };
 }
 

@@ -3,6 +3,7 @@ import { locales } from "@/i18n";
 import { BlogDetail } from "@/components/blogs/blog-detail";
 import { db } from "@/lib/db/client";
 import { blogs } from "@/lib/db/schema/blogs";
+import { buildCanonicalPath } from "@/lib/seo";
 import { eq, and } from "drizzle-orm";
 
 // slug:漂亮的名字
@@ -45,7 +46,9 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
 
 export async function generateMetadata({ params }: BlogDetailPageProps) {
   const resolvedParams = await params;
+  const locale = resolvedParams.locale;
   const slug = resolvedParams.slug;
+  const normalizedLocale = locales.find((l) => l === locale);
   
   // 获取博客数据
   const blogData = await db
@@ -61,12 +64,17 @@ export async function generateMetadata({ params }: BlogDetailPageProps) {
   if (blogData.length === 0) {
     return {
       title: "博客未找到 - ShipBase",
+      alternates: {
+        canonical: buildCanonicalPath(normalizedLocale, "blogs", slug),
+      },
     };
   }
 
   return {
     title: `${blogData[0].title} - ShipBase`,
     description: blogData[0].description || "",
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "blogs", slug),
+    },
   };
 }
-

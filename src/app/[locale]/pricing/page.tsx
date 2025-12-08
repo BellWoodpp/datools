@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePricingPageProps {
   params: Promise<{
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: LocalePricingPageProps) {
     return {
       title: "Pricing - ShipBase",
       description: "Simple, transparent pricing",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "pricing"),
+      },
     };;
   }
 
@@ -42,5 +46,8 @@ export async function generateMetadata({ params }: LocalePricingPageProps) {
   return {
     title: `${dictionary.pages.pricing.title} - ShipBase`,
     description: dictionary.pages.pricing.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "pricing"),
+    },
   };;
 }

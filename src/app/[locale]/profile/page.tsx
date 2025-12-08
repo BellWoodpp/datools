@@ -7,6 +7,7 @@ import { User, Mail, Calendar, Shield } from "lucide-react";
 import { getDictionary } from "@/i18n";
 import { type Locale } from "@/i18n/types";
 import Image from "next/image";
+import { buildCanonicalPath } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
   const dictionary = getDictionary(params.locale);
@@ -14,6 +15,9 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
   return {
     title: dictionary.pages.profile.title,
     description: dictionary.pages.profile.description,
+    alternates: {
+      canonical: buildCanonicalPath(params.locale, "profile"),
+    },
   };
 }
 

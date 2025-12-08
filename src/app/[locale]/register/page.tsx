@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import UserSignForm from "@/components/sign-up/user-sign-form";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleRegisterPageProps {
   params: Promise<{
@@ -55,6 +56,9 @@ export async function generateMetadata({ params }: LocaleRegisterPageProps) {
     return {
       title: "Register - ShipBase",
       description: "Create your account to start your free trial.",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "register"),
+      },
     };
   }
 
@@ -63,5 +67,8 @@ export async function generateMetadata({ params }: LocaleRegisterPageProps) {
   return {
     title: `${dictionary.pages.signup.title} - ShipBase`,
     description: dictionary.pages.signup.description,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "register"),
+    },
   };
 }

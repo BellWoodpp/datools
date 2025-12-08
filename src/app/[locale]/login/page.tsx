@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getDictionary, locales } from "@/i18n";
 import { CardDemo } from "@/components/login/login-card";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleLoginPageProps {
   params: Promise<{
@@ -57,6 +58,9 @@ export async function generateMetadata({ params }: LocaleLoginPageProps) {
     return {
       title: "Sign In - ShipBase",
       description: "Sign in to your account to continue your journey with ShipBase.",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "login"),
+      },
     };;
   }
 
@@ -65,5 +69,8 @@ export async function generateMetadata({ params }: LocaleLoginPageProps) {
   return {
     title: `${dictionary.pages.login.title} - ShipBase`,
     description: dictionary.pages.login.description,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "login"),
+    },
   };;
 }

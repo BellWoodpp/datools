@@ -8,6 +8,7 @@ import { Crown, Star, Zap, Shield, Check } from "lucide-react";
 import { getDictionary } from "@/i18n";
 import { type Locale } from "@/i18n/types";
 import { BillingHistory } from "@/components/membership";
+import { buildCanonicalPath } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
   const dictionary = getDictionary(params.locale);
@@ -15,6 +16,9 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
   return {
     title: dictionary.pages.membership.title,
     description: dictionary.pages.membership.description,
+    alternates: {
+      canonical: buildCanonicalPath(params.locale, "membership"),
+    },
   };
 }
 

@@ -3,6 +3,7 @@ import { BlogsPage } from "@/components/blogs";
 import { getDictionary, locales } from "@/i18n";
 import { db } from "@/lib/db/client";
 import { blogs } from "@/lib/db/schema/blogs";
+import { buildCanonicalPath } from "@/lib/seo";
 import { eq, and, desc } from "drizzle-orm";
 
 
@@ -59,6 +60,9 @@ export async function generateMetadata({ params }: LocaleBlogsPageProps) {
     return {
       title: "Blog - ShipBase",
       description: "Explore our latest articles",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "blogs"),
+      },
     };
   }
 
@@ -67,6 +71,8 @@ export async function generateMetadata({ params }: LocaleBlogsPageProps) {
   return {
     title: `${dictionary.pages.blogs.title} - ShipBase`,
     description: dictionary.pages.blogs.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "blogs"),
+    },
   };
 }
-

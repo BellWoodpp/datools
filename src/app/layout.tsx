@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header, FooterWrapper } from "@/components/layout";
+import { metadataBase } from "@/lib/seo";
 
 // 声明常量geistSans
 const geistSans = Geist({
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
     shortcut: "https://datools.org/data-a-tools.ico",
     apple: "https://datools.org/data-a-tools.png",
   },
+  metadataBase,
 };
 
 // 暴露默认函数RootLayout

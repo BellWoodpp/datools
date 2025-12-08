@@ -3,6 +3,7 @@ import { locales } from "@/i18n";
 import { PaymentSuccessHandler } from "@/components/payment/payment-success-handler";
 import { getPaymentSuccessDictionary } from "@/i18n/pages/payment";
 import type { Locale } from "@/i18n/types";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface PaymentSuccessPageProps {
   params: Promise<{
@@ -53,6 +54,9 @@ export async function generateMetadata({ params }: PaymentSuccessPageProps) {
     return {
       title: "Payment Successful - ShipBase",
       description: "Your payment has been successfully processed",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "payment", "success"),
+      },
     };
   }
 
@@ -62,5 +66,8 @@ export async function generateMetadata({ params }: PaymentSuccessPageProps) {
   return {
     title: `${title} - ShipBase`,
     description,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "payment", "success"),
+    },
   };
 }

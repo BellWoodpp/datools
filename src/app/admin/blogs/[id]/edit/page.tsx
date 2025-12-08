@@ -4,6 +4,7 @@ import { auth } from "@/lib/auth-server/auth";
 import { isAdmin } from "@/lib/auth-server/admin";
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface EditBlogPageProps {
   params: Promise<{
@@ -37,6 +38,8 @@ export async function generateMetadata({ params }: EditBlogPageProps) {
   return {
     title: `编辑博客 ${resolvedParams.id} - ShipBase`,
     description: "编辑博客文章",
+    alternates: {
+      canonical: buildCanonicalPath(undefined, "admin", "blogs", resolvedParams.id, "edit"),
+    },
   };
 }
-

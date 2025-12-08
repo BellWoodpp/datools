@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleFeaturesPageProps {
   params: Promise<{
@@ -40,6 +41,9 @@ export async function generateMetadata({ params }: LocaleFeaturesPageProps) {
     return {
       title: "Features - ShipBase",
       description: "Powerful features to accelerate your development",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "features"),
+      },
     };;
   }
 
@@ -48,5 +52,8 @@ export async function generateMetadata({ params }: LocaleFeaturesPageProps) {
   return {
     title: `${dictionary.pages.features.title} - ShipBase`,
     description: dictionary.pages.features.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "features"),
+    },
   };;
 }

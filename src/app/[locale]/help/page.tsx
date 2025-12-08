@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { PageTemplate } from "@/components/pages/page-template";
 import { getDictionary, locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleHelpPageProps {
   params: Promise<{
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: LocaleHelpPageProps) {
     return {
       title: "Help Center - ShipBase",
       description: "Get the support you need",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "help"),
+      },
     };;
   }
 
@@ -42,5 +46,8 @@ export async function generateMetadata({ params }: LocaleHelpPageProps) {
   return {
     title: `${dictionary.pages.help.title} - ShipBase`,
     description: dictionary.pages.help.subtitle,
+    alternates: {
+      canonical: buildCanonicalPath(normalizedLocale, "help"),
+    },
   };;
 }

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, MessageSquare } from "lucide-react";
 import type { HomeFeedTool } from "@/i18n/types";
+import { useState } from "react";
 
 function highlightText(text: string, term: string) {
   if (!term) return text;
@@ -41,6 +42,43 @@ export function ToolCard({
   officialHref = "#",
 }: ToolCardProps) {
   const isExternal = /^https?:\/\//i.test(officialHref);
+  const [logoError, setLogoError] = useState(false);
+
+  const renderLogo = () => {
+    const fromConfig = tool.logo ?? tool.image;
+    const official = tool.officialUrl && /^https?:\/\//i.test(tool.officialUrl) ? tool.officialUrl : undefined;
+    const fromOfficial = (() => {
+      if (!official) return undefined;
+      try {
+        const url = new URL(official);
+        return `${url.origin}/favicon.ico`;
+      } catch {
+        return undefined;
+      }
+    })();
+    const logoSrc = fromConfig ?? fromOfficial;
+
+    if (logoSrc && !logoError) {
+      return (
+        <div className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-lg border border-[#1e5bff]/40 bg-[#0f1f3f]">
+          <Image
+            src={logoSrc}
+            alt={tool.name}
+            fill
+            sizes="36px"
+            className="object-contain p-1.5"
+            onError={() => setLogoError(true)}
+          />
+        </div>
+      );
+    }
+
+    return (
+      <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg border border-[#1e5bff]/30 bg-[#0f1f3f]">
+        <ReactGlyph />
+      </div>
+    );
+  };
 
   return (
     <Card className="overflow-hidden border border-[#1e5bff]/30 bg-[#0b162e]/90 shadow-[0_15px_40px_-18px_rgba(30,91,255,0.65)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(18,194,233,0.7)]">
@@ -58,11 +96,14 @@ export function ToolCard({
       ) : null}
       <CardHeader className="space-y-2">
         <div className="flex items-start justify-between gap-3">
-          <div>
-            <CardTitle className="text-lg text-slate-100">{highlightText(tool.name, highlightTerm)}</CardTitle>
-            <p className="text-sm text-slate-300">
-              {highlightText(tool.summary, highlightTerm)}
-            </p>
+          <div className="flex items-start gap-3">
+            {renderLogo()}
+            <div>
+              <CardTitle className="text-lg text-slate-100">{highlightText(tool.name, highlightTerm)}</CardTitle>
+              <p className="text-sm text-slate-300">
+                {highlightText(tool.summary, highlightTerm)}
+              </p>
+            </div>
           </div>
           <div className="text-right text-sm font-semibold text-slate-100">
             <div className="text-[#f8a13c]">▲ {tool.votes}</div>
@@ -102,5 +143,18 @@ export function ToolCard({
         </Button>
       </CardContent>
     </Card>
+  );
+}
+
+function ReactGlyph() {
+  return (
+    <svg viewBox="0 0 256 256" className="h-6 w-6 text-[#61dafb]" role="img" aria-label="React logo">
+      <g fill="none" stroke="currentColor" strokeWidth="16">
+        <circle cx="128" cy="128" r="24" />
+        <ellipse cx="128" cy="128" rx="92" ry="36" />
+        <ellipse cx="128" cy="128" rx="92" ry="36" transform="rotate(60 128 128)" />
+        <ellipse cx="128" cy="128" rx="92" ry="36" transform="rotate(120 128 128)" />
+      </g>
+    </svg>
   );
 }

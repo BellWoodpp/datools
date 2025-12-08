@@ -46,7 +46,7 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img
-                src="https://datools.org/data-a-tools.webp"
+                src="https://r2.datools.org/data-a-tools.webp"
                 alt="DaTools"
                 className="h-10 w-10 rounded-lg object-cover"
               />

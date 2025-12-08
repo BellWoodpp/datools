@@ -4,7 +4,7 @@ import type { HomeFeedDictionary, HomeFeedTool } from "@/i18n/types";
 import { ToolCard } from "@/components/ui/tool-card";
 import Search from "@/components/ui/search";
 import { CategoryFilter } from "@/components/home/category-filter";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useTransition } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useLocale } from "@/hooks";
 import { defaultLocale } from "@/i18n";
@@ -16,6 +16,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { Skeleton } from "@/components/ui/skeleton"
 
 
 const normalize = (value: string) => value.toLowerCase();
@@ -25,6 +26,8 @@ type HomeFeedContent = HomeFeedDictionary;
 export function HomeFeed({ content }: { content: HomeFeedContent }) {
   const data = content;
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [showSkeleton, setShowSkeleton] = useState(false);
+  const [isPending, startTransition] = useTransition();
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -64,13 +67,15 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   }, [data.categories, data.tools]);
 
   const handleCategoryChange = (category: string | null) => {
-    setActiveCategory(category);
-    // 切换分类时清空搜索词并回到第一页，避免 query + page 残留导致列表为空
-    const params = new URLSearchParams(searchParams);
-    if (params.has("query")) params.delete("query");
-    params.delete("page");
-    const next = params.toString();
-    replace(next ? `${pathname}?${next}` : pathname);
+    startTransition(() => {
+      setActiveCategory(category);
+      // 切换分类时清空搜索词并回到第一页，避免 query + page 残留导致列表为空
+      const params = new URLSearchParams(searchParams);
+      if (params.has("query")) params.delete("query");
+      params.delete("page");
+      const next = params.toString();
+      replace(next ? `${pathname}?${next}` : pathname);
+    });
   };
 
   // 这段 useMemo 用来按当前分类 activeCategory 生成一个派生的工具列表 filteredByCategory
@@ -119,7 +124,9 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
 
   const goToPage = (page: number) => {
     if (page < 1 || page > totalPages) return;
-    replace(makePageHref(page));
+    startTransition(() => {
+      replace(makePageHref(page));
+    });
   };
 
   const buildDetailHref = useMemo(() => {
@@ -138,6 +145,50 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   const buildOfficialHref = useMemo(() => {
     return (tool: HomeFeedTool) => tool.officialUrl ?? tool.link ?? "#";
   }, []);
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout | undefined;
+    if (isPending) {
+      // 仅在加载感知明显时才显示骨架，避免强制延迟
+      timer = setTimeout(() => setShowSkeleton(true), 350);
+    } else {
+      setShowSkeleton(false);
+    }
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
+  }, [isPending]);
+
+  const renderSkeletons = () =>
+    Array.from({ length: PAGE_SIZE }).map((_, idx) => (
+      <div
+        key={idx}
+        className="overflow-hidden rounded-xl border border-[#1e5bff]/20 bg-[#0b162e]/70 p-4 shadow-[0_10px_30px_-18px_rgba(30,91,255,0.45)]"
+      >
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex items-start gap-3">
+            <Skeleton className="h-9 w-9 rounded-lg" />
+            <div className="space-y-2">
+              <Skeleton className="h-4 w-40" />
+              <Skeleton className="h-3 w-64" />
+            </div>
+          </div>
+          <div className="space-y-2 text-right">
+            <Skeleton className="h-4 w-16" />
+            <Skeleton className="h-3 w-14" />
+          </div>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Skeleton className="h-5 w-16" />
+          <Skeleton className="h-5 w-14" />
+          <Skeleton className="h-5 w-12" />
+        </div>
+        <div className="mt-4 flex items-center justify-between">
+          <Skeleton className="h-4 w-24" />
+          <Skeleton className="h-8 w-24 rounded-md" />
+        </div>
+      </div>
+    ));
 
   return (
     <main className="bg-gradient-to-b from-[#0a0f1f] via-[#0c1e3c] to-[#0a0f1f]">
@@ -159,9 +210,12 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
               <Search placeholder={data.searchPlaceholder ?? "Search data tools…"} />
             </div>
-            <p className="text-xs text-slate-300">
-              {data.filterHint ?? "Quickly filter by name, tags, pricing, and deployment."}
-            </p>
+            <div className="flex items-center justify-between text-xs text-slate-300">
+              <span>{data.filterHint ?? "Quickly filter by name, tags, pricing, and deployment."}</span>
+              <span>
+                {filteredTools.length} {data.resultsLabel ?? "results"}
+              </span>
+            </div>
             {data.categories?.length ? (
               <CategoryFilter
                 categories={data.categories}
@@ -172,17 +226,17 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
           </div>
 
           <div className="grid grid-cols-1 gap-4">
-            {paginatedTools.map((tool) => (
-              <ToolCard
-                key={tool.name}
-                tool={tool}
-                viewDetailsLabel={data.viewDetailsLabel}
-                visitSiteLabel={data.visitSiteLabel}
-                highlightTerm={query}
-                detailHref={buildDetailHref(tool)}
-                officialHref={buildOfficialHref(tool)}
-              />
-            ))}
+            {showSkeleton
+              ? renderSkeletons()
+              : paginatedTools.map((tool) => (
+                  <ToolCard
+                    key={tool.name}
+                    tool={tool}
+                    highlightTerm={query}
+                    detailHref={buildDetailHref(tool)}
+                    officialHref={buildOfficialHref(tool)}
+                  />
+                ))}
           </div>
           {totalPages > 1 ? (
             <Pagination className="pt-2">

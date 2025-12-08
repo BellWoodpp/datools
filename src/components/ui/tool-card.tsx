@@ -3,11 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, MessageSquare } from "lucide-react";
 import type { HomeFeedTool } from "@/i18n/types";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 function highlightText(text: string, term: string) {
   if (!term) return text;
@@ -26,8 +26,6 @@ function highlightText(text: string, term: string) {
 
 interface ToolCardProps {
   tool: HomeFeedTool;
-  viewDetailsLabel: string;
-  visitSiteLabel: string;
   highlightTerm?: string;
   detailHref: string;
   officialHref?: string;
@@ -35,14 +33,13 @@ interface ToolCardProps {
 
 export function ToolCard({
   tool,
-  viewDetailsLabel,
-  visitSiteLabel,
   highlightTerm = "",
   detailHref,
   officialHref = "#",
 }: ToolCardProps) {
   const isExternal = /^https?:\/\//i.test(officialHref);
   const [logoError, setLogoError] = useState(false);
+  const router = useRouter();
 
   const renderLogo = () => {
     const fromConfig = tool.logo ?? tool.image;
@@ -80,8 +77,24 @@ export function ToolCard({
     );
   };
 
+  const handleNavigateDetail = () => {
+    if (!detailHref || detailHref === "#") return;
+    router.push(detailHref);
+  };
+
   return (
-    <Card className="overflow-hidden border border-[#1e5bff]/30 bg-[#0b162e]/90 shadow-[0_15px_40px_-18px_rgba(30,91,255,0.65)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(18,194,233,0.7)]">
+    <Card
+      role="button"
+      tabIndex={0}
+      onClick={handleNavigateDetail}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          handleNavigateDetail();
+        }
+      }}
+      className="overflow-hidden border border-[#1e5bff]/30 bg-[#0b162e]/90 shadow-[0_15px_40px_-18px_rgba(30,91,255,0.65)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(18,194,233,0.7)] focus:outline-none focus:ring-2 focus:ring-[#1e5bff]/60 focus:ring-offset-2 focus:ring-offset-[#0b162e] cursor-pointer"
+    >
       {tool.image ? (
         <div className="relative h-40 w-full bg-neutral-100 dark:bg-neutral-900">
           <Image
@@ -99,7 +112,18 @@ export function ToolCard({
           <div className="flex items-start gap-3">
             {renderLogo()}
             <div>
-              <CardTitle className="text-lg text-slate-100">{highlightText(tool.name, highlightTerm)}</CardTitle>
+              <Link
+                href={officialHref}
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+                onClick={(e) => e.stopPropagation()}
+                className="group inline-flex items-center gap-1 text-lg font-semibold text-slate-100 transition hover:text-[#f8a13c]"
+              >
+                <CardTitle className="m-0 inline-flex items-center gap-1 text-inherit">
+                  <span className="text-left">{highlightText(tool.name, highlightTerm)}</span>
+                  <ExternalLink className="h-4 w-4 text-[#12c2e9] transition group-hover:text-[#f8a13c]" />
+                </CardTitle>
+              </Link>
               <p className="text-sm text-slate-300">
                 {highlightText(tool.summary, highlightTerm)}
               </p>
@@ -124,24 +148,7 @@ export function ToolCard({
         </div>
       </CardHeader>
 
-      <CardContent className="flex items-center justify-between px-6 pb-6 pt-0">
-        <Link
-          href={detailHref}
-          className="inline-flex items-center text-sm font-semibold text-[#12c2e9] hover:text-[#f8a13c]"
-        >
-          {viewDetailsLabel}
-          <ExternalLink className="ml-1 h-4 w-4" />
-        </Link>
-        <Button
-          size="sm"
-          className="bg-gradient-to-r from-[#12c2e9] to-[#1e5bff] text-white shadow-[0_10px_25px_-12px_rgba(30,91,255,0.75)] hover:from-[#1e5bff] hover:to-[#12c2e9]"
-          asChild
-        >
-          <Link href={officialHref} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}>
-            {visitSiteLabel}
-          </Link>
-        </Button>
-      </CardContent>
+      <CardContent className="px-6 pb-6 pt-0" />
     </Card>
   );
 }

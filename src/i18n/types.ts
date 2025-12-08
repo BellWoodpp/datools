@@ -85,6 +85,7 @@ export interface HomeFeedDictionary {
   searchPlaceholder?: string;
   viewDetailsLabel: string;
   visitSiteLabel: string;
+  resultsLabel?: string;
   collectionsTitle: string;
   latestTitle: string;
   filterHint?: string;

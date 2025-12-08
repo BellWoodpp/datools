@@ -21,9 +21,9 @@ export default function RootPage() {
 }
 
 export const metadata: Metadata = {
-  title: "Data Analysis Tools – 今日精选导航",
+  title: "Data Analysis Tools – Daily Picks",
   description:
-    "Discover trending data analysis tools: BI, ETL, AI 助手、自托管与云端解决方案的每日精选导航。",
+    "Discover trending data analysis tools across BI, ETL/ELT, AI assistants, and self-hosted or cloud solutions.",
   alternates: {
     canonical: "/",
   },

@@ -19,6 +19,7 @@ export type BiPageCopy = {
   description: string;
   highlights: { title: string; description: string }[];
   useCases: string[];
+  useCasesHeading?: string;
   ctaVisit: string;
   ctaBack: string;
 };
@@ -76,6 +77,16 @@ const CATEGORY_LABELS: Record<string, Partial<Record<Locale, string>>> = {
   },
 };
 
+const USE_CASES_HEADING: Partial<Record<Locale, string>> = {
+  en: "Use cases",
+  zh: "适用场景",
+  ja: "適用シーン",
+  es: "Casos de uso",
+  fr: "Cas d’usage",
+  pt: "Casos de uso",
+  de: "Anwendungsfälle",
+};
+
 function inferCategorySlug(pathname: string): string | undefined {
   const segments = pathname.split("/").filter(Boolean);
   const first = segments[0];
@@ -117,6 +128,11 @@ export function BiPageTemplate({
     categoryLabel && categoryParams
       ? `${basePath}${basePath.endsWith("/") ? "" : "/"}?${categoryParams}`
       : basePath;
+  const useCasesHeading =
+    copy.useCasesHeading ??
+    (locale && USE_CASES_HEADING[locale as Locale]) ??
+    USE_CASES_HEADING[defaultLocale] ??
+    "Use cases";
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#0a0f1f] via-[#0c1e3c] to-[#0a0f1f] text-slate-100">
@@ -163,7 +179,7 @@ export function BiPageTemplate({
         </section>
 
         <section className="space-y-3 rounded-xl border border-[#1e5bff]/30 bg-[#0f172a]/80 p-6 shadow-[0_15px_45px_-22px_rgba(30,91,255,0.55)]">
-          <h2 className="text-xl font-semibold text-slate-50">适用场景 / Use cases</h2>
+          <h2 className="text-xl font-semibold text-slate-50">{useCasesHeading}</h2>
           <ul className="grid gap-2 sm:grid-cols-2">
             {copy.useCases.map((useCase) => (
               <li key={useCase} className="rounded-lg border border-[#1e5bff]/20 bg-[#0b162e]/80 p-3 text-sm text-slate-200">

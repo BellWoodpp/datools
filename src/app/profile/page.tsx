@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { headers } from "next/headers";
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -20,9 +19,8 @@ export const metadata: Metadata = {
 };
 
 export default async function ProfileRootPage() {
-  const session = await auth.api.getSession({
-    headers: headers(),
-  });
+  const hdrs = await import("next/headers").then((mod) => mod.headers());
+  const session = await auth.api.getSession({ headers: hdrs });
 
   if (!session?.user) {
     redirect("/login");

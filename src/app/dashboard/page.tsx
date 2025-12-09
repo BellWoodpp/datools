@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { headers } from "next/headers";
 import { DashboardPage } from "@/components/dashboard";
 import { auth } from "@/lib/auth-server/auth";
 import { getDictionary, defaultLocale } from "@/i18n";
@@ -15,9 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default async function DashboardRootPage() {
-  const session = await auth.api.getSession({
-    headers: headers(),
-  });
+  const hdrs = await import("next/headers").then((mod) => mod.headers());
+  const session = await auth.api.getSession({ headers: hdrs });
 
   if (!session?.user) {
     redirect("/login");

@@ -84,6 +84,11 @@ const CATEGORY_LABELS: Record<string, Partial<Record<Locale, string>>> = {
     zh: "BI / 可视化",
     ja: "BI / 可視化",
   },
+  "open-source": {
+    en: "Open Source / Self-hosted",
+    zh: "开源 / 自建组件",
+    ja: "オープンソース / 自社ホスト",
+  },
 };
 
 function inferCategorySlug(pathname: string): string | undefined {
@@ -108,6 +113,10 @@ export function MetabasePageContent({ locale }: { locale?: string }) {
     "";
   const categoryLabel =
     mappedCategory || copy.badge?.split("·")?.[0]?.trim() || slug || "BI / Visualization";
+  const displayBadge =
+    slug === "open-source"
+      ? `${categoryLabel} · ${copy.title.split("：")[0].split(":")[0].trim() || "Metabase"}`
+      : copy.badge;
   const categoryParams = categoryLabel ? new URLSearchParams({ category: categoryLabel }).toString() : "";
   const categoryHref =
     categoryLabel && categoryParams
@@ -135,7 +144,7 @@ export function MetabasePageContent({ locale }: { locale?: string }) {
 
         <header className="space-y-3">
           <div className="inline-flex items-center rounded-full border border-[#1e5bff]/50 bg-[#0f1f3f]/70 px-3 py-1 text-xs font-semibold text-[#12c2e9]">
-            {copy.badge}
+            {displayBadge}
           </div>
           <h1 className="text-3xl font-bold leading-tight">{copy.title}</h1>
           <p className="text-lg text-slate-200">{copy.subtitle}</p>

@@ -115,8 +115,7 @@ export function BiPageTemplate({
     (slug && CATEGORY_LABELS[slug]?.[(locale as Locale) ?? defaultLocale]) ||
     (slug && CATEGORY_LABELS[slug]?.[defaultLocale]) ||
     "";
-  const categoryLabel =
-    mappedCategory || copy.badge?.split("·")?.[0]?.trim() || slug || "";
+  const categoryLabel = mappedCategory || "";
   const categoryParams = categoryLabel ? new URLSearchParams({ category: categoryLabel }).toString() : "";
   const categoryHref =
     categoryLabel && categoryParams

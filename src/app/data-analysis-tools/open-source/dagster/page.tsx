@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { DagsterPageContent } from "@/components/pages/dagster-content";
+import { DagsterPageContent } from "@/components/pages/open-source/dagster-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

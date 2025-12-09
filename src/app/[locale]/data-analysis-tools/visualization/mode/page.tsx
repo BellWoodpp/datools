@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { ModePageContent } from "@/components/pages/mode-content";
+import { ModePageContent } from "@/components/pages/visualization/mode-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

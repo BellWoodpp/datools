@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { StatsigPageContent } from "@/components/pages/statsig-content";
+import { StatsigPageContent } from "@/components/pages/attribution/statsig-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

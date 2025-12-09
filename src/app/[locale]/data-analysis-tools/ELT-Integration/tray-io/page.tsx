@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { TrayIoPageContent } from "@/components/pages/tray-io-content";
+import { TrayIoPageContent } from "@/components/pages/elt-integration/tray-io-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

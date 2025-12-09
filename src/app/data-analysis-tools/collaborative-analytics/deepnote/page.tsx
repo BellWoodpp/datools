@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { DeepnotePageContent } from "@/components/pages/deepnote-content";
+import { DeepnotePageContent } from "@/components/pages/collaborative-analytics/deepnote-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

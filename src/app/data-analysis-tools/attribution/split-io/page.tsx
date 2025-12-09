@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { SplitIoPageContent } from "@/components/pages/split-io-content";
+import { SplitIoPageContent } from "@/components/pages/attribution/split-io-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

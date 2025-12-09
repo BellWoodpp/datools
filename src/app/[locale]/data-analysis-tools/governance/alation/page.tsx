@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { AlationPageContent } from "@/components/pages/alation-content";
+import { AlationPageContent } from "@/components/pages/governance/alation-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

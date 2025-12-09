@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { AmplitudePageContent } from "@/components/pages/amplitude-content";
+import { AmplitudePageContent } from "@/components/pages/product-analytics/amplitude-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

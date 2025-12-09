@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { DatabricksPageContent } from "@/components/pages/databricks-content";
+import { DatabricksPageContent } from "@/components/pages/warehouse/databricks-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

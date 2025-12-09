@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { VWOPageContent } from "@/components/pages/vwo-content";
+import { VWOPageContent } from "@/components/pages/attribution/vwo-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

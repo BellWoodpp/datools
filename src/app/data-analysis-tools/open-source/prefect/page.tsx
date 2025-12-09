@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { PrefectPageContent } from "@/components/pages/prefect-content";
+import { PrefectPageContent } from "@/components/pages/open-source/prefect-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

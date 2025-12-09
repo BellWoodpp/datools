@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { RudderStackPageContent } from "@/components/pages/rudderstack-content";
+import { RudderStackPageContent } from "@/components/pages/elt-integration/rudderstack-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

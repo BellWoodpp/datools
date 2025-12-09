@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { VertexAIPageContent } from "@/components/pages/vertex-ai-content";
+import { VertexAIPageContent } from "@/components/pages/ai-assistants/vertex-ai-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

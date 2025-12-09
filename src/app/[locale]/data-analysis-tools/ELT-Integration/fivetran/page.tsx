@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { FivetranPageContent } from "@/components/pages/fivetran-content";
+import { FivetranPageContent } from "@/components/pages/elt-integration/fivetran-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { MetabasePageContent } from "@/components/pages/metabase-content";
+import { MetabasePageContent } from "@/components/pages/visualization/metabase-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { PolynotePageContent } from "@/components/pages/polynote-content";
+import { PolynotePageContent } from "@/components/pages/collaborative-analytics/polynote-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

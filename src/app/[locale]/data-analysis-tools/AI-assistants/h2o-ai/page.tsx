@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { H2OAIPageContent } from "@/components/pages/h2oai-content";
+import { H2OAIPageContent } from "@/components/pages/ai-assistants/h2oai-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { BigQueryPageContent } from "@/components/pages/bigquery-content";
+import { BigQueryPageContent } from "@/components/pages/warehouse/bigquery-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

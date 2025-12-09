@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { FullStoryPageContent } from "@/components/pages/fullstory-content";
+import { FullStoryPageContent } from "@/components/pages/product-analytics/fullstory-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

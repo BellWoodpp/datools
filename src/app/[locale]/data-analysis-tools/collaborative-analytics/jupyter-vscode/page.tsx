@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { JupyterVSCodePageContent } from "@/components/pages/jupyter-vscode-content";
+import { JupyterVSCodePageContent } from "@/components/pages/collaborative-analytics/jupyter-vscode-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

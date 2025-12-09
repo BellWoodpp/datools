@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { GPTSqlAssistantsPageContent } from "@/components/pages/gpt-sql-assistants-content";
+import { GPTSqlAssistantsPageContent } from "@/components/pages/ai-assistants/gpt-sql-assistants-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

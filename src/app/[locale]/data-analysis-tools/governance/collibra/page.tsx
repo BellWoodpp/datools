@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { CollibraPageContent } from "@/components/pages/collibra-content";
+import { CollibraPageContent } from "@/components/pages/governance/collibra-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

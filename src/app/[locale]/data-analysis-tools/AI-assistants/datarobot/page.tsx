@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { DataRobotPageContent } from "@/components/pages/datarobot-content";
+import { DataRobotPageContent } from "@/components/pages/ai-assistants/datarobot-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

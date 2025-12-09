@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { ZapierPageContent } from "@/components/pages/zapier-content";
+import { ZapierPageContent } from "@/components/pages/elt-integration/zapier-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

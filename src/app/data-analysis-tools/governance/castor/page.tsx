@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { CastorPageContent } from "@/components/pages/castor-content";
+import { CastorPageContent } from "@/components/pages/governance/castor-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { CastorPageContent } from "@/components/pages/castor-content";
+import { CastorPageContent } from "@/components/pages/governance/castor-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

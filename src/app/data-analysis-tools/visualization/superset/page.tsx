@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { SupersetPageContent } from "@/components/pages/superset-content";
+import { SupersetPageContent } from "@/components/pages/visualization/superset-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

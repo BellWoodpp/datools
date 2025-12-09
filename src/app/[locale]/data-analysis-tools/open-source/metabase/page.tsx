@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { MetabasePageContent } from "@/components/pages/metabase-content";
+import { MetabasePageContent } from "@/components/pages/visualization/metabase-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

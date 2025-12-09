@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { FireboltPageContent } from "@/components/pages/firebolt-content";
+import { FireboltPageContent } from "@/components/pages/warehouse/firebolt-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

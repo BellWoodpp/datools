@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { HexPageContent } from "@/components/pages/hex-content";
+import { HexPageContent } from "@/components/pages/collaborative-analytics/hex-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { AlationPageContent } from "@/components/pages/alation-content";
+import { AlationPageContent } from "@/components/pages/governance/alation-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

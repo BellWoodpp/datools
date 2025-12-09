@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { H2OAIPageContent } from "@/components/pages/h2oai-content";
+import { H2OAIPageContent } from "@/components/pages/ai-assistants/h2oai-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

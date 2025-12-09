@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { DagsterPageContent } from "@/components/pages/dagster-content";
+import { DagsterPageContent } from "@/components/pages/open-source/dagster-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

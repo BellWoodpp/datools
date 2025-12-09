@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { BuiltInMlPageContent } from "@/components/pages/built-in-ml-content";
+import { BuiltInMlPageContent } from "@/components/pages/ai-assistants/built-in-ml-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

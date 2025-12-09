@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { BuiltInMlPageContent } from "@/components/pages/built-in-ml-content";
+import { BuiltInMlPageContent } from "@/components/pages/ai-assistants/built-in-ml-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { FullStoryPageContent } from "@/components/pages/fullstory-content";
+import { FullStoryPageContent } from "@/components/pages/product-analytics/fullstory-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

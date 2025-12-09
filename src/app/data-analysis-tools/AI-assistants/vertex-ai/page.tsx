@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { VertexAIPageContent } from "@/components/pages/vertex-ai-content";
+import { VertexAIPageContent } from "@/components/pages/ai-assistants/vertex-ai-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

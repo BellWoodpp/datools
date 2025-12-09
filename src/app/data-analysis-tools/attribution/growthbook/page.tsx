@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { GrowthBookPageContent } from "@/components/pages/growthbook-content";
+import { GrowthBookPageContent } from "@/components/pages/attribution/growthbook-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { ThoughtSpotPageContent } from "@/components/pages/thoughtspot-content";
+import { ThoughtSpotPageContent } from "@/components/pages/visualization/thoughtspot-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

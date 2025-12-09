@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { HevoPageContent } from "@/components/pages/hevo-content";
+import { HevoPageContent } from "@/components/pages/elt-integration/hevo-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

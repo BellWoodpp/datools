@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { PostHogPageContent } from "@/components/pages/posthog-content";
+import { PostHogPageContent } from "@/components/pages/product-analytics/posthog-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

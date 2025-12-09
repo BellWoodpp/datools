@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { CollibraPageContent } from "@/components/pages/collibra-content";
+import { CollibraPageContent } from "@/components/pages/governance/collibra-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

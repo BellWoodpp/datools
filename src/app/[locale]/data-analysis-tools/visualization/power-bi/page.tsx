@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { PowerBIPageContent } from "@/components/pages/power-bi-content";
+import { PowerBIPageContent } from "@/components/pages/visualization/power-bi-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { QlikPageContent } from "@/components/pages/qlik-content";
+import { QlikPageContent } from "@/components/pages/visualization/qlik-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { GPTSqlAssistantsPageContent } from "@/components/pages/gpt-sql-assistants-content";
+import { GPTSqlAssistantsPageContent } from "@/components/pages/ai-assistants/gpt-sql-assistants-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

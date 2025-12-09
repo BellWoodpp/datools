@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { RedshiftPageContent } from "@/components/pages/redshift-content";
+import { RedshiftPageContent } from "@/components/pages/warehouse/redshift-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

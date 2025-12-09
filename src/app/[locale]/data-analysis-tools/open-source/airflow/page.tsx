@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { AirflowPageContent } from "@/components/pages/airflow-content";
+import { AirflowPageContent } from "@/components/pages/open-source/airflow-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

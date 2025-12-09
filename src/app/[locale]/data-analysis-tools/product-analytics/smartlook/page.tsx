@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { SmartlookPageContent } from "@/components/pages/smartlook-content";
+import { SmartlookPageContent } from "@/components/pages/product-analytics/smartlook-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

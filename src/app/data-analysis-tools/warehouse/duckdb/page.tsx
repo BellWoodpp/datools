@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { DuckDBPageContent } from "@/components/pages/duckdb-content";
+import { DuckDBPageContent } from "@/components/pages/warehouse/duckdb-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

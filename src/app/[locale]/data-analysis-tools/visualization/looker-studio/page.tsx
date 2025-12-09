@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { LookerStudioPageContent } from "@/components/pages/looker-studio-content";
+import { LookerStudioPageContent } from "@/components/pages/visualization/looker-studio-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { SigmaPageContent } from "@/components/pages/sigma-content";
+import { SigmaPageContent } from "@/components/pages/visualization/sigma-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -4,6 +4,47 @@
     "subheading": "Data Analysis Tools · 今日",
     "searchPlaceholder": "データツールを検索…",
     "filterHint": "名前・タグ・料金・デプロイ方式で素早くフィルター。",
+    "resultsLabel": "件",
+    "viewDetailsLabel": "詳細を見る",
+    "visitSiteLabel": "公式サイトへ",
+    "categories": [
+      {
+        "title": "BI / 可視化",
+        "items": ["Tableau", "Power BI", "Looker", "Qlik", "Metabase", "Superset", "Redash", "Klipfolio", "Mode", "Sigma", "ThoughtSpot", "Looker Studio", "Lightdash"]
+      },
+      {
+        "title": "プロダクトアナリティクス",
+        "items": ["Amplitude", "Mixpanel", "Heap", "PostHog", "Pendo", "FullStory", "June", "LogRocket", "Smartlook"]
+      },
+      {
+        "title": "ETL / ELT・連携",
+        "items": ["Fivetran", "Airbyte", "Stitch", "Hevo", "Matillion", "Segment", "RudderStack", "N8n", "Tray.io", "Workato", "Zapier"]
+      },
+      {
+        "title": "データウェアハウス / レイク",
+        "items": ["Snowflake", "BigQuery", "Redshift", "Databricks", "ClickHouse", "DuckDB", "MotherDuck", "Firebolt"]
+      },
+      {
+        "title": "ノートブック / コラボ分析",
+        "items": ["Hex", "Observable", "Deepnote", "Jupyter / VS Code", "Polynote"]
+      },
+      {
+        "title": "実験 / アトリビューション",
+        "items": ["Optimizely", "VWO", "AB Tasty", "Statsig", "GrowthBook", "Convert", "Split.io"]
+      },
+      {
+        "title": "データ品質 / ガバナンス",
+        "items": ["Monte Carlo", "Bigeye", "Great Expectations", "dbt tests", "Castor", "Collibra", "Alation"]
+      },
+      {
+        "title": "ML / AutoML / AI アシスタント",
+        "items": ["DataRobot", "H2O.ai", "SageMaker", "Vertex AI", "Databricks AutoML", "Built-in ML (Power BI / BigQuery)", "GPT-style SQL/vis assistants"]
+      },
+      {
+        "title": "オープンソース / 自社ホスト",
+        "items": ["Airflow", "Dagster", "Prefect", "dbt", "Superset", "Metabase", "Airbyte", "Great Expectations", "PostHog"]
+      }
+    ],
     "tools": [
       {
         "name": "Tableau",
@@ -16,7 +57,7 @@
         ],
         "pricing": "商用 / トライアル",
         "deployment": "デスクトップ / クラウド / 自社ホスト",
-        "link": "tableau",
+        "link": "data-analysis-tools/visualization/tableau",
         "officialUrl": "https://www.tableau.com/",
         "votes": 128,
         "comments": 12
@@ -663,15 +704,15 @@
       },
       {
         "name": "Hex",
-        "summary": "Collaborative notebook for data teams combining SQL, Python, and visualizations with easy sharing and apps.",
+        "summary": "SQL と Python、可視化を組み合わせたデータチーム向けコラボノートブック。共有やアプリ化が簡単。",
         "tags": [
-          "Collaboration",
-          "Notebook",
+          "コラボレーション",
+          "ノートブック",
           "SQL",
           "Python"
         ],
-        "pricing": "Free / Paid",
-        "deployment": "Cloud",
+        "pricing": "無料 / 有料",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/collaborative-analytics/hex",
         "officialUrl": "https://hex.tech/",
         "votes": 96,
@@ -679,15 +720,15 @@
       },
       {
         "name": "Observable",
-        "summary": "Browser-based notebook and visualization platform using JavaScript/Observable syntax for interactive data stories.",
+        "summary": "JavaScript/Observable 記法でインタラクティブなデータストーリーを作れるブラウザベースのノートブック＆可視化プラットフォーム。",
         "tags": [
-          "Visualization",
-          "Notebook",
+          "可視化",
+          "ノートブック",
           "JavaScript",
-          "Interactive"
+          "インタラクティブ"
         ],
-        "pricing": "Free / Paid",
-        "deployment": "Cloud",
+        "pricing": "無料 / 有料",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/collaborative-analytics/observable",
         "officialUrl": "https://observablehq.com/",
         "votes": 82,
@@ -695,15 +736,15 @@
       },
       {
         "name": "Deepnote",
-        "summary": "Collaborative cloud notebook with SQL and Python, real-time coauthoring, comments, and data source integrations.",
+        "summary": "SQL と Python に対応したクラウド共同ノートブック。リアルタイム共同編集、コメント、データソース連携を提供。",
         "tags": [
-          "Collaboration",
-          "Notebook",
+          "コラボレーション",
+          "ノートブック",
           "SQL",
           "Python"
         ],
-        "pricing": "Free / Paid",
-        "deployment": "Cloud",
+        "pricing": "無料 / 有料",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/collaborative-analytics/deepnote",
         "officialUrl": "https://deepnote.com/",
         "votes": 88,
@@ -711,15 +752,15 @@
       },
       {
         "name": "Jupyter / VS Code",
-        "summary": "Jupyter Notebook/Lab plus VS Code (Python) for local/cloud analytics, supporting Python/R/Julia and more.",
+        "summary": "Jupyter Notebook/Lab と VS Code (Python) によるローカル/クラウド分析。Python/R/Julia など多言語をサポート。",
         "tags": [
-          "Notebook",
+          "ノートブック",
           "Python",
-          "Local dev",
-          "Polyglot"
+          "ローカル開発",
+          "多言語"
         ],
-        "pricing": "Open source / Free",
-        "deployment": "Local / Cloud",
+        "pricing": "オープンソース / 無料",
+        "deployment": "ローカル / クラウド",
         "link": "data-analysis-tools/collaborative-analytics/jupyter-vscode",
         "officialUrl": "https://jupyter.org/",
         "votes": 140,
@@ -727,15 +768,15 @@
       },
       {
         "name": "Polynote",
-        "summary": "Open-source polyglot notebook (Scala/Python, etc.) with strong typing and reproducibility for data engineering and science.",
+        "summary": "Scala/Python など複数言語に対応したオープンソースノートブック。強い型付けと再現性でデータエンジニアリングに適する。",
         "tags": [
-          "Notebook",
-          "Polyglot",
-          "Open source",
-          "Data engineering"
+          "ノートブック",
+          "多言語",
+          "オープンソース",
+          "データエンジニアリング"
         ],
-        "pricing": "Open source",
-        "deployment": "Self-hosted",
+        "pricing": "オープンソース",
+        "deployment": "セルフホスト",
         "link": "data-analysis-tools/collaborative-analytics/polynote",
         "officialUrl": "https://polynote.org/",
         "votes": 70,
@@ -743,12 +784,12 @@
       },
       {
         "name": "Optimizely",
-        "summary": "Mature experimentation and personalization platform with A/B, multivariate, feature flags, and objective management.",
+        "summary": "A/B・多変量テスト、フィーチャーフラグ、目標管理を備えた成熟した実験／パーソナライゼーション基盤。",
         "tags": [
-          "A/B testing",
-          "Personalization",
-          "Feature flags",
-          "Experimentation"
+          "A/B テスト",
+          "パーソナライゼーション",
+          "フィーチャーフラグ",
+          "実験"
         ],
         "pricing": "Subscription",
         "deployment": "Cloud",
@@ -759,11 +800,11 @@
       },
       {
         "name": "VWO",
-        "summary": "Optimization and experimentation suite offering A/B, multivariate tests, heatmaps, session recordings, and conversion insights.",
+        "summary": "A/B・多変量テストに加え、ヒートマップ、セッション録画、CV インサイトを提供する最適化/実験スイート。",
         "tags": [
-          "A/B testing",
-          "Visual editor",
-          "Heatmaps",
+          "A/B テスト",
+          "ビジュアルエディタ",
+          "ヒートマップ",
           "CRO"
         ],
         "pricing": "Subscription",
@@ -775,12 +816,12 @@
       },
       {
         "name": "AB Tasty",
-        "summary": "Digital experience optimization with A/B testing, personalization, feature flags, and behavioral insights.",
+        "summary": "A/B テスト、パーソナライゼーション、フィーチャーフラグ、行動インサイトでデジタル体験を最適化。",
         "tags": [
-          "A/B testing",
-          "Personalization",
-          "Feature flags",
-          "Experience optimization"
+          "A/B テスト",
+          "パーソナライゼーション",
+          "フィーチャーフラグ",
+          "エクスペリエンス最適化"
         ],
         "pricing": "Subscription",
         "deployment": "Cloud",
@@ -791,15 +832,15 @@
       },
       {
         "name": "Statsig",
-        "summary": "Product experimentation and feature management with stats engine, feature flags, metrics, and fast rollback.",
+        "summary": "実験とフィーチャーフラグを統計エンジンで管理し、メトリクス監視と高速ロールバックを提供するプロダクト実験基盤。",
         "tags": [
-          "Experimentation",
-          "Feature flags",
-          "Metrics",
-          "Rollback"
+          "実験",
+          "フィーチャーフラグ",
+          "メトリクス",
+          "ロールバック"
         ],
-        "pricing": "Free tier / Subscription",
-        "deployment": "Cloud",
+        "pricing": "無料枠 / サブスクリプション",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/attribution/statsig",
         "officialUrl": "https://www.statsig.com/",
         "votes": 102,
@@ -807,15 +848,15 @@
       },
       {
         "name": "GrowthBook",
-        "summary": "Open-source/cloud A/B testing and feature flags with self-hosting option, metric definitions, and multi-language SDKs.",
+        "summary": "セルフホストもできるオープンソース/クラウドの A/B テストとフィーチャーフラグ基盤。メトリクス定義と多言語 SDK を提供。",
         "tags": [
-          "Open source",
-          "A/B testing",
-          "Feature flags",
-          "Self-hosted"
+          "オープンソース",
+          "A/B テスト",
+          "フィーチャーフラグ",
+          "セルフホスト"
         ],
-        "pricing": "Open source / Cloud",
-        "deployment": "Self-hosted / Cloud",
+        "pricing": "オープンソース / クラウド",
+        "deployment": "セルフホスト / クラウド",
         "link": "data-analysis-tools/attribution/growthbook",
         "officialUrl": "https://www.growthbook.io/",
         "votes": 88,
@@ -823,15 +864,15 @@
       },
       {
         "name": "Convert",
-        "summary": "Privacy-focused A/B testing and personalization with visual editing, server-side experiments, and GDPR compliance.",
+        "summary": "プライバシー重視の A/B テストとパーソナライゼーション。ビジュアル編集やサーバーサイド実験、GDPR 対応を備える。",
         "tags": [
-          "A/B testing",
-          "Privacy",
-          "Personalization",
-          "Server-side"
+          "A/B テスト",
+          "プライバシー",
+          "パーソナライゼーション",
+          "サーバーサイド"
         ],
-        "pricing": "Subscription",
-        "deployment": "Cloud",
+        "pricing": "サブスクリプション",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/attribution/convert",
         "officialUrl": "https://www.convert.com/",
         "votes": 74,
@@ -839,15 +880,15 @@
       },
       {
         "name": "Split.io",
-        "summary": "Feature flagging and experimentation platform with rollbacks, metrics monitoring, and governance for product/engineering teams.",
+        "summary": "プロダクト/エンジニアリング向けのフィーチャーフラグ & 実験基盤。ロールバック、メトリクス監視、ガバナンスを提供。",
         "tags": [
-          "Feature flags",
-          "Experimentation",
-          "Metrics monitoring",
-          "Rollback"
+          "フィーチャーフラグ",
+          "実験",
+          "メトリクス監視",
+          "ロールバック"
         ],
-        "pricing": "Subscription",
-        "deployment": "Cloud",
+        "pricing": "サブスクリプション",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/attribution/split-io",
         "officialUrl": "https://www.split.io/",
         "votes": 86,
@@ -855,15 +896,15 @@
       },
       {
         "name": "Monte Carlo",
-        "summary": "Data observability platform for data quality, lineage, SLAs, and impact alerts across pipelines.",
+        "summary": "データ品質・系譜・SLA・影響範囲アラートをカバーするデータ可観測性プラットフォーム。",
         "tags": [
-          "Data observability",
-          "Data quality",
-          "Lineage",
-          "Alerts"
+          "データ可観測性",
+          "データ品質",
+          "系譜",
+          "アラート"
         ],
-        "pricing": "Subscription",
-        "deployment": "Cloud",
+        "pricing": "サブスクリプション",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/governance/monte-carlo",
         "officialUrl": "https://www.montecarlodata.com/",
         "votes": 92,
@@ -871,15 +912,15 @@
       },
       {
         "name": "Bigeye",
-        "summary": "Data quality monitoring with self-serve rules, SLAs, anomaly detection, and alerting.",
+        "summary": "セルフサービスのルールや SLA、異常検知とアラートでパイプライン全体のデータ品質を監視する可観測性ツール。",
         "tags": [
-          "Data quality",
-          "Monitoring",
+          "データ品質",
+          "監視",
           "SLA",
-          "Alerts"
+          "アラート"
         ],
-        "pricing": "Subscription",
-        "deployment": "Cloud",
+        "pricing": "サブスクリプション",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/governance/bigeye",
         "officialUrl": "https://www.bigeye.com/",
         "votes": 80,
@@ -887,31 +928,31 @@
       },
       {
         "name": "Great Expectations",
-        "summary": "Open-source data quality framework using Expectations for validation, docs, and pipeline checks.",
+        "summary": "Expectation ベースのバリデーションやプロファイル、ドキュメント生成を行うオープンソースのデータ品質フレームワーク。",
         "tags": [
-          "Open source",
-          "Data quality",
-          "Validation",
-          "Docs"
+          "オープンソース",
+          "データ品質",
+          "バリデーション",
+          "ドキュメント"
         ],
-        "pricing": "OSS / Cloud",
-        "deployment": "Self-hosted / Cloud",
-        "link": "data-analysis-tools/open-source/great-expectations",
+        "pricing": "オープンソース / クラウド",
+        "deployment": "セルフホスト / クラウド",
+        "link": "data-analysis-tools/governance/great-expectations",
         "officialUrl": "https://greatexpectations.io/",
         "votes": 110,
         "comments": 8
       },
       {
         "name": "dbt tests",
-        "summary": "Built-in and custom dbt tests for model-level data quality with documentation and CI integration.",
+        "summary": "dbt 標準/カスタムテストでモデル単位のデータ品質を検証し、ドキュメントや CI と統合。",
         "tags": [
           "dbt",
-          "Tests",
-          "Data quality",
-          "Open source"
+          "テスト",
+          "データ品質",
+          "オープンソース"
         ],
-        "pricing": "Open source",
-        "deployment": "Self-hosted / Cloud",
+        "pricing": "オープンソース",
+        "deployment": "セルフホスト / クラウド",
         "link": "data-analysis-tools/governance/dbt-tests",
         "officialUrl": "https://docs.getdbt.com/docs/build/tests",
         "votes": 125,
@@ -919,15 +960,15 @@
       },
       {
         "name": "Castor",
-        "summary": "Data catalog and discovery with lineage, documentation, asset scoring, and governance collaboration.",
+        "summary": "系譜・ドキュメント・資産スコアリングを備えたデータカタログ/探索ツール。ガバナンスでの協働を支援。",
         "tags": [
-          "Data catalog",
-          "Lineage",
-          "Governance",
-          "Collaboration"
+          "データカタログ",
+          "系譜",
+          "ガバナンス",
+          "コラボレーション"
         ],
-        "pricing": "Subscription",
-        "deployment": "Cloud",
+        "pricing": "サブスクリプション",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/governance/castor",
         "officialUrl": "https://www.castordoc.com/",
         "votes": 78,
@@ -935,15 +976,15 @@
       },
       {
         "name": "Collibra",
-        "summary": "Enterprise data governance and catalog covering quality, lineage, privacy, and compliance workflows.",
+        "summary": "品質・系譜・プライバシー・コンプライアンスのワークフローを含むエンタープライズ向けデータガバナンス/カタログ基盤。",
         "tags": [
-          "Data governance",
-          "Catalog",
-          "Compliance",
-          "Lineage"
+          "データガバナンス",
+          "カタログ",
+          "コンプライアンス",
+          "系譜"
         ],
-        "pricing": "Subscription",
-        "deployment": "Cloud",
+        "pricing": "サブスクリプション",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/governance/collibra",
         "officialUrl": "https://www.collibra.com/",
         "votes": 118,
@@ -951,15 +992,15 @@
       },
       {
         "name": "Alation",
-        "summary": "Enterprise data catalog and governance with search, lineage, policies, and collaboration to drive discovery.",
+        "summary": "検索・系譜・ポリシー・コラボを備え、データ探索を促進するエンタープライズ向けデータカタログ/ガバナンス基盤。",
         "tags": [
-          "Data catalog",
-          "Governance",
-          "Search",
-          "Lineage"
+          "データカタログ",
+          "ガバナンス",
+          "検索",
+          "系譜"
         ],
-        "pricing": "Subscription",
-        "deployment": "Cloud",
+        "pricing": "サブスクリプション",
+        "deployment": "クラウド",
         "link": "data-analysis-tools/governance/alation",
         "officialUrl": "https://www.alation.com/",
         "votes": 102,
@@ -967,15 +1008,15 @@
       },
       {
         "name": "DataRobot",
-        "summary": "Enterprise AutoML and MLOps platform with automated feature engineering, leaderboards, explainability, and monitored deployments across cloud/on-prem.",
+        "summary": "自動特徴量生成、リーダーボード、説明可能性、監視付きデプロイを備えたエンタープライズ向け AutoML / MLOps プラットフォーム。",
         "tags": [
           "AutoML",
           "MLOps",
-          "Enterprise",
-          "Governance"
+          "エンタープライズ",
+          "ガバナンス"
         ],
-        "pricing": "Subscription / Trial",
-        "deployment": "Cloud / On-prem / Hybrid",
+        "pricing": "サブスクリプション / トライアル",
+        "deployment": "クラウド / オンプレ / ハイブリッド",
         "link": "data-analysis-tools/AI-assistants/datarobot",
         "officialUrl": "https://www.datarobot.com/",
         "votes": 115,
@@ -983,15 +1024,15 @@
       },
       {
         "name": "H2O.ai",
-        "summary": "Open-source H2O-3 plus Driverless AI for automated feature engineering, time series, explainability, and self-hosted or cloud AutoML.",
+        "summary": "オープンソース H2O-3 と Driverless AI による AutoML。自動特徴量生成、時系列、説明可能性をセルフホスト/クラウドで提供。",
         "tags": [
           "AutoML",
-          "Open source",
-          "Time series",
+          "オープンソース",
+          "時系列",
           "MLOps"
         ],
-        "pricing": "Open source / Subscription",
-        "deployment": "Self-hosted / Cloud",
+        "pricing": "オープンソース / サブスクリプション",
+        "deployment": "セルフホスト / クラウド",
         "link": "data-analysis-tools/AI-assistants/h2o-ai",
         "officialUrl": "https://www.h2o.ai/",
         "votes": 108,
@@ -999,14 +1040,14 @@
       },
       {
         "name": "SageMaker",
-        "summary": "AWS managed ML platform with Studio/Notebooks, Autopilot AutoML, built-in training/inference, Pipelines, and Model Registry.",
+        "summary": "Studio/ノートブック、Autopilot AutoML、組み込み学習/推論、Pipelines と Model Registry を備えた AWS マネージド ML 基盤。",
         "tags": [
-          "Managed ML",
+          "マネージド ML",
           "AutoML",
           "AWS",
           "MLOps"
         ],
-        "pricing": "Pay-as-you-go",
+        "pricing": "従量課金",
         "deployment": "AWS",
         "link": "data-analysis-tools/AI-assistants/sagemaker",
         "officialUrl": "https://aws.amazon.com/sagemaker/",
@@ -1015,14 +1056,14 @@
       },
       {
         "name": "Vertex AI",
-        "summary": "Google Cloud unified ML/AutoML/GenAI platform with Model Garden, Pipelines, Feature Store, and monitoring integrated with BigQuery.",
+        "summary": "Model Garden、Pipelines、Feature Store、モニタリングを備え、BigQuery と統合された Google Cloud の統合 ML/AutoML/生成 AI 基盤。",
         "tags": [
           "AutoML",
-          "GenAI",
+          "生成 AI",
           "GCP",
           "MLOps"
         ],
-        "pricing": "Usage-based",
+        "pricing": "従量課金",
         "deployment": "Google Cloud",
         "link": "data-analysis-tools/AI-assistants/vertex-ai",
         "officialUrl": "https://cloud.google.com/vertex-ai",
@@ -1031,7 +1072,7 @@
       },
       {
         "name": "Databricks AutoML",
-        "summary": "Lakehouse AutoML that generates editable notebooks, feature engineering, and MLflow-tracked experiments for classification, regression, and time series.",
+        "summary": "編集可能なノートブック生成、特徴量エンジニアリング、MLflow 連携実験を提供する Lakehouse AutoML（分類・回帰・時系列対応）。",
         "tags": [
           "AutoML",
           "Lakehouse",
@@ -1047,15 +1088,15 @@
       },
       {
         "name": "Built-in ML (Power BI / BigQuery)",
-        "summary": "In-place AutoML via Power BI dataflows and BigQuery ML with SQL/low-code training and predictions reusable in reports and tables.",
+        "summary": "Power BI データフローや BigQuery ML で SQL/ローコードの AutoML 学習と予測を実行し、レポートやテーブルで再利用。",
         "tags": [
-          "Built-in ML",
+          "組み込み ML",
           "SQL",
           "BI",
           "AutoML"
         ],
-        "pricing": "Power BI Premium / BigQuery usage",
-        "deployment": "Power BI dataflows / BigQuery",
+        "pricing": "Power BI Premium / BigQuery 従量課金",
+        "deployment": "Power BI データフロー / BigQuery",
         "link": "data-analysis-tools/AI-assistants/built-in-ml-power-bi-bigquery",
         "officialUrl": "https://cloud.google.com/bigquery-ml",
         "votes": 97,
@@ -1063,15 +1104,15 @@
       },
       {
         "name": "GPT-style SQL/vis assistants",
-        "summary": "Natural-language SQL and visualization assistants (ChatGPT-style) that generate queries/charts, explain results, and connect securely to databases/BI.",
+        "summary": "自然言語で SQL やチャートを生成し結果を説明する ChatGPT 風アシスタント。DB/BI に安全に接続して NL2SQL と可視化を支援。",
         "tags": [
           "NL2SQL",
-          "AI assistant",
-          "Visualization",
-          "Chat"
+          "AI アシスタント",
+          "可視化",
+          "チャット"
         ],
-        "pricing": "Varies (SaaS / API)",
-        "deployment": "Cloud / Embedded",
+        "pricing": "SaaS / API により異なる",
+        "deployment": "クラウド / 組み込み",
         "link": "data-analysis-tools/AI-assistants/gpt-sql-vis-assistants",
         "officialUrl": "https://openai.com/chatgpt",
         "votes": 125,

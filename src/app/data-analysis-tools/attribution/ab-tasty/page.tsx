@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { ABTastyPageContent } from "@/components/pages/ab-tasty-content";
+import { ABTastyPageContent } from "@/components/pages/attribution/ab-tasty-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

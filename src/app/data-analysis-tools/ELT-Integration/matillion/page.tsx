@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { MatillionPageContent } from "@/components/pages/matillion-content";
+import { MatillionPageContent } from "@/components/pages/elt-integration/matillion-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { DatabricksAutoMLPageContent } from "@/components/pages/databricks-automl-content";
+import { DatabricksAutoMLPageContent } from "@/components/pages/ai-assistants/databricks-automl-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

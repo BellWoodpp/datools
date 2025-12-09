@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { RudderStackPageContent } from "@/components/pages/rudderstack-content";
+import { RudderStackPageContent } from "@/components/pages/elt-integration/rudderstack-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

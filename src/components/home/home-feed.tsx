@@ -25,14 +25,14 @@ const PAGE_SIZE = 5;
 type HomeFeedContent = HomeFeedDictionary;
 export function HomeFeed({ content }: { content: HomeFeedContent }) {
   const data = content;
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const [showSkeleton, setShowSkeleton] = useState(false);
-  const [isPending, startTransition] = useTransition();
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
   const { locale } = useLocale();
   const query = (searchParams.get("query") ?? "").toLowerCase().trim();
+  const [activeCategory, setActiveCategory] = useState<string | null>(() => searchParams.get("category"));
+  const [showSkeleton, setShowSkeleton] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
   const categoryIndex = useMemo(() => {
     const map = new Map<string, Set<string>>();
@@ -73,6 +73,11 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
       const params = new URLSearchParams(searchParams);
       if (params.has("query")) params.delete("query");
       params.delete("page");
+      if (category) {
+        params.set("category", category);
+      } else {
+        params.delete("category");
+      }
       const next = params.toString();
       replace(next ? `${pathname}?${next}` : pathname);
     });
@@ -147,6 +152,10 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   }, []);
 
   useEffect(() => {
+    // 同步 URL 上的 category 参数到状态，保证返回时保留选择
+    const urlCategory = searchParams.get("category");
+    setActiveCategory(urlCategory);
+
     let timer: NodeJS.Timeout | undefined;
     if (isPending) {
       // 仅在加载感知明显时才显示骨架，避免强制延迟
@@ -157,7 +166,7 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
     return () => {
       if (timer) clearTimeout(timer);
     };
-  }, [isPending]);
+  }, [isPending, searchParams]);
 
   const renderSkeletons = () =>
     Array.from({ length: PAGE_SIZE }).map((_, idx) => (

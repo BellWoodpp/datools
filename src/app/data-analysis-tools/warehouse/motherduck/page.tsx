@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { MotherDuckPageContent } from "@/components/pages/motherduck-content";
+import { MotherDuckPageContent } from "@/components/pages/warehouse/motherduck-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

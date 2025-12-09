@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { DataRobotPageContent } from "@/components/pages/datarobot-content";
+import { DataRobotPageContent } from "@/components/pages/ai-assistants/datarobot-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

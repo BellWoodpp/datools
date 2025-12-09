@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { LookerPageContent } from "@/components/pages/looker-content";
+import { LookerPageContent } from "@/components/pages/visualization/looker-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

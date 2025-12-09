@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { N8nPageContent } from "@/components/pages/n8n-content";
+import { N8nPageContent } from "@/components/pages/elt-integration/n8n-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

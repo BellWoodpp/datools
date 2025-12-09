@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { SegmentPageContent } from "@/components/pages/segment-content";
+import { SegmentPageContent } from "@/components/pages/elt-integration/segment-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

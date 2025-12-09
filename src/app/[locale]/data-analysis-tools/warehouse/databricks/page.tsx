@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { DatabricksPageContent } from "@/components/pages/databricks-content";
+import { DatabricksPageContent } from "@/components/pages/warehouse/databricks-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

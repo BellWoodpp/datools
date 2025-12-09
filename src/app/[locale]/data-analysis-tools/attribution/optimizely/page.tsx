@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { OptimizelyPageContent } from "@/components/pages/optimizely-content";
+import { OptimizelyPageContent } from "@/components/pages/attribution/optimizely-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

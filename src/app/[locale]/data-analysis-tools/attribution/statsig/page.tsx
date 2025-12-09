@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { StatsigPageContent } from "@/components/pages/statsig-content";
+import { StatsigPageContent } from "@/components/pages/attribution/statsig-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

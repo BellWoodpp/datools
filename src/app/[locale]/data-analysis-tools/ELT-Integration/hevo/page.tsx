@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { HevoPageContent } from "@/components/pages/hevo-content";
+import { HevoPageContent } from "@/components/pages/elt-integration/hevo-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

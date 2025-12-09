@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { MatillionPageContent } from "@/components/pages/matillion-content";
+import { MatillionPageContent } from "@/components/pages/elt-integration/matillion-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { SigmaPageContent } from "@/components/pages/sigma-content";
+import { SigmaPageContent } from "@/components/pages/visualization/sigma-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

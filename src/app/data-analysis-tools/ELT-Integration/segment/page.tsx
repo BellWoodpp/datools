@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { SegmentPageContent } from "@/components/pages/segment-content";
+import { SegmentPageContent } from "@/components/pages/elt-integration/segment-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

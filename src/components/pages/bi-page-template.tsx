@@ -1,5 +1,16 @@
+"use client";
+
 import Link from "next/link";
-import { defaultLocale } from "@/i18n";
+import { defaultLocale, locales, type Locale } from "@/i18n";
+import { usePathname, useSearchParams } from "next/navigation";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 export type BiPageCopy = {
   badge: string;
@@ -17,6 +28,64 @@ export type BiPageCopyMap = Record<string, BiPageCopy>;
 const pickCopy = (copyByLocale: BiPageCopyMap, locale?: string) =>
   copyByLocale[locale ?? defaultLocale] ?? copyByLocale.en ?? Object.values(copyByLocale)[0];
 
+const CATEGORY_LABELS: Record<string, Partial<Record<Locale, string>>> = {
+  "visualization": {
+    en: "BI / Visualization",
+    zh: "BI / 可视化",
+    ja: "BI / 可視化",
+  },
+  "product-analytics": {
+    en: "Product Analytics",
+    zh: "埋点 / 产品分析",
+    ja: "プロダクトアナリティクス",
+  },
+  "elt-integration": {
+    en: "ETL / ELT & Integration",
+    zh: "ETL / ELT 与集成",
+    ja: "ETL / ELT・連携",
+  },
+  "warehouse": {
+    en: "Warehouse / Lake",
+    zh: "数据仓库 / 数据湖",
+    ja: "データウェアハウス / レイク",
+  },
+  "collaborative-analytics": {
+    en: "Notebook / Collaborative Analytics",
+    zh: "笔记本 / 协作分析",
+    ja: "ノートブック / コラボ分析",
+  },
+  "attribution": {
+    en: "Experimentation / Attribution",
+    zh: "实验 / 归因",
+    ja: "実験 / アトリビューション",
+  },
+  "governance": {
+    en: "Data Quality / Governance",
+    zh: "数据质量 / 治理",
+    ja: "データ品質 / ガバナンス",
+  },
+  "ai-assistants": {
+    en: "ML / AutoML / AI Assistants",
+    zh: "ML / AutoML / AI 助手",
+    ja: "ML / AutoML / AI アシスタント",
+  },
+  "open-source": {
+    en: "Open Source / Self-hosted",
+    zh: "开源 / 自建组件",
+    ja: "オープンソース / 自社ホスト",
+  },
+};
+
+function inferCategorySlug(pathname: string): string | undefined {
+  const segments = pathname.split("/").filter(Boolean);
+  const first = segments[0];
+  const start = locales.includes(first as Locale) ? 1 : 0;
+  const idx = segments.indexOf("data-analysis-tools", start);
+  if (idx !== -1 && segments[idx + 1]) {
+    return segments[idx + 1].toLowerCase();
+  }
+}
+
 export function BiPageTemplate({
   copyByLocale,
   locale,
@@ -27,10 +96,51 @@ export function BiPageTemplate({
   officialUrl: string;
 }) {
   const copy = pickCopy(copyByLocale, locale);
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const slug = inferCategorySlug(pathname);
+  const homeLabel = copy.ctaBack || "Home";
+  const basePath = locale && locale !== defaultLocale ? `/${locale}` : "/";
+  const categoryFromUrl = searchParams.get("category") || "";
+  const mappedCategory =
+    (slug && CATEGORY_LABELS[slug]?.[(locale as Locale) ?? defaultLocale]) ||
+    (slug && CATEGORY_LABELS[slug]?.[defaultLocale]) ||
+    "";
+  const categoryLabel =
+    categoryFromUrl.trim() ||
+    mappedCategory ||
+    copy.badge?.split("·")?.[0]?.trim() ||
+    slug ||
+    "";
+  const categoryParams = categoryLabel ? new URLSearchParams({ category: categoryLabel }).toString() : "";
+  const categoryHref =
+    categoryLabel && categoryParams
+      ? `${basePath}${basePath.endsWith("/") ? "" : "/"}?${categoryParams}`
+      : basePath;
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#0a0f1f] via-[#0c1e3c] to-[#0a0f1f] text-slate-100">
       <div className="mx-auto max-w-5xl space-y-10 px-4 py-12">
+        <Breadcrumb className="text-sm text-slate-300/90">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href={basePath}>{homeLabel}</BreadcrumbLink>
+            </BreadcrumbItem>
+            {categoryLabel ? (
+              <>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href={categoryHref}>{categoryLabel}</BreadcrumbLink>
+                </BreadcrumbItem>
+              </>
+            ) : null}
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>{copy.title}</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
         <header className="space-y-3">
           <div className="inline-flex items-center rounded-full border border-[#1e5bff]/50 bg-[#0f1f3f]/70 px-3 py-1 text-xs font-semibold text-[#12c2e9]">
             {copy.badge}

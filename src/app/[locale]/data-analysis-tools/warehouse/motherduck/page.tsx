@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { MotherDuckPageContent } from "@/components/pages/motherduck-content";
+import { MotherDuckPageContent } from "@/components/pages/warehouse/motherduck-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

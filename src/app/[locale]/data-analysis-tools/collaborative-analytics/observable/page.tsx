@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { ObservablePageContent } from "@/components/pages/observable-content";
+import { ObservablePageContent } from "@/components/pages/collaborative-analytics/observable-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

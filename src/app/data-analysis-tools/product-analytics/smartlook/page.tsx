@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { SmartlookPageContent } from "@/components/pages/smartlook-content";
+import { SmartlookPageContent } from "@/components/pages/product-analytics/smartlook-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

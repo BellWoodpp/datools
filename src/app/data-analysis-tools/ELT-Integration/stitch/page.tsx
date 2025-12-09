@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { StitchPageContent } from "@/components/pages/stitch-content";
+import { StitchPageContent } from "@/components/pages/elt-integration/stitch-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

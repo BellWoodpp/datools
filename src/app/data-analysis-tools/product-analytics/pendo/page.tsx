@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { PendoPageContent } from "@/components/pages/pendo-content";
+import { PendoPageContent } from "@/components/pages/product-analytics/pendo-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

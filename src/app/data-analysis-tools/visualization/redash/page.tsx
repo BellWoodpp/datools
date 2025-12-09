@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { RedashPageContent } from "@/components/pages/redash-content";
+import { RedashPageContent } from "@/components/pages/visualization/redash-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

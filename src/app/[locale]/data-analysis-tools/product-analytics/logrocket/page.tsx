@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { LogRocketPageContent } from "@/components/pages/logrocket-content";
+import { LogRocketPageContent } from "@/components/pages/product-analytics/logrocket-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { KlipfolioPageContent } from "@/components/pages/klipfolio-content";
+import { KlipfolioPageContent } from "@/components/pages/visualization/klipfolio-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

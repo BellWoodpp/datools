@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { SageMakerPageContent } from "@/components/pages/sagemaker-content";
+import { SageMakerPageContent } from "@/components/pages/ai-assistants/sagemaker-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

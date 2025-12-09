@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { MixpanelPageContent } from "@/components/pages/mixpanel-content";
+import { MixpanelPageContent } from "@/components/pages/product-analytics/mixpanel-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

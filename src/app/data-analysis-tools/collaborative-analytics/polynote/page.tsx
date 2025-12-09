@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { PolynotePageContent } from "@/components/pages/polynote-content";
+import { PolynotePageContent } from "@/components/pages/collaborative-analytics/polynote-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

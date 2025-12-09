@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { FivetranPageContent } from "@/components/pages/fivetran-content";
+import { FivetranPageContent } from "@/components/pages/elt-integration/fivetran-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

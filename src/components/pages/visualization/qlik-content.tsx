@@ -1,5 +1,16 @@
+ "use client";
+
 import Link from "next/link";
-import { defaultLocale } from "@/i18n";
+import { defaultLocale, locales, type Locale } from "@/i18n";
+import { usePathname } from "next/navigation";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const OFFICIAL_URL = "https://www.qlik.com/";
 
@@ -67,12 +78,61 @@ const copyByLocale: Record<string, Copy> = {
 
 const getCopy = (locale?: string) => copyByLocale[locale ?? defaultLocale] ?? copyByLocale.en;
 
+const CATEGORY_LABELS: Record<string, Partial<Record<Locale, string>>> = {
+  "visualization": {
+    en: "BI / Visualization",
+    zh: "BI / 可视化",
+    ja: "BI / 可視化",
+  },
+};
+
+function inferCategorySlug(pathname: string): string | undefined {
+  const segments = pathname.split("/").filter(Boolean);
+  const first = segments[0];
+  const start = locales.includes(first as Locale) ? 1 : 0;
+  const idx = segments.indexOf("data-analysis-tools", start);
+  if (idx !== -1 && segments[idx + 1]) {
+    return segments[idx + 1].toLowerCase();
+  }
+}
+
 export function QlikPageContent({ locale }: { locale?: string }) {
   const copy = getCopy(locale);
+  const pathname = usePathname();
+  const slug = inferCategorySlug(pathname);
+  const homeLabel = copy.ctaBack || "Home";
+  const basePath = locale && locale !== defaultLocale ? `/${locale}` : "/";
+  const categoryLabel =
+    (slug && CATEGORY_LABELS[slug]?.[(locale as Locale) ?? defaultLocale]) ||
+    (slug && CATEGORY_LABELS[slug]?.[defaultLocale]) ||
+    copy.badge?.split("·")?.[0]?.trim() ||
+    slug ||
+    "BI / Visualization";
+  const categoryParams = categoryLabel ? new URLSearchParams({ category: categoryLabel }).toString() : "";
+  const categoryHref =
+    categoryLabel && categoryParams
+      ? `${basePath}${basePath.endsWith("/") ? "" : "/"}?${categoryParams}`
+      : basePath;
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#0a0f1f] via-[#0c1e3c] to-[#0a0f1f] text-slate-100">
       <div className="mx-auto max-w-5xl space-y-10 px-4 py-12">
+        <Breadcrumb className="text-sm text-slate-300/90">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href={basePath}>{homeLabel}</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href={categoryHref}>{categoryLabel}</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>{copy.title}</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
         <header className="space-y-3">
           <div className="inline-flex items-center rounded-full border border-[#1e5bff]/50 bg-[#0f1f3f]/70 px-3 py-1 text-xs font-semibold text-[#12c2e9]">
             {copy.badge}

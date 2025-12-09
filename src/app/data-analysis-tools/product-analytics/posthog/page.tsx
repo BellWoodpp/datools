@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { PostHogPageContent } from "@/components/pages/posthog-content";
+import { PostHogPageContent } from "@/components/pages/product-analytics/posthog-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

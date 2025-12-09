@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { BigQueryPageContent } from "@/components/pages/bigquery-content";
+import { BigQueryPageContent } from "@/components/pages/warehouse/bigquery-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

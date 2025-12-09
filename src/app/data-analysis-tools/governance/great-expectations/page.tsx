@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { GreatExpectationsPageContent } from "@/components/pages/great-expectations-content";
+import { GreatExpectationsPageContent } from "@/components/pages/governance/great-expectations-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

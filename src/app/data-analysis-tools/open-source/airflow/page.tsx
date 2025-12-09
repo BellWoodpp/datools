@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { AirflowPageContent } from "@/components/pages/airflow-content";
+import { AirflowPageContent } from "@/components/pages/open-source/airflow-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

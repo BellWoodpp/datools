@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { TableauPageContent } from "@/components/pages/tableau-content";
+import { TableauPageContent } from "@/components/pages/visualization/tableau-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

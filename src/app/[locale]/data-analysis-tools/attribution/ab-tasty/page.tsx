@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { ABTastyPageContent } from "@/components/pages/ab-tasty-content";
+import { ABTastyPageContent } from "@/components/pages/attribution/ab-tasty-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

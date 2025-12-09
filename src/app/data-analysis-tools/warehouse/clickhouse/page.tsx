@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { ClickHousePageContent } from "@/components/pages/clickhouse-content";
+import { ClickHousePageContent } from "@/components/pages/warehouse/clickhouse-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

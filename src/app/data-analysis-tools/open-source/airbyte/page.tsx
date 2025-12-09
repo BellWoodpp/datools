@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { AirbytePageContent } from "@/components/pages/airbyte-content";
+import { AirbytePageContent } from "@/components/pages/elt-integration/airbyte-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

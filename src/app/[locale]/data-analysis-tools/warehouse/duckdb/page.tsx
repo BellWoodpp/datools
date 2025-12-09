@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { DuckDBPageContent } from "@/components/pages/duckdb-content";
+import { DuckDBPageContent } from "@/components/pages/warehouse/duckdb-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

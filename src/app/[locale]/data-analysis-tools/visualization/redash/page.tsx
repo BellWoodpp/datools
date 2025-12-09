@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { RedashPageContent } from "@/components/pages/redash-content";
+import { RedashPageContent } from "@/components/pages/visualization/redash-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

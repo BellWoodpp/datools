@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { JunePageContent } from "@/components/pages/june-content";
+import { JunePageContent } from "@/components/pages/product-analytics/june-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

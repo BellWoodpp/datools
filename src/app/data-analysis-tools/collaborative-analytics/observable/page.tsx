@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { ObservablePageContent } from "@/components/pages/observable-content";
+import { ObservablePageContent } from "@/components/pages/collaborative-analytics/observable-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

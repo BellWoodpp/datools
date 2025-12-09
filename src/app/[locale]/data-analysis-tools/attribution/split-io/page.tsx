@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { SplitIoPageContent } from "@/components/pages/split-io-content";
+import { SplitIoPageContent } from "@/components/pages/attribution/split-io-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

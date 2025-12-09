@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { WorkatoPageContent } from "@/components/pages/workato-content";
+import { WorkatoPageContent } from "@/components/pages/elt-integration/workato-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

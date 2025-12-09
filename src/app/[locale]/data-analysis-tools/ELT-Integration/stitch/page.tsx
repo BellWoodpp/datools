@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { StitchPageContent } from "@/components/pages/stitch-content";
+import { StitchPageContent } from "@/components/pages/elt-integration/stitch-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

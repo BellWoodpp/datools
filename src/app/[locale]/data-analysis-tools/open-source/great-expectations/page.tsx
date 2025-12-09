@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { GreatExpectationsPageContent } from "@/components/pages/great-expectations-content";
+import { GreatExpectationsPageContent } from "@/components/pages/governance/great-expectations-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

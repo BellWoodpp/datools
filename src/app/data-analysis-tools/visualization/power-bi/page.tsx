@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { PowerBIPageContent } from "@/components/pages/power-bi-content";
+import { PowerBIPageContent } from "@/components/pages/visualization/power-bi-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

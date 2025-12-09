@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { SnowflakePageContent } from "@/components/pages/snowflake-content";
+import { SnowflakePageContent } from "@/components/pages/warehouse/snowflake-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

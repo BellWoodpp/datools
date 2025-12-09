@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { LightdashPageContent } from "@/components/pages/lightdash-content";
+import { LightdashPageContent } from "@/components/pages/visualization/lightdash-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

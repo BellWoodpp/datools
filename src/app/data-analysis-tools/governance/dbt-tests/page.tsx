@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { DbtTestsPageContent } from "@/components/pages/dbt-tests-content";
+import { DbtTestsPageContent } from "@/components/pages/governance/dbt-tests-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

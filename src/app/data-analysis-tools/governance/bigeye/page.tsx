@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { BigeyePageContent } from "@/components/pages/bigeye-content";
+import { BigeyePageContent } from "@/components/pages/governance/bigeye-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

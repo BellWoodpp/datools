@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { AmplitudePageContent } from "@/components/pages/amplitude-content";
+import { AmplitudePageContent } from "@/components/pages/product-analytics/amplitude-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

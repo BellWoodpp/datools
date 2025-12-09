@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { DbtPageContent } from "@/components/pages/dbt-content";
+import { DbtPageContent } from "@/components/pages/open-source/dbt-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { HeapPageContent } from "@/components/pages/heap-content";
+import { HeapPageContent } from "@/components/pages/product-analytics/heap-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

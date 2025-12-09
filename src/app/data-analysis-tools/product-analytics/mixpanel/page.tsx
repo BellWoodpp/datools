@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { MixpanelPageContent } from "@/components/pages/mixpanel-content";
+import { MixpanelPageContent } from "@/components/pages/product-analytics/mixpanel-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

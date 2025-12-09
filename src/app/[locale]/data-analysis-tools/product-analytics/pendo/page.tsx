@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { PendoPageContent } from "@/components/pages/pendo-content";
+import { PendoPageContent } from "@/components/pages/product-analytics/pendo-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

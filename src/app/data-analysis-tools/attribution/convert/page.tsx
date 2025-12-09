@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { ConvertPageContent } from "@/components/pages/convert-content";
+import { ConvertPageContent } from "@/components/pages/attribution/convert-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

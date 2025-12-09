@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { MonteCarloPageContent } from "@/components/pages/monte-carlo-content";
+import { MonteCarloPageContent } from "@/components/pages/governance/monte-carlo-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

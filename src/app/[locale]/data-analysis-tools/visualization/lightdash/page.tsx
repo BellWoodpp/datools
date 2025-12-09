@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
-import { LightdashPageContent } from "@/components/pages/lightdash-content";
+import { LightdashPageContent } from "@/components/pages/visualization/lightdash-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocalePageProps {

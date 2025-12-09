@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { LogRocketPageContent } from "@/components/pages/logrocket-content";
+import { LogRocketPageContent } from "@/components/pages/product-analytics/logrocket-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

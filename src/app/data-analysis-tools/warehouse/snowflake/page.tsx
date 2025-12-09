@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { defaultLocale } from "@/i18n";
-import { SnowflakePageContent } from "@/components/pages/snowflake-content";
+import { SnowflakePageContent } from "@/components/pages/warehouse/snowflake-content";
 import { buildCanonicalPath } from "@/lib/seo";
 
 export const metadata: Metadata = {

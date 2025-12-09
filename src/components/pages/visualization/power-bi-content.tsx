@@ -13,6 +13,30 @@ import {
 } from "@/components/ui/breadcrumb";
 
 const OFFICIAL_URL = "https://www.microsoft.com/en-us/power-platform/products/power-bi";
+const USE_CASE_TITLES: Record<string, string> = {
+  zh: "适用场景",
+  ja: "ユースケース",
+  fr: "Cas d’usage",
+  es: "Casos de uso",
+  pt: "Casos de uso",
+  de: "Anwendungsfälle",
+  ru: "Сценарии использования",
+  ar: "حالات الاستخدام",
+  id: "Kasus penggunaan",
+  en: "Use cases",
+};
+const MODULE_TITLES: Record<string, string> = {
+  zh: "产品线与模块",
+  ja: "製品ラインとモジュール",
+  fr: "Produits et modules",
+  es: "Líneas de producto y módulos",
+  pt: "Linhas de produto e módulos",
+  de: "Produktlinien & Module",
+  ru: "Линейки продуктов и модули",
+  ar: "المنتجات والوحدات",
+  id: "Produk & modul",
+  en: "Products & modules",
+};
 
 type Copy = {
   badge: string;
@@ -121,6 +145,8 @@ export function PowerBIPageContent({ locale }: { locale?: string }) {
   const slug = inferCategorySlug(pathname);
   const homeLabel = copy.ctaBack || "Home";
   const basePath = locale && locale !== defaultLocale ? `/${locale}` : "/";
+  const useCaseTitle = USE_CASE_TITLES[locale ?? defaultLocale] ?? USE_CASE_TITLES.en;
+  const moduleTitle = MODULE_TITLES[locale ?? defaultLocale] ?? MODULE_TITLES.en;
   const mappedCategory =
     (slug && CATEGORY_LABELS[slug]?.[(locale as Locale) ?? defaultLocale]) ||
     (slug && CATEGORY_LABELS[slug]?.[defaultLocale]) ||
@@ -174,7 +200,7 @@ export function PowerBIPageContent({ locale }: { locale?: string }) {
         </section>
 
         <section className="space-y-4 rounded-xl border border-[#1e5bff]/30 bg-[#0b162e]/80 p-6 shadow-[0_20px_50px_-24px_rgba(18,194,233,0.55)]">
-          <h2 className="text-xl font-semibold text-slate-50">产品线与模块</h2>
+          <h2 className="text-xl font-semibold text-slate-50">{moduleTitle}</h2>
           <div className="grid gap-4 md:grid-cols-3">
             {copy.modules.map((module) => (
               <div key={module.title} className="rounded-lg border border-[#1e5bff]/20 bg-[#0f1f3f]/70 p-4">
@@ -186,7 +212,7 @@ export function PowerBIPageContent({ locale }: { locale?: string }) {
         </section>
 
         <section className="space-y-3 rounded-xl border border-[#1e5bff]/30 bg-[#0f172a]/80 p-6 shadow-[0_15px_45px_-22px_rgba(30,91,255,0.55)]">
-          <h2 className="text-xl font-semibold text-slate-50">适用场景</h2>
+          <h2 className="text-xl font-semibold text-slate-50">{useCaseTitle}</h2>
           <ul className="grid gap-2 sm:grid-cols-2">
             {copy.useCases.map((useCase) => (
               <li key={useCase} className="rounded-lg border border-[#1e5bff]/20 bg-[#0b162e]/80 p-3 text-sm text-slate-200">

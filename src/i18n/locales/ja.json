@@ -59,6 +59,7 @@
         "deployment": "デスクトップ / クラウド / 自社ホスト",
         "link": "data-analysis-tools/visualization/tableau",
         "officialUrl": "https://www.tableau.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/tableau.ico",
         "votes": 128,
         "comments": 12
       },
@@ -75,6 +76,7 @@
         "deployment": "デスクトップ / クラウド / 自社ホスト",
         "link": "data-analysis-tools/visualization/power-bi",
         "officialUrl": "https://www.microsoft.com/en-us/power-platform/products/power-bi",
+        "logo": "https://r2.datools.org/bi-Visualization/power-BI.ico",
         "votes": 120,
         "comments": 10
       },
@@ -91,6 +93,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/visualization/looker",
         "officialUrl": "https://looker.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/loker.ico",
         "votes": 92,
         "comments": 7
       },
@@ -107,6 +110,7 @@
         "deployment": "クラウド / 自社ホスト",
         "link": "data-analysis-tools/visualization/qlik",
         "officialUrl": "https://www.qlik.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/quilk.png",
         "votes": 86,
         "comments": 6
       },
@@ -123,6 +127,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/open-source/metabase",
         "officialUrl": "https://www.metabase.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/metabase.svg",
         "votes": 110,
         "comments": 9
       },
@@ -139,6 +144,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/open-source/superset",
         "officialUrl": "https://superset.apache.org/",
+        "logo": "https://r2.datools.org/bi-Visualization/superset.ico",
         "votes": 95,
         "comments": 8
       },
@@ -155,6 +161,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/visualization/redash",
         "officialUrl": "https://redash.io/",
+        "logo": "https://r2.datools.org/bi-Visualization/redash.png",
         "votes": 88,
         "comments": 7
       },
@@ -171,6 +178,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/visualization/klipfolio",
         "officialUrl": "https://www.klipfolio.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/klipfolio.png",
         "votes": 76,
         "comments": 5
       },
@@ -187,6 +195,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/visualization/mode",
         "officialUrl": "https://mode.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/mode.png",
         "votes": 82,
         "comments": 6
       },
@@ -203,6 +212,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/visualization/sigma",
         "officialUrl": "https://www.sigmacomputing.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/sigma.png",
         "votes": 74,
         "comments": 5
       },
@@ -219,6 +229,7 @@
         "deployment": "クラウド / 自社ホスト",
         "link": "data-analysis-tools/visualization/thoughtspot",
         "officialUrl": "https://www.thoughtspot.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/toughtspot.png",
         "votes": 79,
         "comments": 6
       },
@@ -235,6 +246,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/visualization/looker-studio",
         "officialUrl": "https://lookerstudio.google.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/looker-studio.svg",
         "votes": 90,
         "comments": 8
       },
@@ -251,6 +263,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/visualization/lightdash",
         "officialUrl": "https://www.lightdash.com/",
+        "logo": "https://r2.datools.org/bi-Visualization/lightdash.png",
         "votes": 72,
         "comments": 5
       },

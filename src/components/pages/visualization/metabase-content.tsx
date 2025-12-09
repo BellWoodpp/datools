@@ -13,6 +13,18 @@ import {
 } from "@/components/ui/breadcrumb";
 
 const OFFICIAL_URL = "https://www.metabase.com/";
+const USE_CASE_TITLES: Record<string, string> = {
+  zh: "适用场景",
+  ja: "ユースケース",
+  fr: "Cas d’usage",
+  es: "Casos de uso",
+  pt: "Casos de uso",
+  de: "Anwendungsfälle",
+  ru: "Сценарии использования",
+  ar: "حالات الاستخدام",
+  id: "Kasus penggunaan",
+  en: "Use cases",
+};
 
 type Copy = {
   badge: string;
@@ -107,6 +119,7 @@ export function MetabasePageContent({ locale }: { locale?: string }) {
   const slug = inferCategorySlug(pathname);
   const homeLabel = copy.ctaBack || "Home";
   const basePath = locale && locale !== defaultLocale ? `/${locale}` : "/";
+  const useCaseTitle = USE_CASE_TITLES[locale ?? defaultLocale] ?? USE_CASE_TITLES.en;
   const mappedCategory =
     (slug && CATEGORY_LABELS[slug]?.[(locale as Locale) ?? defaultLocale]) ||
     (slug && CATEGORY_LABELS[slug]?.[defaultLocale]) ||
@@ -164,7 +177,7 @@ export function MetabasePageContent({ locale }: { locale?: string }) {
         </section>
 
         <section className="space-y-3 rounded-xl border border-[#1e5bff]/30 bg-[#0f172a]/80 p-6 shadow-[0_15px_45px_-22px_rgba(30,91,255,0.55)]">
-          <h2 className="text-xl font-semibold text-slate-50">适用场景 / Use cases</h2>
+          <h2 className="text-xl font-semibold text-slate-50">{useCaseTitle}</h2>
           <ul className="grid gap-2 sm:grid-cols-2">
             {copy.useCases.map((useCase) => (
               <li key={useCase} className="rounded-lg border border-[#1e5bff]/20 bg-[#0b162e]/80 p-3 text-sm text-slate-200">

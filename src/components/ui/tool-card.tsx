@@ -67,10 +67,17 @@ export function ToolCard({
     const logoSrc = fallbackError
       ? undefined
       : (!logoError && primaryLogo) || defaultLogo;
+    const needsLightBg =
+      typeof primaryLogo === "string" &&
+      /thoughtspot/i.test(primaryLogo);
 
     if (logoSrc && !logoError) {
       return (
-        <div className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-lg border border-[#1e5bff]/40 bg-[#0f1f3f]">
+        <div
+          className={`relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-lg border border-[#1e5bff]/40 ${
+            needsLightBg ? "bg-white" : "bg-[#0f1f3f]"
+          }`}
+        >
           <Image
             src={logoSrc}
             alt={tool.name}

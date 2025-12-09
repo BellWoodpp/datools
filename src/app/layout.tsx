@@ -5,6 +5,7 @@
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Header, FooterWrapper } from "@/components/layout";
 import { metadataBase } from "@/lib/seo";
@@ -37,12 +38,26 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
-}>) {
+      children: React.ReactNode;
+    }>) {
   return (
     // suppressHydrationWarning：抑制水和警告
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-RXYHLNX1JM"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RXYHLNX1JM');
+          `}
+        </Script>
         <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="c31qQEYvGp/28tgAFpJaPQ"

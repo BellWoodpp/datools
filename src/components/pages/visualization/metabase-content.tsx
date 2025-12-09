@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { defaultLocale, locales, type Locale } from "@/i18n";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -99,21 +99,15 @@ function inferCategorySlug(pathname: string): string | undefined {
 export function MetabasePageContent({ locale }: { locale?: string }) {
   const copy = getCopy(locale);
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const slug = inferCategorySlug(pathname);
   const homeLabel = copy.ctaBack || "Home";
   const basePath = locale && locale !== defaultLocale ? `/${locale}` : "/";
-  const categoryFromUrl = searchParams.get("category") || "";
   const mappedCategory =
     (slug && CATEGORY_LABELS[slug]?.[(locale as Locale) ?? defaultLocale]) ||
     (slug && CATEGORY_LABELS[slug]?.[defaultLocale]) ||
     "";
   const categoryLabel =
-    categoryFromUrl.trim() ||
-    mappedCategory ||
-    copy.badge?.split("·")?.[0]?.trim() ||
-    slug ||
-    "BI / Visualization";
+    mappedCategory || copy.badge?.split("·")?.[0]?.trim() || slug || "BI / Visualization";
   const categoryParams = categoryLabel ? new URLSearchParams({ category: categoryLabel }).toString() : "";
   const categoryHref =
     categoryLabel && categoryParams

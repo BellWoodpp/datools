@@ -121,7 +121,6 @@ export function TableauPageContent({ locale }: { locale?: string }) {
   const slug = inferCategorySlug(pathname);
   const homeLabel = copy.ctaBack || "Home";
   const basePath = locale && locale !== defaultLocale ? `/${locale}` : "/";
-  const categoryFromUrl = searchParams.get("category") || "";
   const mappedCategory =
     (slug && CATEGORY_LABELS[slug]?.[(locale as Locale) ?? defaultLocale]) ||
     (slug && CATEGORY_LABELS[slug]?.[defaultLocale]) ||

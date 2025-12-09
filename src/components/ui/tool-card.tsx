@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, MessageSquare } from "lucide-react";
+import { ArrowRight, ExternalLink, MessageSquare } from "lucide-react";
 import type { HomeFeedTool } from "@/i18n/types";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -29,6 +29,7 @@ interface ToolCardProps {
   highlightTerm?: string;
   detailHref: string;
   officialHref?: string;
+  detailLabel?: string;
 }
 
 export function ToolCard({
@@ -36,12 +37,16 @@ export function ToolCard({
   highlightTerm = "",
   detailHref,
   officialHref = "#",
+  detailLabel = "View details",
 }: ToolCardProps) {
   const isExternal = /^https?:\/\//i.test(officialHref);
   const [logoError, setLogoError] = useState(false);
+  const [fallbackError, setFallbackError] = useState(false);
   const router = useRouter();
+  const showDetailLink = detailHref && detailHref !== "#";
 
   const renderLogo = () => {
+    const defaultLogo = "https://r2.datools.org/logo_light.svg";
     const fromConfig = tool.logo ?? tool.image;
     const official = tool.officialUrl && /^https?:\/\//i.test(tool.officialUrl) ? tool.officialUrl : undefined;
     const fromOfficial = (() => {
@@ -53,7 +58,10 @@ export function ToolCard({
         return undefined;
       }
     })();
-    const logoSrc = fromConfig ?? fromOfficial;
+    const primaryLogo = fromConfig ?? fromOfficial;
+    const logoSrc = fallbackError
+      ? undefined
+      : (!logoError && primaryLogo) || defaultLogo;
 
     if (logoSrc && !logoError) {
       return (
@@ -64,7 +72,13 @@ export function ToolCard({
             fill
             sizes="36px"
             className="object-contain p-1.5"
-            onError={() => setLogoError(true)}
+            onError={() => {
+              if (logoSrc === defaultLogo) {
+                setFallbackError(true);
+                return;
+              }
+              setLogoError(true);
+            }}
           />
         </div>
       );
@@ -148,7 +162,18 @@ export function ToolCard({
         </div>
       </CardHeader>
 
-      <CardContent className="px-6 pb-6 pt-0" />
+      {showDetailLink ? (
+        <CardContent className="px-6 pb-6 pt-0">
+          <Link
+            href={detailHref}
+            onClick={(e) => e.stopPropagation()}
+            className="group inline-flex items-center gap-2 text-sm font-semibold text-[#12c2e9] transition hover:text-[#f8a13c] focus:outline-none focus:ring-2 focus:ring-[#1e5bff]/60 focus:ring-offset-2 focus:ring-offset-[#0b162e]"
+          >
+            <span>{detailLabel}</span>
+            <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+          </Link>
+        </CardContent>
+      ) : null}
     </Card>
   );
 }

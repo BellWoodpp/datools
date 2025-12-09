@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Tableau: drag-and-drop BI with connections to databases, spreadsheets, and cloud services, spanning Prep, Desktop/Cloud analytics, and Server/Cloud collaboration.",
   alternates: {
-    canonical: buildCanonicalPath(undefined, "tableau"),
+    canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "tableau"),
   },
 };
 

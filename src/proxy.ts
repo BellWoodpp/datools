@@ -1,21 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { locales, defaultLocale } from '@/i18n/types';
 
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-  
-  // 检查路径是否缺少语言前缀
-  const pathnameIsMissingLocale = locales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-  );
 
-  // 如果路径缺少语言前缀，重写URL到默认语言版本
-  if (pathnameIsMissingLocale) {
-    // 重写URL到默认语言版本，但不重定向
-    return NextResponse.rewrite(
-      new URL(`/${defaultLocale}${pathname}`, request.url)
-    );
+  // 如果是默认语言前缀 /en，重定向到无前缀路径，保持查询参数
+  if (pathname === "/en" || pathname.startsWith("/en/")) {
+    const url = request.nextUrl.clone();
+    url.pathname = pathname.replace(/^\/en(\/|$)/, "/") || "/";
+    return NextResponse.redirect(url);
   }
+
+  return NextResponse.next();
 }
 
 export const config = {

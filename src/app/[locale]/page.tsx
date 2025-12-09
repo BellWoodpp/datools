@@ -50,8 +50,8 @@ export async function generateMetadata({ params }: LocalePageProps) {
 
   if (!normalizedLocale) {
     return {
-      title: "Data Analysis Tools – 每日导航",
-      description: "精选数据分析工具导航，覆盖 BI、ETL、AI 助手与自托管方案。",
+      title: "Data Analysis Tools – Daily Picks",
+      description: "Discover trending data analysis tools across BI, ETL/ELT, AI assistants, and self-hosted or cloud solutions.",
       alternates: {
         canonical: "/",
       },
@@ -59,8 +59,8 @@ export async function generateMetadata({ params }: LocalePageProps) {
   }
 
   return {
-    title: "Data Analysis Tools – 每日导航",
-    description: "精选数据分析工具导航，覆盖 BI、ETL、AI 助手与自托管方案。",
+    title: "Data Analysis Tools – Daily Picks",
+    description: "Discover trending data analysis tools across BI, ETL/ELT, AI assistants, and self-hosted or cloud solutions.",
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale),
     },

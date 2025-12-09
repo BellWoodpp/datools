@@ -235,6 +235,7 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
                     highlightTerm={query}
                     detailHref={buildDetailHref(tool)}
                     officialHref={buildOfficialHref(tool)}
+                    detailLabel={data.viewDetailsLabel ?? "View details"}
                   />
                 ))}
           </div>

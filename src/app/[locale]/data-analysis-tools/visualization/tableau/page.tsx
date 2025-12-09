@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: LocalePageProps): Promise<Met
     return {
       ...meta,
       alternates: {
-        canonical: buildCanonicalPath(undefined, "tableau"),
+        canonical: buildCanonicalPath(undefined, "data-analysis-tools", "visualization", "tableau"),
       },
     };
   }
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: LocalePageProps): Promise<Met
   return {
     ...meta,
     alternates: {
-      canonical: buildCanonicalPath(locale, "tableau"),
+      canonical: buildCanonicalPath(locale, "data-analysis-tools", "visualization", "tableau"),
     },
   };
 }

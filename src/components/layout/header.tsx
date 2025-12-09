@@ -53,7 +53,7 @@ export function Header() {
         <div className="flex items-center flex-1">
           <Link href={locale === 'en' ? '/' : `/${locale}/`} className="flex items-center space-x-2">
             <Image
-              src="https://datools.org/data-a-tools.webp"
+              src="https://r2.datools.org/data-a-tools.webp"
               alt="DaTools"
               width={40}
               height={40}

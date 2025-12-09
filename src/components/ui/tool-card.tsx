@@ -48,20 +48,9 @@ export function ToolCard({
   const renderLogo = () => {
     const defaultLogo = "https://r2.datools.org/logo_light.svg";
     const fromConfig = tool.logo ?? tool.image;
-    const official = tool.officialUrl && /^https?:\/\//i.test(tool.officialUrl) ? tool.officialUrl : undefined;
-    const fromOfficial = (() => {
-      if (!official) return undefined;
-      try {
-        const url = new URL(official);
-        return `${url.origin}/favicon.ico`;
-      } catch {
-        return undefined;
-      }
-    })();
-    const primaryLogo = fromConfig ?? fromOfficial;
-    const logoSrc = fallbackError
-      ? undefined
-      : (!logoError && primaryLogo) || defaultLogo;
+    // 避免请求站点 favicon 触发 404，优先使用配置的 logo/image，缺省用自有默认图
+    const primaryLogo = fromConfig || defaultLogo;
+    const logoSrc = fallbackError ? undefined : (!logoError && primaryLogo) || defaultLogo;
 
     if (logoSrc && !logoError) {
       return (
@@ -73,11 +62,12 @@ export function ToolCard({
             sizes="36px"
             className="object-contain p-1.5"
             onError={() => {
-              if (logoSrc === defaultLogo) {
-                setFallbackError(true);
+              // 失败时切换到默认图，默认图再失败则用内置 SVG
+              if (logoSrc !== defaultLogo) {
+                setLogoError(true);
                 return;
               }
-              setLogoError(true);
+              setFallbackError(true);
             }}
           />
         </div>

@@ -27,7 +27,7 @@ export default async function ProfilePage({ params }: { params: { locale: Locale
   });
 
   if (!session?.user) {
-    redirect("/login");
+    redirect(`/${params.locale}/login`);
   }
 
   const user = session.user;

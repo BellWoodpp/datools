@@ -28,7 +28,7 @@ export default async function MembershipPage({ params }: { params: { locale: Loc
   });
 
   if (!session?.user) {
-    redirect("/login");
+    redirect(`/${params.locale}/login`);
   }
 
   const dictionary = getDictionary(params.locale);

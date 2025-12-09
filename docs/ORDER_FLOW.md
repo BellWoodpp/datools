@@ -195,7 +195,7 @@ DATABASE_URL=postgresql://...
 
 # 其他配置
 NEXT_PUBLIC_WEB_URL=http://localhost:3000
-NEXT_PUBLIC_PROJECT_NAME=shipbase
+NEXT_PUBLIC_PROJECT_NAME=datools
 ```
 
 ## 注意事项

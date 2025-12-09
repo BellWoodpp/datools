@@ -69,7 +69,7 @@ sitemap 为每种语言生成相应的 URL：
 ```bash
 # 网站基础 URL（用于生成 sitemap）
 NEXT_PUBLIC_BASE_URL=http://localhost:3000  # 开发环境
-# NEXT_PUBLIC_BASE_URL=https://shipbase.com  # 生产环境
+# NEXT_PUBLIC_BASE_URL=https://datools.org  # 生产环境
 ```
 
 ## Robots.txt 配置

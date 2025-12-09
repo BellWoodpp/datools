@@ -388,7 +388,7 @@ export interface FeaturesPageDictionary extends PageDictionary {
       title: string;
       items: ComparisonItem[];
     };
-    shipbase: {
+    datools: {
       title: string;
       items: ComparisonItem[];
     };

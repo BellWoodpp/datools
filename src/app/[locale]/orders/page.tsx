@@ -15,7 +15,7 @@ export async function generateMetadata({
   
   if (!normalizedLocale) {
     return {
-      title: "Orders - ShipBase",
+      title: "Orders - DaTools",
       description: "View your orders",
       alternates: {
         canonical: buildCanonicalPath(undefined, "orders"),

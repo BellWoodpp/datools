@@ -1,4 +1,4 @@
-# ShipBase
+# DaTools
 
 > A modern, full-featured SaaS starter template built with Next.js 15, featuring Better Auth, payment integration, and complete internationalization support.
 
@@ -81,7 +81,7 @@
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd shipbase
+   cd datools
    ```
 
 2. **Install dependencies**
@@ -125,7 +125,7 @@
 
    # Application
    NEXT_PUBLIC_WEB_URL=http://localhost:3000
-   NEXT_PUBLIC_PROJECT_NAME=ShipBase
+   NEXT_PUBLIC_PROJECT_NAME=DaTools
    PAY_PROVIDER=creem
 
    # Sitemap & SEO
@@ -166,7 +166,7 @@
 ## 🗂️ Project Structure
 
 ```
-shipbase/
+datools/
 ├── src/
 │   ├── app/                    # Next.js App Router
 │   │   ├── [locale]/          # Internationalized routes

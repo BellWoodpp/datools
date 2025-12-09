@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: LocaleBlogsPageProps) {
   
   if (!normalizedLocale) {
     return {
-      title: "Blog - ShipBase",
+      title: "Blog - DaTools",
       description: "Explore our latest articles",
       alternates: {
         canonical: buildCanonicalPath(undefined, "blogs"),
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: LocaleBlogsPageProps) {
   const dictionary = getDictionary(normalizedLocale);
   
   return {
-    title: `${dictionary.pages.blogs.title} - ShipBase`,
+    title: `${dictionary.pages.blogs.title} - DaTools`,
     description: dictionary.pages.blogs.subtitle,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "blogs"),

@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: PaymentSuccessPageProps) {
   
   if (!normalizedLocale) {
     return {
-      title: "Payment Successful - ShipBase",
+      title: "Payment Successful - DaTools",
       description: "Your payment has been successfully processed",
       alternates: {
         canonical: buildCanonicalPath(undefined, "payment", "success"),
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: PaymentSuccessPageProps) {
   const { title, description } = paymentSuccessDictionary;
   
   return {
-    title: `${title} - ShipBase`,
+    title: `${title} - DaTools`,
     description,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "payment", "success"),

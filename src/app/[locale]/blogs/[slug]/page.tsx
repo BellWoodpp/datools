@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: BlogDetailPageProps) {
 
   if (blogData.length === 0) {
     return {
-      title: "博客未找到 - ShipBase",
+      title: "博客未找到 - DaTools",
       alternates: {
         canonical: buildCanonicalPath(normalizedLocale, "blogs", slug),
       },
@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: BlogDetailPageProps) {
   }
 
   return {
-    title: `${blogData[0].title} - ShipBase`,
+    title: `${blogData[0].title} - DaTools`,
     description: blogData[0].description || "",
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "blogs", slug),

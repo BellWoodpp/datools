@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 
 // 暴露常量metadata
 export const metadata: Metadata = {
-  title: "ShipBase - Enable secure sign-in methods for Shipbase",
+  title: "DaTools - Enable secure sign-in methods for DaTools",
   description: "Integrate Google and GitHub OAuth plus Magic Link email sign-in through Better Auth. Sessions stay on the server and automatically sync via HTTP-only cookies.",
   icons: {
     icon: [{ url: "https://r2.datools.org/data-a-tools.ico" }],

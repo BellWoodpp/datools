@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: LocalePricingPageProps) {
   
   if (!normalizedLocale) {
     return {
-      title: "Pricing - ShipBase",
+      title: "Pricing - DaTools",
       description: "Simple, transparent pricing",
       alternates: {
         canonical: buildCanonicalPath(undefined, "pricing"),
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: LocalePricingPageProps) {
   const dictionary = getDictionary(normalizedLocale);
   
   return {
-    title: `${dictionary.pages.pricing.title} - ShipBase`,
+    title: `${dictionary.pages.pricing.title} - DaTools`,
     description: dictionary.pages.pricing.subtitle,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "pricing"),

@@ -134,7 +134,7 @@ const filtered = blogs.filter(blog =>
 ```tsx
 export async function generateMetadata({ params }) {
   return {
-    title: `${blog.title} - ShipBase`,
+    title: `${blog.title} - DaTools`,
     description: blog.description || "",
   };
 }

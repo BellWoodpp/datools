@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: LocaleIntegrationsPageProps) 
   
   if (!normalizedLocale) {
     return {
-      title: "Integrations - ShipBase",
+      title: "Integrations - DaTools",
       description: "Connect with your favorite tools",
       alternates: {
         canonical: buildCanonicalPath(undefined, "integrations"),
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: LocaleIntegrationsPageProps) 
   const dictionary = getDictionary(normalizedLocale);
   
   return {
-    title: `${dictionary.pages.integrations.title} - ShipBase`,
+    title: `${dictionary.pages.integrations.title} - DaTools`,
     description: dictionary.pages.integrations.subtitle,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "integrations"),

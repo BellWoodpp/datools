@@ -7,15 +7,15 @@
   },
   "home": {
     "badgeLabel": "2025🚀 Kirim Sekarang",
-    "heroTitle": "ShipBase, Kirim Lebih Banyak.",
-    "heroDescription": "ShipBase adalah boilerplate NextJS untuk membangun startup AI SaaS. Kirim cepat dengan beragam template dan komponen.",
+    "heroTitle": "DaTools, Kirim Lebih Banyak.",
+    "heroDescription": "DaTools adalah boilerplate NextJS untuk membangun startup AI SaaS. Kirim cepat dengan beragam template dan komponen.",
     "ctaPrimary": "Mulai",
     "ctaSecondary": "Baca Dokumen",
     "watchDemo": "Tonton Demo",
     "viewDetails": "Lihat Detail",
     "promotionText": "🎁 Diskon $100 untuk 1000 pelanggan pertama",
     "userCount": "dari 250+ pengguna puas",
-    "techStackTitle": "ShipBase dibangun di atas pundak para raksasa",
+    "techStackTitle": "DaTools dibangun di atas pundak para raksasa",
     "techStackItems": [
       {
         "name": "Next.js",
@@ -38,8 +38,8 @@
         "description": "Platform Deploy"
       }
     ],
-    "featuresTitle": "Apa itu ShipBase",
-    "featuresSubtitle": "ShipBase adalah boilerplate NextJS untuk membangun startup AI SaaS. Dilengkapi berbagai template dan komponen.",
+    "featuresTitle": "Apa itu DaTools",
+    "featuresSubtitle": "DaTools adalah boilerplate NextJS untuk membangun startup AI SaaS. Dilengkapi berbagai template dan komponen.",
     "features": [
       {
         "title": "Template Siap Pakai",
@@ -54,7 +54,7 @@
         "description": "Deploy aplikasi AI SaaS Anda ke produksi dalam hitungan jam, bukan hari."
       }
     ],
-    "benefitsTitle": "Mengapa Memilih ShipBase",
+    "benefitsTitle": "Mengapa Memilih DaTools",
     "benefitsSubtitle": "Dapatkan semua yang Anda butuhkan untuk meluncurkan startup AI Anda—dari template siap pakai hingga dukungan teknis.",
     "benefits": [
       {
@@ -70,18 +70,18 @@
         "description": "Dapatkan dukungan teknis profesional untuk membantu Anda mulai dengan cepat."
       }
     ],
-    "launchStepsTitle": "Cara Meluncur dengan ShipBase",
+    "launchStepsTitle": "Cara Meluncur dengan DaTools",
     "launchStepsSubtitle": "Jalankan startup AI SaaS Anda dalam tiga langkah sederhana:",
     "launchSteps": [
       {
         "step": "1",
-        "title": "Dapatkan ShipBase",
-        "description": "Beli ShipBase dengan pembayaran sekali. Periksa email Anda untuk kode dan dokumentasi."
+        "title": "Dapatkan DaTools",
+        "description": "Beli DaTools dengan pembayaran sekali. Periksa email Anda untuk kode dan dokumentasi."
       },
       {
         "step": "2",
         "title": "Mulai Proyek Anda",
-        "description": "Baca dokumentasi dan klon kode ShipBase. Mulai bangun startup AI SaaS Anda."
+        "description": "Baca dokumentasi dan klon kode DaTools. Mulai bangun startup AI SaaS Anda."
       },
       {
         "step": "3",
@@ -94,7 +94,7 @@
         "description": "Deploy proyek Anda ke produksi dalam beberapa langkah dan mulai melayani pelanggan segera."
       }
     ],
-    "keyFeaturesTitle": "Fitur Utama ShipBase",
+    "keyFeaturesTitle": "Fitur Utama DaTools",
     "keyFeaturesSubtitle": "Semua yang Anda butuhkan untuk meluncurkan startup AI SaaS dengan cepat dan efisien.",
     "keyFeatures": [
       {
@@ -122,27 +122,27 @@
         "description": "Integrasi AI pra-konfigurasi dengan sistem kredit bawaan dan penjualan API."
       }
     ],
-    "testimonialsTitle": "Apa Kata Pengguna tentang ShipBase",
-    "testimonialsSubtitle": "Dengarkan dari developer dan founder yang meluncurkan startup AI mereka dengan ShipBase.",
+    "testimonialsTitle": "Apa Kata Pengguna tentang DaTools",
+    "testimonialsSubtitle": "Dengarkan dari developer dan founder yang meluncurkan startup AI mereka dengan DaTools.",
     "testimonials": [
       {
-        "quote": "ShipBase membuat perjalanan dari ide ke produk jadi lebih sederhana dari sebelumnya. Template, skrip, dan infrastruktur fondasinya yang lengkap membuat saya hampir tak perlu menghabiskan waktu pada pengembangan dasar. Saya sangat merekomendasikannya bagi founder yang ingin cepat meluncurkan bisnis SaaS.",
+        "quote": "DaTools membuat perjalanan dari ide ke produk jadi lebih sederhana dari sebelumnya. Template, skrip, dan infrastruktur fondasinya yang lengkap membuat saya hampir tak perlu menghabiskan waktu pada pengembangan dasar. Saya sangat merekomendasikannya bagi founder yang ingin cepat meluncurkan bisnis SaaS.",
         "author": "Penulis AITDK",
         "role": "Pengembang Independen"
       },
       {
-        "quote": "ShipBase sangat memudahkan penyiapan pembayaran dan semua detail komersialisasi, sehingga kami bisa fokus membangun fitur yang penting. Jika Anda ingin mengirim dan menskalakan AI SaaS dengan cepat, ShipBase adalah pilihan jelas!",
+        "quote": "DaTools sangat memudahkan penyiapan pembayaran dan semua detail komersialisasi, sehingga kami bisa fokus membangun fitur yang penting. Jika Anda ingin mengirim dan menskalakan AI SaaS dengan cepat, DaTools adalah pilihan jelas!",
         "author": "Scar",
         "role": "Engineer Front-end"
       },
       {
-        "quote": "Saya menggunakan ShipBase dan meluncurkan situs baru dalam 8 menit, termasuk login/pembayaran—luar biasa!",
+        "quote": "Saya menggunakan DaTools dan meluncurkan situs baru dalam 8 menit, termasuk login/pembayaran—luar biasa!",
         "author": "Lafe",
         "role": "Tech Lead"
       }
     ],
-    "productShowcaseTitle": "Startup AI SaaS yang Dibangun dengan ShipBase",
-    "productShowcaseSubtitle": "Lihat aplikasi AI SaaS luar biasa yang dibuat dengan ShipBase",
+    "productShowcaseTitle": "Startup AI SaaS yang Dibangun dengan DaTools",
+    "productShowcaseSubtitle": "Lihat aplikasi AI SaaS luar biasa yang dibuat dengan DaTools",
     "showcaseItems": [
       {
         "name": "Raphael AI",
@@ -181,7 +181,7 @@
         "category": "Platform Sosial"
       }
     ],
-    "statsTitle": "Banyak yang Mencintai ShipBase",
+    "statsTitle": "Banyak yang Mencintai DaTools",
     "statsSubtitle": "karena mudah digunakan dan cepat dikirim",
     "stats": [
       {
@@ -200,41 +200,41 @@
         "description": "Kirim Cepat dalam"
       }
     ],
-    "faqTitle": "Pertanyaan yang Sering Diajukan tentang ShipBase",
+    "faqTitle": "Pertanyaan yang Sering Diajukan tentang DaTools",
     "faqSubtitle": "Punya pertanyaan lain? Hubungi kami di Discord atau email.",
     "faqs": [
       {
-        "question": "Apa sebenarnya ShipBase dan bagaimana cara kerjanya?",
-        "answer": "ShipBase adalah boilerplate NextJS komprehensif yang dirancang khusus untuk membangun startup AI SaaS. Menyediakan template siap pakai, penyiapan infrastruktur, dan alat deploy yang membantu Anda meluncurkan bisnis AI dalam hitungan jam, bukan hari."
+        "question": "Apa sebenarnya DaTools dan bagaimana cara kerjanya?",
+        "answer": "DaTools adalah boilerplate NextJS komprehensif yang dirancang khusus untuk membangun startup AI SaaS. Menyediakan template siap pakai, penyiapan infrastruktur, dan alat deploy yang membantu Anda meluncurkan bisnis AI dalam hitungan jam, bukan hari."
       },
       {
-        "question": "Apakah saya perlu skill teknis tingkat lanjut untuk menggunakan ShipBase?",
-        "answer": "Walau pengetahuan pemrograman dasar membantu, ShipBase dirancang ramah developer. Template dan dokumentasi kami memudahkan Anda memulai, bahkan jika Anda bukan ahli AI atau infrastruktur cloud."
+        "question": "Apakah saya perlu skill teknis tingkat lanjut untuk menggunakan DaTools?",
+        "answer": "Walau pengetahuan pemrograman dasar membantu, DaTools dirancang ramah developer. Template dan dokumentasi kami memudahkan Anda memulai, bahkan jika Anda bukan ahli AI atau infrastruktur cloud."
       },
       {
-        "question": "Jenis AI SaaS apa yang bisa saya bangun dengan ShipBase?",
-        "answer": "ShipBase mendukung berbagai aplikasi AI, dari pembuatan konten hingga alat analisis data. Template kami mencakup use case populer seperti chatbot AI, generator konten, aplikasi pemrosesan gambar, dan lainnya."
+        "question": "Jenis AI SaaS apa yang bisa saya bangun dengan DaTools?",
+        "answer": "DaTools mendukung berbagai aplikasi AI, dari pembuatan konten hingga alat analisis data. Template kami mencakup use case populer seperti chatbot AI, generator konten, aplikasi pemrosesan gambar, dan lainnya."
       },
       {
-        "question": "Berapa lama biasanya untuk meluncur dengan ShipBase?",
-        "answer": "Dengan ShipBase, Anda bisa memiliki prototipe kerja dalam hitungan jam dan aplikasi siap produksi juga dalam hitungan jam. Deploy satu klik dan infrastruktur pra-konfigurasi secara signifikan memangkas siklus pengembangan berbulan-bulan."
+        "question": "Berapa lama biasanya untuk meluncur dengan DaTools?",
+        "answer": "Dengan DaTools, Anda bisa memiliki prototipe kerja dalam hitungan jam dan aplikasi siap produksi juga dalam hitungan jam. Deploy satu klik dan infrastruktur pra-konfigurasi secara signifikan memangkas siklus pengembangan berbulan-bulan."
       },
       {
-        "question": "Apa saja yang termasuk dalam infrastruktur ShipBase?",
-        "answer": "ShipBase menyediakan tumpukan infrastruktur lengkap termasuk autentikasi, penyiapan basis data, integrasi API, pemrosesan pembayaran, dan deploy cloud berskala. Semuanya pra-konfigurasi mengikuti praktik terbaik industri."
+        "question": "Apa saja yang termasuk dalam infrastruktur DaTools?",
+        "answer": "DaTools menyediakan tumpukan infrastruktur lengkap termasuk autentikasi, penyiapan basis data, integrasi API, pemrosesan pembayaran, dan deploy cloud berskala. Semuanya pra-konfigurasi mengikuti praktik terbaik industri."
       },
       {
         "question": "Bisakah saya menyesuaikan template agar sesuai merek?",
-        "answer": "Tentu! Semua template ShipBase sepenuhnya dapat dikustomisasi. Anda dapat memodifikasi desain, fitur, dan fungsi agar sesuai identitas merek serta kebutuhan bisnis Anda, sambil mempertahankan infrastruktur yang kokoh."
+        "answer": "Tentu! Semua template DaTools sepenuhnya dapat dikustomisasi. Anda dapat memodifikasi desain, fitur, dan fungsi agar sesuai identitas merek serta kebutuhan bisnis Anda, sambil mempertahankan infrastruktur yang kokoh."
       }
     ],
     "finalCtaTitle": "Kirim AI SaaS Pertama Anda",
-    "finalCtaSubtitle": "Mulai dari sini, kirim dengan ShipBase.",
-    "finalCtaButton": "Dapatkan ShipBase",
+    "finalCtaSubtitle": "Mulai dari sini, kirim dengan DaTools.",
+    "finalCtaButton": "Dapatkan DaTools",
     "finalCtaSecondary": "Baca Dokumen"
   },
   "authPanel": {
-    "title": "Masuk ke ShipBase",
+    "title": "Masuk ke DaTools",
     "description": "Autentikasi dengan Google, GitHub, atau Magic Link dari Better Auth.",
     "signedInAs": "Masuk sebagai {name}",
     "sessionLabel": "ID Sesi: {id}",
@@ -310,14 +310,14 @@
     "privacyPolicy": "Kebijakan Privasi",
     "termsOfService": "Ketentuan Layanan",
     "cookiePolicy": "Kebijakan Cookie",
-    "copyright": "© 2024 ShipBase. Hak cipta dilindungi.",
+    "copyright": "© 2024 DaTools. Hak cipta dilindungi.",
     "madeWithLove": "Dibuat dengan ❤️"
   },
   "pages": {
     "features": {
       "title": "Fitur",
       "subtitle": "Fitur kuat untuk mempercepat pengembangan Anda",
-      "description": "Jelajahi rangkaian alat dan fitur komprehensif yang menjadikan ShipBase platform sempurna untuk aplikasi SaaS modern.",
+      "description": "Jelajahi rangkaian alat dan fitur komprehensif yang menjadikan DaTools platform sempurna untuk aplikasi SaaS modern.",
       "coreFeatures": {
         "title": "Fitur Inti",
         "subtitle": "Solusi lengkap yang disesuaikan untuk aplikasi SaaS modern, sehingga Anda fokus pada inovasi produk alih-alih penyiapan infrastruktur",
@@ -455,8 +455,8 @@
         ]
       },
       "comparison": {
-        "title": "Mengapa Memilih ShipBase",
-        "subtitle": "Dibanding metode pengembangan tradisional, ShipBase menghemat 90% waktu pengembangan Anda",
+        "title": "Mengapa Memilih DaTools",
+        "subtitle": "Dibanding metode pengembangan tradisional, DaTools menghemat 90% waktu pengembangan Anda",
         "traditional": {
           "title": "Pengembangan Tradisional",
           "items": [
@@ -477,8 +477,8 @@
             }
           ]
         },
-        "shipbase": {
-          "title": "Menggunakan ShipBase",
+        "datools": {
+          "title": "Menggunakan DaTools",
           "items": [
             {
               "text": "Selesai penyiapan dasar dalam 5 menit"
@@ -500,8 +500,8 @@
       },
       "cta": {
         "title": "Siap Membangun AI SaaS Anda?",
-        "subtitle": "Dapatkan ShipBase sekarang dan luncurkan proyek berikutnya dalam hitungan menit",
-        "primaryButton": "Dapatkan ShipBase",
+        "subtitle": "Dapatkan DaTools sekarang dan luncurkan proyek berikutnya dalam hitungan menit",
+        "primaryButton": "Dapatkan DaTools",
         "secondaryButton": "Lihat Dokumentasi"
       }
     },
@@ -646,13 +646,13 @@
       "description": "Panduan komprehensif, referensi API, dan tutorial untuk membantu Anda membangun aplikasi hebat.",
       "quickStart": {
         "title": "Mulai Cepat",
-        "subtitle": "Mulai dengan ShipBase dalam beberapa langkah sederhana untuk membangun aplikasi AI SaaS Anda",
+        "subtitle": "Mulai dengan DaTools dalam beberapa langkah sederhana untuk membangun aplikasi AI SaaS Anda",
         "steps": [
           {
             "step": "1",
-            "title": "Instal ShipBase",
+            "title": "Instal DaTools",
             "description": "Klon repositori dan instal dependensi",
-            "code": "git clone [https://github.com/your-repo/shipbase\ncd](https://github.com/your-repo/shipbase\ncd) shipbase\npnpm install"
+            "code": "git clone [https://github.com/your-repo/datools\ncd](https://github.com/your-repo/datools\ncd) datools\npnpm install"
           },
           {
             "step": "2",
@@ -680,7 +680,7 @@
         "sections": [
           {
             "title": "Mulai Cepat",
-            "description": "Siap jalan dengan ShipBase dalam 5 menit",
+            "description": "Siap jalan dengan DaTools dalam 5 menit",
             "icon": "Rocket",
             "links": [
               {
@@ -699,7 +699,7 @@
           },
           {
             "title": "Fitur Inti",
-            "description": "Pelajari fungsi inti ShipBase",
+            "description": "Pelajari fungsi inti DaTools",
             "icon": "Code",
             "links": [
               {
@@ -825,7 +825,7 @@
     "integrations": {
       "title": "Integrasi",
       "subtitle": "Terhubung dengan alat favorit Anda",
-      "description": "Integrasikan ShipBase dengan alur kerja dan layanan pihak ketiga yang sudah Anda gunakan.",
+      "description": "Integrasikan DaTools dengan alur kerja dan layanan pihak ketiga yang sudah Anda gunakan.",
       "categories": [
         {
           "name": "Autentikasi & Keamanan",
@@ -1130,19 +1130,19 @@
             "step": "3",
             "title": "Instal Paket Integrasi",
             "description": "Instal paket integrasi dan dependensinya",
-            "code": "# Instal paket integrasi\npnpm add @shipbase/integrations-stripe"
+            "code": "# Instal paket integrasi\npnpm add @datools/integrations-stripe"
           },
           {
             "step": "4",
             "title": "Inisialisasi Integrasi",
             "description": "Inisialisasi layanan integrasi di aplikasi Anda",
-            "code": "# Inisialisasi integrasi\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\nconst stripe = new StripeIntegration()"
+            "code": "# Inisialisasi integrasi\nimport { StripeIntegration } from '@datools/integrations-stripe'\nconst stripe = new StripeIntegration()"
           }
         ]
       },
       "cta": {
         "title": "Siap Memulai Integrasi?",
-        "subtitle": "Langsung gunakan fitur integrasi kuat dari ShipBase",
+        "subtitle": "Langsung gunakan fitur integrasi kuat dari DaTools",
         "primaryButton": "Lihat Dokumentasi",
         "secondaryButton": "Hubungi Dukungan"
       }
@@ -1157,7 +1157,7 @@
         "subtitle": "Artikel bantuan paling banyak dibaca",
         "articles": [
           {
-            "title": "Memulai dengan ShipBase",
+            "title": "Memulai dengan DaTools",
             "description": "Pelajari cara menyiapkan dan mendeploy aplikasi AI SaaS pertama Anda dengan cepat",
             "href": "#",
             "tags": [
@@ -1228,7 +1228,7 @@
           "articles": [
             {
               "title": "Instalasi dan Penyiapan",
-              "description": "Menyiapkan proyek ShipBase dari nol",
+              "description": "Menyiapkan proyek DaTools dari nol",
               "href": "#",
               "tags": [
                 "Instalasi",
@@ -1260,7 +1260,7 @@
         },
         {
           "title": "Fitur Inti",
-          "description": "Panduan penggunaan fitur utama ShipBase",
+          "description": "Panduan penggunaan fitur utama DaTools",
           "icon": "Code",
           "articles": [
             {
@@ -1395,24 +1395,24 @@
         "subtitle": "Temukan jawaban yang Anda butuhkan dengan cepat",
         "faqs": [
           {
-            "question": "Layanan AI apa yang didukung ShipBase?",
-            "answer": "ShipBase mendukung layanan AI arus utama seperti OpenAI, Anthropic, Google AI, dan menyediakan antarmuka terpadu untuk mengelola berbagai penyedia AI."
+            "question": "Layanan AI apa yang didukung DaTools?",
+            "answer": "DaTools mendukung layanan AI arus utama seperti OpenAI, Anthropic, Google AI, dan menyediakan antarmuka terpadu untuk mengelola berbagai penyedia AI."
           },
           {
-            "question": "Bagaimana cara menyesuaikan antarmuka ShipBase?",
-            "answer": "ShipBase menggunakan Tailwind CSS dan Shadcn/UI sehingga mudah menyesuaikan gaya. Semua komponen dapat dikustomisasi dan mendukung penggantian tema."
+            "question": "Bagaimana cara menyesuaikan antarmuka DaTools?",
+            "answer": "DaTools menggunakan Tailwind CSS dan Shadcn/UI sehingga mudah menyesuaikan gaya. Semua komponen dapat dikustomisasi dan mendukung penggantian tema."
           },
           {
-            "question": "Apakah ShipBase mendukung banyak bahasa?",
-            "answer": "Ya, ShipBase memiliki dukungan internasionalisasi bawaan. Saat ini mendukung Tionghoa, Inggris, dan Jepang, dan Anda dapat menambahkan bahasa lain dengan mudah."
+            "question": "Apakah DaTools mendukung banyak bahasa?",
+            "answer": "Ya, DaTools memiliki dukungan internasionalisasi bawaan. Saat ini mendukung Tionghoa, Inggris, dan Jepang, dan Anda dapat menambahkan bahasa lain dengan mudah."
           },
           {
-            "question": "Bagaimana cara upgrade versi ShipBase?",
-            "answer": "Anda dapat upgrade ShipBase dengan menarik kode terbaru melalui Git. Kami menyarankan untuk mencadangkan kode kustom Anda sebelum upgrade."
+            "question": "Bagaimana cara upgrade versi DaTools?",
+            "answer": "Anda dapat upgrade DaTools dengan menarik kode terbaru melalui Git. Kami menyarankan untuk mencadangkan kode kustom Anda sebelum upgrade."
           },
           {
-            "question": "Bagaimana performa ShipBase?",
-            "answer": "ShipBase dibangun di atas Next.js 14+ dengan Server Components dan dukungan Edge Runtime sehingga memberikan performa yang sangat baik."
+            "question": "Bagaimana performa DaTools?",
+            "answer": "DaTools dibangun di atas Next.js 14+ dengan Server Components dan dukungan Edge Runtime sehingga memberikan performa yang sangat baik."
           },
           {
             "question": "Bagaimana cara mendapatkan dukungan teknis?",
@@ -1449,9 +1449,9 @@
         {
           "icon": "Zap",
           "title": "Dukungan Email",
-          "description": "Kirim email ke [support@shipbase.com](mailto:support@shipbase.com)",
+          "description": "Kirim email ke [support@datools.org](mailto:support@datools.org)",
           "action": "Kirim Email",
-          "href": "mailto:support@shipbase.com"
+          "href": "mailto:support@datools.org"
         },
         {
           "icon": "Shield",
@@ -1465,23 +1465,23 @@
           "title": "Kemitraan Enterprise",
           "description": "Dukungan tingkat enterprise dan layanan pengembangan kustom",
           "action": "Hubungi Sales",
-          "href": "mailto:sales@shipbase.com"
+          "href": "mailto:sales@datools.org"
         }
       ],
       "team": [
         {
           "name": "Dukungan Teknis",
-          "email": "[support@shipbase.com](mailto:support@shipbase.com)",
+          "email": "[support@datools.org](mailto:support@datools.org)",
           "description": "Masalah teknis dan pemecahan masalah"
         },
         {
           "name": "Tim Penjualan",
-          "email": "[sales@shipbase.com](mailto:sales@shipbase.com)",
+          "email": "[sales@datools.org](mailto:sales@datools.org)",
           "description": "Kemitraan bisnis dan layanan kustom"
         },
         {
           "name": "Umpan Balik Produk",
-          "email": "[feedback@shipbase.com](mailto:feedback@shipbase.com)",
+          "email": "[feedback@datools.org](mailto:feedback@datools.org)",
           "description": "Saran produk dan permintaan fitur"
         }
       ],
@@ -1506,16 +1506,16 @@
     "status": {
       "title": "Status Layanan",
       "subtitle": "Status sistem real-time",
-      "description": "Pantau status terkini semua layanan dan infrastruktur ShipBase.",
+      "description": "Pantau status terkini semua layanan dan infrastruktur DaTools.",
       "overview": {
         "title": "Ringkasan Status Layanan",
-        "subtitle": "Pemantauan real-time semua layanan ShipBase",
+        "subtitle": "Pemantauan real-time semua layanan DaTools",
         "allSystemsOperational": "Semua Sistem Beroperasi Normal",
         "lastUpdated": "Terakhir diperbarui"
       },
       "services": {
         "title": "Status Layanan",
-        "subtitle": "Status saat ini semua layanan ShipBase",
+        "subtitle": "Status saat ini semua layanan DaTools",
         "api": {
           "name": "Layanan API",
           "description": "Endpoint dan layanan API inti"
@@ -1562,11 +1562,11 @@
       "lastUpdated": "Terakhir diperbarui: 1 Januari 2024",
       "introduction": {
         "title": "Pendahuluan",
-        "content": "Selamat datang di ShipBase, **NextJS Boilerplate** yang dirancang untuk membantu Anda membangun startup AI SaaS dengan cepat dan efisien. Di ShipBase, privasi Anda sangat penting bagi kami, dan kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan layanan kami."
+        "content": "Selamat datang di DaTools, **NextJS Boilerplate** yang dirancang untuk membantu Anda membangun startup AI SaaS dengan cepat dan efisien. Di DaTools, privasi Anda sangat penting bagi kami, dan kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan layanan kami."
       },
       "informationCollection": {
         "title": "Pengumpulan dan Penggunaan Informasi",
-        "subtitle": "Kami mengumpulkan jenis data berikut untuk memberikan pengalaman lebih baik saat menggunakan ShipBase:",
+        "subtitle": "Kami mengumpulkan jenis data berikut untuk memberikan pengalaman lebih baik saat menggunakan DaTools:",
         "accountInfo": {
           "title": "Informasi Akun",
           "whatWeCollect": "Yang Kami Kumpulkan: Nama, alamat email, dan informasi lain yang Anda berikan saat membuat akun.",
@@ -1574,12 +1574,12 @@
         },
         "usageDetails": {
           "title": "Detail Penggunaan",
-          "whatWeCollect": "Yang Kami Kumpulkan: Informasi tentang cara Anda menggunakan ShipBase, termasuk interaksi, fitur yang diakses, dan frekuensi penggunaan.",
+          "whatWeCollect": "Yang Kami Kumpulkan: Informasi tentang cara Anda menggunakan DaTools, termasuk interaksi, fitur yang diakses, dan frekuensi penggunaan.",
           "purpose": "Tujuan: Menganalisis keterlibatan pengguna dan meningkatkan layanan kami."
         },
         "deviceInfo": {
           "title": "Informasi Perangkat",
-          "whatWeCollect": "Yang Kami Kumpulkan: Data mengenai perangkat yang Anda gunakan untuk mengakses ShipBase, seperti tipe perangkat, sistem operasi, dan jenis peramban.",
+          "whatWeCollect": "Yang Kami Kumpulkan: Data mengenai perangkat yang Anda gunakan untuk mengakses DaTools, seperti tipe perangkat, sistem operasi, dan jenis peramban.",
           "purpose": "Tujuan: Mengoptimalkan layanan kami untuk berbagai perangkat dan memastikan kompatibilitas."
         },
         "cookies": {
@@ -1613,11 +1613,11 @@
       "contactUs": {
         "title": "Hubungi Kami",
         "content": "Jika Anda memiliki pertanyaan atau kekhawatiran tentang kebijakan privasi ini atau praktik data kami, hubungi kami di:",
-        "copyrightOwner": "Pemilik Hak Cipta: shipbase.ai",
-        "email": "Email: [support@shipbase.ai](mailto:support@shipbase.ai)"
+        "copyrightOwner": "Pemilik Hak Cipta: datools.ai",
+        "email": "Email: [support@datools.ai](mailto:support@datools.ai)"
       },
       "consent": {
-        "content": "Dengan menggunakan ShipBase, Anda menyetujui kebijakan privasi kami dan menyetujui ketentuannya. Terima kasih telah mempercayakan informasi Anda kepada kami!"
+        "content": "Dengan menggunakan DaTools, Anda menyetujui kebijakan privasi kami dan menyetujui ketentuannya. Terima kasih telah mempercayakan informasi Anda kepada kami!"
       }
     },
     "terms": {
@@ -1627,11 +1627,11 @@
       "lastUpdated": "Terakhir diperbarui: 1 Januari 2024",
       "introduction": {
         "title": "Pendahuluan dan Penerimaan Ketentuan",
-        "content": "Selamat datang di **ShipBase**, boilerplate NextJS yang dirancang untuk membangun startup AI SaaS dengan cepat dan efisien. Dengan mengakses atau menggunakan layanan kami, Anda setuju untuk terikat oleh Ketentuan Layanan ini. Jika Anda tidak setuju dengan ketentuan apa pun, mohon jangan gunakan layanan kami."
+        "content": "Selamat datang di **DaTools**, boilerplate NextJS yang dirancang untuk membangun startup AI SaaS dengan cepat dan efisien. Dengan mengakses atau menggunakan layanan kami, Anda setuju untuk terikat oleh Ketentuan Layanan ini. Jika Anda tidak setuju dengan ketentuan apa pun, mohon jangan gunakan layanan kami."
       },
       "serviceUse": {
         "title": "Penggunaan Layanan",
-        "content": "ShipBase menyediakan platform komprehensif bagi pengguna untuk membangun dan meluncurkan startup AI SaaS menggunakan template dan infrastruktur kami. Anda setuju menggunakan layanan sesuai hukum dan regulasi yang berlaku di tingkat lokal, negara bagian, nasional, dan internasional."
+        "content": "DaTools menyediakan platform komprehensif bagi pengguna untuk membangun dan meluncurkan startup AI SaaS menggunakan template dan infrastruktur kami. Anda setuju menggunakan layanan sesuai hukum dan regulasi yang berlaku di tingkat lokal, negara bagian, nasional, dan internasional."
       },
       "userAccounts": {
         "title": "Akun Pengguna dan Pendaftaran",
@@ -1639,18 +1639,18 @@
       },
       "intellectualProperty": {
         "title": "Konten dan Hak Kekayaan Intelektual",
-        "content": "Seluruh konten yang disediakan melalui ShipBase—termasuk namun tidak terbatas pada template, kode, penyiapan infrastruktur, dan dokumentasi—dilindungi oleh hukum hak cipta. Pemilik hak cipta ShipBase adalah **shipbase.ai**.",
+        "content": "Seluruh konten yang disediakan melalui DaTools—termasuk namun tidak terbatas pada template, kode, penyiapan infrastruktur, dan dokumentasi—dilindungi oleh hukum hak cipta. Pemilik hak cipta DaTools adalah **datools.ai**.",
         "points": [
-          "Anda mengakui tidak memiliki teknologi dasar atau kekayaan intelektual yang membentuk layanan ShipBase, dan setuju menghormati hak kekayaan intelektual shipbase.ai dan pihak ketiga mana pun.",
-          "Meski Anda tetap memiliki kepemilikan atas implementasi dan modifikasi kustom Anda, platform inti dan template ShipBase tetap menjadi milik shipbase.ai."
+          "Anda mengakui tidak memiliki teknologi dasar atau kekayaan intelektual yang membentuk layanan DaTools, dan setuju menghormati hak kekayaan intelektual datools.ai dan pihak ketiga mana pun.",
+          "Meski Anda tetap memiliki kepemilikan atas implementasi dan modifikasi kustom Anda, platform inti dan template DaTools tetap menjadi milik datools.ai."
         ]
       },
       "prohibitedActivities": {
         "title": "Aktivitas Terlarang",
-        "content": "Anda setuju untuk tidak melakukan aktivitas terlarang berikut saat menggunakan ShipBase:",
+        "content": "Anda setuju untuk tidak melakukan aktivitas terlarang berikut saat menggunakan DaTools:",
         "activities": [
           "Akses tidak sah atau distribusi kode dan template proprietary kami",
-          "Menjual kembali atau mendistribusikan template ShipBase tanpa izin",
+          "Menjual kembali atau mendistribusikan template DaTools tanpa izin",
           "Mengganggu atau merusak keamanan atau kinerja layanan",
           "Menggunakan layanan untuk tujuan ilegal atau tidak sah",
           "Mencoba melewati fitur keamanan layanan"
@@ -1658,7 +1658,7 @@
       },
       "privacyData": {
         "title": "Privasi dan Pengumpulan Data",
-        "content": "ShipBase mengumpulkan jenis data berikut:",
+        "content": "DaTools mengumpulkan jenis data berikut:",
         "dataTypes": [
           "Informasi Akun: Informasi yang Anda berikan saat membuat akun",
           "Detail Penggunaan: Data terkait aktivitas Anda di layanan kami",
@@ -1687,15 +1687,15 @@
       },
       "liability": {
         "title": "Batasan Tanggung Jawab",
-        "content": "Sejauh diizinkan oleh hukum, shipbase.ai tidak bertanggung jawab atas kerusakan langsung, tidak langsung, insidental, khusus, konsekuensial, atau hukuman yang timbul dari penggunaan atau ketidakmampuan menggunakan layanan."
+        "content": "Sejauh diizinkan oleh hukum, datools.ai tidak bertanggung jawab atas kerusakan langsung, tidak langsung, insidental, khusus, konsekuensial, atau hukuman yang timbul dari penggunaan atau ketidakmampuan menggunakan layanan."
       },
       "indemnification": {
         "title": "Ganti Rugi",
-        "content": "Anda setuju untuk mengganti rugi dan membebaskan shipbase.ai, afiliasinya, serta pejabat, direktur, karyawan, dan agennya dari klaim, kerusakan, kerugian, tanggung jawab, dan biaya (termasuk biaya pengacara) yang timbul dari penggunaan layanan atau pelanggaran Ketentuan ini."
+        "content": "Anda setuju untuk mengganti rugi dan membebaskan datools.ai, afiliasinya, serta pejabat, direktur, karyawan, dan agennya dari klaim, kerusakan, kerugian, tanggung jawab, dan biaya (termasuk biaya pengacara) yang timbul dari penggunaan layanan atau pelanggaran Ketentuan ini."
       },
       "governingLaw": {
         "title": "Hukum yang Berlaku dan Penyelesaian Sengketa",
-        "content": "Ketentuan ini diatur dan ditafsirkan sesuai hukum yurisdiksi tempat shipbase.ai beroperasi, tanpa memperhatikan pertentangan aturan hukum. Sengketa yang timbul dari Ketentuan ini atau layanan akan diselesaikan melalui arbitrase yang mengikat sesuai hukum yang berlaku."
+        "content": "Ketentuan ini diatur dan ditafsirkan sesuai hukum yurisdiksi tempat datools.ai beroperasi, tanpa memperhatikan pertentangan aturan hukum. Sengketa yang timbul dari Ketentuan ini atau layanan akan diselesaikan melalui arbitrase yang mengikat sesuai hukum yang berlaku."
       },
       "changes": {
         "title": "Perubahan Ketentuan Ini",
@@ -1703,10 +1703,10 @@
       },
       "contact": {
         "title": "Informasi Kontak",
-        "content": "Jika Anda memiliki pertanyaan tentang Ketentuan ini, hubungi kami di [support@shipbase.ai](mailto:support@shipbase.ai)."
+        "content": "Jika Anda memiliki pertanyaan tentang Ketentuan ini, hubungi kami di [support@datools.ai](mailto:support@datools.ai)."
       },
       "acknowledgment": {
-        "content": "Dengan menggunakan ShipBase, Anda mengakui telah membaca, memahami, dan setuju untuk terikat oleh Ketentuan Layanan ini. Terima kasih telah memilih ShipBase!"
+        "content": "Dengan menggunakan DaTools, Anda mengakui telah membaca, memahami, dan setuju untuk terikat oleh Ketentuan Layanan ini. Terima kasih telah memilih DaTools!"
       }
     },
     "cookies": {
@@ -1813,7 +1813,7 @@
       "contact": {
         "title": "Hubungi Kami",
         "content": "Jika Anda memiliki pertanyaan tentang Kebijakan Cookie ini atau membutuhkan informasi lebih lanjut, hubungi kami di:",
-        "email": "Email: [support@shipbase.ai](mailto:support@shipbase.ai)"
+        "email": "Email: [support@datools.ai](mailto:support@datools.ai)"
       },
       "consent": {
         "content": "Dengan terus menggunakan situs kami, Anda menyetujui penggunaan cookie sesuai Kebijakan Cookie ini."
@@ -1822,15 +1822,15 @@
     "login": {
       "title": "Masuk",
       "subtitle": "Selamat datang kembali",
-      "description": "Masuk ke akun Anda untuk melanjutkan perjalanan dengan ShipBase."
+      "description": "Masuk ke akun Anda untuk melanjutkan perjalanan dengan DaTools."
     },
     "signup": {
       "title": "Mulai",
       "subtitle": "Buat akun Anda",
-      "description": "Bergabung dengan ribuan developer yang membangun aplikasi hebat dengan ShipBase."
+      "description": "Bergabung dengan ribuan developer yang membangun aplikasi hebat dengan DaTools."
     },
     "profile": {
-      "title": "Profil Pengguna - ShipBase",
+      "title": "Profil Pengguna - DaTools",
       "subtitle": "Lihat dan kelola informasi pengguna Anda",
       "description": "Lihat dan kelola informasi akun Anda",
       "basicInfo": {
@@ -1859,7 +1859,7 @@
       "noNameSet": "Nama belum diatur"
     },
     "membership": {
-      "title": "Pusat Keanggotaan - ShipBase",
+      "title": "Pusat Keanggotaan - DaTools",
       "subtitle": "Kelola langganan dan manfaat keanggotaan Anda",
       "description": "Kelola paket langganan dan manfaat keanggotaan Anda",
       "currentPlan": {

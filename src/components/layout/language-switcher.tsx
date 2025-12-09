@@ -1,6 +1,7 @@
 "use client";
 
-import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { locales, defaultLocale, type Locale } from "@/i18n";
 import { Languages } from "lucide-react";
 import {
@@ -16,65 +17,53 @@ interface LanguageSwitcherProps {
 }
 
 export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
-  const router = useRouter();
   const pathname = usePathname();
 
-  const handleLanguageChange = (locale: Locale) => {
-    // 构建新的路径
+  // 构建目标语言的链接，保证有真实 href 便于 SEO 抓取
+  const buildLocalePath = (locale: Locale) => {
     let newPath = pathname;
-    
-    // 如果当前路径包含语言参数，替换它
-    const pathSegments = pathname.split('/').filter(Boolean);
+    const pathSegments = pathname.split("/").filter(Boolean);
+
     if (pathSegments.length > 0 && locales.includes(pathSegments[0] as Locale)) {
-      // 替换第一个段（语言代码）
       if (locale === defaultLocale) {
-        // 默认语言不需要前缀，移除语言代码
         pathSegments.shift();
-        newPath = '/' + pathSegments.join('/');
-        if (newPath === '/') {
-          newPath = '/';
+        newPath = `/${pathSegments.join("/")}`;
+        if (newPath === "/") {
+          newPath = "/";
         }
       } else {
-        // 非默认语言需要前缀
         pathSegments[0] = locale;
-        newPath = '/' + pathSegments.join('/');
+        newPath = `/${pathSegments.join("/")}`;
       }
     } else {
-      // 如果没有语言参数（当前是默认语言）
-      if (locale === defaultLocale) {
-        // 保持当前路径不变
-        newPath = pathname;
-      } else {
-        // 添加语言前缀
-        newPath = `/${locale}${pathname === '/' ? '' : pathname}`;
-      }
+      newPath = locale === defaultLocale ? pathname : `/${locale}${pathname === "/" ? "" : pathname}`;
     }
-    
-    router.push(newPath);
+
+    return newPath || "/";
   };
 
   const getLanguageLabel = (locale: Locale) => {
     switch (locale) {
-      case 'en':
-        return 'English';
-      case 'zh':
-        return '中文';
-      case 'es':
-        return 'Español';
-      case 'ar':
-        return 'العربية';
-      case 'id':
-        return 'Bahasa Indonesia';
-      case 'pt':
-        return 'Português';
-      case 'fr':
-        return 'Français';
-      case 'ja':
-        return '日本語';
-      case 'ru':
-        return 'Русский';
-      case 'de':
-        return 'Deutsch';
+      case "en":
+        return "English";
+      case "zh":
+        return "中文";
+      case "es":
+        return "Español";
+      case "ar":
+        return "العربية";
+      case "id":
+        return "Bahasa Indonesia";
+      case "pt":
+        return "Português";
+      case "fr":
+        return "Français";
+      case "ja":
+        return "日本語";
+      case "ru":
+        return "Русский";
+      case "de":
+        return "Deutsch";
       default:
         return locale;
     }
@@ -88,16 +77,21 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
           <span className="ml-1 md:hidden">{getLanguageLabel(currentLocale)}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-32">
-        {locales.map((locale) => (
-          <DropdownMenuItem
-            key={locale}
-            onClick={() => handleLanguageChange(locale)}
-            className={locale === currentLocale ? "bg-accent" : ""}
-          >
-            {getLanguageLabel(locale)}
-          </DropdownMenuItem>
-        ))}
+      <DropdownMenuContent align="end" className="w-40">
+        {locales.map((locale) => {
+          const href = buildLocalePath(locale);
+          return (
+            <DropdownMenuItem
+              key={locale}
+              asChild
+              className={locale === currentLocale ? "bg-accent" : ""}
+            >
+              <Link href={href} prefetch={false} className="w-full">
+                {getLanguageLabel(locale)}
+              </Link>
+            </DropdownMenuItem>
+          );
+        })}
       </DropdownMenuContent>
     </DropdownMenu>
   );

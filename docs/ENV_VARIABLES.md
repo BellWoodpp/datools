@@ -30,7 +30,7 @@ ADMIN_EMAILS=admin@example.com,owner@example.com,superuser@example.com
 **示例：**
 ```bash
 # 生产环境
-NEXT_PUBLIC_BASE_URL=https://shipbase.com
+NEXT_PUBLIC_BASE_URL=https://datools.org
 
 # 开发环境（可选，默认使用 http://localhost:3000）
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
@@ -55,7 +55,7 @@ NEXT_PUBLIC_BASE_URL=http://localhost:3000
 ADMIN_EMAILS=admin@example.com,owner@example.com
 
 # 网站基础 URL（用于 sitemap）
-NEXT_PUBLIC_BASE_URL=https://shipbase.com
+NEXT_PUBLIC_BASE_URL=https://datools.org
 ```
 
 ## 在 .env.local 中配置

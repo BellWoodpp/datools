@@ -36,7 +36,7 @@ export default async function EditBlogPage({ params }: EditBlogPageProps) {
 export async function generateMetadata({ params }: EditBlogPageProps) {
   const resolvedParams = await params;
   return {
-    title: `Edit blog ${resolvedParams.id} - ShipBase`,
+    title: `Edit blog ${resolvedParams.id} - DaTools`,
     description: "Edit blog post",
     alternates: {
       canonical: buildCanonicalPath(undefined, "admin", "blogs", resolvedParams.id, "edit"),

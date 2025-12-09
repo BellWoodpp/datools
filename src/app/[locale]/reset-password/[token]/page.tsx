@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { ResetPasswordPanel } from "@/components/auth/reset-password-panel";
 import { locales } from "@/i18n";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface LocaleResetPasswordTokenPageProps {
   params: Promise<{
@@ -34,4 +36,29 @@ export function generateStaticParams() {
   return locales.flatMap((locale) =>
     Array.from({ length: 0 }, () => ({ locale, token: "" })),
   );
+}
+
+export async function generateMetadata({
+  params,
+}: LocaleResetPasswordTokenPageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const locale = locales.find((l) => l === resolvedParams.locale);
+
+  if (!locale) {
+    return {
+      title: "Reset password",
+      description: "Enter your reset token to set a new password.",
+      alternates: {
+        canonical: buildCanonicalPath(undefined, "reset-password"),
+      },
+    };
+  }
+
+  return {
+    title: "Reset password",
+    description: "Enter your reset token to set a new password.",
+    alternates: {
+      canonical: buildCanonicalPath(locale, "reset-password"),
+    },
+  };
 }

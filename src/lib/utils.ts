@@ -20,5 +20,5 @@ export function getBaseUrl(): string {
   }
   // 默认值
   // 最终兜底：上面两种情况都不满足（也就是生产环境 + 没手动配置域名）
-  return 'https://shipbase.com';
+  return 'https://datools.org';
 }

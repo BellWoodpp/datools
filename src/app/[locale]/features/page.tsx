@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: LocaleFeaturesPageProps) {
   
   if (!normalizedLocale) {
     return {
-      title: "Features - ShipBase",
+      title: "Features - DaTools",
       description: "Powerful features to accelerate your development",
       alternates: {
         canonical: buildCanonicalPath(undefined, "features"),
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: LocaleFeaturesPageProps) {
   const dictionary = getDictionary(normalizedLocale);
   
   return {
-    title: `${dictionary.pages.features.title} - ShipBase`,
+    title: `${dictionary.pages.features.title} - DaTools`,
     description: dictionary.pages.features.subtitle,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "features"),

@@ -7,15 +7,15 @@
   },
   "home": {
     "badgeLabel": "2025🚀 Expédiez maintenant",
-    "heroTitle": "ShipBase, expédiez plus.",
-    "heroDescription": "ShipBase est un boilerplate NextJS pour créer des startups SaaS IA. Expédiez vite avec une variété de modèles et de composants.",
+    "heroTitle": "DaTools, expédiez plus.",
+    "heroDescription": "DaTools est un boilerplate NextJS pour créer des startups SaaS IA. Expédiez vite avec une variété de modèles et de composants.",
     "ctaPrimary": "Commencer",
     "ctaSecondary": "Lire la documentation",
     "watchDemo": "Regarder la démo",
     "viewDetails": "Voir les détails",
     "promotionText": "🎁 100 $ de réduction pour les 1000 premiers clients",
     "userCount": "parmi 250+ utilisateurs satisfaits",
-    "techStackTitle": "ShipBase est construit sur les épaules de géants",
+    "techStackTitle": "DaTools est construit sur les épaules de géants",
     "techStackItems": [
       {
         "name": "Next.js",
@@ -38,8 +38,8 @@
         "description": "Plateforme de déploiement"
       }
     ],
-    "featuresTitle": "Qu’est-ce que ShipBase",
-    "featuresSubtitle": "ShipBase est un boilerplate NextJS pour créer des startups SaaS IA. Livré avec de nombreux modèles et composants.",
+    "featuresTitle": "Qu’est-ce que DaTools",
+    "featuresSubtitle": "DaTools est un boilerplate NextJS pour créer des startups SaaS IA. Livré avec de nombreux modèles et composants.",
     "features": [
       {
         "title": "Modèles prêts à l’emploi",
@@ -54,7 +54,7 @@
         "description": "Déployez votre application SaaS IA en production en quelques heures, pas en jours."
       }
     ],
-    "benefitsTitle": "Pourquoi choisir ShipBase",
+    "benefitsTitle": "Pourquoi choisir DaTools",
     "benefitsSubtitle": "Tout ce dont vous avez besoin pour lancer votre startup IA : modèles prêts à l’emploi et support technique.",
     "benefits": [
       {
@@ -70,18 +70,18 @@
         "description": "Bénéficiez d’un support technique professionnel pour vous aider à démarrer vite."
       }
     ],
-    "launchStepsTitle": "Comment lancer avec ShipBase",
+    "launchStepsTitle": "Comment lancer avec DaTools",
     "launchStepsSubtitle": "Faites tourner votre startup SaaS IA en trois étapes simples :",
     "launchSteps": [
       {
         "step": "1",
-        "title": "Obtenir ShipBase",
-        "description": "Achetez ShipBase avec un paiement unique. Vérifiez votre e-mail pour le code et la documentation."
+        "title": "Obtenir DaTools",
+        "description": "Achetez DaTools avec un paiement unique. Vérifiez votre e-mail pour le code et la documentation."
       },
       {
         "step": "2",
         "title": "Démarrer votre projet",
-        "description": "Lisez la documentation et clonez le code de ShipBase. Commencez à construire votre SaaS IA."
+        "description": "Lisez la documentation et clonez le code de DaTools. Commencez à construire votre SaaS IA."
       },
       {
         "step": "3",
@@ -94,7 +94,7 @@
         "description": "Déployez votre projet en production en quelques étapes et commencez immédiatement à servir vos clients."
       }
     ],
-    "keyFeaturesTitle": "Fonctionnalités clés de ShipBase",
+    "keyFeaturesTitle": "Fonctionnalités clés de DaTools",
     "keyFeaturesSubtitle": "Tout ce qu’il faut pour lancer rapidement et efficacement votre startup SaaS IA.",
     "keyFeatures": [
       {
@@ -122,27 +122,27 @@
         "description": "Intégration IA préconfigurée avec système de crédits et vente d’API intégrés."
       }
     ],
-    "testimonialsTitle": "Ce que les utilisateurs pensent de ShipBase",
-    "testimonialsSubtitle": "Témoignages de développeurs et fondateurs ayant lancé leur startup IA avec ShipBase.",
+    "testimonialsTitle": "Ce que les utilisateurs pensent de DaTools",
+    "testimonialsSubtitle": "Témoignages de développeurs et fondateurs ayant lancé leur startup IA avec DaTools.",
     "testimonials": [
       {
-        "quote": "ShipBase a rendu le passage de l’idée au produit plus simple que jamais. Ses modèles complets, scripts et fondations d’infrastructure m’évitent de passer du temps sur le développement de base. Je le recommande vivement aux fondateurs qui veulent lancer rapidement leur SaaS.",
+        "quote": "DaTools a rendu le passage de l’idée au produit plus simple que jamais. Ses modèles complets, scripts et fondations d’infrastructure m’évitent de passer du temps sur le développement de base. Je le recommande vivement aux fondateurs qui veulent lancer rapidement leur SaaS.",
         "author": "Auteur de AITDK",
         "role": "Développeur indépendant"
       },
       {
-        "quote": "ShipBase a grandement simplifié la mise en place des paiements et toute la mécanique de commercialisation, ce qui nous a permis de nous concentrer sur les fonctionnalités qui comptent. Si vous voulez expédier et scaler votre SaaS IA rapidement, ShipBase est une évidence !",
+        "quote": "DaTools a grandement simplifié la mise en place des paiements et toute la mécanique de commercialisation, ce qui nous a permis de nous concentrer sur les fonctionnalités qui comptent. Si vous voulez expédier et scaler votre SaaS IA rapidement, DaTools est une évidence !",
         "author": "Scar",
         "role": "Ingénieur Front-end"
       },
       {
-        "quote": "J’ai utilisé ShipBase et lancé un nouveau site en 8 minutes, y compris connexion/paiement, incroyable !",
+        "quote": "J’ai utilisé DaTools et lancé un nouveau site en 8 minutes, y compris connexion/paiement, incroyable !",
         "author": "Lafe",
         "role": "Tech Lead"
       }
     ],
-    "productShowcaseTitle": "Startups SaaS IA construites avec ShipBase",
-    "productShowcaseSubtitle": "Découvrez de superbes applications SaaS IA réalisées avec ShipBase",
+    "productShowcaseTitle": "Startups SaaS IA construites avec DaTools",
+    "productShowcaseSubtitle": "Découvrez de superbes applications SaaS IA réalisées avec DaTools",
     "showcaseItems": [
       {
         "name": "Raphael AI",
@@ -181,7 +181,7 @@
         "category": "Plateforme sociale"
       }
     ],
-    "statsTitle": "Les gens adorent ShipBase",
+    "statsTitle": "Les gens adorent DaTools",
     "statsSubtitle": "pour sa facilité d’usage et sa rapidité d’expédition",
     "stats": [
       {
@@ -200,41 +200,41 @@
         "description": "Pour expédier"
       }
     ],
-    "faqTitle": "Questions fréquentes sur ShipBase",
+    "faqTitle": "Questions fréquentes sur DaTools",
     "faqSubtitle": "Une autre question ? Contactez-nous sur Discord ou par e-mail.",
     "faqs": [
       {
-        "question": "Qu’est-ce que ShipBase exactement et comment ça marche ?",
-        "answer": "ShipBase est un boilerplate NextJS complet, conçu spécifiquement pour créer des startups SaaS IA. Il fournit des modèles prêts à l’emploi, une mise en place d’infrastructure et des outils de déploiement qui vous aident à lancer votre activité en quelques heures plutôt qu’en plusieurs jours."
+        "question": "Qu’est-ce que DaTools exactement et comment ça marche ?",
+        "answer": "DaTools est un boilerplate NextJS complet, conçu spécifiquement pour créer des startups SaaS IA. Il fournit des modèles prêts à l’emploi, une mise en place d’infrastructure et des outils de déploiement qui vous aident à lancer votre activité en quelques heures plutôt qu’en plusieurs jours."
       },
       {
-        "question": "Ai-je besoin de compétences techniques avancées pour utiliser ShipBase ?",
-        "answer": "Des connaissances de base en programmation sont utiles, mais ShipBase est pensé pour les développeurs. Nos modèles et notre documentation facilitent la prise en main, même si vous n’êtes pas expert en IA ou en cloud."
+        "question": "Ai-je besoin de compétences techniques avancées pour utiliser DaTools ?",
+        "answer": "Des connaissances de base en programmation sont utiles, mais DaTools est pensé pour les développeurs. Nos modèles et notre documentation facilitent la prise en main, même si vous n’êtes pas expert en IA ou en cloud."
       },
       {
-        "question": "Quels types de SaaS IA puis-je créer avec ShipBase ?",
-        "answer": "ShipBase couvre un large éventail d’applications IA, de la génération de contenu aux outils d’analyse de données. Nos modèles couvrent des cas d’usage populaires comme les chatbots IA, les générateurs de contenu, les apps de traitement d’images, et plus encore."
+        "question": "Quels types de SaaS IA puis-je créer avec DaTools ?",
+        "answer": "DaTools couvre un large éventail d’applications IA, de la génération de contenu aux outils d’analyse de données. Nos modèles couvrent des cas d’usage populaires comme les chatbots IA, les générateurs de contenu, les apps de traitement d’images, et plus encore."
       },
       {
-        "question": "Combien de temps faut-il généralement pour lancer avec ShipBase ?",
-        "answer": "Avec ShipBase, vous pouvez disposer d’un prototype fonctionnel en quelques heures et d’une application prête pour la production également en quelques heures. Le déploiement en un clic et l’infrastructure préconfigurée réduisent fortement le cycle de développement traditionnel."
+        "question": "Combien de temps faut-il généralement pour lancer avec DaTools ?",
+        "answer": "Avec DaTools, vous pouvez disposer d’un prototype fonctionnel en quelques heures et d’une application prête pour la production également en quelques heures. Le déploiement en un clic et l’infrastructure préconfigurée réduisent fortement le cycle de développement traditionnel."
       },
       {
-        "question": "Que comprend l’infrastructure ShipBase ?",
-        "answer": "ShipBase fournit un stack complet comprenant authentification, base de données, intégration d’API, traitement des paiements et déploiement cloud scalable. Tout est préconfiguré selon les bonnes pratiques du secteur."
+        "question": "Que comprend l’infrastructure DaTools ?",
+        "answer": "DaTools fournit un stack complet comprenant authentification, base de données, intégration d’API, traitement des paiements et déploiement cloud scalable. Tout est préconfiguré selon les bonnes pratiques du secteur."
       },
       {
         "question": "Puis-je personnaliser les modèles pour correspondre à ma marque ?",
-        "answer": "Absolument ! Tous les modèles ShipBase sont entièrement personnalisables. Vous pouvez modifier le design, les fonctionnalités et le comportement pour coller à votre identité de marque et à vos besoins tout en conservant une base robuste."
+        "answer": "Absolument ! Tous les modèles DaTools sont entièrement personnalisables. Vous pouvez modifier le design, les fonctionnalités et le comportement pour coller à votre identité de marque et à vos besoins tout en conservant une base robuste."
       }
     ],
     "finalCtaTitle": "Expédiez votre premier SaaS IA",
-    "finalCtaSubtitle": "Commencez ici, expédiez avec ShipBase.",
-    "finalCtaButton": "Obtenir ShipBase",
+    "finalCtaSubtitle": "Commencez ici, expédiez avec DaTools.",
+    "finalCtaButton": "Obtenir DaTools",
     "finalCtaSecondary": "Lire la documentation"
   },
   "authPanel": {
-    "title": "Se connecter à ShipBase",
+    "title": "Se connecter à DaTools",
     "description": "Authentifiez-vous avec Google, GitHub ou un lien magique propulsé par Better Auth.",
     "signedInAs": "Connecté en tant que {name}",
     "sessionLabel": "ID de session : {id}",
@@ -310,14 +310,14 @@
     "privacyPolicy": "Politique de confidentialité",
     "termsOfService": "Conditions d’utilisation",
     "cookiePolicy": "Politique relative aux cookies",
-    "copyright": "© 2024 ShipBase. Tous droits réservés.",
+    "copyright": "© 2024 DaTools. Tous droits réservés.",
     "madeWithLove": "Fait avec ❤️"
   },
   "pages": {
     "features": {
       "title": "Fonctionnalités",
       "subtitle": "Des fonctionnalités puissantes pour accélérer votre développement",
-      "description": "Découvrez l’ensemble d’outils et de fonctionnalités qui font de ShipBase la plateforme idéale pour les applications SaaS modernes.",
+      "description": "Découvrez l’ensemble d’outils et de fonctionnalités qui font de DaTools la plateforme idéale pour les applications SaaS modernes.",
       "coreFeatures": {
         "title": "Fonctionnalités de base",
         "subtitle": "Une solution complète pensée pour les SaaS modernes, pour vous concentrer sur l’innovation produit plutôt que sur l’infrastructure",
@@ -455,8 +455,8 @@
         ]
       },
       "comparison": {
-        "title": "Pourquoi choisir ShipBase",
-        "subtitle": "Comparé aux méthodes traditionnelles, ShipBase vous fait gagner 90 % de temps de développement",
+        "title": "Pourquoi choisir DaTools",
+        "subtitle": "Comparé aux méthodes traditionnelles, DaTools vous fait gagner 90 % de temps de développement",
         "traditional": {
           "title": "Développement traditionnel",
           "items": [
@@ -477,8 +477,8 @@
             }
           ]
         },
-        "shipbase": {
-          "title": "Avec ShipBase",
+        "datools": {
+          "title": "Avec DaTools",
           "items": [
             {
               "text": "Configuration de base en 5 minutes"
@@ -500,8 +500,8 @@
       },
       "cta": {
         "title": "Prêt à créer votre SaaS IA ?",
-        "subtitle": "Obtenez ShipBase maintenant et lancez votre prochain projet en quelques minutes",
-        "primaryButton": "Obtenir ShipBase",
+        "subtitle": "Obtenez DaTools maintenant et lancez votre prochain projet en quelques minutes",
+        "primaryButton": "Obtenir DaTools",
         "secondaryButton": "Voir la documentation"
       }
     },
@@ -646,13 +646,13 @@
       "description": "Guides complets, références d’API et tutoriels pour créer des applications remarquables.",
       "quickStart": {
         "title": "Démarrage rapide",
-        "subtitle": "Démarrez avec ShipBase en quelques étapes pour construire votre SaaS IA",
+        "subtitle": "Démarrez avec DaTools en quelques étapes pour construire votre SaaS IA",
         "steps": [
           {
             "step": "1",
-            "title": "Installer ShipBase",
+            "title": "Installer DaTools",
             "description": "Cloner le dépôt et installer les dépendances",
-            "code": "git clone [https://github.com/your-repo/shipbase\ncd](https://github.com/your-repo/shipbase\ncd) shipbase\npnpm install"
+            "code": "git clone [https://github.com/your-repo/datools\ncd](https://github.com/your-repo/datools\ncd) datools\npnpm install"
           },
           {
             "step": "2",
@@ -680,7 +680,7 @@
         "sections": [
           {
             "title": "Démarrage rapide",
-            "description": "Prenez en main ShipBase en 5 minutes",
+            "description": "Prenez en main DaTools en 5 minutes",
             "icon": "Rocket",
             "links": [
               {
@@ -699,7 +699,7 @@
           },
           {
             "title": "Fonctionnalités principales",
-            "description": "Découvrez le cœur de ShipBase",
+            "description": "Découvrez le cœur de DaTools",
             "icon": "Code",
             "links": [
               {
@@ -825,7 +825,7 @@
     "integrations": {
       "title": "Intégrations",
       "subtitle": "Connectez vos outils préférés",
-      "description": "Intégrez ShipBase à votre flux de travail et aux services tiers en toute simplicité.",
+      "description": "Intégrez DaTools à votre flux de travail et aux services tiers en toute simplicité.",
       "categories": [
         {
           "name": "Authentification & Sécurité",
@@ -1130,19 +1130,19 @@
             "step": "3",
             "title": "Installer le paquet d’intégration",
             "description": "Installez le paquet correspondant et ses dépendances",
-            "code": "# Installer le paquet d’intégration\npnpm add @shipbase/integrations-stripe"
+            "code": "# Installer le paquet d’intégration\npnpm add @datools/integrations-stripe"
           },
           {
             "step": "4",
             "title": "Initialiser l’intégration",
             "description": "Initialisez le service d’intégration dans votre application",
-            "code": "# Initialiser l’intégration\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\nconst stripe = new StripeIntegration()"
+            "code": "# Initialiser l’intégration\nimport { StripeIntegration } from '@datools/integrations-stripe'\nconst stripe = new StripeIntegration()"
           }
         ]
       },
       "cta": {
         "title": "Prêt à intégrer ?",
-        "subtitle": "Commencez dès maintenant à utiliser les puissantes intégrations de ShipBase",
+        "subtitle": "Commencez dès maintenant à utiliser les puissantes intégrations de DaTools",
         "primaryButton": "Voir la documentation",
         "secondaryButton": "Contacter le support"
       }
@@ -1157,7 +1157,7 @@
         "subtitle": "Articles d’aide les plus consultés",
         "articles": [
           {
-            "title": "Bien débuter avec ShipBase",
+            "title": "Bien débuter avec DaTools",
             "description": "Apprenez à configurer et déployer rapidement votre premier SaaS IA",
             "href": "#",
             "tags": [
@@ -1228,7 +1228,7 @@
           "articles": [
             {
               "title": "Installation et configuration",
-              "description": "Créer un projet ShipBase depuis zéro",
+              "description": "Créer un projet DaTools depuis zéro",
               "href": "#",
               "tags": [
                 "Installation",
@@ -1395,24 +1395,24 @@
         "subtitle": "Trouvez rapidement les réponses dont vous avez besoin",
         "faqs": [
           {
-            "question": "Quels services IA ShipBase prend-il en charge ?",
-            "answer": "ShipBase prend en charge les principaux services IA comme OpenAI, Anthropic, Google AI et offre une interface unifiée pour gérer différents fournisseurs."
+            "question": "Quels services IA DaTools prend-il en charge ?",
+            "answer": "DaTools prend en charge les principaux services IA comme OpenAI, Anthropic, Google AI et offre une interface unifiée pour gérer différents fournisseurs."
           },
           {
-            "question": "Comment personnaliser l’interface de ShipBase ?",
-            "answer": "ShipBase utilise Tailwind CSS et Shadcn/UI, ce qui facilite la personnalisation. Tous les composants sont modulables et prennent en charge le changement de thème."
+            "question": "Comment personnaliser l’interface de DaTools ?",
+            "answer": "DaTools utilise Tailwind CSS et Shadcn/UI, ce qui facilite la personnalisation. Tous les composants sont modulables et prennent en charge le changement de thème."
           },
           {
-            "question": "ShipBase prend-il en charge plusieurs langues ?",
-            "answer": "Oui, ShipBase dispose d’un support i18n intégré. Il prend actuellement en charge le chinois, l’anglais et le japonais, et vous pouvez ajouter d’autres langues facilement."
+            "question": "DaTools prend-il en charge plusieurs langues ?",
+            "answer": "Oui, DaTools dispose d’un support i18n intégré. Il prend actuellement en charge le chinois, l’anglais et le japonais, et vous pouvez ajouter d’autres langues facilement."
           },
           {
-            "question": "Comment mettre à niveau les versions de ShipBase ?",
-            "answer": "Mettez à jour ShipBase en récupérant le dernier code via Git. Nous recommandons de sauvegarder votre code personnalisé avant toute mise à niveau."
+            "question": "Comment mettre à niveau les versions de DaTools ?",
+            "answer": "Mettez à jour DaTools en récupérant le dernier code via Git. Nous recommandons de sauvegarder votre code personnalisé avant toute mise à niveau."
           },
           {
-            "question": "Qu’en est-il des performances de ShipBase ?",
-            "answer": "ShipBase est basé sur Next.js 14+ avec Server Components et prise en charge d’Edge Runtime, offrant d’excellentes performances."
+            "question": "Qu’en est-il des performances de DaTools ?",
+            "answer": "DaTools est basé sur Next.js 14+ avec Server Components et prise en charge d’Edge Runtime, offrant d’excellentes performances."
           },
           {
             "question": "Comment obtenir du support technique ?",
@@ -1449,9 +1449,9 @@
         {
           "icon": "Zap",
           "title": "Support e-mail",
-          "description": "Envoyez un e-mail à [support@shipbase.com](mailto:support@shipbase.com)",
+          "description": "Envoyez un e-mail à [support@datools.org](mailto:support@datools.org)",
           "action": "Envoyer un e-mail",
-          "href": "mailto:support@shipbase.com"
+          "href": "mailto:support@datools.org"
         },
         {
           "icon": "Shield",
@@ -1465,23 +1465,23 @@
           "title": "Partenariats Entreprise",
           "description": "Support de niveau entreprise et développement sur mesure",
           "action": "Contacter les ventes",
-          "href": "mailto:sales@shipbase.com"
+          "href": "mailto:sales@datools.org"
         }
       ],
       "team": [
         {
           "name": "Support technique",
-          "email": "[support@shipbase.com](mailto:support@shipbase.com)",
+          "email": "[support@datools.org](mailto:support@datools.org)",
           "description": "Problèmes techniques et dépannage"
         },
         {
           "name": "Équipe commerciale",
-          "email": "[sales@shipbase.com](mailto:sales@shipbase.com)",
+          "email": "[sales@datools.org](mailto:sales@datools.org)",
           "description": "Partenariats et services sur mesure"
         },
         {
           "name": "Retour produit",
-          "email": "[feedback@shipbase.com](mailto:feedback@shipbase.com)",
+          "email": "[feedback@datools.org](mailto:feedback@datools.org)",
           "description": "Suggestions et demandes de fonctionnalités"
         }
       ],
@@ -1506,16 +1506,16 @@
     "status": {
       "title": "État du service",
       "subtitle": "Statut système en temps réel",
-      "description": "Surveillez l’état actuel de tous les services et de l’infrastructure ShipBase.",
+      "description": "Surveillez l’état actuel de tous les services et de l’infrastructure DaTools.",
       "overview": {
         "title": "Vue d’ensemble de l’état",
-        "subtitle": "Surveillance en temps réel de tous les services ShipBase",
+        "subtitle": "Surveillance en temps réel de tous les services DaTools",
         "allSystemsOperational": "Tous les systèmes opérationnels",
         "lastUpdated": "Dernière mise à jour"
       },
       "services": {
         "title": "État des services",
-        "subtitle": "Statut actuel de tous les services ShipBase",
+        "subtitle": "Statut actuel de tous les services DaTools",
         "api": {
           "name": "Services API",
           "description": "Points de terminaison et services essentiels"
@@ -1562,11 +1562,11 @@
       "lastUpdated": "Dernière mise à jour : 1 janvier 2024",
       "introduction": {
         "title": "Introduction",
-        "content": "Bienvenue sur ShipBase, le **boilerplate NextJS** conçu pour vous aider à créer des startups SaaS IA rapidement et efficacement. Chez ShipBase, votre confidentialité est primordiale ; cette politique explique comment nous collectons, utilisons et protégeons vos informations personnelles lorsque vous utilisez nos services."
+        "content": "Bienvenue sur DaTools, le **boilerplate NextJS** conçu pour vous aider à créer des startups SaaS IA rapidement et efficacement. Chez DaTools, votre confidentialité est primordiale ; cette politique explique comment nous collectons, utilisons et protégeons vos informations personnelles lorsque vous utilisez nos services."
       },
       "informationCollection": {
         "title": "Collecte et utilisation des informations",
-        "subtitle": "Nous collectons les types de données suivants pour vous offrir une meilleure expérience avec ShipBase :",
+        "subtitle": "Nous collectons les types de données suivants pour vous offrir une meilleure expérience avec DaTools :",
         "accountInfo": {
           "title": "Informations de compte",
           "whatWeCollect": "Ce que nous collectons : votre nom, votre adresse e-mail et toute information fournie lors de la création d’un compte.",
@@ -1574,12 +1574,12 @@
         },
         "usageDetails": {
           "title": "Détails d’utilisation",
-          "whatWeCollect": "Ce que nous collectons : informations sur votre utilisation de ShipBase, y compris vos interactions, les fonctionnalités consultées et la fréquence d’utilisation.",
+          "whatWeCollect": "Ce que nous collectons : informations sur votre utilisation de DaTools, y compris vos interactions, les fonctionnalités consultées et la fréquence d’utilisation.",
           "purpose": "Finalité : analyser l’engagement et améliorer nos services."
         },
         "deviceInfo": {
           "title": "Informations sur l’appareil",
-          "whatWeCollect": "Ce que nous collectons : type d’appareil, système d’exploitation et navigateur utilisés pour accéder à ShipBase.",
+          "whatWeCollect": "Ce que nous collectons : type d’appareil, système d’exploitation et navigateur utilisés pour accéder à DaTools.",
           "purpose": "Finalité : optimiser nos services pour différents appareils et assurer la compatibilité."
         },
         "cookies": {
@@ -1613,11 +1613,11 @@
       "contactUs": {
         "title": "Nous contacter",
         "content": "Pour toute question sur cette politique ou nos pratiques de données, contactez-nous :",
-        "copyrightOwner": "Titulaire du droit d’auteur : shipbase.ai",
-        "email": "E-mail : [support@shipbase.ai](mailto:support@shipbase.ai)"
+        "copyrightOwner": "Titulaire du droit d’auteur : datools.ai",
+        "email": "E-mail : [support@datools.ai](mailto:support@datools.ai)"
       },
       "consent": {
-        "content": "En utilisant ShipBase, vous consentez à notre politique de confidentialité et en acceptez les termes. Merci de votre confiance !"
+        "content": "En utilisant DaTools, vous consentez à notre politique de confidentialité et en acceptez les termes. Merci de votre confiance !"
       }
     },
     "terms": {
@@ -1627,11 +1627,11 @@
       "lastUpdated": "Dernière mise à jour : 1 janvier 2024",
       "introduction": {
         "title": "Introduction et acceptation",
-        "content": "Bienvenue sur **ShipBase**, un boilerplate NextJS pour créer des startups SaaS IA rapidement et efficacement. En accédant ou en utilisant notre service, vous acceptez d’être lié par ces conditions. Si vous n’êtes pas d’accord, n’utilisez pas le service."
+        "content": "Bienvenue sur **DaTools**, un boilerplate NextJS pour créer des startups SaaS IA rapidement et efficacement. En accédant ou en utilisant notre service, vous acceptez d’être lié par ces conditions. Si vous n’êtes pas d’accord, n’utilisez pas le service."
       },
       "serviceUse": {
         "title": "Utilisation du service",
-        "content": "ShipBase fournit une plateforme complète pour créer et lancer des startups SaaS IA grâce à des modèles et une infrastructure préconstruits. Vous vous engagez à l’utiliser conformément aux lois applicables."
+        "content": "DaTools fournit une plateforme complète pour créer et lancer des startups SaaS IA grâce à des modèles et une infrastructure préconstruits. Vous vous engagez à l’utiliser conformément aux lois applicables."
       },
       "userAccounts": {
         "title": "Comptes utilisateur et inscription",
@@ -1639,10 +1639,10 @@
       },
       "intellectualProperty": {
         "title": "Contenu et droits de propriété intellectuelle",
-        "content": "Tout le contenu fourni via ShipBase (modèles, code, configuration d’infrastructure, documentation, etc.) est protégé par le droit d’auteur. Le titulaire du droit d’auteur de ShipBase est **shipbase.ai**.",
+        "content": "Tout le contenu fourni via DaTools (modèles, code, configuration d’infrastructure, documentation, etc.) est protégé par le droit d’auteur. Le titulaire du droit d’auteur de DaTools est **datools.ai**.",
         "points": [
-          "Vous reconnaissez ne pas être propriétaire de la technologie sous-jacente du service ShipBase et vous vous engagez à respecter les droits de shipbase.ai et des tiers.",
-          "Vous conservez la propriété de vos implémentations et personnalisations, mais la plateforme ShipBase et ses modèles restent la propriété de shipbase.ai."
+          "Vous reconnaissez ne pas être propriétaire de la technologie sous-jacente du service DaTools et vous vous engagez à respecter les droits de datools.ai et des tiers.",
+          "Vous conservez la propriété de vos implémentations et personnalisations, mais la plateforme DaTools et ses modèles restent la propriété de datools.ai."
         ]
       },
       "prohibitedActivities": {
@@ -1650,7 +1650,7 @@
         "content": "Vous vous engagez à ne pas :",
         "activities": [
           "Accéder ou distribuer sans autorisation notre code et nos modèles propriétaires",
-          "Revendre ou redistribuer les modèles ShipBase sans autorisation",
+          "Revendre ou redistribuer les modèles DaTools sans autorisation",
           "Perturber la sécurité ou les performances du service",
           "Utiliser le service à des fins illégales ou non autorisées",
           "Contourner toute fonctionnalité de sécurité"
@@ -1658,7 +1658,7 @@
       },
       "privacyData": {
         "title": "Confidentialité et collecte de données",
-        "content": "ShipBase collecte les types de données suivants :",
+        "content": "DaTools collecte les types de données suivants :",
         "dataTypes": [
           "Informations de compte : données fournies lors de la création d’un compte",
           "Détails d’utilisation : données liées à votre activité",
@@ -1687,15 +1687,15 @@
       },
       "liability": {
         "title": "Limitation de responsabilité",
-        "content": "Dans la limite permise par la loi, shipbase.ai n’est pas responsable des dommages directs, indirects, fortuits, spéciaux, consécutifs ou punitifs liés à l’utilisation ou l’impossibilité d’utiliser le service."
+        "content": "Dans la limite permise par la loi, datools.ai n’est pas responsable des dommages directs, indirects, fortuits, spéciaux, consécutifs ou punitifs liés à l’utilisation ou l’impossibilité d’utiliser le service."
       },
       "indemnification": {
         "title": "Indemnisation",
-        "content": "Vous acceptez d’indemniser et de tenir indemnes shipbase.ai, ses affiliés et leurs dirigeants, directeurs, employés et agents de toute réclamation ou perte liée à votre utilisation du service ou à une violation des présentes."
+        "content": "Vous acceptez d’indemniser et de tenir indemnes datools.ai, ses affiliés et leurs dirigeants, directeurs, employés et agents de toute réclamation ou perte liée à votre utilisation du service ou à une violation des présentes."
       },
       "governingLaw": {
         "title": "Droit applicable et litiges",
-        "content": "Ces conditions sont régies par les lois de la juridiction où opère shipbase.ai, sans égard aux conflits de lois. Tout litige sera résolu par arbitrage contraignant conformément aux lois applicables."
+        "content": "Ces conditions sont régies par les lois de la juridiction où opère datools.ai, sans égard aux conflits de lois. Tout litige sera résolu par arbitrage contraignant conformément aux lois applicables."
       },
       "changes": {
         "title": "Modifications des conditions",
@@ -1703,10 +1703,10 @@
       },
       "contact": {
         "title": "Contact",
-        "content": "Pour toute question concernant ces conditions, contactez-nous à [support@shipbase.ai](mailto:support@shipbase.ai)."
+        "content": "Pour toute question concernant ces conditions, contactez-nous à [support@datools.ai](mailto:support@datools.ai)."
       },
       "acknowledgment": {
-        "content": "En utilisant ShipBase, vous reconnaissez avoir lu, compris et accepté ces Conditions d’utilisation. Merci de choisir ShipBase !"
+        "content": "En utilisant DaTools, vous reconnaissez avoir lu, compris et accepté ces Conditions d’utilisation. Merci de choisir DaTools !"
       }
     },
     "cookies": {
@@ -1813,7 +1813,7 @@
       "contact": {
         "title": "Nous contacter",
         "content": "Pour toute question concernant cette politique relative aux cookies :",
-        "email": "E-mail : [support@shipbase.ai](mailto:support@shipbase.ai)"
+        "email": "E-mail : [support@datools.ai](mailto:support@datools.ai)"
       },
       "consent": {
         "content": "En continuant à utiliser notre site, vous consentez à l’utilisation de cookies conformément à cette politique."
@@ -1822,15 +1822,15 @@
     "login": {
       "title": "Connexion",
       "subtitle": "Heureux de vous revoir",
-      "description": "Connectez-vous pour poursuivre votre aventure avec ShipBase."
+      "description": "Connectez-vous pour poursuivre votre aventure avec DaTools."
     },
     "signup": {
       "title": "Commencer",
       "subtitle": "Créez votre compte",
-      "description": "Rejoignez des milliers de développeurs qui créent des applications incroyables avec ShipBase."
+      "description": "Rejoignez des milliers de développeurs qui créent des applications incroyables avec DaTools."
     },
     "profile": {
-      "title": "Profil utilisateur – ShipBase",
+      "title": "Profil utilisateur – DaTools",
       "subtitle": "Afficher et gérer vos informations",
       "description": "Affichez et gérez les informations de votre compte",
       "basicInfo": {
@@ -1859,7 +1859,7 @@
       "noNameSet": "Aucun nom défini"
     },
     "membership": {
-      "title": "Centre d’abonnement – ShipBase",
+      "title": "Centre d’abonnement – DaTools",
       "subtitle": "Gérez votre abonnement et vos avantages",
       "description": "Gérez votre formule et vos avantages",
       "currentPlan": {

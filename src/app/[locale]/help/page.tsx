@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: LocaleHelpPageProps) {
   
   if (!normalizedLocale) {
     return {
-      title: "Help Center - ShipBase",
+      title: "Help Center - DaTools",
       description: "Get the support you need",
       alternates: {
         canonical: buildCanonicalPath(undefined, "help"),
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: LocaleHelpPageProps) {
   const dictionary = getDictionary(normalizedLocale);
   
   return {
-    title: `${dictionary.pages.help.title} - ShipBase`,
+    title: `${dictionary.pages.help.title} - DaTools`,
     description: dictionary.pages.help.subtitle,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "help"),

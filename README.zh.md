@@ -1,4 +1,4 @@
-# ShipBase
+# DaTools
 
 > 一个基于 Next.js 15 构建的现代化、功能完整的 SaaS 起步模板，集成 Better Auth 认证、支付功能以及完整的国际化支持。
 
@@ -81,7 +81,7 @@
 1. **克隆仓库**
    ```bash
    git clone <repository-url>
-   cd shipbase
+   cd datools
    ```
 
 2. **安装依赖**
@@ -122,7 +122,7 @@
 
    # 应用配置
    NEXT_PUBLIC_WEB_URL=http://localhost:3000
-   NEXT_PUBLIC_PROJECT_NAME=ShipBase
+   NEXT_PUBLIC_PROJECT_NAME=DaTools
    PAY_PROVIDER=creem
 
    # Sitemap 和 SEO
@@ -163,7 +163,7 @@
 ## 🗂️ 项目结构
 
 ```
-shipbase/
+datools/
 ├── src/
 │   ├── app/                    # Next.js 应用路由
 │   │   ├── [locale]/          # 国际化路由

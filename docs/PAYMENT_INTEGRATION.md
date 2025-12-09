@@ -42,7 +42,7 @@ CREEM_PRODUCTS={"professional":"prod_xxx","enterprise":"prod_yyy"}
 # 应用配置
 NEXT_PUBLIC_WEB_URL=http://localhost:3000
 NEXT_PUBLIC_PAY_CANCEL_URL=/pricing
-NEXT_PUBLIC_PROJECT_NAME=ShipBase
+NEXT_PUBLIC_PROJECT_NAME=DaTools
 PAY_PROVIDER=creem
 ```
 

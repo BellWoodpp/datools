@@ -56,8 +56,8 @@ export async function generateMetadata({ params }: LocaleSignupPageProps) {
   
   if (!normalizedLocale) {
     return {
-      title: "Get Started - ShipBase",
-      description: "Join thousands of developers building amazing applications with ShipBase.",
+      title: "Get Started - DaTools",
+      description: "Join thousands of developers building amazing applications with DaTools.",
       alternates: {
         canonical: buildCanonicalPath(undefined, "signup"),
       },
@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: LocaleSignupPageProps) {
   const dictionary = getDictionary(normalizedLocale);
   
   return {
-    title: `${dictionary.pages.signup.title} - ShipBase`,
+    title: `${dictionary.pages.signup.title} - DaTools`,
     description: dictionary.pages.signup.description,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "signup"),

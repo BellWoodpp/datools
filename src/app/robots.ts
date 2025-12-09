@@ -7,7 +7,7 @@ import { getBaseUrl } from "@/lib/utils";
 // : MetadataRoute.Robots 是 TypeScript 类型，来自 Next.js 内置类型，意思是“这个函数必须返回一个符合 robots.txt 协议的对象”。
 export default function robots(): MetadataRoute.Robots {
   // 调用前面我们解释过的那个私有工具函数 getBaseUrl()（自动判断是 localhost 还是生产域名）。
-  // 这样生成的 sitemap 地址永远是正确的（比如 https://shipbase.com/sitemap.xml）
+  // 这样生成的 sitemap 地址永远是正确的（比如 https://datools.org/sitemap.xml）
   const baseUrl = getBaseUrl();
   
   // userAgent: '*',        // 对所有爬虫生效（Googlebot、Bingbot、百度蜘蛛等）

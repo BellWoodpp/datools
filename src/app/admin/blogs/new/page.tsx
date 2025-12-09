@@ -29,7 +29,7 @@ export default async function NewBlogPage() {
 
 export async function generateMetadata() {
   return {
-    title: "Create blog - ShipBase",
+    title: "Create blog - DaTools",
     description: "Create a new blog post",
     alternates: {
       canonical: buildCanonicalPath(undefined, "admin", "blogs", "new"),

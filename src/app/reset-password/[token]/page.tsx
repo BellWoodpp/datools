@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import { ResetPasswordPanel } from "@/components/auth/reset-password-panel";
+import { buildCanonicalPath } from "@/lib/seo";
 
 interface ResetPasswordTokenPageProps {
   params: Promise<{
@@ -20,3 +22,11 @@ export default async function ResetPasswordTokenPage({
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Reset password",
+  description: "Enter your reset token to set a new password.",
+  alternates: {
+    canonical: buildCanonicalPath(undefined, "reset-password"),
+  },
+};

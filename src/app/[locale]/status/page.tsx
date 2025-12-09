@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: LocaleStatusPageProps) {
   
   if (!normalizedLocale) {
     return {
-      title: "Service Status - ShipBase",
+      title: "Service Status - DaTools",
       description: "Real-time system status",
       alternates: {
         canonical: buildCanonicalPath(undefined, "status"),
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: LocaleStatusPageProps) {
   const dictionary = getDictionary(normalizedLocale);
   
   return {
-    title: `${dictionary.pages.status.title} - ShipBase`,
+    title: `${dictionary.pages.status.title} - DaTools`,
     description: dictionary.pages.status.subtitle,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "status"),

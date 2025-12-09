@@ -58,7 +58,7 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
   return (
     <section className="w-full max-w-md rounded-xl border border-black/10 bg-white p-6 shadow-lg shadow-black/5 dark:border-white/10 dark:bg-black dark:shadow-none">
       <header className="mb-6 space-y-1">
-        {/* 登录 Shipbase */}
+        {/* 登录 DaTools */}
         <h1 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
           {dictionary.title}
         </h1>

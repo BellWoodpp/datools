@@ -31,7 +31,7 @@ export default async function AdminBlogsPage() {
 
 export async function generateMetadata() {
   return {
-    title: "Blog management - ShipBase",
+    title: "Blog management - DaTools",
     description: "Manage blog posts",
     alternates: {
       canonical: buildCanonicalPath(undefined, "admin", "blogs"),

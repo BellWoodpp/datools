@@ -9,7 +9,7 @@
     "viewDetails": "查看详情",
     "promotionText": "🎁 前1000名客户享受$100优惠",
     "userCount": "来自250+满意用户",
-    "techStackTitle": "ShipBase 建立在巨人的肩膀上",
+    "techStackTitle": "DaTools 建立在巨人的肩膀上",
     "techStackItems": [
       {
         "name": "Next.js",
@@ -32,8 +32,8 @@
         "description": "部署平台"
       }
     ],
-    "featuresTitle": "什么是 ShipBase",
-    "featuresSubtitle": "ShipBase 是一个用于构建 AI SaaS 初创公司的 NextJS 模板。内置多种模板和组件。",
+    "featuresTitle": "什么是 DaTools",
+    "featuresSubtitle": "DaTools 是一个用于构建 AI SaaS 初创公司的 NextJS 模板。内置多种模板和组件。",
     "features": [
       {
         "title": "即用型模板",
@@ -48,7 +48,7 @@
         "description": "在几小时内而不是几天内将您的 AI SaaS 应用程序部署到生产环境。"
       }
     ],
-    "benefitsTitle": "为什么选择 ShipBase",
+    "benefitsTitle": "为什么选择 DaTools",
     "benefitsSubtitle": "获得启动 AI 初创公司所需的一切 - 从即用型模板到技术支持。",
     "benefits": [
       {
@@ -64,18 +64,18 @@
         "description": "获得专业技术支持，帮助您快速上手。"
       }
     ],
-    "launchStepsTitle": "如何使用 ShipBase 发布",
+    "launchStepsTitle": "如何使用 DaTools 发布",
     "launchStepsSubtitle": "通过三个简单步骤让您的 AI SaaS 初创公司运行：",
     "launchSteps": [
       {
         "step": "1",
-        "title": "获取 ShipBase",
-        "description": "一次性购买 ShipBase。检查您的电子邮件获取代码和文档。"
+        "title": "获取 DaTools",
+        "description": "一次性购买 DaTools。检查您的电子邮件获取代码和文档。"
       },
       {
         "step": "2",
         "title": "开始您的项目",
-        "description": "阅读文档并克隆 ShipBase 代码。开始构建您的 AI SaaS 初创公司。"
+        "description": "阅读文档并克隆 DaTools 代码。开始构建您的 AI SaaS 初创公司。"
       },
       {
         "step": "3",
@@ -88,7 +88,7 @@
         "description": "通过几个步骤将您的项目部署到生产环境，立即开始为客户服务。"
       }
     ],
-    "keyFeaturesTitle": "ShipBase 的关键特性",
+    "keyFeaturesTitle": "DaTools 的关键特性",
     "keyFeaturesSubtitle": "快速高效地启动 AI SaaS 初创公司所需的一切。",
     "keyFeatures": [
       {
@@ -116,27 +116,27 @@
         "description": "预配置的 AI 集成，内置积分系统和 API 销售。"
       }
     ],
-    "testimonialsTitle": "用户对 ShipBase 的评价",
-    "testimonialsSubtitle": "听听使用 ShipBase 启动 AI 初创公司的开发者和创始人的声音。",
+    "testimonialsTitle": "用户对 DaTools 的评价",
+    "testimonialsSubtitle": "听听使用 DaTools 启动 AI 初创公司的开发者和创始人的声音。",
     "testimonials": [
       {
-        "quote": "ShipBase 让从想法到产品的旅程变得比以往任何时候都简单。其全面的模板、脚本和基础基础设施意味着我几乎不需要花时间在基础开发上。我强烈推荐给希望快速启动 SaaS 业务的创始人。",
+        "quote": "DaTools 让从想法到产品的旅程变得比以往任何时候都简单。其全面的模板、脚本和基础基础设施意味着我几乎不需要花时间在基础开发上。我强烈推荐给希望快速启动 SaaS 业务的创始人。",
         "author": "AITDK 作者",
         "role": "独立开发者"
       },
       {
-        "quote": "ShipBase 让设置支付和处理商业化的所有细节变得超级简单，这样我们就可以专注于构建重要的功能。如果您想快速发布和扩展 AI SaaS，ShipBase 是不二之选！",
+        "quote": "DaTools 让设置支付和处理商业化的所有细节变得超级简单，这样我们就可以专注于构建重要的功能。如果您想快速发布和扩展 AI SaaS，DaTools 是不二之选！",
         "author": "Scar",
         "role": "前端工程师"
       },
       {
-        "quote": "我使用 ShipBase 在8分钟内启动了一个新网站，包括登录/支付，太棒了！",
+        "quote": "我使用 DaTools 在8分钟内启动了一个新网站，包括登录/支付，太棒了！",
         "author": "Lafe",
         "role": "技术负责人"
       }
     ],
     "productShowcaseTitle": "AI SaaS 初创公司展示",
-    "productShowcaseSubtitle": "看看使用 ShipBase 构建的令人惊叹的 AI SaaS 应用",
+    "productShowcaseSubtitle": "看看使用 DaTools 构建的令人惊叹的 AI SaaS 应用",
     "showcaseItems": [
       {
         "name": "Raphael AI",
@@ -175,7 +175,7 @@
         "category": "社交平台"
       }
     ],
-    "statsTitle": "人们喜爱 ShipBase",
+    "statsTitle": "人们喜爱 DaTools",
     "statsSubtitle": "因为它易于使用且发布快速",
     "stats": [
       {
@@ -194,37 +194,37 @@
         "description": "快速发布"
       }
     ],
-    "faqTitle": "关于 ShipBase 的常见问题",
+    "faqTitle": "关于 DaTools 的常见问题",
     "faqSubtitle": "还有其他问题？在 Discord 上联系我们或发送邮件。",
     "faqs": [
       {
-        "question": "ShipBase 到底是什么，它是如何工作的？",
-        "answer": "ShipBase 是专门为构建 AI SaaS 初创公司而设计的综合 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
+        "question": "DaTools 到底是什么，它是如何工作的？",
+        "answer": "DaTools 是专门为构建 AI SaaS 初创公司而设计的综合 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
       },
       {
-        "question": "使用 ShipBase 需要高级技术技能吗？",
-        "answer": "虽然基本的编程知识很有帮助，但 ShipBase 被设计为对开发者友好。我们的模板和文档让您即使不是 AI 或云基础设施专家也能轻松上手。"
+        "question": "使用 DaTools 需要高级技术技能吗？",
+        "answer": "虽然基本的编程知识很有帮助，但 DaTools 被设计为对开发者友好。我们的模板和文档让您即使不是 AI 或云基础设施专家也能轻松上手。"
       },
       {
-        "question": "我可以使用 ShipBase 构建什么类型的 AI SaaS？",
-        "answer": "ShipBase 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖了流行的用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
+        "question": "我可以使用 DaTools 构建什么类型的 AI SaaS？",
+        "answer": "DaTools 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖了流行的用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
       },
       {
-        "question": "使用 ShipBase 发布通常需要多长时间？",
-        "answer": "使用 ShipBase，您可以在几小时内拥有一个工作原型，在几小时内拥有一个生产就绪的应用程序。我们的一键部署和预配置基础设施大大减少了传统的数月开发周期。"
+        "question": "使用 DaTools 发布通常需要多长时间？",
+        "answer": "使用 DaTools，您可以在几小时内拥有一个工作原型，在几小时内拥有一个生产就绪的应用程序。我们的一键部署和预配置基础设施大大减少了传统的数月开发周期。"
       },
       {
-        "question": "ShipBase 基础设施包含什么？",
-        "answer": "ShipBase 提供完整的基础设施堆栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都预配置遵循行业最佳实践。"
+        "question": "DaTools 基础设施包含什么？",
+        "answer": "DaTools 提供完整的基础设施堆栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都预配置遵循行业最佳实践。"
       },
       {
         "question": "我可以自定义模板以匹配我的品牌吗？",
-        "answer": "当然可以！所有 ShipBase 模板都是完全可自定义的。您可以修改设计、功能和特性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。"
+        "answer": "当然可以！所有 DaTools 模板都是完全可自定义的。您可以修改设计、功能和特性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。"
       }
     ],
     "finalCtaTitle": "发布您的第一个 AI SaaS 初创公司",
-    "finalCtaSubtitle": "从这里开始，使用 ShipBase 发布。",
-    "finalCtaButton": "获取 ShipBase",
+    "finalCtaSubtitle": "从这里开始，使用 DaTools 发布。",
+    "finalCtaButton": "获取 DaTools",
     "finalCtaSecondary": "阅读文档"
   },
   "homeFeed": {
@@ -1188,14 +1188,14 @@
     "privacyPolicy": "隐私政策",
     "termsOfService": "服务条款",
     "cookiePolicy": "Cookie政策",
-    "copyright": "© 2024 ShipBase. 保留所有权利。",
+    "copyright": "© 2024 DaTools. 保留所有权利。",
     "madeWithLove": "由 ❤️ 制造"
   },
   "pages": {
     "features": {
       "title": "功能特性",
       "subtitle": "强大的功能加速您的开发",
-      "description": "发现全面的工具和功能集，让ShipBase成为现代SaaS应用程序的完美平台。",
+      "description": "发现全面的工具和功能集，让DaTools成为现代SaaS应用程序的完美平台。",
       "coreFeatures": {
         "title": "核心特性",
         "subtitle": "为现代 SaaS 应用量身定制的完整解决方案，让您专注于产品创新而非基础设施搭建",
@@ -1333,8 +1333,8 @@
         ]
       },
       "comparison": {
-        "title": "为什么选择 ShipBase",
-        "subtitle": "与传统开发方式相比，ShipBase 让您节省 90% 的开发时间",
+        "title": "为什么选择 DaTools",
+        "subtitle": "与传统开发方式相比，DaTools 让您节省 90% 的开发时间",
         "traditional": {
           "title": "传统开发",
           "items": [
@@ -1355,8 +1355,8 @@
             }
           ]
         },
-        "shipbase": {
-          "title": "使用 ShipBase",
+        "datools": {
+          "title": "使用 DaTools",
           "items": [
             {
               "text": "5 分钟内完成基础设置"
@@ -1378,8 +1378,8 @@
       },
       "cta": {
         "title": "准备开始构建您的 AI SaaS？",
-        "subtitle": "立即获取 ShipBase，在几分钟内启动您的下一个项目",
-        "primaryButton": "获取 ShipBase",
+        "subtitle": "立即获取 DaTools，在几分钟内启动您的下一个项目",
+        "primaryButton": "获取 DaTools",
         "secondaryButton": "查看文档"
       }
     },
@@ -1524,13 +1524,13 @@
       "description": "全面的指南、API参考和教程，帮助您构建出色的应用程序。",
       "quickStart": {
         "title": "快速开始",
-        "subtitle": "只需几个简单步骤，您就可以开始使用 ShipBase 构建您的 AI SaaS 应用",
+        "subtitle": "只需几个简单步骤，您就可以开始使用 DaTools 构建您的 AI SaaS 应用",
         "steps": [
           {
             "step": "1",
-            "title": "安装 ShipBase",
+            "title": "安装 DaTools",
             "description": "克隆仓库并安装依赖",
-            "code": "git clone https://github.com/your-repo/shipbase\\ncd shipbase\\npnpm install"
+            "code": "git clone https://github.com/your-repo/datools\\ncd datools\\npnpm install"
           },
           {
             "step": "2",
@@ -1558,7 +1558,7 @@
         "sections": [
           {
             "title": "快速开始",
-            "description": "5 分钟快速上手 ShipBase",
+            "description": "5 分钟快速上手 DaTools",
             "icon": "Rocket",
             "links": [
               {
@@ -1577,7 +1577,7 @@
           },
           {
             "title": "核心功能",
-            "description": "了解 ShipBase 的核心功能",
+            "description": "了解 DaTools 的核心功能",
             "icon": "Code",
             "links": [
               {
@@ -1703,7 +1703,7 @@
     "integrations": {
       "title": "集成",
       "subtitle": "与您喜爱的工具连接",
-      "description": "将ShipBase与您现有的工作流程和第三方服务无缝集成。",
+      "description": "将DaTools与您现有的工作流程和第三方服务无缝集成。",
       "categories": [
         {
           "name": "身份验证与安全",
@@ -2008,19 +2008,19 @@
             "step": "3",
             "title": "安装集成包",
             "description": "安装对应的集成包和依赖",
-            "code": "# 安装集成包\\npnpm add @shipbase/integrations-stripe"
+            "code": "# 安装集成包\\npnpm add @datools/integrations-stripe"
           },
           {
             "step": "4",
             "title": "初始化集成",
             "description": "在您的应用中初始化集成服务",
-            "code": "# 初始化集成\\nimport { StripeIntegration } from '@shipbase/integrations-stripe'\\nconst stripe = new StripeIntegration()"
+            "code": "# 初始化集成\\nimport { StripeIntegration } from '@datools/integrations-stripe'\\nconst stripe = new StripeIntegration()"
           }
         ]
       },
       "cta": {
         "title": "准备开始集成？",
-        "subtitle": "立即开始使用ShipBase的强大集成功能",
+        "subtitle": "立即开始使用DaTools的强大集成功能",
         "primaryButton": "查看文档",
         "secondaryButton": "联系支持"
       }
@@ -2035,7 +2035,7 @@
         "subtitle": "最常被查看的帮助文章",
         "articles": [
           {
-            "title": "如何开始使用 ShipBase",
+            "title": "如何开始使用 DaTools",
             "description": "了解如何快速设置和部署您的第一个 AI SaaS 应用",
             "href": "#",
             "tags": [
@@ -2106,7 +2106,7 @@
           "articles": [
             {
               "title": "安装和设置",
-              "description": "从零开始设置 ShipBase 项目",
+              "description": "从零开始设置 DaTools 项目",
               "href": "#",
               "tags": [
                 "安装",
@@ -2138,7 +2138,7 @@
         },
         {
           "title": "核心功能",
-          "description": "ShipBase 主要功能的使用指南",
+          "description": "DaTools 主要功能的使用指南",
           "icon": "Code",
           "articles": [
             {
@@ -2273,24 +2273,24 @@
         "subtitle": "快速找到您需要的答案",
         "faqs": [
           {
-            "question": "ShipBase 支持哪些 AI 服务？",
-            "answer": "ShipBase 支持 OpenAI、Anthropic、Google AI 等主流 AI 服务，并提供了统一的接口来管理不同的 AI 提供商。"
+            "question": "DaTools 支持哪些 AI 服务？",
+            "answer": "DaTools 支持 OpenAI、Anthropic、Google AI 等主流 AI 服务，并提供了统一的接口来管理不同的 AI 提供商。"
           },
           {
-            "question": "如何自定义 ShipBase 的界面？",
-            "answer": "ShipBase 使用 Tailwind CSS 和 Shadcn/UI，您可以轻松自定义样式。所有组件都是可定制的，支持主题切换。"
+            "question": "如何自定义 DaTools 的界面？",
+            "answer": "DaTools 使用 Tailwind CSS 和 Shadcn/UI，您可以轻松自定义样式。所有组件都是可定制的，支持主题切换。"
           },
           {
-            "question": "ShipBase 是否支持多语言？",
-            "answer": "是的，ShipBase 内置了国际化支持，目前支持中文、英文和日文，您可以轻松添加更多语言。"
+            "question": "DaTools 是否支持多语言？",
+            "answer": "是的，DaTools 内置了国际化支持，目前支持中文、英文和日文，您可以轻松添加更多语言。"
           },
           {
-            "question": "如何升级 ShipBase 版本？",
-            "answer": "您可以通过 Git 拉取最新代码来升级 ShipBase。我们建议在升级前备份您的自定义代码。"
+            "question": "如何升级 DaTools 版本？",
+            "answer": "您可以通过 Git 拉取最新代码来升级 DaTools。我们建议在升级前备份您的自定义代码。"
           },
           {
-            "question": "ShipBase 的性能如何？",
-            "answer": "ShipBase 基于 Next.js 14+ 构建，支持 Server Components 和 Edge Runtime，具有出色的性能表现。"
+            "question": "DaTools 的性能如何？",
+            "answer": "DaTools 基于 Next.js 14+ 构建，支持 Server Components 和 Edge Runtime，具有出色的性能表现。"
           },
           {
             "question": "如何获得技术支持？",
@@ -2327,9 +2327,9 @@
         {
           "icon": "Zap",
           "title": "邮件支持",
-          "description": "发送邮件到 support@shipbase.com",
+          "description": "发送邮件到 support@datools.org",
           "action": "发送邮件",
-          "href": "mailto:support@shipbase.com"
+          "href": "mailto:support@datools.org"
         },
         {
           "icon": "Shield",
@@ -2343,23 +2343,23 @@
           "title": "企业合作",
           "description": "企业级支持和定制开发服务",
           "action": "联系销售",
-          "href": "mailto:sales@shipbase.com"
+          "href": "mailto:sales@datools.org"
         }
       ],
       "team": [
         {
           "name": "技术支持",
-          "email": "support@shipbase.com",
+          "email": "support@datools.org",
           "description": "技术问题和故障排除"
         },
         {
           "name": "销售团队",
-          "email": "sales@shipbase.com",
+          "email": "sales@datools.org",
           "description": "商业合作和定制服务"
         },
         {
           "name": "产品反馈",
-          "email": "feedback@shipbase.com",
+          "email": "feedback@datools.org",
           "description": "产品建议和功能请求"
         }
       ],
@@ -2384,16 +2384,16 @@
     "status": {
       "title": "服务状态",
       "subtitle": "实时系统状态",
-      "description": "监控所有ShipBase服务和基础设施的当前状态。",
+      "description": "监控所有DaTools服务和基础设施的当前状态。",
       "overview": {
         "title": "服务状态概览",
-        "subtitle": "实时监控所有ShipBase服务",
+        "subtitle": "实时监控所有DaTools服务",
         "allSystemsOperational": "所有系统正常运行",
         "lastUpdated": "最后更新"
       },
       "services": {
         "title": "服务状态",
-        "subtitle": "所有ShipBase服务的当前状态",
+        "subtitle": "所有DaTools服务的当前状态",
         "api": {
           "name": "API服务",
           "description": "核心API端点和服务"
@@ -2440,11 +2440,11 @@
       "lastUpdated": "最后更新：2024年1月1日",
       "introduction": {
         "title": "介绍",
-        "content": "欢迎使用 ShipBase，这是一个专为帮助您快速高效构建 AI SaaS 初创公司而设计的 **NextJS 模板**。在 ShipBase，您的隐私对我们至关重要，本隐私政策概述了您在使用我们的服务时，我们如何收集、使用和保护您的个人信息。"
+        "content": "欢迎使用 DaTools，这是一个专为帮助您快速高效构建 AI SaaS 初创公司而设计的 **NextJS 模板**。在 DaTools，您的隐私对我们至关重要，本隐私政策概述了您在使用我们的服务时，我们如何收集、使用和保护您的个人信息。"
       },
       "informationCollection": {
         "title": "信息收集和使用",
-        "subtitle": "我们收集以下类型的数据，以便在使用 ShipBase 时为您提供更好的体验：",
+        "subtitle": "我们收集以下类型的数据，以便在使用 DaTools 时为您提供更好的体验：",
         "accountInfo": {
           "title": "账户信息",
           "whatWeCollect": "我们收集的内容：这包括您的姓名、邮箱地址以及您在创建账户时提供的任何其他信息。",
@@ -2452,12 +2452,12 @@
         },
         "usageDetails": {
           "title": "使用详情",
-          "whatWeCollect": "我们收集的内容：关于您如何使用 ShipBase 的信息，包括您的交互、访问的功能和使用频率。",
+          "whatWeCollect": "我们收集的内容：关于您如何使用 DaTools 的信息，包括您的交互、访问的功能和使用频率。",
           "purpose": "目的：分析用户参与度并改进我们的服务。"
         },
         "deviceInfo": {
           "title": "设备信息",
-          "whatWeCollect": "我们收集的内容：关于您用于访问 ShipBase 的设备的数据，如设备类型、操作系统和浏览器类型。",
+          "whatWeCollect": "我们收集的内容：关于您用于访问 DaTools 的设备的数据，如设备类型、操作系统和浏览器类型。",
           "purpose": "目的：为不同设备优化我们的服务并确保兼容性。"
         },
         "cookies": {
@@ -2491,11 +2491,11 @@
       "contactUs": {
         "title": "联系我们",
         "content": "如果您对此隐私政策或我们的数据实践有任何疑问或担忧，请通过以下方式联系我们：",
-        "copyrightOwner": "版权所有者：shipbase.ai",
-        "email": "邮箱：support@shipbase.ai"
+        "copyrightOwner": "版权所有者：datools.ai",
+        "email": "邮箱：support@datools.ai"
       },
       "consent": {
-        "content": "通过使用 ShipBase，您同意我们的隐私政策并同意其条款。感谢您信任我们处理您的信息！"
+        "content": "通过使用 DaTools，您同意我们的隐私政策并同意其条款。感谢您信任我们处理您的信息！"
       }
     },
     "terms": {
@@ -2505,11 +2505,11 @@
       "lastUpdated": "最后更新：2024年1月1日",
       "introduction": {
         "title": "条款介绍和接受",
-        "content": "欢迎使用 **ShipBase**，这是一个专为帮助您快速高效构建 AI SaaS 初创公司而设计的 NextJS 模板。通过访问或使用我们的服务，您同意受本服务条款的约束。如果您不同意这些条款中的任何内容，请不要使用我们的服务。"
+        "content": "欢迎使用 **DaTools**，这是一个专为帮助您快速高效构建 AI SaaS 初创公司而设计的 NextJS 模板。通过访问或使用我们的服务，您同意受本服务条款的约束。如果您不同意这些条款中的任何内容，请不要使用我们的服务。"
       },
       "serviceUse": {
         "title": "服务使用",
-        "content": "ShipBase 为用户提供全面的平台，使用我们预构建的模板和基础设施来构建和启动 AI SaaS 初创公司。您同意按照所有适用的地方、州、国家和国际法律法规使用服务。"
+        "content": "DaTools 为用户提供全面的平台，使用我们预构建的模板和基础设施来构建和启动 AI SaaS 初创公司。您同意按照所有适用的地方、州、国家和国际法律法规使用服务。"
       },
       "userAccounts": {
         "title": "用户账户和注册",
@@ -2517,18 +2517,18 @@
       },
       "intellectualProperty": {
         "title": "内容和知识产权",
-        "content": "通过 ShipBase 提供的所有内容，包括但不限于模板、代码、基础设施设置和文档，均受版权法保护。ShipBase 的版权所有者是 **shipbase.ai**。",
+        "content": "通过 DaTools 提供的所有内容，包括但不限于模板、代码、基础设施设置和文档，均受版权法保护。DaTools 的版权所有者是 **datools.ai**。",
         "points": [
-          "您承认您不拥有构成 ShipBase 服务的基础技术或知识产权，您同意尊重 shipbase.ai 和任何第三方的知识产权。",
-          "虽然您保留对自定义实现和修改的所有权，但 ShipBase 核心平台和模板仍然是 shipbase.ai 的财产。"
+          "您承认您不拥有构成 DaTools 服务的基础技术或知识产权，您同意尊重 datools.ai 和任何第三方的知识产权。",
+          "虽然您保留对自定义实现和修改的所有权，但 DaTools 核心平台和模板仍然是 datools.ai 的财产。"
         ]
       },
       "prohibitedActivities": {
         "title": "禁止活动",
-        "content": "您同意在使用 ShipBase 时不从事以下任何禁止活动：",
+        "content": "您同意在使用 DaTools 时不从事以下任何禁止活动：",
         "activities": [
           "未经授权访问或分发我们的专有代码和模板",
-          "未经授权转售或重新分发 ShipBase 模板",
+          "未经授权转售或重新分发 DaTools 模板",
           "干扰或破坏服务的安全性或性能",
           "将服务用于任何非法或未经授权的目的",
           "试图绕过服务的任何安全功能"
@@ -2536,7 +2536,7 @@
       },
       "privacyData": {
         "title": "隐私和数据收集",
-        "content": "ShipBase 收集以下类型的数据：",
+        "content": "DaTools 收集以下类型的数据：",
         "dataTypes": [
           "账户信息：您在创建账户时提供的信息",
           "使用详情：与您在我们服务上的活动相关的数据",
@@ -2565,15 +2565,15 @@
       },
       "liability": {
         "title": "责任限制",
-        "content": "在法律允许的最大范围内，shipbase.ai 不对因使用或无法使用服务而产生的任何直接、间接、偶然、特殊、后果性或惩罚性损害承担责任。"
+        "content": "在法律允许的最大范围内，datools.ai 不对因使用或无法使用服务而产生的任何直接、间接、偶然、特殊、后果性或惩罚性损害承担责任。"
       },
       "indemnification": {
         "title": "赔偿",
-        "content": "您同意赔偿并使 shipbase.ai、其关联公司及其各自的官员、董事、员工和代理免受因您使用服务或违反这些条款而产生的任何索赔、损害、损失、负债和费用（包括律师费）。"
+        "content": "您同意赔偿并使 datools.ai、其关联公司及其各自的官员、董事、员工和代理免受因您使用服务或违反这些条款而产生的任何索赔、损害、损失、负债和费用（包括律师费）。"
       },
       "governingLaw": {
         "title": "适用法律和争议解决",
-        "content": "这些条款应受 shipbase.ai 运营所在司法管辖区的法律管辖和解释，不考虑其法律冲突条款。因这些条款或服务产生的任何争议将通过具有约束力的仲裁根据适用法律解决。"
+        "content": "这些条款应受 datools.ai 运营所在司法管辖区的法律管辖和解释，不考虑其法律冲突条款。因这些条款或服务产生的任何争议将通过具有约束力的仲裁根据适用法律解决。"
       },
       "changes": {
         "title": "条款变更",
@@ -2581,10 +2581,10 @@
       },
       "contact": {
         "title": "联系信息",
-        "content": "如果您对这些条款有任何疑问，请通过 support@shipbase.ai 联系我们。"
+        "content": "如果您对这些条款有任何疑问，请通过 support@datools.ai 联系我们。"
       },
       "acknowledgment": {
-        "content": "通过使用 ShipBase，您承认您已阅读、理解并同意受这些服务条款的约束。感谢您选择 ShipBase！"
+        "content": "通过使用 DaTools，您承认您已阅读、理解并同意受这些服务条款的约束。感谢您选择 DaTools！"
       }
     },
     "cookies": {
@@ -2691,7 +2691,7 @@
       "contact": {
         "title": "联系我们",
         "content": "如果您对此Cookie政策有任何疑问或需要更多信息，请通过以下方式联系我们：",
-        "email": "邮箱：support@shipbase.ai"
+        "email": "邮箱：support@datools.ai"
       },
       "consent": {
         "content": "通过继续使用我们的网站，您同意我们按照此Cookie政策使用Cookie。"
@@ -2700,15 +2700,15 @@
     "login": {
       "title": "登录",
       "subtitle": "欢迎回来",
-      "description": "登录您的账户，继续您的ShipBase之旅。"
+      "description": "登录您的账户，继续您的DaTools之旅。"
     },
     "signup": {
       "title": "开始使用",
       "subtitle": "创建您的账户",
-      "description": "加入数千名开发者，使用ShipBase构建出色的应用程序。"
+      "description": "加入数千名开发者，使用DaTools构建出色的应用程序。"
     },
     "profile": {
-      "title": "用户信息 - ShipBase",
+      "title": "用户信息 - DaTools",
       "subtitle": "查看和管理您的用户信息",
       "description": "查看和管理您的账户信息",
       "basicInfo": {
@@ -2737,7 +2737,7 @@
       "noNameSet": "未设置姓名"
     },
     "membership": {
-      "title": "会员中心 - ShipBase",
+      "title": "会员中心 - DaTools",
       "subtitle": "管理您的会员订阅和权益",
       "description": "管理您的订阅计划和会员权益",
       "currentPlan": {

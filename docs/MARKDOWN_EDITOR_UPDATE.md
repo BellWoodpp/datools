@@ -83,7 +83,7 @@ console.log("Hello, World!");
 
 ## 链接
 
-访问 [ShipBase](https://shipbase.ai) 了解更多。
+访问 [DaTools](https://datools.ai) 了解更多。
 ```
 
 ## 技术细节

@@ -230,11 +230,11 @@ function FeaturesContent({ dictionary }: { dictionary: FeaturesPageDictionary })
                   <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-400" />
                 </div>
                 <h3 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
-                  {dictionary.comparison.shipbase.title}
+                  {dictionary.comparison.datools.title}
                 </h3>
               </div>
               <ul className="space-y-3 text-neutral-600 dark:text-neutral-300">
-                {dictionary.comparison.shipbase.items.map((item, idx) => (
+                {dictionary.comparison.datools.items.map((item, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
                       <span className="text-green-500">✓</span>
                       <span>{item.text}</span>

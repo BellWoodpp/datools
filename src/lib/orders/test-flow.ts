@@ -22,7 +22,7 @@ const testOrderData = {
   customerEmail: "test@example.com",
   metadata: {
     locale: "zh",
-    project: "shipbase",
+    project: "datools",
     plan_id: "pro-plan",
     plan_period: "one-time",
   },

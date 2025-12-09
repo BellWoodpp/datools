@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: LocaleTermsPageProps) {
   
   if (!normalizedLocale) {
     return {
-      title: "Terms of Service - ShipBase",
+      title: "Terms of Service - DaTools",
       description: "Our terms and conditions",
       alternates: {
         canonical: buildCanonicalPath(undefined, "terms"),
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: LocaleTermsPageProps) {
   const dictionary = getDictionary(normalizedLocale);
   
   return {
-    title: `${dictionary.pages.terms.title} - ShipBase`,
+    title: `${dictionary.pages.terms.title} - DaTools`,
     description: dictionary.pages.terms.subtitle,
     alternates: {
       canonical: buildCanonicalPath(normalizedLocale, "terms"),

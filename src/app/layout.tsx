@@ -68,6 +68,13 @@ export default function RootLayout({
             gtag('config', 'G-RXYHLNX1JM');
           `}
         </Script>
+        {/* 谷歌广告代码 */}
+        <Script
+          id="google-adsense"
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6581885234407347"
+          crossOrigin="anonymous"
+        />
         <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="c31qQEYvGp/28tgAFpJaPQ"

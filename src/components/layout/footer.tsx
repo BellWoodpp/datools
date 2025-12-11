@@ -99,6 +99,14 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
+                  href={currentLocale === 'en' ? '/data-analysis-tools' : `/${currentLocale}/data-analysis-tools`}
+                  className="text-sm text-slate-300 hover:text-[#12c2e9] transition-colors"
+                >
+                  Data Tools
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={currentLocale === 'en' ? '/integrations' : `/${currentLocale}/integrations`}
                   className="text-sm text-slate-300 hover:text-[#12c2e9] transition-colors"
                 >

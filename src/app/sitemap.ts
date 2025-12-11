@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter((l) => l !== defaultLocale)
     .forEach((locale) => urls.add(buildUrl(locale, "/")));
 
+  // 数据分析工具聚合页
+  urls.add(buildUrl(defaultLocale, "/data-analysis-tools"));
+  locales
+    .filter((l) => l !== defaultLocale)
+    .forEach((locale) => urls.add(buildUrl(locale, "/data-analysis-tools")));
+
   // 从 home feed 的工具列表收集详情页链接
   const dictionary = getDictionary(defaultLocale);
   const toolLinks =
@@ -46,4 +52,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
   }));
 }
-

@@ -17,13 +17,13 @@ export function CategoryFilter({ categories, active, onChange }: CategoryFilterP
   if (!categories.length) return null;
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-col gap-2">
       {categories.map((cat) => (
         <Button
           key={cat.title}
           variant={cat.title === current ? "default" : "outline"}
           size="sm"
-          className="w-28 whitespace-normal text-center leading-tight h-auto min-h-[48px]"
+          className="w-full whitespace-normal text-left leading-tight h-auto min-h-[48px] justify-start"
           onClick={() => onChange(cat.title === current ? null : cat.title)}
         >
           {cat.title}

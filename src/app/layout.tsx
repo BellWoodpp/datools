@@ -24,8 +24,9 @@ const geistMono = Geist_Mono({
 
 // 暴露常量metadata
 export const metadata: Metadata = {
-  title: "DaTools - Enable secure sign-in methods for DaTools",
-  description: "Integrate Google and GitHub OAuth plus Magic Link email sign-in through Better Auth. Sessions stay on the server and automatically sync via HTTP-only cookies.",
+  title: "DaTools | Data Analysis Tools, BI, ETL, AI Assistants Directory",
+  description:
+    "Discover data analysis tools across BI/visualization, product analytics, experimentation, ETL/ELT, warehouses, notebooks, governance, and AI/AutoML assistants with quick links and guides.",
   icons: {
     icon: [{ url: "https://r2.datools.org/data-a-tools.ico" }],
     shortcut: [{ url: "https://r2.datools.org/data-a-tools.ico" }],

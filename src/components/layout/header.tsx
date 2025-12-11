@@ -116,6 +116,16 @@ export function Header() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link
+                  href={locale === 'en' ? '/data-analysis-tools' : `/${locale}/data-analysis-tools`}
+                  className={navigationMenuTriggerStyle({ className: "text-slate-100/90" })}
+                >
+                  Data Tools
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Link
                   href={locale === 'en' ? '/blogs' : `/${locale}/blogs`}
                   className={navigationMenuTriggerStyle({ className: "text-slate-100/90" })}
                 >
@@ -204,6 +214,14 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.header.pricing}
+            </Link>
+            {/* 工具聚合 */}
+            <Link
+              href={locale === 'en' ? '/data-analysis-tools' : `/${locale}/data-analysis-tools`}
+              className="block text-sm font-medium text-slate-100/80 hover:text-[#12c2e9] transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Data Tools
             </Link>
             {/* blog */}
             <Link

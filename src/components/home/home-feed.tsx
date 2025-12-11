@@ -202,8 +202,24 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   return (
     <main className="bg-gradient-to-b from-[#0a0f1f] via-[#0c1e3c] to-[#0a0f1f]">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 lg:flex-row lg:gap-10">
-        {/* 左侧：工具列表 */}
-        <div className="flex-1 space-y-4">
+        {/* 左侧导航：分类按钮 */}
+        {data.categories?.length ? (
+          <aside className="hidden lg:block fixed left-6 top-28 z-40 w-64">
+            <div className="space-y-3">
+              <p className="text-sm font-semibold text-slate-100 uppercase tracking-wide">
+                Categories
+              </p>
+              <CategoryFilter
+                categories={data.categories}
+                active={activeCategory}
+                onChange={handleCategoryChange}
+              />
+            </div>
+          </aside>
+        ) : null}
+
+        {/* 右侧：工具列表 */}
+        <div className="flex-1 space-y-4 lg:pl-72">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-semibold text-neutral-500 dark:text-neutral-400">
@@ -226,11 +242,13 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
               </span>
             </div>
             {data.categories?.length ? (
-              <CategoryFilter
-                categories={data.categories}
-                active={activeCategory}
-                onChange={handleCategoryChange}
-              />
+              <div className="lg:hidden">
+                <CategoryFilter
+                  categories={data.categories}
+                  active={activeCategory}
+                  onChange={handleCategoryChange}
+                />
+              </div>
             ) : null}
           </div>
 

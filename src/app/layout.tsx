@@ -75,6 +75,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6581885234407347"
           crossOrigin="anonymous"
         />
+        {/* ahrefs代码 */}
         <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="c31qQEYvGp/28tgAFpJaPQ"

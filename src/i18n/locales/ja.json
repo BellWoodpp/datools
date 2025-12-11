@@ -38,7 +38,7 @@
       },
       {
         "title": "ML / AutoML / AI アシスタント",
-        "items": ["DataRobot", "H2O.ai", "SageMaker", "Vertex AI", "Databricks AutoML", "Built-in ML (Power BI / BigQuery)", "GPT-style SQL/vis assistants"]
+        "items": ["DataRobot", "H2O.ai", "SageMaker", "Vertex AI", "Built-in ML (Power BI / BigQuery)", "GPT-style SQL/vis assistants"]
       },
       {
         "title": "オープンソース / 自社ホスト",
@@ -280,6 +280,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/product-analytics/amplitude",
         "officialUrl": "https://amplitude.com/",
+        "logo": "https://r2.datools.org/product-analytics/amplitude.png",
         "votes": 130,
         "comments": 12
       },
@@ -296,6 +297,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/product-analytics/mixpanel",
         "officialUrl": "https://mixpanel.com/",
+        "logo": "https://r2.datools.org/product-analytics/mixpanel.png",
         "votes": 125,
         "comments": 11
       },
@@ -312,6 +314,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/product-analytics/heap",
         "officialUrl": "https://heap.io/",
+        "logo": "https://r2.datools.org/product-analytics/heap.png",
         "votes": 90,
         "comments": 7
       },
@@ -328,6 +331,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/open-source/posthog",
         "officialUrl": "https://posthog.com/",
+        "logo": "https://r2.datools.org/product-analytics/posthog.png",
         "votes": 118,
         "comments": 10
       },
@@ -344,6 +348,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/product-analytics/pendo",
         "officialUrl": "https://www.pendo.io/",
+        "logo": "https://r2.datools.org/product-analytics/pendo.ico",
         "votes": 84,
         "comments": 6
       },
@@ -360,6 +365,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/product-analytics/fullstory",
         "officialUrl": "https://www.fullstory.com/",
+        "logo": "https://r2.datools.org/product-analytics/fullstory.svg",
         "votes": 88,
         "comments": 7
       },
@@ -376,6 +382,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/product-analytics/june",
         "officialUrl": "https://www.june.so/",
+        "logo": "https://r2.datools.org/product-analytics/june.ico",
         "votes": 75,
         "comments": 5
       },
@@ -392,6 +399,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/product-analytics/logrocket",
         "officialUrl": "https://logrocket.com/",
+        "logo": "https://r2.datools.org/product-analytics/logrocket.png",
         "votes": 83,
         "comments": 6
       },
@@ -408,6 +416,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/product-analytics/smartlook",
         "officialUrl": "https://www.smartlook.com/",
+        "logo": "https://r2.datools.org/product-analytics/smartlook.png",
         "votes": 78,
         "comments": 6
       },
@@ -424,6 +433,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/ELT-Integration/fivetran",
         "officialUrl": "https://www.fivetran.com/",
+        "logo": "https://r2.datools.org/ETL-integration/fivetran.png",
         "votes": 120,
         "comments": 9
       },
@@ -440,6 +450,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/open-source/airbyte",
         "officialUrl": "https://airbyte.com/",
+        "logo": "https://r2.datools.org/ETL-integration/airbyte.png",
         "votes": 105,
         "comments": 8
       },
@@ -456,6 +467,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/ELT-Integration/stitch",
         "officialUrl": "https://www.stitchdata.com/",
+        "logo": "https://r2.datools.org/ETL-integration/stitch.png",
         "votes": 70,
         "comments": 5
       },
@@ -472,6 +484,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/ELT-Integration/hevo",
         "officialUrl": "https://hevodata.com/",
+        "logo": "https://r2.datools.org/ETL-integration/hevo.png",
         "votes": 74,
         "comments": 5
       },
@@ -488,6 +501,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/ELT-Integration/matillion",
         "officialUrl": "https://www.matillion.com/",
+        "logo": "https://r2.datools.org/ETL-integration/matillion.png",
         "votes": 78,
         "comments": 6
       },
@@ -504,6 +518,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/ELT-Integration/segment",
         "officialUrl": "https://segment.com/",
+        "logo": "https://r2.datools.org/ETL-integration/segment.png",
         "votes": 122,
         "comments": 10
       },
@@ -520,6 +535,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/ELT-Integration/rudderstack",
         "officialUrl": "https://www.rudderstack.com/",
+        "logo": "https://r2.datools.org/ETL-integration/rudderstack.ico",
         "votes": 88,
         "comments": 7
       },
@@ -536,6 +552,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/ELT-Integration/n8n",
         "officialUrl": "https://n8n.io/",
+        "logo": "https://r2.datools.org/ETL-integration/N8n.svg",
         "votes": 96,
         "comments": 8
       },
@@ -552,6 +569,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/ELT-Integration/tray-io",
         "officialUrl": "https://tray.io/",
+        "logo": "https://r2.datools.org/ETL-integration/tray.ico",
         "votes": 72,
         "comments": 5
       },
@@ -568,6 +586,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/ELT-Integration/workato",
         "officialUrl": "https://www.workato.com/",
+        "logo": "https://r2.datools.org/ETL-integration/workato.ico",
         "votes": 80,
         "comments": 6
       },
@@ -584,6 +603,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/ELT-Integration/zapier",
         "officialUrl": "https://zapier.com/",
+        "logo": "https://r2.datools.org/ETL-integration/zipier.png",
         "votes": 140,
         "comments": 12
       },
@@ -600,6 +620,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/warehouse/snowflake",
         "officialUrl": "https://www.snowflake.com/",
+        "logo": "https://r2.datools.org/warehouse-lake/snowflake.png",
         "votes": 160,
         "comments": 14
       },
@@ -616,6 +637,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/warehouse/bigquery",
         "officialUrl": "https://cloud.google.com/bigquery",
+        "logo": "https://r2.datools.org/warehouse-lake/bigquery.svg",
         "votes": 155,
         "comments": 13
       },
@@ -632,6 +654,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/warehouse/redshift",
         "officialUrl": "https://aws.amazon.com/redshift/",
+        "logo": "https://r2.datools.org/warehouse-lake/redshift.ico",
         "votes": 130,
         "comments": 11
       },
@@ -648,6 +671,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/warehouse/databricks",
         "officialUrl": "https://www.databricks.com/",
+        "logo": "https://r2.datools.org/warehouse-lake/databricks.png",
         "votes": 148,
         "comments": 12
       },
@@ -664,6 +688,7 @@
         "deployment": "自社ホスト / クラウド",
         "link": "data-analysis-tools/warehouse/clickhouse",
         "officialUrl": "https://clickhouse.com/",
+        "logo": "https://r2.datools.org/warehouse-lake/clickhouse.ico",
         "votes": 118,
         "comments": 9
       },
@@ -680,6 +705,7 @@
         "deployment": "ローカル / 組み込み",
         "link": "data-analysis-tools/warehouse/duckdb",
         "officialUrl": "https://duckdb.org/",
+        "logo": "https://r2.datools.org/warehouse-lake/duckbd.png",
         "votes": 112,
         "comments": 8
       },
@@ -696,6 +722,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/warehouse/motherduck",
         "officialUrl": "https://motherduck.com/",
+        "logo": "https://r2.datools.org/warehouse-lake/motherduck.svg",
         "votes": 90,
         "comments": 7
       },
@@ -712,6 +739,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/warehouse/firebolt",
         "officialUrl": "https://www.firebolt.io/",
+        "logo": "https://r2.datools.org/warehouse-lake/firebolt.png",
         "votes": 88,
         "comments": 7
       },
@@ -728,6 +756,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/collaborative-analytics/hex",
         "officialUrl": "https://hex.tech/",
+        "logo": "https://r2.datools.org/notebook-collaborative-analytics/hex.svg",
         "votes": 96,
         "comments": 8
       },
@@ -744,6 +773,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/collaborative-analytics/observable",
         "officialUrl": "https://observablehq.com/",
+        "logo": "https://r2.datools.org/notebook-collaborative-analytics/observable.png",
         "votes": 82,
         "comments": 6
       },
@@ -776,6 +806,7 @@
         "deployment": "ローカル / クラウド",
         "link": "data-analysis-tools/collaborative-analytics/jupyter-vscode",
         "officialUrl": "https://jupyter.org/",
+        "logo": "https://r2.datools.org/notebook-collaborative-analytics/jupyter.png",
         "votes": 140,
         "comments": 12
       },
@@ -792,6 +823,7 @@
         "deployment": "セルフホスト",
         "link": "data-analysis-tools/collaborative-analytics/polynote",
         "officialUrl": "https://polynote.org/",
+        "logo": "https://r2.datools.org/notebook-collaborative-analytics/polynote.ico",
         "votes": 70,
         "comments": 5
       },
@@ -920,6 +952,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/governance/monte-carlo",
         "officialUrl": "https://www.montecarlodata.com/",
+        "logo": "https://r2.datools.org/data-quality-governance/monte-carlo.png",
         "votes": 92,
         "comments": 7
       },
@@ -936,6 +969,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/governance/bigeye",
         "officialUrl": "https://www.bigeye.com/",
+        "logo": "https://r2.datools.org/data-quality-governance/bigeye.svg",
         "votes": 80,
         "comments": 6
       },
@@ -952,6 +986,7 @@
         "deployment": "セルフホスト / クラウド",
         "link": "data-analysis-tools/governance/great-expectations",
         "officialUrl": "https://greatexpectations.io/",
+        "logo": "https://r2.datools.org/data-quality-governance/greatexpectations.png",
         "votes": 110,
         "comments": 8
       },
@@ -968,6 +1003,7 @@
         "deployment": "セルフホスト / クラウド",
         "link": "data-analysis-tools/governance/dbt-tests",
         "officialUrl": "https://docs.getdbt.com/docs/build/tests",
+        "logo": "https://r2.datools.org/data-quality-governance/det-tests.png",
         "votes": 125,
         "comments": 9
       },
@@ -984,6 +1020,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/governance/castor",
         "officialUrl": "https://www.castordoc.com/",
+        "logo": "https://r2.datools.org/data-quality-governance/castor.png",
         "votes": 78,
         "comments": 6
       },
@@ -1000,6 +1037,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/governance/collibra",
         "officialUrl": "https://www.collibra.com/",
+        "logo": "https://r2.datools.org/data-quality-governance/collibra.ico",
         "votes": 118,
         "comments": 9
       },
@@ -1016,6 +1054,7 @@
         "deployment": "クラウド",
         "link": "data-analysis-tools/governance/alation",
         "officialUrl": "https://www.alation.com/",
+        "logo": "https://r2.datools.org/data-quality-governance/alation.svg",
         "votes": 102,
         "comments": 8
       },
@@ -1084,22 +1123,6 @@
         "comments": 11
       },
       {
-        "name": "Databricks AutoML",
-        "summary": "編集可能なノートブック生成、特徴量エンジニアリング、MLflow 連携実験を提供する Lakehouse AutoML（分類・回帰・時系列対応）。",
-        "tags": [
-          "AutoML",
-          "Lakehouse",
-          "MLflow",
-          "Notebooks"
-        ],
-        "pricing": "Usage-based",
-        "deployment": "Databricks cloud",
-        "link": "data-analysis-tools/AI-assistants/databricks-automl",
-        "officialUrl": "https://www.databricks.com/product/machine-learning/automl",
-        "votes": 102,
-        "comments": 7
-      },
-      {
         "name": "Built-in ML (Power BI / BigQuery)",
         "summary": "Power BI データフローや BigQuery ML で SQL/ローコードの AutoML 学習と予測を実行し、レポートやテーブルで再利用。",
         "tags": [
@@ -1144,6 +1167,7 @@
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/airflow",
         "officialUrl": "https://airflow.apache.org/",
+        "logo": "https://r2.datools.org/open-source-self-hosted/airflow.png",
         "votes": 150,
         "comments": 14
       },
@@ -1160,6 +1184,7 @@
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/dagster",
         "officialUrl": "https://dagster.io/",
+        "logo": "https://r2.datools.org/open-source-self-hosted/dagster.png",
         "votes": 120,
         "comments": 10
       },
@@ -1176,6 +1201,7 @@
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/prefect",
         "officialUrl": "https://www.prefect.io/",
+        "logo": "https://r2.datools.org/open-source-self-hosted/prefect.ico",
         "votes": 118,
         "comments": 9
       },
@@ -1192,6 +1218,7 @@
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/dbt",
         "officialUrl": "https://www.getdbt.com/",
+        "logo": "https://r2.datools.org/open-source-self-hosted/dbt.ico",
         "votes": 145,
         "comments": 12
       }

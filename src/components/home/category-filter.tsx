@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import type { HomeFeedDictionary } from "@/i18n/types";
+import type { ReactElement } from "react";
 import {
   ChartNoAxesCombined,
   PackageSearch,
@@ -39,7 +40,7 @@ export function CategoryFilter({ categories, active, onChange }: CategoryFilterP
     | "ml"
     | "openSource";
 
-  const iconRenderers: Record<IconKey, () => JSX.Element> = {
+  const iconRenderers: Record<IconKey, () => ReactElement> = {
     bi: () => <ChartNoAxesCombined className={iconClass} />,
     product: () => <PackageSearch className={iconClass} />,
     etl: () => <Pipette className={iconClass} />,

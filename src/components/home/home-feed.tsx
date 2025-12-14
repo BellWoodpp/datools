@@ -220,15 +220,13 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
 
         {/* 右侧：工具列表 */}
         <div className="flex-1 space-y-4 lg:pl-72">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm font-semibold text-neutral-500 dark:text-neutral-400">
-                {data.subheading}
-              </p>
-              <h1 className="text-2xl font-bold text-neutral-900 dark:text-neutral-50">
-                {data.heading}
-              </h1>
-            </div>
+          <div className="flex flex-col items-center gap-1 text-center">
+            <p className="text-sm font-semibold text-neutral-500 dark:text-neutral-400">
+              {data.subheading}
+            </p>
+            <h1 className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-neutral-50">
+              {data.heading}
+            </h1>
           </div>
 
           <div className="flex flex-col gap-3 rounded-xl border border-[#1e5bff]/30 bg-[#0f172a]/80 p-4 shadow-[0_15px_40px_-20px_rgba(18,194,233,0.55)]">

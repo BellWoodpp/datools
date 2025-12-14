@@ -142,11 +142,16 @@ export function ToolCard({
               </p>
             </div>
           </div>
-          <div className="text-right text-sm font-semibold text-slate-100">
-            <div className="text-[#f8a13c]">▲ {tool.votes}</div>
-            <div className="text-xs text-slate-400">
-              <MessageSquare className="mr-1 inline-block h-4 w-4 align-middle" />
-              {tool.comments}
+          <div className="flex flex-col items-end gap-1 text-right">
+            <div className="text-sm font-semibold text-[#12c2e9]">
+              {highlightText(tool.pricing, highlightTerm)}
+            </div>
+            <div className="text-sm font-semibold text-slate-100">
+              <div className="text-[#f8a13c]">▲ {tool.votes}</div>
+              <div className="text-xs text-slate-400">
+                <MessageSquare className="mr-1 inline-block h-4 w-4 align-middle" />
+                {tool.comments}
+              </div>
             </div>
           </div>
         </div>
@@ -156,7 +161,6 @@ export function ToolCard({
               {highlightText(tag, highlightTerm)}
             </Badge>
           ))}
-          <Badge variant="outline">{highlightText(tool.pricing, highlightTerm)}</Badge>
           <Badge variant="outline">{highlightText(tool.deployment, highlightTerm)}</Badge>
         </div>
       </CardHeader>

@@ -82,6 +82,19 @@ export default function RootLayout({
           data-key="c31qQEYvGp/28tgAFpJaPQ"
           async
         ></script>
+        {/* Privacy-friendly analytics by Plausible */}
+        <Script
+          async
+          src="https://plausible.io/js/pa-4QgZhiy8H7f3-FR-2Ez4z.js"
+          strategy="afterInteractive"
+        />
+        <Script id="plausible-init" strategy="afterInteractive">
+          {`
+            window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)};
+            plausible.init=plausible.init||function(i){plausible.o=i||{}};
+            plausible.init();
+          `}
+        </Script>
         {/* 显式声明远程 favicon，避免浏览器回退到 Next 默认图标 */}
         <link rel="icon" href="https://r2.datools.org/data-a-tools.ico" sizes="any" />
         <link rel="shortcut icon" href="https://r2.datools.org/data-a-tools.ico" />

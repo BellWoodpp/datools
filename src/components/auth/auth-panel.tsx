@@ -5,11 +5,9 @@ import { useState } from "react";
 import { authClient } from "@/lib/auth-server/client";
 import { RichTextContent } from "@/components/i18n/rich-text";
 import type { AuthPanelDictionary } from "@/i18n";
-import MagicLinkButton from "@/components/ui/magic-link-button"
+import MagicLinkButton from "@/components/ui/magic-link-button";
 
-
-
-type OAuthProvider = "google" | "github" | "x";
+type OAuthProvider = "google" | "github";
 
 interface AuthPanelProps {
   dictionary: AuthPanelDictionary;
@@ -43,9 +41,9 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
         console.error(`[Better Auth] ${provider} sign-in failed`, error);
         setPendingProvider(null); // 登录失败时才释放按钮
         setOauthError("登录失败，请稍后重试");
-      })
+      });
   };
-  
+
   // 处理登出
   const handleSignOut = async () => {
     try {
@@ -119,15 +117,6 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
                 {pendingProvider === "github"
                   ? dictionary.githubButton.loading
                   : dictionary.githubButton.default}
-              </button>
-              {/* X(Twitter)登陆按钮 */}
-              <button
-                type="button"
-                onClick={() => handleOAuth("x")}
-                disabled={pendingProvider !== null}
-                className="inline-flex items-center justify-center rounded-md border border-neutral-300 bg-neutral-900 px-3 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-500 disabled:cursor-not-allowed disabled:opacity-60 dark:border-neutral-700 dark:bg-neutral-950 dark:hover:bg-neutral-900"
-              >
-                {pendingProvider === "x" ? "Connecting..." : "Continue with X"}
               </button>
             </div>
             {oauthError ? (

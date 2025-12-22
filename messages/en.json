@@ -243,134 +243,46 @@
     "categories": [
       {
         "title": "BI / Visualization",
-        "items": [
-          "Tableau",
-          "Power BI",
-          "Looker",
-          "Qlik",
-          "Metabase",
-          "Superset",
-          "Redash",
-          "Klipfolio",
-          "Mode",
-          "Sigma",
-          "ThoughtSpot",
-          "Looker Studio",
-          "Lightdash"
-        ]
+        "items": ["Tableau", "Power BI", "Looker", "Qlik", "Metabase", "Superset", "Redash", "Klipfolio", "Mode", "Sigma", "ThoughtSpot", "Looker Studio", "Lightdash"]
       },
       {
         "title": "Product Analytics",
-        "items": [
-          "Amplitude",
-          "Mixpanel",
-          "Heap",
-          "PostHog",
-          "Pendo",
-          "FullStory",
-          "June",
-          "LogRocket",
-          "Smartlook"
-        ]
+        "items": ["Amplitude", "Mixpanel", "Heap", "PostHog", "Pendo", "FullStory", "June", "LogRocket", "Smartlook"]
       },
       {
         "title": "ETL / ELT & Integration",
-        "items": [
-          "Fivetran",
-          "Airbyte",
-          "Stitch",
-          "Hevo",
-          "Matillion",
-          "Segment",
-          "RudderStack",
-          "N8n",
-          "Tray.io",
-          "Workato",
-          "Zapier"
-        ]
+        "items": ["Fivetran", "Airbyte", "Stitch", "Hevo", "Matillion", "Segment", "RudderStack", "N8n", "Tray.io", "Workato", "Zapier"]
       },
       {
         "title": "Warehouse / Lake",
-        "items": [
-          "Snowflake",
-          "BigQuery",
-          "Redshift",
-          "Databricks",
-          "ClickHouse",
-          "DuckDB",
-          "MotherDuck",
-          "Firebolt"
-        ]
+        "items": ["Snowflake", "BigQuery", "Redshift", "Databricks", "ClickHouse", "DuckDB", "MotherDuck", "Firebolt"]
       },
       {
         "title": "Notebook / Collaborative Analytics",
-        "items": [
-          "Hex",
-          "Observable",
-          "Deepnote",
-          "Jupyter / VS Code",
-          "Polynote"
-        ]
+        "items": ["Hex", "Observable", "Deepnote", "Jupyter / VS Code", "Polynote"]
       },
       {
         "title": "Experimentation / Attribution",
-        "items": [
-          "Optimizely",
-          "VWO",
-          "AB Tasty",
-          "Statsig",
-          "GrowthBook",
-          "Convert",
-          "Split.io"
-        ]
+        "items": ["Optimizely", "VWO", "AB Tasty", "Statsig", "GrowthBook", "Convert", "Split.io"]
       },
       {
         "title": "Data Quality / Governance",
-        "items": [
-          "Monte Carlo",
-          "Bigeye",
-          "Great Expectations",
-          "dbt tests",
-          "Castor",
-          "Collibra",
-          "Alation"
-        ]
+        "items": ["Monte Carlo", "Bigeye", "Great Expectations", "dbt tests", "Castor", "Collibra", "Alation"]
       },
       {
         "title": "ML / AutoML / AI Assistants",
-        "items": [
-          "DataRobot",
-          "H2O.ai",
-          "SageMaker",
-          "Vertex AI",
-          "GPT-style SQL/vis assistants"
-        ]
+        "items": ["DataRobot", "H2O.ai", "SageMaker", "Vertex AI", "GPT-style SQL/vis assistants"]
       },
       {
         "title": "Open Source / Self-hosted",
-        "items": [
-          "Airflow",
-          "Dagster",
-          "Prefect",
-          "dbt",
-          "Superset",
-          "Metabase",
-          "Airbyte",
-          "Great Expectations",
-          "PostHog"
-        ]
+        "items": ["Airflow", "Dagster", "Prefect", "dbt", "Superset", "Metabase", "Airbyte", "Great Expectations", "PostHog"]
       }
     ],
     "tools": [
       {
         "name": "Tableau",
         "summary": "Drag-and-drop BI for interactive dashboards; connects to databases, spreadsheets, and clouds with Prep, Desktop/Cloud analysis, and Server/Cloud sharing.",
-        "tags": [
-          "BI",
-          "Visualization",
-          "Self-service",
-          "Dashboard"
-        ],
+        "tags": ["BI", "Visualization", "Self-service", "Dashboard"],
         "pricing": "Commercial / Trial",
         "deployment": "Desktop / Cloud / Self-hosted",
         "link": "data-analysis-tools/visualization/tableau",
@@ -382,12 +294,7 @@
       {
         "name": "Power BI",
         "summary": "Microsoft self-service BI suite with Power Query prep, DAX modeling, interactive dashboards, and broad data connectors; tightly integrated with the Microsoft stack.",
-        "tags": [
-          "BI",
-          "Visualization",
-          "Self-service",
-          "Dashboard"
-        ],
+        "tags": ["BI", "Visualization", "Self-service", "Dashboard"],
         "pricing": "Free Desktop / Pro / Premium",
         "deployment": "Desktop / Cloud / Self-hosted",
         "link": "data-analysis-tools/visualization/power-bi",
@@ -399,12 +306,7 @@
       {
         "name": "Looker",
         "summary": "Google Cloud semantic layer and BI platform using LookML to model metrics; supports governed dashboards and embedded analytics.",
-        "tags": [
-          "BI",
-          "Visualization",
-          "Semantic layer",
-          "Embedded"
-        ],
+        "tags": ["BI", "Visualization", "Semantic layer", "Embedded"],
         "pricing": "Subscription (Enterprise)",
         "deployment": "Cloud",
         "link": "data-analysis-tools/visualization/looker",
@@ -416,12 +318,7 @@
       {
         "name": "Qlik",
         "summary": "Qlik Sense with associative in-memory engine for self-service analytics and visualization plus data integration via Qlik Cloud Data Integration.",
-        "tags": [
-          "BI",
-          "Visualization",
-          "Self-service",
-          "In-memory"
-        ],
+        "tags": ["BI", "Visualization", "Self-service", "In-memory"],
         "pricing": "Subscription / Enterprise",
         "deployment": "Cloud / Self-hosted",
         "link": "data-analysis-tools/visualization/qlik",
@@ -433,12 +330,7 @@
       {
         "name": "Metabase",
         "summary": "Open-source BI and visualization with SQL/GUI querying, dashboards, and embedding; easy to self-host with broad database support.",
-        "tags": [
-          "BI",
-          "Visualization",
-          "Open source",
-          "Self-hosted"
-        ],
+        "tags": ["BI", "Visualization", "Open source", "Self-hosted"],
         "pricing": "Open source / Cloud / Enterprise",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/metabase",
@@ -450,12 +342,7 @@
       {
         "name": "Superset",
         "summary": "Apache open-source BI with SQL Lab, visualization plugins, dashboards, and permissions; great for self-hosted and cloud-native deploys.",
-        "tags": [
-          "BI",
-          "Visualization",
-          "Open source",
-          "Self-hosted"
-        ],
+        "tags": ["BI", "Visualization", "Open source", "Self-hosted"],
         "pricing": "Open source / Hosted",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/superset",
@@ -467,12 +354,7 @@
       {
         "name": "Redash",
         "summary": "SQL-first lightweight BI connecting many sources, with parameterized queries, visuals, dashboards, schedules, and alerts.",
-        "tags": [
-          "BI",
-          "SQL",
-          "Visualization",
-          "Lightweight"
-        ],
+        "tags": ["BI", "SQL", "Visualization", "Lightweight"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/visualization/redash",
@@ -484,12 +366,7 @@
       {
         "name": "Klipfolio",
         "summary": "KPI dashboard and monitoring tool with drag-and-drop builder, rich SaaS/database/API connectors, refresh, and alerts.",
-        "tags": [
-          "BI",
-          "Dashboard",
-          "KPI",
-          "SaaS"
-        ],
+        "tags": ["BI", "Dashboard", "KPI", "SaaS"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/visualization/klipfolio",
@@ -501,12 +378,7 @@
       {
         "name": "Mode",
         "summary": "Analyst-friendly BI combining SQL, Python/R notebooks, and visualizations for collaboration and sharing.",
-        "tags": [
-          "BI",
-          "SQL",
-          "Notebook",
-          "Collaboration"
-        ],
+        "tags": ["BI", "SQL", "Notebook", "Collaboration"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/visualization/mode",
@@ -518,12 +390,7 @@
       {
         "name": "Sigma",
         "summary": "Spreadsheet-like cloud BI with warehouse-native compute for business self-service analytics and live metrics.",
-        "tags": [
-          "BI",
-          "Visualization",
-          "Self-service",
-          "Cloud warehouse"
-        ],
+        "tags": ["BI", "Visualization", "Self-service", "Cloud warehouse"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/visualization/sigma",
@@ -535,12 +402,7 @@
       {
         "name": "ThoughtSpot",
         "summary": "Search-driven analytics with AI suggestions, embedding, and granular security for business users.",
-        "tags": [
-          "BI",
-          "Search",
-          "Self-service",
-          "Embedded"
-        ],
+        "tags": ["BI", "Search", "Self-service", "Embedded"],
         "pricing": "Subscription",
         "deployment": "Cloud / Self-hosted",
         "link": "data-analysis-tools/visualization/thoughtspot",
@@ -552,12 +414,7 @@
       {
         "name": "Looker Studio",
         "summary": "Google’s free dashboarding tool (ex-Data Studio) with rich connectors, sharing, and embeds for lightweight reporting.",
-        "tags": [
-          "BI",
-          "Visualization",
-          "Dashboard",
-          "Free"
-        ],
+        "tags": ["BI", "Visualization", "Dashboard", "Free"],
         "pricing": "Free / Paid connectors",
         "deployment": "Cloud",
         "link": "data-analysis-tools/visualization/looker-studio",
@@ -569,12 +426,7 @@
       {
         "name": "Lightdash",
         "summary": "Open-source BI for dbt, providing Looker-style explores and dashboards from dbt models; self-hosted or cloud.",
-        "tags": [
-          "BI",
-          "Open source",
-          "dbt",
-          "Self-hosted"
-        ],
+        "tags": ["BI", "Open source", "dbt", "Self-hosted"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/visualization/lightdash",
@@ -586,12 +438,7 @@
       {
         "name": "Amplitude",
         "summary": "Product analytics platform with event tracking, funnels, retention, cohorts, and experiments for growth insights.",
-        "tags": [
-          "Product analytics",
-          "Events",
-          "Retention",
-          "Experiments"
-        ],
+        "tags": ["Product analytics", "Events", "Retention", "Experiments"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/product-analytics/amplitude",
@@ -603,12 +450,7 @@
       {
         "name": "Mixpanel",
         "summary": "Event-based product analytics with funnels, retention, cohorts, and signal analysis for optimization and growth.",
-        "tags": [
-          "Product analytics",
-          "Events",
-          "Funnels",
-          "Retention"
-        ],
+        "tags": ["Product analytics", "Events", "Funnels", "Retention"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/product-analytics/mixpanel",
@@ -620,12 +462,7 @@
       {
         "name": "Heap",
         "summary": "Autocapture product analytics; no-code event collection with funnels, retention, and pathing for fast insights.",
-        "tags": [
-          "Product analytics",
-          "Autocapture",
-          "Funnels",
-          "Retention"
-        ],
+        "tags": ["Product analytics", "Autocapture", "Funnels", "Retention"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/product-analytics/heap",
@@ -637,12 +474,7 @@
       {
         "name": "PostHog",
         "summary": "Open-source product analytics with events, funnels, retention, session replay, feature flags, and A/B tests; self-hostable.",
-        "tags": [
-          "Product analytics",
-          "Open source",
-          "Self-hosted",
-          "Session replay"
-        ],
+        "tags": ["Product analytics", "Open source", "Self-hosted", "Session replay"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/posthog",
@@ -654,12 +486,7 @@
       {
         "name": "Pendo",
         "summary": "Product experience and analytics with in-app guides, feedback, and behavior insights to drive adoption and retention.",
-        "tags": [
-          "Product analytics",
-          "Guides",
-          "Feedback",
-          "Retention"
-        ],
+        "tags": ["Product analytics", "Guides", "Feedback", "Retention"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/product-analytics/pendo",
@@ -671,12 +498,7 @@
       {
         "name": "FullStory",
         "summary": "Digital experience analytics with session replay, journey insights, funnels, retention, and alerts for UX issues.",
-        "tags": [
-          "Experience analytics",
-          "Session replay",
-          "Funnels",
-          "Retention"
-        ],
+        "tags": ["Experience analytics", "Session replay", "Funnels", "Retention"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/product-analytics/fullstory",
@@ -688,12 +510,7 @@
       {
         "name": "June",
         "summary": "SaaS product metrics dashboards and reports on top of event data: funnels, retention, activation, and growth KPIs.",
-        "tags": [
-          "Product analytics",
-          "SaaS metrics",
-          "Dashboards",
-          "Retention"
-        ],
+        "tags": ["Product analytics", "SaaS metrics", "Dashboards", "Retention"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/product-analytics/june",
@@ -705,12 +522,7 @@
       {
         "name": "LogRocket",
         "summary": "Front-end monitoring and product experience analytics combining session replay, performance, and behavior insights.",
-        "tags": [
-          "Frontend monitoring",
-          "Session replay",
-          "Performance",
-          "Product analytics"
-        ],
+        "tags": ["Frontend monitoring", "Session replay", "Performance", "Product analytics"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/product-analytics/logrocket",
@@ -722,12 +534,7 @@
       {
         "name": "Smartlook",
         "summary": "Experience and behavior analytics with session replay, funnels, heatmaps, and event tracking to find UX and conversion issues.",
-        "tags": [
-          "Session replay",
-          "Funnels",
-          "Heatmaps",
-          "Product analytics"
-        ],
+        "tags": ["Session replay", "Funnels", "Heatmaps", "Product analytics"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/product-analytics/smartlook",
@@ -739,12 +546,7 @@
       {
         "name": "Fivetran",
         "summary": "Fully managed ELT pipelines syncing databases/SaaS/events to warehouses with scheduling, incrementals, and monitoring.",
-        "tags": [
-          "ELT",
-          "Integration",
-          "Pipelines",
-          "Cloud"
-        ],
+        "tags": ["ELT", "Integration", "Pipelines", "Cloud"],
         "pricing": "Usage-based",
         "deployment": "Cloud",
         "link": "data-analysis-tools/elt-integration/fivetran",
@@ -756,12 +558,7 @@
       {
         "name": "Airbyte",
         "summary": "Open-source ELT connector platform with community connectors, incremental sync, and self-hosted or cloud options.",
-        "tags": [
-          "ELT",
-          "Open source",
-          "Self-hosted",
-          "Integration"
-        ],
+        "tags": ["ELT", "Open source", "Self-hosted", "Integration"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/airbyte",
@@ -773,12 +570,7 @@
       {
         "name": "Stitch",
         "summary": "Lightweight cloud ELT (Talend) with popular connectors and scheduling to load data into warehouses.",
-        "tags": [
-          "ELT",
-          "Integration",
-          "Cloud",
-          "Scheduling"
-        ],
+        "tags": ["ELT", "Integration", "Cloud", "Scheduling"],
         "pricing": "Free tier / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/elt-integration/stitch",
@@ -790,12 +582,7 @@
       {
         "name": "Hevo",
         "summary": "No-code data pipeline/ELT for real-time and batch sync from many sources to warehouses/lakes with monitoring.",
-        "tags": [
-          "ELT",
-          "No-code",
-          "Real-time",
-          "Monitoring"
-        ],
+        "tags": ["ELT", "No-code", "Real-time", "Monitoring"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/elt-integration/hevo",
@@ -807,12 +594,7 @@
       {
         "name": "Matillion",
         "summary": "ELT/ETL for cloud warehouses with visual orchestration, transforms, and scheduling for Snowflake/BigQuery/Redshift, etc.",
-        "tags": [
-          "ELT",
-          "ETL",
-          "Orchestration",
-          "Cloud DW"
-        ],
+        "tags": ["ELT", "ETL", "Orchestration", "Cloud DW"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/elt-integration/matillion",
@@ -824,12 +606,7 @@
       {
         "name": "Segment",
         "summary": "CDP and event pipeline routing multi-platform data to warehouses and downstream tools with identity resolution and audiences.",
-        "tags": [
-          "CDP",
-          "Events",
-          "Routing",
-          "Integration"
-        ],
+        "tags": ["CDP", "Events", "Routing", "Integration"],
         "pricing": "Free tier / Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/elt-integration/segment",
@@ -841,12 +618,7 @@
       {
         "name": "RudderStack",
         "summary": "Open-source CDP/event pipeline compatible with Segment API; self-hosted or cloud to route events to warehouses and SaaS.",
-        "tags": [
-          "CDP",
-          "Events",
-          "Open source",
-          "Self-hosted"
-        ],
+        "tags": ["CDP", "Events", "Open source", "Self-hosted"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/elt-integration/rudderstack",
@@ -858,12 +630,7 @@
       {
         "name": "N8n",
         "summary": "Open-source low-code automation/integration with visual workflows, webhooks, and rich nodes; self-hostable.",
-        "tags": [
-          "Automation",
-          "Integration",
-          "Open source",
-          "Self-hosted"
-        ],
+        "tags": ["Automation", "Integration", "Open source", "Self-hosted"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/elt-integration/n8n",
@@ -875,12 +642,7 @@
       {
         "name": "Tray.io",
         "summary": "Low-code iPaaS with visual integration and automation for business/engineering teams to orchestrate APIs and events.",
-        "tags": [
-          "iPaaS",
-          "Automation",
-          "Low-code",
-          "Integration"
-        ],
+        "tags": ["iPaaS", "Automation", "Low-code", "Integration"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/elt-integration/tray-io",
@@ -892,12 +654,7 @@
       {
         "name": "Workato",
         "summary": "Enterprise iPaaS/automation with triggers, workflows, data sync, and governance for cross-department integrations.",
-        "tags": [
-          "iPaaS",
-          "Automation",
-          "Workflow",
-          "Governance"
-        ],
+        "tags": ["iPaaS", "Automation", "Workflow", "Governance"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/elt-integration/workato",
@@ -909,12 +666,7 @@
       {
         "name": "Zapier",
         "summary": "No-code automation for business users connecting thousands of SaaS apps with trigger-based multi-step workflows.",
-        "tags": [
-          "Automation",
-          "No-code",
-          "SaaS integration",
-          "Workflow"
-        ],
+        "tags": ["Automation", "No-code", "SaaS integration", "Workflow"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/elt-integration/zapier",
@@ -926,12 +678,7 @@
       {
         "name": "Snowflake",
         "summary": "Cloud-native data warehouse with storage-compute separation, auto scaling, sharing, and strong governance.",
-        "tags": [
-          "Cloud warehouse",
-          "Separation",
-          "Multi-cloud",
-          "Governance"
-        ],
+        "tags": ["Cloud warehouse", "Separation", "Multi-cloud", "Governance"],
         "pricing": "Usage-based",
         "deployment": "Cloud",
         "link": "data-analysis-tools/warehouse/snowflake",
@@ -943,12 +690,7 @@
       {
         "name": "BigQuery",
         "summary": "Google's serverless cloud warehouse with storage/compute separation, federated queries, and BI Engine acceleration.",
-        "tags": [
-          "Cloud warehouse",
-          "Serverless",
-          "Federated",
-          "Acceleration"
-        ],
+        "tags": ["Cloud warehouse", "Serverless", "Federated", "Acceleration"],
         "pricing": "Usage-based",
         "deployment": "Cloud",
         "link": "data-analysis-tools/warehouse/bigquery",
@@ -960,12 +702,7 @@
       {
         "name": "Redshift",
         "summary": "AWS cloud warehouse with Spectrum federation and RA3 storage/compute separation, PostgreSQL-compatible.",
-        "tags": [
-          "Cloud warehouse",
-          "Federated",
-          "AWS",
-          "Separation"
-        ],
+        "tags": ["Cloud warehouse", "Federated", "AWS", "Separation"],
         "pricing": "Subscription / Usage",
         "deployment": "Cloud",
         "link": "data-analysis-tools/warehouse/redshift",
@@ -977,12 +714,7 @@
       {
         "name": "Databricks",
         "summary": "Lakehouse platform with Delta Lake, Spark, MLflow, and SQL warehouse; unifies data and AI workloads.",
-        "tags": [
-          "Lakehouse",
-          "Delta Lake",
-          "Spark",
-          "SQL warehouse"
-        ],
+        "tags": ["Lakehouse", "Delta Lake", "Spark", "SQL warehouse"],
         "pricing": "Subscription / Usage",
         "deployment": "Cloud",
         "link": "data-analysis-tools/warehouse/databricks",
@@ -994,12 +726,7 @@
       {
         "name": "ClickHouse",
         "summary": "Open-source columnar database for real-time/near-real-time analytics with self-hosted and cloud options.",
-        "tags": [
-          "Columnar",
-          "Real-time",
-          "Open source",
-          "Self-hosted"
-        ],
+        "tags": ["Columnar", "Real-time", "Open source", "Self-hosted"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/warehouse/clickhouse",
@@ -1011,12 +738,7 @@
       {
         "name": "DuckDB",
         "summary": "Open-source embedded columnar database for local/embedded analytics with vectorized SQL execution.",
-        "tags": [
-          "Embedded",
-          "Columnar",
-          "Local analytics",
-          "Open source"
-        ],
+        "tags": ["Embedded", "Columnar", "Local analytics", "Open source"],
         "pricing": "Open source",
         "deployment": "Local / Embedded",
         "link": "data-analysis-tools/warehouse/duckdb",
@@ -1028,12 +750,7 @@
       {
         "name": "MotherDuck",
         "summary": "DuckDB-backed cloud collaboration and storage, enabling shared, persisted, and hybrid queries.",
-        "tags": [
-          "DuckDB",
-          "Cloud",
-          "Collaboration",
-          "Hybrid queries"
-        ],
+        "tags": ["DuckDB", "Cloud", "Collaboration", "Hybrid queries"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/warehouse/motherduck",
@@ -1045,12 +762,7 @@
       {
         "name": "Firebolt",
         "summary": "Cloud-native MPP warehouse focused on high-performance queries with indexing and storage optimizations.",
-        "tags": [
-          "Cloud warehouse",
-          "High performance",
-          "Indexing",
-          "MPP"
-        ],
+        "tags": ["Cloud warehouse", "High performance", "Indexing", "MPP"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/warehouse/firebolt",
@@ -1062,12 +774,7 @@
       {
         "name": "Hex",
         "summary": "Collaborative notebook for data teams combining SQL, Python, and visualizations with easy sharing and apps.",
-        "tags": [
-          "Collaboration",
-          "Notebook",
-          "SQL",
-          "Python"
-        ],
+        "tags": ["Collaboration", "Notebook", "SQL", "Python"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/collaborative-analytics/hex",
@@ -1079,12 +786,7 @@
       {
         "name": "Observable",
         "summary": "Browser-based notebook and visualization platform using JavaScript/Observable syntax for interactive data stories.",
-        "tags": [
-          "Visualization",
-          "Notebook",
-          "JavaScript",
-          "Interactive"
-        ],
+        "tags": ["Visualization", "Notebook", "JavaScript", "Interactive"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/collaborative-analytics/observable",
@@ -1096,12 +798,7 @@
       {
         "name": "Deepnote",
         "summary": "Collaborative cloud notebook with SQL and Python, real-time coauthoring, comments, and data source integrations.",
-        "tags": [
-          "Collaboration",
-          "Notebook",
-          "SQL",
-          "Python"
-        ],
+        "tags": ["Collaboration", "Notebook", "SQL", "Python"],
         "pricing": "Free / Paid",
         "deployment": "Cloud",
         "link": "data-analysis-tools/collaborative-analytics/deepnote",
@@ -1113,12 +810,7 @@
       {
         "name": "Jupyter / VS Code",
         "summary": "Jupyter Notebook/Lab plus VS Code (Python) for local/cloud analytics, supporting Python/R/Julia and more.",
-        "tags": [
-          "Notebook",
-          "Python",
-          "Local dev",
-          "Polyglot"
-        ],
+        "tags": ["Notebook", "Python", "Local dev", "Polyglot"],
         "pricing": "Open source / Free",
         "deployment": "Local / Cloud",
         "link": "data-analysis-tools/collaborative-analytics/jupyter-vscode",
@@ -1130,12 +822,7 @@
       {
         "name": "Polynote",
         "summary": "Open-source polyglot notebook (Scala/Python, etc.) with strong typing and reproducibility for data engineering and science.",
-        "tags": [
-          "Notebook",
-          "Polyglot",
-          "Open source",
-          "Data engineering"
-        ],
+        "tags": ["Notebook", "Polyglot", "Open source", "Data engineering"],
         "pricing": "Open source",
         "deployment": "Self-hosted",
         "link": "data-analysis-tools/collaborative-analytics/polynote",
@@ -1147,12 +834,7 @@
       {
         "name": "Optimizely",
         "summary": "Mature experimentation and personalization platform with A/B, multivariate, feature flags, and objective management.",
-        "tags": [
-          "A/B testing",
-          "Personalization",
-          "Feature flags",
-          "Experimentation"
-        ],
+        "tags": ["A/B testing", "Personalization", "Feature flags", "Experimentation"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/attribution/optimizely",
@@ -1164,12 +846,7 @@
       {
         "name": "VWO",
         "summary": "Optimization and experimentation suite offering A/B, multivariate tests, heatmaps, session recordings, and conversion insights.",
-        "tags": [
-          "A/B testing",
-          "Visual editor",
-          "Heatmaps",
-          "CRO"
-        ],
+        "tags": ["A/B testing", "Visual editor", "Heatmaps", "CRO"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/attribution/vwo",
@@ -1181,12 +858,7 @@
       {
         "name": "AB Tasty",
         "summary": "Digital experience optimization with A/B testing, personalization, feature flags, and behavioral insights.",
-        "tags": [
-          "A/B testing",
-          "Personalization",
-          "Feature flags",
-          "Experience optimization"
-        ],
+        "tags": ["A/B testing", "Personalization", "Feature flags", "Experience optimization"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/attribution/ab-tasty",
@@ -1198,12 +870,7 @@
       {
         "name": "Statsig",
         "summary": "Product experimentation and feature management with stats engine, feature flags, metrics, and fast rollback.",
-        "tags": [
-          "Experimentation",
-          "Feature flags",
-          "Metrics",
-          "Rollback"
-        ],
+        "tags": ["Experimentation", "Feature flags", "Metrics", "Rollback"],
         "pricing": "Free tier / Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/attribution/statsig",
@@ -1215,12 +882,7 @@
       {
         "name": "GrowthBook",
         "summary": "Open-source/cloud A/B testing and feature flags with self-hosting option, metric definitions, and multi-language SDKs.",
-        "tags": [
-          "Open source",
-          "A/B testing",
-          "Feature flags",
-          "Self-hosted"
-        ],
+        "tags": ["Open source", "A/B testing", "Feature flags", "Self-hosted"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/attribution/growthbook",
@@ -1232,12 +894,7 @@
       {
         "name": "Convert",
         "summary": "Privacy-focused A/B testing and personalization with visual editing, server-side experiments, and GDPR compliance.",
-        "tags": [
-          "A/B testing",
-          "Privacy",
-          "Personalization",
-          "Server-side"
-        ],
+        "tags": ["A/B testing", "Privacy", "Personalization", "Server-side"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/attribution/convert",
@@ -1249,12 +906,7 @@
       {
         "name": "Split.io",
         "summary": "Feature flagging and experimentation platform with rollbacks, metrics monitoring, and governance for product/engineering teams.",
-        "tags": [
-          "Feature flags",
-          "Experimentation",
-          "Metrics monitoring",
-          "Rollback"
-        ],
+        "tags": ["Feature flags", "Experimentation", "Metrics monitoring", "Rollback"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/attribution/split-io",
@@ -1266,12 +918,7 @@
       {
         "name": "Monte Carlo",
         "summary": "Data observability platform for data quality, lineage, SLAs, and impact alerts across pipelines.",
-        "tags": [
-          "Data observability",
-          "Data quality",
-          "Lineage",
-          "Alerts"
-        ],
+        "tags": ["Data observability", "Data quality", "Lineage", "Alerts"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/governance/monte-carlo",
@@ -1283,12 +930,7 @@
       {
         "name": "Bigeye",
         "summary": "Data quality monitoring with self-serve rules, SLAs, anomaly detection, and alerting.",
-        "tags": [
-          "Data quality",
-          "Monitoring",
-          "SLA",
-          "Alerts"
-        ],
+        "tags": ["Data quality", "Monitoring", "SLA", "Alerts"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/governance/bigeye",
@@ -1300,12 +942,7 @@
       {
         "name": "Great Expectations",
         "summary": "Open-source data quality framework using Expectations for validation, docs, and pipeline checks.",
-        "tags": [
-          "Open source",
-          "Data quality",
-          "Validation",
-          "Docs"
-        ],
+        "tags": ["Open source", "Data quality", "Validation", "Docs"],
         "pricing": "OSS / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/great-expectations",
@@ -1317,12 +954,7 @@
       {
         "name": "dbt tests",
         "summary": "Built-in and custom dbt tests for model-level data quality with documentation and CI integration.",
-        "tags": [
-          "dbt",
-          "Tests",
-          "Data quality",
-          "Open source"
-        ],
+        "tags": ["dbt", "Tests", "Data quality", "Open source"],
         "pricing": "Open source",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/governance/dbt-tests",
@@ -1334,12 +966,7 @@
       {
         "name": "Castor",
         "summary": "Data catalog and discovery with lineage, documentation, asset scoring, and governance collaboration.",
-        "tags": [
-          "Data catalog",
-          "Lineage",
-          "Governance",
-          "Collaboration"
-        ],
+        "tags": ["Data catalog", "Lineage", "Governance", "Collaboration"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/governance/castor",
@@ -1351,12 +978,7 @@
       {
         "name": "Collibra",
         "summary": "Enterprise data governance and catalog covering quality, lineage, privacy, and compliance workflows.",
-        "tags": [
-          "Data governance",
-          "Catalog",
-          "Compliance",
-          "Lineage"
-        ],
+        "tags": ["Data governance", "Catalog", "Compliance", "Lineage"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/governance/collibra",
@@ -1368,12 +990,7 @@
       {
         "name": "Alation",
         "summary": "Enterprise data catalog and governance with search, lineage, policies, and collaboration to drive discovery.",
-        "tags": [
-          "Data catalog",
-          "Governance",
-          "Search",
-          "Lineage"
-        ],
+        "tags": ["Data catalog", "Governance", "Search", "Lineage"],
         "pricing": "Subscription",
         "deployment": "Cloud",
         "link": "data-analysis-tools/governance/alation",
@@ -1385,12 +1002,7 @@
       {
         "name": "DataRobot",
         "summary": "Enterprise AutoML and MLOps platform with automated feature engineering, leaderboards, explainability, and monitored deployments across cloud/on-prem.",
-        "tags": [
-          "AutoML",
-          "MLOps",
-          "Enterprise",
-          "Governance"
-        ],
+        "tags": ["AutoML", "MLOps", "Enterprise", "Governance"],
         "pricing": "Subscription / Trial",
         "deployment": "Cloud / On-prem / Hybrid",
         "link": "data-analysis-tools/ai-assistants/datarobot",
@@ -1402,12 +1014,7 @@
       {
         "name": "H2O.ai",
         "summary": "Open-source H2O-3 plus Driverless AI for automated feature engineering, time series, explainability, and self-hosted or cloud AutoML.",
-        "tags": [
-          "AutoML",
-          "Open source",
-          "Time series",
-          "MLOps"
-        ],
+        "tags": ["AutoML", "Open source", "Time series", "MLOps"],
         "pricing": "Open source / Subscription",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/ai-assistants/h2o-ai",
@@ -1419,12 +1026,7 @@
       {
         "name": "SageMaker",
         "summary": "AWS managed ML platform with Studio/Notebooks, Autopilot AutoML, built-in training/inference, Pipelines, and Model Registry.",
-        "tags": [
-          "Managed ML",
-          "AutoML",
-          "AWS",
-          "MLOps"
-        ],
+        "tags": ["Managed ML", "AutoML", "AWS", "MLOps"],
         "pricing": "Pay-as-you-go",
         "deployment": "AWS",
         "link": "data-analysis-tools/ai-assistants/sagemaker",
@@ -1436,12 +1038,7 @@
       {
         "name": "Vertex AI",
         "summary": "Google Cloud unified ML/AutoML/GenAI platform with Model Garden, Pipelines, Feature Store, and monitoring integrated with BigQuery.",
-        "tags": [
-          "AutoML",
-          "GenAI",
-          "GCP",
-          "MLOps"
-        ],
+        "tags": ["AutoML", "GenAI", "GCP", "MLOps"],
         "pricing": "Usage-based",
         "deployment": "Google Cloud",
         "link": "data-analysis-tools/ai-assistants/vertex-ai",
@@ -1453,12 +1050,7 @@
       {
         "name": "GPT-style SQL/vis assistants",
         "summary": "Natural-language SQL and visualization assistants (ChatGPT-style) that generate queries/charts, explain results, and connect securely to databases/BI.",
-        "tags": [
-          "NL2SQL",
-          "AI assistant",
-          "Visualization",
-          "Chat"
-        ],
+        "tags": ["NL2SQL", "AI assistant", "Visualization", "Chat"],
         "pricing": "Varies (SaaS / API)",
         "deployment": "Cloud / Embedded",
         "link": "data-analysis-tools/ai-assistants/gpt-sql-vis-assistants",
@@ -1470,12 +1062,7 @@
       {
         "name": "Airflow",
         "summary": "Apache Airflow orchestrates Python-defined DAGs with scheduling, retries, backfills, and a large provider ecosystem for self-hosted data workflows.",
-        "tags": [
-          "Orchestration",
-          "Open source",
-          "Python",
-          "Scheduling"
-        ],
+        "tags": ["Orchestration", "Open source", "Python", "Scheduling"],
         "pricing": "Open source",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/airflow",
@@ -1487,12 +1074,7 @@
       {
         "name": "Dagster",
         "summary": "Open-source orchestrator centered on software-defined assets with typing/validation, lineage, observability, and hybrid execution.",
-        "tags": [
-          "Orchestration",
-          "Open source",
-          "Data assets",
-          "Observability"
-        ],
+        "tags": ["Orchestration", "Open source", "Data assets", "Observability"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/dagster",
@@ -1504,12 +1086,7 @@
       {
         "name": "Prefect",
         "summary": "Python-first open-source workflow orchestration with Flows/Tasks, retries, caching, deployments, and cloud/self-hosted monitoring.",
-        "tags": [
-          "Orchestration",
-          "Open source",
-          "Python",
-          "Monitoring"
-        ],
+        "tags": ["Orchestration", "Open source", "Python", "Monitoring"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/prefect",
@@ -1521,12 +1098,7 @@
       {
         "name": "dbt",
         "summary": "Open-source analytics engineering framework using SQL/Jinja for models, tests, and docs across warehouses and Lakehouse.",
-        "tags": [
-          "dbt",
-          "SQL",
-          "Transformations",
-          "Open source"
-        ],
+        "tags": ["dbt", "SQL", "Transformations", "Open source"],
         "pricing": "Open source / Cloud",
         "deployment": "Self-hosted / Cloud",
         "link": "data-analysis-tools/open-source/dbt",
@@ -1557,10 +1129,7 @@
       {
         "name": "MetricBoard",
         "summary": "KPI monitoring and alerts",
-        "tags": [
-          "Monitoring",
-          "Dashboard"
-        ],
+        "tags": ["Monitoring", "Dashboard"],
         "pricing": "Free / Pro",
         "deployment": "Cloud",
         "link": "#",
@@ -1570,10 +1139,7 @@
       {
         "name": "StreamKit",
         "summary": "Real-time processing and streaming compute",
-        "tags": [
-          "Streaming",
-          "Real-time"
-        ],
+        "tags": ["Streaming", "Real-time"],
         "pricing": "Open source",
         "deployment": "Self-hosted",
         "link": "#",
@@ -1583,10 +1149,7 @@
       {
         "name": "ChartCraft",
         "summary": "Low-code chart builder",
-        "tags": [
-          "Visualization",
-          "Low-code"
-        ],
+        "tags": ["Visualization", "Low-code"],
         "pricing": "Free trial",
         "deployment": "Cloud",
         "link": "#",

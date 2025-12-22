@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "note": "Home Feed 工具摘要翻译（es/de/fr/pt/ru/id/ar），保留产品名，摘要/标签/定价/部署本地化"
+  },
+  "tools": {
+    "Tableau": {
+      "es": {"summary": "BI de arrastrar y soltar para dashboards interactivos; conecta bases de datos, hojas de cálculo y nubes con Prep, análisis Desktop/Cloud y uso compartido en Server/Cloud.", "pricing": "Comercial / Prueba", "deployment": "Escritorio / Nube / Self-hosted", "tags": ["BI", "Visualización", "Autoservicio", "Panel"]},
+      "de": {"summary": "Drag-and-drop-BI für interaktive Dashboards; verbindet Datenbanken, Tabellen und Clouds mit Prep, Desktop/Cloud-Analyse und Server/Cloud-Sharing.", "pricing": "Kommerziell / Testversion", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Visualisierung", "Self-Service", "Dashboard"]},
+      "fr": {"summary": "BI en glisser-déposer pour des tableaux de bord interactifs ; connecte bases de données, feuilles et clouds avec Prep, analyses Desktop/Cloud et partage Server/Cloud.", "pricing": "Commercial / Essai", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Visualisation", "Self-service", "Dashboard"]},
+      "pt": {"summary": "BI de arrastar e soltar para dashboards interativos; conecta bancos, planilhas e clouds com Prep, análise Desktop/Cloud e compartilhamento Server/Cloud.", "pricing": "Comercial / Teste", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Visualização", "Self-service", "Dashboard"]},
+      "ru": {"summary": "Drag-and-drop BI для интерактивных дашбордов; подключает БД, таблицы и облака, с Prep, анализом Desktop/Cloud и шарингом Server/Cloud.", "pricing": "Коммерческая / Триал", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Визуализация", "Self-service", "Дашборд"]},
+      "id": {"summary": "BI drag-and-drop untuk dashboard interaktif; terhubung ke database, spreadsheet, dan cloud dengan Prep, analitik Desktop/Cloud, serta berbagi via Server/Cloud.", "pricing": "Komersial / Uji coba", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Visualisasi", "Self-service", "Dashboard"]},
+      "ar": {"summary": "ذكاء أعمال بالسحب والإفلات للوحة معلومات تفاعلية؛ يتصل بقاعدة بيانات وجداول وغيوم مع Prep، وتحليل Desktop/Cloud، ومشاركة عبر Server/Cloud.", "pricing": "تجاري / تجريبي", "deployment": "سطح مكتب / سحابة / مستضاف ذاتياً", "tags": ["ذكاء الأعمال", "تصور", "خدمة ذاتية", "لوحة تحكم"]}
+    },
+    "Power BI": {
+      "es": {"summary": "Suite BI de autoservicio de Microsoft con preparación Power Query, modelado DAX, dashboards interactivos y gran abanico de conectores; integración estrecha con el stack Microsoft.", "pricing": "Desktop Gratis / Pro / Premium", "deployment": "Escritorio / Nube / Self-hosted", "tags": ["BI", "Visualización", "Autoservicio", "Dashboard"]},
+      "de": {"summary": "Self-Service-BI-Suite von Microsoft mit Power Query, DAX-Modellierung, interaktiven Dashboards und breiten Konnektoren; eng in den Microsoft-Stack integriert.", "pricing": "Desktop Gratis / Pro / Premium", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Visualisierung", "Self-service", "Dashboard"]},
+      "fr": {"summary": "Suite BI self-service de Microsoft avec préparation Power Query, modélisation DAX, dashboards interactifs et nombreux connecteurs ; intégration étroite avec l’écosystème Microsoft.", "pricing": "Desktop gratuit / Pro / Premium", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Visualisation", "Self-service", "Dashboard"]},
+      "pt": {"summary": "BI self-service da Microsoft com Power Query, modelagem DAX, dashboards interativos e ampla gama de conectores; integração forte com o stack Microsoft.", "pricing": "Desktop grátis / Pro / Premium", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Visualização", "Self-service", "Dashboard"]},
+      "ru": {"summary": "Self-service BI от Microsoft: Power Query, DAX-моделирование, интерактивные дашборды и широкий набор коннекторов; плотная интеграция с экосистемой Microsoft.", "pricing": "Бесплатно (Desktop) / Pro / Premium", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Визуализация", "Self-service", "Дашборд"]},
+      "id": {"summary": "BI self-service dari Microsoft dengan Power Query, pemodelan DAX, dashboard interaktif, dan konektor luas; terintegrasi erat dengan ekosistem Microsoft.", "pricing": "Desktop Gratis / Pro / Premium", "deployment": "Desktop / Cloud / Self-hosted", "tags": ["BI", "Visualisasi", "Self-service", "Dashboard"]},
+      "ar": {"summary": "حزمة ذكاء أعمال ذاتي من مايكروسوفت مع Power Query وDAX ولوحات تفاعلية واتصالات واسعة؛ تكامل عميق مع حزمة مايكروسوفت.", "pricing": "سطح مكتب مجاني / Pro / Premium", "deployment": "سطح مكتب / سحابة / مستضاف ذاتياً", "tags": ["ذكاء الأعمال", "تصور", "خدمة ذاتية", "لوحة تحكم"]}
+    }
+  }
+}

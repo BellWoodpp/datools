@@ -10,218 +10,218 @@
     "promotionText": "🎁 前1000名客户享受$100优惠",
     "userCount": "来自250+满意用户",
     "techStackTitle": "DaTools 建立在巨人的肩膀上",
-    "techStackItems": [
-      {
+    "techStackItems": {
+      "0": {
         "name": "Next.js",
         "description": "React 全栈框架"
       },
-      {
+      "1": {
         "name": "React",
         "description": "用户界面库"
       },
-      {
+      "2": {
         "name": "TailwindCSS",
         "description": "实用优先的CSS框架"
       },
-      {
+      "3": {
         "name": "Shadcn/UI",
         "description": "现代组件库"
       },
-      {
+      "4": {
         "name": "Vercel",
         "description": "部署平台"
       }
-    ],
+    },
     "featuresTitle": "什么是 DaTools",
     "featuresSubtitle": "DaTools 是一个用于构建 AI SaaS 初创公司的 NextJS 模板。内置多种模板和组件。",
-    "features": [
-      {
+    "features": {
+      "0": {
         "title": "即用型模板",
         "description": "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。"
       },
-      {
+      "1": {
         "title": "基础设施设置",
         "description": "通过内置的最佳实践，立即获得可扩展的基础设施访问权限。"
       },
-      {
+      "2": {
         "title": "快速部署",
         "description": "在几小时内而不是几天内将您的 AI SaaS 应用程序部署到生产环境。"
       }
-    ],
+    },
     "benefitsTitle": "为什么选择 DaTools",
     "benefitsSubtitle": "获得启动 AI 初创公司所需的一切 - 从即用型模板到技术支持。",
-    "benefits": [
-      {
+    "benefits": {
+      "0": {
         "title": "完整框架",
         "description": "基于 Next.js 构建，包含身份验证、支付和 AI 集成 - 一切开箱即用。"
       },
-      {
+      "1": {
         "title": "丰富的模板库",
         "description": "选择适合您需求的模板，快速开始构建。"
       },
-      {
+      "2": {
         "title": "技术指导",
         "description": "获得专业技术支持，帮助您快速上手。"
       }
-    ],
+    },
     "launchStepsTitle": "如何使用 DaTools 发布",
     "launchStepsSubtitle": "通过三个简单步骤让您的 AI SaaS 初创公司运行：",
-    "launchSteps": [
-      {
+    "launchSteps": {
+      "0": {
         "step": "1",
         "title": "获取 DaTools",
         "description": "一次性购买 DaTools。检查您的电子邮件获取代码和文档。"
       },
-      {
+      "1": {
         "step": "2",
         "title": "开始您的项目",
         "description": "阅读文档并克隆 DaTools 代码。开始构建您的 AI SaaS 初创公司。"
       },
-      {
+      "2": {
         "step": "3",
         "title": "自定义您的项目",
         "description": "使用您的数据和内容修改模板。满足特定的 AI 功能需求。"
       },
-      {
+      "3": {
         "step": "4",
         "title": "部署到生产环境",
         "description": "通过几个步骤将您的项目部署到生产环境，立即开始为客户服务。"
       }
-    ],
+    },
     "keyFeaturesTitle": "DaTools 的关键特性",
     "keyFeaturesSubtitle": "快速高效地启动 AI SaaS 初创公司所需的一切。",
-    "keyFeatures": [
-      {
+    "keyFeatures": {
+      "0": {
         "title": "Next.js 模板",
         "description": "生产就绪的 Next.js 模板，具有 SEO 友好的结构和 i18n 支持。"
       },
-      {
+      "1": {
         "title": "身份验证和支付",
         "description": "集成 Google OAuth、一键登录和 Stripe 支付处理。"
       },
-      {
+      "2": {
         "title": "数据基础设施",
         "description": "内置 Supabase 集成，提供可靠和可扩展的数据存储。"
       },
-      {
+      "3": {
         "title": "一键部署",
         "description": "无缝部署到 Vercel 或 Cloudflare，自动设置。"
       },
-      {
+      "4": {
         "title": "业务分析",
         "description": "集成 Google Analytics 和 Search Console 用于跟踪增长。"
       },
-      {
+      "5": {
         "title": "AI 就绪基础设施",
         "description": "预配置的 AI 集成，内置积分系统和 API 销售。"
       }
-    ],
+    },
     "testimonialsTitle": "用户对 DaTools 的评价",
     "testimonialsSubtitle": "听听使用 DaTools 启动 AI 初创公司的开发者和创始人的声音。",
-    "testimonials": [
-      {
+    "testimonials": {
+      "0": {
         "quote": "DaTools 让从想法到产品的旅程变得比以往任何时候都简单。其全面的模板、脚本和基础基础设施意味着我几乎不需要花时间在基础开发上。我强烈推荐给希望快速启动 SaaS 业务的创始人。",
         "author": "AITDK 作者",
         "role": "独立开发者"
       },
-      {
+      "1": {
         "quote": "DaTools 让设置支付和处理商业化的所有细节变得超级简单，这样我们就可以专注于构建重要的功能。如果您想快速发布和扩展 AI SaaS，DaTools 是不二之选！",
         "author": "Scar",
         "role": "前端工程师"
       },
-      {
+      "2": {
         "quote": "我使用 DaTools 在8分钟内启动了一个新网站，包括登录/支付，太棒了！",
         "author": "Lafe",
         "role": "技术负责人"
       }
-    ],
+    },
     "productShowcaseTitle": "AI SaaS 初创公司展示",
     "productShowcaseSubtitle": "看看使用 DaTools 构建的令人惊叹的 AI SaaS 应用",
-    "showcaseItems": [
-      {
+    "showcaseItems": {
+      "0": {
         "name": "Raphael AI",
         "description": "几秒钟内创建令人惊叹的 AI 生成图像",
         "image": "/api/placeholder/400/300",
         "category": "AI 图像生成"
       },
-      {
+      "1": {
         "name": "SiteSnapper",
         "description": "一键捕获任何网站",
         "image": "/api/placeholder/400/300",
         "category": "网站工具"
       },
-      {
+      "2": {
         "name": "SEO Combine",
         "description": "所有 SEO 工具合而为一",
         "image": "/api/placeholder/400/300",
         "category": "SEO 工具"
       },
-      {
+      "3": {
         "name": "TrendsBar",
         "description": "Google 趋势分析工具",
         "image": "/api/placeholder/400/300",
         "category": "数据分析"
       },
-      {
+      "4": {
         "name": "Deepseek Artifacts",
         "description": "使用世界领先的开源模型创建 React 应用",
         "image": "/api/placeholder/400/300",
         "category": "AI 开发"
       },
-      {
+      "5": {
         "name": "Rednote Club",
         "description": "在 Rednote 中分享您生活的美好时刻",
         "image": "/api/placeholder/400/300",
         "category": "社交平台"
       }
-    ],
+    },
     "statsTitle": "人们喜爱 DaTools",
     "statsSubtitle": "因为它易于使用且发布快速",
-    "stats": [
-      {
+    "stats": {
+      "0": {
         "number": "250+",
         "label": "客户",
         "description": "信任我们"
       },
-      {
+      "1": {
         "number": "30+",
         "label": "组件",
         "description": "内置构建"
       },
-      {
+      "2": {
         "number": "5",
         "label": "分钟",
         "description": "快速发布"
       }
-    ],
+    },
     "faqTitle": "关于 DaTools 的常见问题",
     "faqSubtitle": "还有其他问题？在 Discord 上联系我们或发送邮件。",
-    "faqs": [
-      {
+    "faqs": {
+      "0": {
         "question": "DaTools 到底是什么，它是如何工作的？",
         "answer": "DaTools 是专门为构建 AI SaaS 初创公司而设计的综合 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
       },
-      {
+      "1": {
         "question": "使用 DaTools 需要高级技术技能吗？",
         "answer": "虽然基本的编程知识很有帮助，但 DaTools 被设计为对开发者友好。我们的模板和文档让您即使不是 AI 或云基础设施专家也能轻松上手。"
       },
-      {
+      "2": {
         "question": "我可以使用 DaTools 构建什么类型的 AI SaaS？",
         "answer": "DaTools 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖了流行的用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
       },
-      {
+      "3": {
         "question": "使用 DaTools 发布通常需要多长时间？",
         "answer": "使用 DaTools，您可以在几小时内拥有一个工作原型，在几小时内拥有一个生产就绪的应用程序。我们的一键部署和预配置基础设施大大减少了传统的数月开发周期。"
       },
-      {
+      "4": {
         "question": "DaTools 基础设施包含什么？",
         "answer": "DaTools 提供完整的基础设施堆栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都预配置遵循行业最佳实践。"
       },
-      {
+      "5": {
         "question": "我可以自定义模板以匹配我的品牌吗？",
         "answer": "当然可以！所有 DaTools 模板都是完全可自定义的。您可以修改设计、功能和特性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。"
       }
-    ],
+    },
     "finalCtaTitle": "发布您的第一个 AI SaaS 初创公司",
     "finalCtaSubtitle": "从这里开始，使用 DaTools 发布。",
     "finalCtaButton": "获取 DaTools",
@@ -240,1360 +240,1360 @@
     "collectionsTitle": "精选合集",
     "latestTitle": "最新上架",
     "filterHint": "支持按名称、标签、价格和部署方式快速筛选。",
-    "categories": [
-      {
+    "categories": {
+      "0": {
         "title": "BI / 可视化",
-        "items": [
-          "Tableau",
-          "Power BI",
-          "Looker",
-          "Qlik",
-          "Metabase",
-          "Superset",
-          "Redash",
-          "Klipfolio",
-          "Mode",
-          "Sigma",
-          "ThoughtSpot",
-          "Looker Studio",
-          "Lightdash"
-        ]
+        "items": {
+          "0": "Tableau",
+          "1": "Power BI",
+          "2": "Looker",
+          "3": "Qlik",
+          "4": "Metabase",
+          "5": "Superset",
+          "6": "Redash",
+          "7": "Klipfolio",
+          "8": "Mode",
+          "9": "Sigma",
+          "10": "ThoughtSpot",
+          "11": "Looker Studio",
+          "12": "Lightdash"
+        }
       },
-      {
+      "1": {
         "title": "埋点 / 产品分析",
-        "items": [
-          "Amplitude",
-          "Mixpanel",
-          "Heap",
-          "PostHog",
-          "Pendo",
-          "FullStory",
-          "June",
-          "LogRocket",
-          "Smartlook"
-        ]
+        "items": {
+          "0": "Amplitude",
+          "1": "Mixpanel",
+          "2": "Heap",
+          "3": "PostHog",
+          "4": "Pendo",
+          "5": "FullStory",
+          "6": "June",
+          "7": "LogRocket",
+          "8": "Smartlook"
+        }
       },
-      {
+      "2": {
         "title": "ETL / ELT 与集成",
-        "items": [
-          "Fivetran",
-          "Airbyte",
-          "Stitch",
-          "Hevo",
-          "Matillion",
-          "Segment",
-          "RudderStack",
-          "N8n",
-          "Tray.io",
-          "Workato",
-          "Zapier"
-        ]
+        "items": {
+          "0": "Fivetran",
+          "1": "Airbyte",
+          "2": "Stitch",
+          "3": "Hevo",
+          "4": "Matillion",
+          "5": "Segment",
+          "6": "RudderStack",
+          "7": "N8n",
+          "8": "Tray.io",
+          "9": "Workato",
+          "10": "Zapier"
+        }
       },
-      {
+      "3": {
         "title": "数据仓库 / 数据湖",
-        "items": [
-          "Snowflake",
-          "BigQuery",
-          "Redshift",
-          "Databricks",
-          "ClickHouse",
-          "DuckDB",
-          "MotherDuck",
-          "Firebolt"
-        ]
+        "items": {
+          "0": "Snowflake",
+          "1": "BigQuery",
+          "2": "Redshift",
+          "3": "Databricks",
+          "4": "ClickHouse",
+          "5": "DuckDB",
+          "6": "MotherDuck",
+          "7": "Firebolt"
+        }
       },
-      {
+      "4": {
         "title": "笔记本 / 协作分析",
-        "items": [
-          "Hex",
-          "Observable",
-          "Deepnote",
-          "Jupyter / VS Code",
-          "Polynote"
-        ]
+        "items": {
+          "0": "Hex",
+          "1": "Observable",
+          "2": "Deepnote",
+          "3": "Jupyter / VS Code",
+          "4": "Polynote"
+        }
       },
-      {
+      "5": {
         "title": "实验 / 归因",
-        "items": [
-          "Optimizely",
-          "VWO",
-          "AB Tasty",
-          "Statsig",
-          "GrowthBook",
-          "Convert",
-          "Split.io"
-        ]
+        "items": {
+          "0": "Optimizely",
+          "1": "VWO",
+          "2": "AB Tasty",
+          "3": "Statsig",
+          "4": "GrowthBook",
+          "5": "Convert",
+          "6": "Split.io"
+        }
       },
-      {
+      "6": {
         "title": "数据质量 / 治理",
-        "items": [
-          "Monte Carlo",
-          "Bigeye",
-          "Great Expectations",
-          "dbt 测试",
-          "Castor",
-          "Collibra",
-          "Alation"
-        ]
+        "items": {
+          "0": "Monte Carlo",
+          "1": "Bigeye",
+          "2": "Great Expectations",
+          "3": "dbt 测试",
+          "4": "Castor",
+          "5": "Collibra",
+          "6": "Alation"
+        }
       },
-      {
+      "7": {
         "title": "ML / AutoML / AI 助手",
-        "items": [
-          "DataRobot",
-          "H2O.ai",
-          "SageMaker",
-          "Vertex AI",
-          "GPT 类 SQL/可视化助手"
-        ]
+        "items": {
+          "0": "DataRobot",
+          "1": "H2O.ai",
+          "2": "SageMaker",
+          "3": "Vertex AI",
+          "4": "GPT 类 SQL/可视化助手"
+        }
       },
-      {
+      "8": {
         "title": "开源 / 自建组件",
-        "items": [
-          "Airflow",
-          "Dagster",
-          "Prefect",
-          "dbt",
-          "Superset",
-          "Metabase",
-          "Airbyte",
-          "Great Expectations",
-          "PostHog"
-        ]
+        "items": {
+          "0": "Airflow",
+          "1": "Dagster",
+          "2": "Prefect",
+          "3": "dbt",
+          "4": "Superset",
+          "5": "Metabase",
+          "6": "Airbyte",
+          "7": "Great Expectations",
+          "8": "PostHog"
+        }
       }
-    ],
-    "tools": [
-      {
+    },
+    "tools": {
+      "0": {
         "name": "Tableau",
         "summary": "拖拽式 BI 与交互式仪表板，支持多数据源连接，涵盖 Prep 清洗、Desktop/Cloud 分析及 Server/Cloud 协作共享。",
-        "tags": [
-          "商业智能",
-          "可视化",
-          "自助分析",
-          "仪表板"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "可视化",
+          "2": "自助分析",
+          "3": "仪表板"
+        },
         "pricing": "商业版 / 试用",
         "deployment": "桌面 / 云端 / 私有部署",
         "link": "data-analysis-tools/visualization/tableau",
         "officialUrl": "https://www.tableau.com/",
         "logo": "https://r2.datools.org/bi-Visualization/tableau.ico",
-        "votes": 128,
-        "comments": 12
+        "votes": "128",
+        "comments": "12"
       },
-      {
+      "1": {
         "name": "Power BI",
         "summary": "微软的自助式 BI 与可视化套件，支持 Power Query 清洗、DAX 建模、交互式仪表板与多源连接，深度集成 Microsoft 生态。",
-        "tags": [
-          "商业智能",
-          "可视化",
-          "自助分析",
-          "仪表板"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "可视化",
+          "2": "自助分析",
+          "3": "仪表板"
+        },
         "pricing": "免费桌面版 / Pro / Premium",
         "deployment": "桌面 / 云端 / 私有部署",
         "link": "data-analysis-tools/visualization/power-bi",
         "officialUrl": "https://www.microsoft.com/en-us/power-platform/products/power-bi",
         "logo": "https://r2.datools.org/bi-Visualization/power-BI.ico",
-        "votes": 120,
-        "comments": 10
+        "votes": "120",
+        "comments": "10"
       },
-      {
+      "2": {
         "name": "Looker",
         "summary": "Google Cloud 的语义层与可视化平台，基于 LookML 建模统一指标，支持嵌入式分析与数据治理。",
-        "tags": [
-          "商业智能",
-          "可视化",
-          "语义层",
-          "嵌入式"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "可视化",
+          "2": "语义层",
+          "3": "嵌入式"
+        },
         "pricing": "订阅制（企业版）",
         "deployment": "云端",
         "link": "data-analysis-tools/visualization/looker",
         "officialUrl": "https://looker.com/",
         "logo": "https://r2.datools.org/bi-Visualization/loker.ico",
-        "votes": 92,
-        "comments": 7
+        "votes": "92",
+        "comments": "7"
       },
-      {
+      "3": {
         "name": "Qlik",
         "summary": "Qlik Sense 提供关联内存引擎、可视化分析与数据集成（Qlik Cloud Data Integration），擅长自助式探索与内存计算。",
-        "tags": [
-          "商业智能",
-          "可视化",
-          "自助分析",
-          "内存计算"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "可视化",
+          "2": "自助分析",
+          "3": "内存计算"
+        },
         "pricing": "订阅制 / 企业版",
         "deployment": "云端 / 私有部署",
         "link": "data-analysis-tools/visualization/qlik",
         "officialUrl": "https://www.qlik.com/",
         "logo": "https://r2.datools.org/bi-Visualization/quilk.png",
-        "votes": 86,
-        "comments": 6
+        "votes": "86",
+        "comments": "6"
       },
-      {
+      "4": {
         "name": "Metabase",
         "summary": "开源 BI 与可视化，支持 SQL/GUI 问答、仪表板与嵌入，易于自托管并可连接主流数据库。",
-        "tags": [
-          "商业智能",
-          "可视化",
-          "开源",
-          "自托管"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "可视化",
+          "2": "开源",
+          "3": "自托管"
+        },
         "pricing": "开源 / 云端 / 企业版",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/metabase",
         "officialUrl": "https://www.metabase.com/",
         "logo": "https://r2.datools.org/bi-Visualization/metabase.svg",
-        "votes": 110,
-        "comments": 9
+        "votes": "110",
+        "comments": "9"
       },
-      {
+      "5": {
         "name": "Superset",
         "summary": "Apache 开源 BI，支持 SQL Lab、可视化插件、仪表板与权限，适合自托管与云原生部署。",
-        "tags": [
-          "商业智能",
-          "可视化",
-          "开源",
-          "自托管"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "可视化",
+          "2": "开源",
+          "3": "自托管"
+        },
         "pricing": "开源 / 云端托管",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/superset",
         "officialUrl": "https://superset.apache.org/",
         "logo": "https://r2.datools.org/bi-Visualization/superset.ico",
-        "votes": 95,
-        "comments": 8
+        "votes": "95",
+        "comments": "8"
       },
-      {
+      "6": {
         "name": "Redash",
         "summary": "SQL 驱动的轻量 BI，连接多数据源，支持参数化查询、可视化、仪表板与定时告警。",
-        "tags": [
-          "商业智能",
-          "SQL",
-          "可视化",
-          "轻量"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "SQL",
+          "2": "可视化",
+          "3": "轻量"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/visualization/redash",
         "officialUrl": "https://redash.io/",
         "logo": "https://r2.datools.org/bi-Visualization/redash.png",
-        "votes": 88,
-        "comments": 7
+        "votes": "88",
+        "comments": "7"
       },
-      {
+      "7": {
         "name": "Klipfolio",
         "summary": "面向 KPI 的仪表板与监控工具，拖拽式构建，丰富 SaaS/数据库连接器与刷新告警。",
-        "tags": [
-          "商业智能",
-          "仪表板",
-          "关键绩效指标",
-          "SaaS"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "仪表板",
+          "2": "关键绩效指标",
+          "3": "SaaS"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/visualization/klipfolio",
         "officialUrl": "https://www.klipfolio.com/",
         "logo": "https://r2.datools.org/bi-Visualization/klipfolio.png",
-        "votes": 76,
-        "comments": 5
+        "votes": "76",
+        "comments": "5"
       },
-      {
+      "8": {
         "name": "Mode",
         "summary": "分析师友好的 BI，结合 SQL、Python/R Notebook 与可视化，便于协作分享与嵌入。",
-        "tags": [
-          "商业智能",
-          "SQL",
-          "笔记本",
-          "协作"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "SQL",
+          "2": "笔记本",
+          "3": "协作"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/visualization/mode",
         "officialUrl": "https://mode.com/",
         "logo": "https://r2.datools.org/bi-Visualization/mode.png",
-        "votes": 82,
-        "comments": 6
+        "votes": "82",
+        "comments": "6"
       },
-      {
+      "9": {
         "name": "Sigma",
         "summary": "类 Excel 的云端 BI，直接在数据仓库计算，适合业务团队自助探索与实时指标。",
-        "tags": [
-          "商业智能",
-          "可视化",
-          "自助分析",
-          "云仓"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "可视化",
+          "2": "自助分析",
+          "3": "云仓"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/visualization/sigma",
         "officialUrl": "https://www.sigmacomputing.com/",
         "logo": "https://r2.datools.org/bi-Visualization/sigma.png",
-        "votes": 74,
-        "comments": 5
+        "votes": "74",
+        "comments": "5"
       },
-      {
+      "10": {
         "name": "ThoughtSpot",
         "summary": "搜索驱动与 AI 辅助的自助分析，支持嵌入式分析与行级权限。",
-        "tags": [
-          "商业智能",
-          "搜索",
-          "自助分析",
-          "嵌入式"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "搜索",
+          "2": "自助分析",
+          "3": "嵌入式"
+        },
         "pricing": "订阅制",
         "deployment": "云端 / 私有部署",
         "link": "data-analysis-tools/visualization/thoughtspot",
         "officialUrl": "https://www.thoughtspot.com/",
         "logo": "https://r2.datools.org/bi-Visualization/toughtspot.png",
-        "votes": 79,
-        "comments": 6
+        "votes": "79",
+        "comments": "6"
       },
-      {
+      "11": {
         "name": "Looker Studio",
         "summary": "Google 的免费仪表板与可视化工具（原 Data Studio），丰富连接器与分享嵌入。",
-        "tags": [
-          "商业智能",
-          "可视化",
-          "仪表板",
-          "免费"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "可视化",
+          "2": "仪表板",
+          "3": "免费"
+        },
         "pricing": "免费 / 付费连接器",
         "deployment": "云端",
         "link": "data-analysis-tools/visualization/looker-studio",
         "officialUrl": "https://lookerstudio.google.com/",
         "logo": "https://r2.datools.org/bi-Visualization/looker-studio.svg",
-        "votes": 90,
-        "comments": 8
+        "votes": "90",
+        "comments": "8"
       },
-      {
+      "12": {
         "name": "Lightdash",
         "summary": "面向 dbt 的开源 BI，使用 dbt 模型提供 Looker 风格探索与仪表板，可自托管或云端。",
-        "tags": [
-          "商业智能",
-          "开源",
-          "dbt",
-          "自托管"
-        ],
+        "tags": {
+          "0": "商业智能",
+          "1": "开源",
+          "2": "dbt",
+          "3": "自托管"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/visualization/lightdash",
         "officialUrl": "https://www.lightdash.com/",
         "logo": "https://r2.datools.org/bi-Visualization/lightdash.png",
-        "votes": 72,
-        "comments": 5
+        "votes": "72",
+        "comments": "5"
       },
-      {
+      "13": {
         "name": "Amplitude",
         "summary": "产品分析平台，支持事件采集、漏斗、留存、群组分析与实验，常用于增长与用户行为洞察。",
-        "tags": [
-          "产品分析",
-          "事件",
-          "留存",
-          "实验"
-        ],
+        "tags": {
+          "0": "产品分析",
+          "1": "事件",
+          "2": "留存",
+          "3": "实验"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/product-analytics/amplitude",
         "officialUrl": "https://amplitude.com/",
         "logo": "https://r2.datools.org/product-analytics/amplitude.png",
-        "votes": 130,
-        "comments": 12
+        "votes": "130",
+        "comments": "12"
       },
-      {
+      "14": {
         "name": "Mixpanel",
         "summary": "事件与用户行为分析，提供漏斗、留存、群组与信号分析，常用于产品优化和增长实验。",
-        "tags": [
-          "产品分析",
-          "事件",
-          "漏斗",
-          "留存"
-        ],
+        "tags": {
+          "0": "产品分析",
+          "1": "事件",
+          "2": "漏斗",
+          "3": "留存"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/product-analytics/mixpanel",
         "officialUrl": "https://mixpanel.com/",
         "logo": "https://r2.datools.org/product-analytics/mixpanel.png",
-        "votes": 125,
-        "comments": 11
+        "votes": "125",
+        "comments": "11"
       },
-      {
+      "15": {
         "name": "Heap",
         "summary": "自动采集事件与行为，无需预埋点即可分析漏斗、留存与路径，适合快速产品洞察。",
-        "tags": [
-          "产品分析",
-          "自动采集",
-          "漏斗",
-          "留存"
-        ],
+        "tags": {
+          "0": "产品分析",
+          "1": "自动采集",
+          "2": "漏斗",
+          "3": "留存"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/product-analytics/heap",
         "officialUrl": "https://heap.io/",
         "logo": "https://r2.datools.org/product-analytics/heap.png",
-        "votes": 90,
-        "comments": 7
+        "votes": "90",
+        "comments": "7"
       },
-      {
+      "16": {
         "name": "PostHog",
         "summary": "开源产品分析与埋点平台，提供事件采集、漏斗、留存、Session 回放、Feature Flags 和 A/B 实验，可自托管。",
-        "tags": [
-          "产品分析",
-          "开源",
-          "自托管",
-          "Session 回放"
-        ],
+        "tags": {
+          "0": "产品分析",
+          "1": "开源",
+          "2": "自托管",
+          "3": "Session 回放"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/posthog",
         "officialUrl": "https://posthog.com/",
         "logo": "https://r2.datools.org/product-analytics/posthog.png",
-        "votes": 118,
-        "comments": 10
+        "votes": "118",
+        "comments": "10"
       },
-      {
+      "17": {
         "name": "Pendo",
         "summary": "产品体验与分析平台，集成应用内引导、反馈收集和行为分析，帮助提升留存和转化。",
-        "tags": [
-          "产品分析",
-          "引导",
-          "反馈",
-          "留存"
-        ],
+        "tags": {
+          "0": "产品分析",
+          "1": "引导",
+          "2": "反馈",
+          "3": "留存"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/product-analytics/pendo",
         "officialUrl": "https://www.pendo.io/",
         "logo": "https://r2.datools.org/product-analytics/pendo.ico",
-        "votes": 84,
-        "comments": 6
+        "votes": "84",
+        "comments": "6"
       },
-      {
+      "18": {
         "name": "FullStory",
         "summary": "数字体验分析与 Session 回放，记录用户行为、路径与体验问题，支持漏斗/留存与告警。",
-        "tags": [
-          "体验分析",
-          "Session 回放",
-          "漏斗",
-          "留存"
-        ],
+        "tags": {
+          "0": "体验分析",
+          "1": "Session 回放",
+          "2": "漏斗",
+          "3": "留存"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/product-analytics/fullstory",
         "officialUrl": "https://www.fullstory.com/",
         "logo": "https://r2.datools.org/product-analytics/fullstory.svg",
-        "votes": 88,
-        "comments": 7
+        "votes": "88",
+        "comments": "7"
       },
-      {
+      "19": {
         "name": "June",
         "summary": "面向 SaaS 的产品指标仪表板与报告，基于事件数据生成漏斗、留存、活跃与增长看板。",
-        "tags": [
-          "产品分析",
-          "SaaS 指标",
-          "仪表板",
-          "留存"
-        ],
+        "tags": {
+          "0": "产品分析",
+          "1": "SaaS 指标",
+          "2": "仪表板",
+          "3": "留存"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/product-analytics/june",
         "officialUrl": "https://www.june.so/",
         "logo": "https://r2.datools.org/product-analytics/june.ico",
-        "votes": 75,
-        "comments": 5
+        "votes": "75",
+        "comments": "5"
       },
-      {
+      "20": {
         "name": "LogRocket",
         "summary": "前端监控与产品体验分析，结合 Session 回放、性能监控和问题定位，支持漏斗与用户行为分析。",
-        "tags": [
-          "前端监控",
-          "Session 回放",
-          "性能",
-          "产品分析"
-        ],
+        "tags": {
+          "0": "前端监控",
+          "1": "Session 回放",
+          "2": "性能",
+          "3": "产品分析"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/product-analytics/logrocket",
         "officialUrl": "https://logrocket.com/",
         "logo": "https://r2.datools.org/product-analytics/logrocket.png",
-        "votes": 83,
-        "comments": 6
+        "votes": "83",
+        "comments": "6"
       },
-      {
+      "21": {
         "name": "Smartlook",
         "summary": "产品体验与行为分析，提供 Session 回放、漏斗、热力图与事件跟踪，定位体验问题与转化障碍。",
-        "tags": [
-          "Session 回放",
-          "漏斗",
-          "热力图",
-          "产品分析"
-        ],
+        "tags": {
+          "0": "Session 回放",
+          "1": "漏斗",
+          "2": "热力图",
+          "3": "产品分析"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/product-analytics/smartlook",
         "officialUrl": "https://www.smartlook.com/",
         "logo": "https://r2.datools.org/product-analytics/smartlook.png",
-        "votes": 78,
-        "comments": 6
+        "votes": "78",
+        "comments": "6"
       },
-      {
+      "22": {
         "name": "Fivetran",
         "summary": "全托管 ELT，同步数据库/SaaS/事件数据到仓库，支持调度、增量与监控告警。",
-        "tags": [
-          "ELT",
-          "集成",
-          "数据管道",
-          "云端"
-        ],
+        "tags": {
+          "0": "ELT",
+          "1": "集成",
+          "2": "数据管道",
+          "3": "云端"
+        },
         "pricing": "基于用量",
         "deployment": "云端",
         "link": "data-analysis-tools/elt-integration/fivetran",
         "officialUrl": "https://www.fivetran.com/",
         "logo": "https://r2.datools.org/ETL-integration/fivetran.png",
-        "votes": 120,
-        "comments": 9
+        "votes": "120",
+        "comments": "9"
       },
-      {
+      "23": {
         "name": "Airbyte",
         "summary": "开源 ELT 连接器平台，支持自托管与云端，拥有丰富社区连接器与增量同步。",
-        "tags": [
-          "ELT",
-          "开源",
-          "自托管",
-          "集成"
-        ],
+        "tags": {
+          "0": "ELT",
+          "1": "开源",
+          "2": "自托管",
+          "3": "集成"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/airbyte",
         "officialUrl": "https://airbyte.com/",
         "logo": "https://r2.datools.org/ETL-integration/airbyte.png",
-        "votes": 105,
-        "comments": 8
+        "votes": "105",
+        "comments": "8"
       },
-      {
+      "24": {
         "name": "Stitch",
         "summary": "轻量云端 ELT（Talend 旗下），提供常用连接器与调度，将数据写入仓库。",
-        "tags": [
-          "ELT",
-          "集成",
-          "云端",
-          "调度"
-        ],
+        "tags": {
+          "0": "ELT",
+          "1": "集成",
+          "2": "云端",
+          "3": "调度"
+        },
         "pricing": "免费层 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/elt-integration/stitch",
         "officialUrl": "https://www.stitchdata.com/",
         "logo": "https://r2.datools.org/ETL-integration/stitch.png",
-        "votes": 70,
-        "comments": 5
+        "votes": "70",
+        "comments": "5"
       },
-      {
+      "25": {
         "name": "Hevo",
         "summary": "无代码数据管道与 ELT，支持多源到仓库/湖的实时/批量同步与监控告警。",
-        "tags": [
-          "ELT",
-          "无代码",
-          "实时",
-          "监控"
-        ],
+        "tags": {
+          "0": "ELT",
+          "1": "无代码",
+          "2": "实时",
+          "3": "监控"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/elt-integration/hevo",
         "officialUrl": "https://hevodata.com/",
         "logo": "https://r2.datools.org/ETL-integration/hevo.png",
-        "votes": 74,
-        "comments": 5
+        "votes": "74",
+        "comments": "5"
       },
-      {
+      "26": {
         "name": "Matillion",
         "summary": "面向云数据仓库的 ELT/ETL，提供可视化编排、转换组件与作业调度，适配 Snowflake/BigQuery/Redshift 等。",
-        "tags": [
-          "ELT",
-          "ETL",
-          "编排",
-          "云仓"
-        ],
+        "tags": {
+          "0": "ELT",
+          "1": "ETL",
+          "2": "编排",
+          "3": "云仓"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/elt-integration/matillion",
         "officialUrl": "https://www.matillion.com/",
         "logo": "https://r2.datools.org/ETL-integration/matillion.png",
-        "votes": 78,
-        "comments": 6
+        "votes": "78",
+        "comments": "6"
       },
-      {
+      "27": {
         "name": "Segment",
         "summary": "CDP 与事件管道，将多端事件路由到仓库与下游工具，支持身份解析与受众分发。",
-        "tags": [
-          "CDP",
-          "事件",
-          "路由",
-          "集成"
-        ],
+        "tags": {
+          "0": "CDP",
+          "1": "事件",
+          "2": "路由",
+          "3": "集成"
+        },
         "pricing": "免费层 / 订阅",
         "deployment": "云端",
         "link": "data-analysis-tools/elt-integration/segment",
         "officialUrl": "https://segment.com/",
         "logo": "https://r2.datools.org/ETL-integration/segment.png",
-        "votes": 122,
-        "comments": 10
+        "votes": "122",
+        "comments": "10"
       },
-      {
+      "28": {
         "name": "RudderStack",
         "summary": "开源 CDP/事件管道，兼容 Segment API，可自托管或云端，将事件路由到仓库与 SaaS。",
-        "tags": [
-          "CDP",
-          "事件",
-          "开源",
-          "自托管"
-        ],
+        "tags": {
+          "0": "CDP",
+          "1": "事件",
+          "2": "开源",
+          "3": "自托管"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/elt-integration/rudderstack",
         "officialUrl": "https://www.rudderstack.com/",
         "logo": "https://r2.datools.org/ETL-integration/rudderstack.ico",
-        "votes": 88,
-        "comments": 7
+        "votes": "88",
+        "comments": "7"
       },
-      {
+      "29": {
         "name": "N8n",
         "summary": "开源低代码自动化与集成，提供可视化流程编排、Webhook 与丰富节点，支持自托管。",
-        "tags": [
-          "自动化",
-          "集成",
-          "开源",
-          "自托管"
-        ],
+        "tags": {
+          "0": "自动化",
+          "1": "集成",
+          "2": "开源",
+          "3": "自托管"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "数据分析工具/ELT集成/n8n",
         "officialUrl": "https://n8n.io/",
         "logo": "https://r2.datools.org/ETL-integration/N8n.svg",
-        "votes": 96,
-        "comments": 8
+        "votes": "96",
+        "comments": "8"
       },
-      {
+      "30": {
         "name": "Tray.io",
         "summary": "低代码 iPaaS，提供可视化集成与自动化，面向业务与工程团队的 API/事件编排。",
-        "tags": [
-          "集成平台即服务(iPaaS)",
-          "自动化",
-          "低代码",
-          "集成"
-        ],
+        "tags": {
+          "0": "集成平台即服务(iPaaS)",
+          "1": "自动化",
+          "2": "低代码",
+          "3": "集成"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "数据分析工具/ELT集成/tray-io",
         "officialUrl": "https://tray.io/",
         "logo": "https://r2.datools.org/ETL-integration/tray.ico",
-        "votes": 72,
-        "comments": 5
+        "votes": "72",
+        "comments": "5"
       },
-      {
+      "31": {
         "name": "Workato",
         "summary": "企业级 iPaaS 与自动化，支持触发器、工作流、数据同步与权限治理，面向多部门集成。",
-        "tags": [
-          "集成平台即服务(iPaaS)",
-          "自动化",
-          "工作流",
-          "治理"
-        ],
+        "tags": {
+          "0": "集成平台即服务(iPaaS)",
+          "1": "自动化",
+          "2": "工作流",
+          "3": "治理"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "数据分析工具/ELT集成/workato",
         "officialUrl": "https://www.workato.com/",
         "logo": "https://r2.datools.org/ETL-integration/workato.ico",
-        "votes": 80,
-        "comments": 6
+        "votes": "80",
+        "comments": "6"
       },
-      {
+      "32": {
         "name": "Zapier",
         "summary": "面向业务用户的无代码自动化，连接数千 SaaS，基于触发器执行多步工作流。",
-        "tags": [
-          "自动化",
-          "无代码",
-          "SaaS 集成",
-          "工作流"
-        ],
+        "tags": {
+          "0": "自动化",
+          "1": "无代码",
+          "2": "SaaS 集成",
+          "3": "工作流"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "数据分析工具/ELT集成/zapier",
         "officialUrl": "https://zapier.com/",
         "logo": "https://r2.datools.org/ETL-integration/zipier.png",
-        "votes": 140,
-        "comments": 12
+        "votes": "140",
+        "comments": "12"
       },
-      {
+      "33": {
         "name": "Snowflake",
         "summary": "云原生数据仓库，存算分离与自动扩缩容，支持共享、安全治理与市场生态。",
-        "tags": [
-          "云数据仓库",
-          "存算分离",
-          "多云",
-          "安全治理"
-        ],
+        "tags": {
+          "0": "云数据仓库",
+          "1": "存算分离",
+          "2": "多云",
+          "3": "安全治理"
+        },
         "pricing": "基于用量",
         "deployment": "云端",
         "link": "数据分析工具/数据仓库/snowflake",
         "officialUrl": "https://www.snowflake.com/",
         "logo": "https://r2.datools.org/warehouse-lake/snowflake.png",
-        "votes": 160,
-        "comments": 14
+        "votes": "160",
+        "comments": "14"
       },
-      {
+      "34": {
         "name": "BigQuery",
         "summary": "Google 的无服务器云数据仓库，分离存算，支持联邦查询与 BI Engine 加速。",
-        "tags": [
-          "云数据仓库",
-          "无服务器",
-          "联邦查询",
-          "加速引擎"
-        ],
+        "tags": {
+          "0": "云数据仓库",
+          "1": "无服务器",
+          "2": "联邦查询",
+          "3": "加速引擎"
+        },
         "pricing": "基于用量",
         "deployment": "云端",
         "link": "数据分析工具/数据仓库/bigquery",
         "officialUrl": "https://cloud.google.com/bigquery",
         "logo": "https://r2.datools.org/warehouse-lake/bigquery.svg",
-        "votes": 155,
-        "comments": 13
+        "votes": "155",
+        "comments": "13"
       },
-      {
+      "35": {
         "name": "Redshift",
         "summary": "AWS 云数据仓库，支持 Spectrum 联邦查询与 RA3 存算分离，兼容 PostgreSQL 语法。",
-        "tags": [
-          "云数据仓库",
-          "联邦查询",
-          "AWS",
-          "存算分离"
-        ],
+        "tags": {
+          "0": "云数据仓库",
+          "1": "联邦查询",
+          "2": "AWS",
+          "3": "存算分离"
+        },
         "pricing": "订阅 / 基于用量",
         "deployment": "云端",
         "link": "数据分析工具/数据仓库/redshift",
         "officialUrl": "https://aws.amazon.com/redshift/",
         "logo": "https://r2.datools.org/warehouse-lake/redshift.ico",
-        "votes": 130,
-        "comments": 11
+        "votes": "130",
+        "comments": "11"
       },
-      {
+      "36": {
         "name": "Databricks",
         "summary": "统一数据与 AI 平台，Lakehouse 架构，支持 Delta Lake、Spark、MLflow 与 SQL 仓库。",
-        "tags": [
-          "湖仓一体",
-          "Delta Lake",
-          "Spark",
-          "SQL 仓库"
-        ],
+        "tags": {
+          "0": "湖仓一体",
+          "1": "Delta Lake",
+          "2": "Spark",
+          "3": "SQL 仓库"
+        },
         "pricing": "订阅制 / 基于用量",
         "deployment": "云端",
         "link": "数据分析工具/数据仓库/databricks",
         "officialUrl": "https://www.databricks.com/",
         "logo": "https://r2.datools.org/warehouse-lake/databricks.png",
-        "votes": 148,
-        "comments": 12
+        "votes": "148",
+        "comments": "12"
       },
-      {
+      "37": {
         "name": "ClickHouse",
         "summary": "开源列式数据库，擅长实时/近实时分析，支持自托管与云服务。",
-        "tags": [
-          "列式数据库",
-          "实时分析",
-          "开源",
-          "自托管"
-        ],
+        "tags": {
+          "0": "列式数据库",
+          "1": "实时分析",
+          "2": "开源",
+          "3": "自托管"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "数据分析工具/数据仓库/clickhouse",
         "officialUrl": "https://clickhouse.com/",
         "logo": "https://r2.datools.org/warehouse-lake/clickhouse.ico",
-        "votes": 118,
-        "comments": 9
+        "votes": "118",
+        "comments": "9"
       },
-      {
+      "38": {
         "name": "DuckDB",
         "summary": "开源嵌入式列式数据库，适合本地/嵌入式分析，零服务器依赖，支持 SQL 与向量化执行。",
-        "tags": [
-          "嵌入式",
-          "列式",
-          "本地分析",
-          "开源"
-        ],
+        "tags": {
+          "0": "嵌入式",
+          "1": "列式",
+          "2": "本地分析",
+          "3": "开源"
+        },
         "pricing": "开源",
         "deployment": "本地 / 嵌入式",
         "link": "data-analysis-tools/warehouse/duckdb",
         "officialUrl": "https://duckdb.org/",
         "logo": "https://r2.datools.org/warehouse-lake/duckbd.png",
-        "votes": 112,
-        "comments": 8
+        "votes": "112",
+        "comments": "8"
       },
-      {
+      "39": {
         "name": "MotherDuck",
         "summary": "DuckDB 的云协作与存储扩展，支持多端共享、持久化与混合查询。",
-        "tags": [
-          "DuckDB",
-          "云服务",
-          "协作",
-          "混合查询"
-        ],
+        "tags": {
+          "0": "DuckDB",
+          "1": "云服务",
+          "2": "协作",
+          "3": "混合查询"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/warehouse/motherduck",
         "officialUrl": "https://motherduck.com/",
         "logo": "https://r2.datools.org/warehouse-lake/motherduck.svg",
-        "votes": 90,
-        "comments": 7
+        "votes": "90",
+        "comments": "7"
       },
-      {
+      "40": {
         "name": "Firebolt",
         "summary": "云原生 MPP 数据仓库，主打高性能查询、索引与存储优化，适合低延迟分析。",
-        "tags": [
-          "云数据仓库",
-          "高性能",
-          "索引",
-          "MPP"
-        ],
+        "tags": {
+          "0": "云数据仓库",
+          "1": "高性能",
+          "2": "索引",
+          "3": "MPP"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/warehouse/firebolt",
         "officialUrl": "https://www.firebolt.io/",
         "logo": "https://r2.datools.org/warehouse-lake/firebolt.png",
-        "votes": 88,
-        "comments": 7
+        "votes": "88",
+        "comments": "7"
       },
-      {
+      "41": {
         "name": "Hex",
         "summary": "面向数据团队的协作式 Notebook，融合 SQL、Python 与可视化，便于分享和发布应用。",
-        "tags": [
-          "协作分析",
-          "笔记本",
-          "SQL",
-          "Python"
-        ],
+        "tags": {
+          "0": "协作分析",
+          "1": "笔记本",
+          "2": "SQL",
+          "3": "Python"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/collaborative-analytics/hex",
         "officialUrl": "https://hex.tech/",
         "logo": "https://r2.datools.org/notebook-collaborative-analytics/hex.svg",
-        "votes": 96,
-        "comments": 8
+        "votes": "96",
+        "comments": "8"
       },
-      {
+      "42": {
         "name": "Observable",
         "summary": "基于浏览器的可视化与 Notebook 平台，使用 JavaScript/Observable 语法构建交互数据故事。",
-        "tags": [
-          "可视化",
-          "笔记本",
-          "JavaScript",
-          "交互式"
-        ],
+        "tags": {
+          "0": "可视化",
+          "1": "笔记本",
+          "2": "JavaScript",
+          "3": "交互式"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/collaborative-analytics/observable",
         "officialUrl": "https://observablehq.com/",
         "logo": "https://r2.datools.org/notebook-collaborative-analytics/observable.png",
-        "votes": 82,
-        "comments": 6
+        "votes": "82",
+        "comments": "6"
       },
-      {
+      "43": {
         "name": "Deepnote",
         "summary": "协作型云 Notebook，支持 SQL 与 Python，提供实时协作、评论与数据源集成。",
-        "tags": [
-          "协作分析",
-          "笔记本",
-          "SQL",
-          "Python"
-        ],
+        "tags": {
+          "0": "协作分析",
+          "1": "笔记本",
+          "2": "SQL",
+          "3": "Python"
+        },
         "pricing": "免费 / 付费",
         "deployment": "云端",
         "link": "data-analysis-tools/collaborative-analytics/deepnote",
         "officialUrl": "https://deepnote.com/",
         "logo": "https://r2.datools.org/notebook-collaborative-analytics/deepnote.webp",
-        "votes": 88,
-        "comments": 7
+        "votes": "88",
+        "comments": "7"
       },
-      {
+      "44": {
         "name": "Jupyter / VS Code",
         "summary": "Jupyter Notebook/Lab 与 VS Code (Python) 组成的本地/云端数据分析环境，支持 Python/R/Julia 等多语言。",
-        "tags": [
-          "笔记本",
-          "Python",
-          "本地开发",
-          "多语言"
-        ],
+        "tags": {
+          "0": "笔记本",
+          "1": "Python",
+          "2": "本地开发",
+          "3": "多语言"
+        },
         "pricing": "开源 / 免费",
         "deployment": "本地 / 云端",
         "link": "data-analysis-tools/collaborative-analytics/jupyter-vscode",
         "officialUrl": "https://jupyter.org/",
         "logo": "https://r2.datools.org/notebook-collaborative-analytics/jupyter.png",
-        "votes": 140,
-        "comments": 12
+        "votes": "140",
+        "comments": "12"
       },
-      {
+      "45": {
         "name": "Polynote",
         "summary": "开源多语言 Notebook，支持 Scala/Python 等混合、强类型与可重复执行，适合数据工程与科学计算。",
-        "tags": [
-          "笔记本",
-          "多语言",
-          "开源",
-          "数据工程"
-        ],
+        "tags": {
+          "0": "笔记本",
+          "1": "多语言",
+          "2": "开源",
+          "3": "数据工程"
+        },
         "pricing": "开源",
         "deployment": "自托管",
         "link": "data-analysis-tools/collaborative-analytics/polynote",
         "officialUrl": "https://polynote.org/",
         "logo": "https://r2.datools.org/notebook-collaborative-analytics/polynote.ico",
-        "votes": 70,
-        "comments": 5
+        "votes": "70",
+        "comments": "5"
       },
-      {
+      "46": {
         "name": "Optimizely",
         "summary": "老牌实验与个性化平台，支持 A/B、多变量测试、特征旗标与目标管理。",
-        "tags": [
-          "A/B 测试",
-          "个性化",
-          "特征旗标",
-          "实验"
-        ],
+        "tags": {
+          "0": "A/B 测试",
+          "1": "个性化",
+          "2": "特征旗标",
+          "3": "实验"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/attribution/optimizely",
         "officialUrl": "https://www.optimizely.com/",
         "logo": "https://r2.datools.org/experimentation-attribution/optimizely.svg",
-        "votes": 120,
-        "comments": 10
+        "votes": "120",
+        "comments": "10"
       },
-      {
+      "47": {
         "name": "VWO",
         "summary": "可视化优化与实验平台，提供 A/B、多变量、热图、录屏与转化分析。",
-        "tags": [
-          "A/B 测试",
-          "可视化编辑",
-          "热图",
-          "转化率优化"
-        ],
+        "tags": {
+          "0": "A/B 测试",
+          "1": "可视化编辑",
+          "2": "热图",
+          "3": "转化率优化"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/attribution/vwo",
         "officialUrl": "https://vwo.com/",
         "logo": "https://r2.datools.org/experimentation-attribution/VWO.png",
-        "votes": 95,
-        "comments": 8
+        "votes": "95",
+        "comments": "8"
       },
-      {
+      "48": {
         "name": "AB Tasty",
         "summary": "数字体验优化平台，包含 A/B 测试、个性化、特征旗标与行为分析。",
-        "tags": [
-          "A/B 测试",
-          "个性化",
-          "特征旗标",
-          "体验优化"
-        ],
+        "tags": {
+          "0": "A/B 测试",
+          "1": "个性化",
+          "2": "特征旗标",
+          "3": "体验优化"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/attribution/ab-tasty",
         "logo": "https://r2.datools.org/experimentation-attribution/AB-tasty.png",
         "officialUrl": "https://www.abtasty.com/",
-        "votes": 80,
-        "comments": 6
+        "votes": "80",
+        "comments": "6"
       },
-      {
+      "49": {
         "name": "Statsig",
         "summary": "产品实验与特征管理平台，提供统计引擎、特征旗标、指标框架与快/慢回滚。",
-        "tags": [
-          "实验平台",
-          "特征旗标",
-          "指标",
-          "回滚"
-        ],
+        "tags": {
+          "0": "实验平台",
+          "1": "特征旗标",
+          "2": "指标",
+          "3": "回滚"
+        },
         "pricing": "免费层 / 订阅",
         "deployment": "云端",
         "link": "data-analysis-tools/attribution/statsig",
         "officialUrl": "https://www.statsig.com/",
         "logo": "https://r2.datools.org/experimentation-attribution/statsig.png",
-        "votes": 102,
-        "comments": 9
+        "votes": "102",
+        "comments": "9"
       },
-      {
+      "50": {
         "name": "GrowthBook",
         "summary": "开源/云端 A/B 测试与特征旗标，支持自托管、指标定义与多语言 SDK。",
-        "tags": [
-          "开源",
-          "A/B 测试",
-          "特征旗标",
-          "自托管"
-        ],
+        "tags": {
+          "0": "开源",
+          "1": "A/B 测试",
+          "2": "特征旗标",
+          "3": "自托管"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/attribution/growthbook",
         "officialUrl": "https://www.growthbook.io/",
         "logo": "https://r2.datools.org/experimentation-attribution/growthbook.png",
-        "votes": 88,
-        "comments": 7
+        "votes": "88",
+        "comments": "7"
       },
-      {
+      "51": {
         "name": "Convert",
         "summary": "注重隐私的 A/B 测试与个性化平台，提供可视化编辑、服务器端实验与 GDPR 合规。",
-        "tags": [
-          "A/B 测试",
-          "隐私",
-          "个性化",
-          "服务器端"
-        ],
+        "tags": {
+          "0": "A/B 测试",
+          "1": "隐私",
+          "2": "个性化",
+          "3": "服务器端"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/attribution/convert",
         "officialUrl": "https://www.convert.com/",
         "logo": "https://r2.datools.org/experimentation-attribution/convert.ico",
-        "votes": 74,
-        "comments": 5
+        "votes": "74",
+        "comments": "5"
       },
-      {
+      "52": {
         "name": "Split.io",
         "summary": "特征旗标与实验平台，支持回滚、指标监控与数据治理，适合工程与产品团队。",
-        "tags": [
-          "特征旗标",
-          "实验",
-          "指标监控",
-          "回滚"
-        ],
+        "tags": {
+          "0": "特征旗标",
+          "1": "实验",
+          "2": "指标监控",
+          "3": "回滚"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/attribution/split-io",
         "officialUrl": "https://www.split.io/",
         "logo": "https://r2.datools.org/experimentation-attribution/split.png",
-        "votes": 86,
-        "comments": 6
+        "votes": "86",
+        "comments": "6"
       },
-      {
+      "53": {
         "name": "Monte Carlo",
         "summary": "数据可观测性平台，监控数据质量、血缘与 SLA，提供告警与影响分析。",
-        "tags": [
-          "数据可观测性",
-          "数据质量",
-          "血缘",
-          "告警"
-        ],
+        "tags": {
+          "0": "数据可观测性",
+          "1": "数据质量",
+          "2": "血缘",
+          "3": "告警"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/governance/monte-carlo",
         "officialUrl": "https://www.montecarlodata.com/",
         "logo": "https://r2.datools.org/data-quality-governance/monte-carlo.png",
-        "votes": 92,
-        "comments": 7
+        "votes": "92",
+        "comments": "7"
       },
-      {
+      "54": {
         "name": "Bigeye",
         "summary": "数据质量监控与指标平台，支持自助规则、SLA、异常检测与告警。",
-        "tags": [
-          "数据质量",
-          "监控",
-          "服务等级协议",
-          "告警"
-        ],
+        "tags": {
+          "0": "数据质量",
+          "1": "监控",
+          "2": "服务等级协议",
+          "3": "告警"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/governance/bigeye",
         "officialUrl": "https://www.bigeye.com/",
         "logo": "https://r2.datools.org/data-quality-governance/bigeye.svg",
-        "votes": 80,
-        "comments": 6
+        "votes": "80",
+        "comments": "6"
       },
-      {
+      "55": {
         "name": "Great Expectations",
         "summary": "开源数据质量框架，基于 Expectation 定义校验规则，支持数据文档与验证管道。",
-        "tags": [
-          "开源",
-          "数据质量",
-          "校验",
-          "文档"
-        ],
+        "tags": {
+          "0": "开源",
+          "1": "数据质量",
+          "2": "校验",
+          "3": "文档"
+        },
         "pricing": "开源 / 商业云",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/great-expectations",
         "officialUrl": "https://greatexpectations.io/",
         "logo": "https://r2.datools.org/data-quality-governance/greatexpectations.png",
-        "votes": 110,
-        "comments": 8
+        "votes": "110",
+        "comments": "8"
       },
-      {
+      "56": {
         "name": "dbt 测试",
         "summary": "dbt 内置测试与自定义断言，用于模型级数据质量与文档生成。",
-        "tags": [
-          "dbt",
-          "测试",
-          "数据质量",
-          "开源"
-        ],
+        "tags": {
+          "0": "dbt",
+          "1": "测试",
+          "2": "数据质量",
+          "3": "开源"
+        },
         "pricing": "开源",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/governance/dbt-tests",
         "officialUrl": "https://docs.getdbt.com/docs/build/tests",
         "logo": "https://r2.datools.org/data-quality-governance/det-tests.png",
-        "votes": 125,
-        "comments": 9
+        "votes": "125",
+        "comments": "9"
       },
-      {
+      "57": {
         "name": "Castor",
         "summary": "数据目录与发现工具，提供血缘、文档、资产打分与治理协作。",
-        "tags": [
-          "数据目录",
-          "血缘",
-          "治理",
-          "协作"
-        ],
+        "tags": {
+          "0": "数据目录",
+          "1": "血缘",
+          "2": "治理",
+          "3": "协作"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/governance/castor",
         "officialUrl": "https://www.castordoc.com/",
         "logo": "https://r2.datools.org/data-quality-governance/castor.png",
-        "votes": 78,
-        "comments": 6
+        "votes": "78",
+        "comments": "6"
       },
-      {
+      "58": {
         "name": "Collibra",
         "summary": "企业数据治理与目录平台，覆盖数据质量、血缘、隐私与合规工作流。",
-        "tags": [
-          "数据治理",
-          "数据目录",
-          "合规",
-          "血缘"
-        ],
+        "tags": {
+          "0": "数据治理",
+          "1": "数据目录",
+          "2": "合规",
+          "3": "血缘"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/governance/collibra",
         "officialUrl": "https://www.collibra.com/",
         "logo": "https://r2.datools.org/data-quality-governance/collibra.ico",
-        "votes": 118,
-        "comments": 9
+        "votes": "118",
+        "comments": "9"
       },
-      {
+      "59": {
         "name": "Alation",
         "summary": "企业数据目录与治理平台，支持搜索、血缘、策略与协作，提升数据可发现性。",
-        "tags": [
-          "数据目录",
-          "治理",
-          "搜索",
-          "血缘"
-        ],
+        "tags": {
+          "0": "数据目录",
+          "1": "治理",
+          "2": "搜索",
+          "3": "血缘"
+        },
         "pricing": "订阅制",
         "deployment": "云端",
         "link": "data-analysis-tools/governance/alation",
         "officialUrl": "https://www.alation.com/",
         "logo": "https://r2.datools.org/data-quality-governance/alation.svg",
-        "votes": 102,
-        "comments": 8
+        "votes": "102",
+        "comments": "8"
       },
-      {
+      "60": {
         "name": "DataRobot",
         "summary": "企业级 AutoML 与 MLOps 平台，自动特征工程、排行榜、可解释与监控，支持多云/本地部署。",
-        "tags": [
-          "自动机器学习",
-          "MLOps",
-          "企业",
-          "治理"
-        ],
+        "tags": {
+          "0": "自动机器学习",
+          "1": "MLOps",
+          "2": "企业",
+          "3": "治理"
+        },
         "pricing": "订阅 / 试用",
         "deployment": "云端 / 本地 / 混合",
         "link": "data-analysis-tools/ai-assistants/datarobot",
         "officialUrl": "https://www.datarobot.com/",
         "logo": "https://r2.datools.org/AI-AutoML-AI-Assistants/datarobot.avif",
-        "votes": 115,
-        "comments": 9
+        "votes": "115",
+        "comments": "9"
       },
-      {
+      "61": {
         "name": "H2O.ai",
         "summary": "开源 H2O-3 + Driverless AI，自动特征工程、时间序列与可解释性，适合自托管或云端 AutoML。",
-        "tags": [
-          "自动机器学习",
-          "开源",
-          "时间序列",
-          "MLOps"
-        ],
+        "tags": {
+          "0": "自动机器学习",
+          "1": "开源",
+          "2": "时间序列",
+          "3": "MLOps"
+        },
         "pricing": "开源 / 订阅",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/ai-assistants/h2o-ai",
         "officialUrl": "https://www.h2o.ai/",
         "logo": "https://r2.datools.org/AI-AutoML-AI-Assistants/h2o.ico",
-        "votes": 108,
-        "comments": 8
+        "votes": "108",
+        "comments": "8"
       },
-      {
+      "62": {
         "name": "SageMaker",
         "summary": "AWS 托管 ML 平台，涵盖 Studio、Autopilot、训练推理、Pipelines 与 Model Registry/MLOps。",
-        "tags": [
-          "托管ML",
-          "自动机器学习",
-          "AWS",
-          "MLOps"
-        ],
+        "tags": {
+          "0": "托管ML",
+          "1": "自动机器学习",
+          "2": "AWS",
+          "3": "MLOps"
+        },
         "pricing": "按量计费",
         "deployment": "AWS",
         "link": "data-analysis-tools/ai-assistants/sagemaker",
         "officialUrl": "https://aws.amazon.com/sagemaker/",
         "logo": "https://r2.datools.org/AI-AutoML-AI-Assistants/sagmaker.ico",
-        "votes": 142,
-        "comments": 12
+        "votes": "142",
+        "comments": "12"
       },
-      {
+      "63": {
         "name": "Vertex AI",
         "summary": "Google Cloud 统一 ML/AutoML/GenAI 平台，含模型花园、Pipelines、特征库与监控，集成 BigQuery。",
-        "tags": [
-          "自动机器学习",
-          "生成式AI",
-          "GCP",
-          "MLOps"
-        ],
+        "tags": {
+          "0": "自动机器学习",
+          "1": "生成式AI",
+          "2": "GCP",
+          "3": "MLOps"
+        },
         "pricing": "按量计费",
         "deployment": "谷歌云",
         "link": "data-analysis-tools/ai-assistants/vertex-ai",
         "officialUrl": "https://cloud.google.com/vertex-ai",
         "logo": "https://r2.datools.org/AI-AutoML-AI-Assistants/vertex-ai.svg",
-        "votes": 138,
-        "comments": 11
+        "votes": "138",
+        "comments": "11"
       },
-      {
+      "64": {
         "name": "GPT 类 SQL/可视化助手",
         "summary": "GPT 风格的 SQL/可视化助手，用自然语言生成查询与图表，解释结果并连接数据库/BI，具备安全控制。",
-        "tags": [
-          "自然语言转SQL",
-          "AI助手",
-          "可视化",
-          "聊天"
-        ],
+        "tags": {
+          "0": "自然语言转SQL",
+          "1": "AI助手",
+          "2": "可视化",
+          "3": "聊天"
+        },
         "pricing": "SaaS / API 按用量",
         "deployment": "云端 / 嵌入",
         "link": "data-analysis-tools/ai-assistants/gpt-sql-vis-assistants",
         "officialUrl": "https://openai.com/chatgpt",
         "logo": "https://r2.datools.org/AI-AutoML-AI-Assistants/ChatGPT-Logo.png",
-        "votes": 125,
-        "comments": 10
+        "votes": "125",
+        "comments": "10"
       },
-      {
+      "65": {
         "name": "Airflow",
         "summary": "Apache Airflow 以 Python 定义 DAG，提供调度、重试、回填与依赖管理，生态丰富，适合自托管数据工作流。",
-        "tags": [
-          "编排",
-          "开源",
-          "Python",
-          "调度"
-        ],
+        "tags": {
+          "0": "编排",
+          "1": "开源",
+          "2": "Python",
+          "3": "调度"
+        },
         "pricing": "开源",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/airflow",
         "officialUrl": "https://airflow.apache.org/",
         "logo": "https://r2.datools.org/open-source-self-hosted/airflow.png",
-        "votes": 150,
-        "comments": 14
+        "votes": "150",
+        "comments": "14"
       },
-      {
+      "66": {
         "name": "Dagster",
         "summary": "Dagster 以软件定义资产管理数据依赖，内置类型校验、血缘、可观测与混合执行，适合现代数据管道。",
-        "tags": [
-          "编排",
-          "开源",
-          "数据资产",
-          "可观测性"
-        ],
+        "tags": {
+          "0": "编排",
+          "1": "开源",
+          "2": "数据资产",
+          "3": "可观测性"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/dagster",
         "officialUrl": "https://dagster.io/",
         "logo": "https://r2.datools.org/open-source-self-hosted/dagster.png",
-        "votes": 120,
-        "comments": 10
+        "votes": "120",
+        "comments": "10"
       },
-      {
+      "67": {
         "name": "Prefect",
         "summary": "Prefect 用 Python 定义 Flow/Task，提供重试、缓存、并发与部署管理，配合 UI/Cloud 获得调度与监控。",
-        "tags": [
-          "编排",
-          "开源",
-          "Python",
-          "监控"
-        ],
+        "tags": {
+          "0": "编排",
+          "1": "开源",
+          "2": "Python",
+          "3": "监控"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/prefect",
         "officialUrl": "https://www.prefect.io/",
         "logo": "https://r2.datools.org/open-source-self-hosted/prefect.ico",
-        "votes": 118,
-        "comments": 9
+        "votes": "118",
+        "comments": "9"
       },
-      {
+      "68": {
         "name": "dbt",
         "summary": "dbt 以 SQL/Jinja 定义模型、测试与文档，可在仓库/Lakehouse 上构建可维护的转换层与语义层。",
-        "tags": [
-          "dbt",
-          "SQL",
-          "转换",
-          "开源"
-        ],
+        "tags": {
+          "0": "dbt",
+          "1": "SQL",
+          "2": "转换",
+          "3": "开源"
+        },
         "pricing": "开源 / 云端",
         "deployment": "自托管 / 云端",
         "link": "data-analysis-tools/open-source/dbt",
         "officialUrl": "https://www.getdbt.com/",
-        "votes": 145,
-        "comments": 12,
+        "votes": "145",
+        "comments": "12",
         "logo": "https://r2.datools.org/open-source-self-hosted/dbt.ico"
       }
-    ],
-    "collections": [
-      {
+    },
+    "collections": {
+      "0": {
         "title": "AI 数据助理",
         "description": "用自然语言完成查询与报表",
         "link": "#"
       },
-      {
+      "1": {
         "title": "开源自托管精选",
         "description": "可私有部署的 BI / ETL / 仓库",
         "link": "#"
       },
-      {
+      "2": {
         "title": "团队协作 BI",
         "description": "内置分享、权限与评论的可视化工具",
         "link": "#"
       }
-    ],
-    "latestTools": [
-      {
+    },
+    "latestTools": {
+      "0": {
         "name": "MetricBoard",
         "summary": "KPI 监控与告警",
-        "tags": [
-          "监控",
-          "仪表盘"
-        ],
+        "tags": {
+          "0": "监控",
+          "1": "仪表盘"
+        },
         "pricing": "免费 / Pro",
         "deployment": "云端",
         "link": "#",
-        "votes": 68,
-        "comments": 5
+        "votes": "68",
+        "comments": "5"
       },
-      {
+      "1": {
         "name": "StreamKit",
         "summary": "实时数据处理与流式计算",
-        "tags": [
-          "流式",
-          "实时"
-        ],
+        "tags": {
+          "0": "流式",
+          "1": "实时"
+        },
         "pricing": "开源",
         "deployment": "自托管",
         "link": "#",
-        "votes": 54,
-        "comments": 3
+        "votes": "54",
+        "comments": "3"
       },
-      {
+      "2": {
         "name": "ChartCraft",
         "summary": "低代码图表构建器",
-        "tags": [
-          "可视化",
-          "低代码"
-        ],
+        "tags": {
+          "0": "可视化",
+          "1": "低代码"
+        },
         "pricing": "免费试用",
         "deployment": "云端",
         "link": "#",
-        "votes": 41,
-        "comments": 2
+        "votes": "41",
+        "comments": "2"
       }
-    ]
+    }
   },
   "authPanel": {
     "title": "登录 DaTools",
@@ -1622,20 +1622,20 @@
       "requestError": "发送过程中出现问题，请稍后再试。",
       "success": "魔法链接已发送。如果未集成邮件服务，请查看服务器日志获取登录链接。"
     },
-    "footer": [
-      {
+    "footer": {
+      "0": {
         "type": "text",
         "value": "登录后 Better Auth 会在服务器端生成会话并写入 HTTP-only Cookies。结合 "
       },
-      {
+      "1": {
         "type": "code",
         "value": "authClient.useSession()"
       },
-      {
+      "2": {
         "type": "text",
         "value": " 可在任意客户端组件中读取当前用户。"
       }
-    ]
+    }
   },
   "header": {
     "features": "功能特性",
@@ -1683,181 +1683,181 @@
       "coreFeatures": {
         "title": "核心特性",
         "subtitle": "为现代 SaaS 应用量身定制的完整解决方案，让您专注于产品创新而非基础设施搭建",
-        "features": [
-          {
+        "features": {
+          "0": {
             "icon": "代码",
             "title": "Next.js 全栈框架",
             "description": "基于最新的 Next.js 14+ 构建，支持 App Router、Server Components 和 Edge Runtime，提供最佳的性能和开发体验。",
-            "highlights": [
-              "应用路由器",
-              "服务器组件",
-              "边缘运行时",
-              "TypeScript 支持"
-            ]
+            "highlights": {
+              "0": "应用路由器",
+              "1": "服务器组件",
+              "2": "边缘运行时",
+              "3": "TypeScript 支持"
+            }
           },
-          {
+          "1": {
             "icon": "盾牌",
             "title": "企业级身份验证",
             "description": "集成 Better Auth，支持多种登录方式，包括 Google OAuth、GitHub OAuth 和 Magic Link，确保安全可靠。",
-            "highlights": [
-              "谷歌 OAuth",
-              "GitHub OAuth",
-              "魔术链接",
-              "会话管理"
-            ]
+            "highlights": {
+              "0": "谷歌 OAuth",
+              "1": "GitHub OAuth",
+              "2": "魔术链接",
+              "3": "会话管理"
+            }
           },
-          {
+          "2": {
             "icon": "信用卡",
             "title": "Stripe 支付集成",
             "description": "完整的支付解决方案，支持订阅、一次性支付和发票管理，让您轻松实现商业化。",
-            "highlights": [
-              "订阅管理",
-              "一次性支付",
-              "发票系统",
-              "Webhook 处理"
-            ]
+            "highlights": {
+              "0": "订阅管理",
+              "1": "一次性支付",
+              "2": "发票系统",
+              "3": "Webhook 处理"
+            }
           },
-          {
+          "3": {
             "icon": "数据库",
             "title": "Supabase 数据库",
             "description": "强大的 PostgreSQL 数据库，内置实时功能、身份验证和存储，为您的应用提供可靠的数据基础。",
-            "highlights": [
-              "PostgreSQL",
-              "实时订阅",
-              "文件存储",
-              "行级安全"
-            ]
+            "highlights": {
+              "0": "PostgreSQL",
+              "1": "实时订阅",
+              "2": "文件存储",
+              "3": "行级安全"
+            }
           },
-          {
+          "4": {
             "icon": "机器人",
             "title": "AI 就绪基础设施",
             "description": "预配置的 AI 集成，支持 OpenAI、Anthropic 等主流 AI 服务，内置积分系统和 API 销售功能。",
-            "highlights": [
-              "OpenAI 集成",
-              "积分系统",
-              "API 销售",
-              "多模型支持"
-            ]
+            "highlights": {
+              "0": "OpenAI 集成",
+              "1": "积分系统",
+              "2": "API 销售",
+              "3": "多模型支持"
+            }
           },
-          {
+          "5": {
             "icon": "火箭",
             "title": "一键部署",
             "description": "支持 Vercel、Cloudflare 等主流平台的一键部署，自动化 CI/CD 流程，让发布变得简单。",
-            "highlights": [
-              "Vercel 部署",
-              "Cloudflare 页面",
-              "CI/CD 自动化",
-              "环境管理"
-            ]
+            "highlights": {
+              "0": "Vercel 部署",
+              "1": "Cloudflare 页面",
+              "2": "CI/CD 自动化",
+              "3": "环境管理"
+            }
           },
-          {
+          "6": {
             "icon": "柱状图3",
             "title": "业务分析",
             "description": "集成 Google Analytics、Search Console 等分析工具，帮助您了解用户行为和业务增长。",
-            "highlights": [
-              "谷歌分析",
-              "搜索控制台",
-              "用户行为分析",
-              "转化跟踪"
-            ]
+            "highlights": {
+              "0": "谷歌分析",
+              "1": "搜索控制台",
+              "2": "用户行为分析",
+              "3": "转化跟踪"
+            }
           },
-          {
+          "7": {
             "icon": "地球",
             "title": "国际化支持",
             "description": "内置多语言支持，支持中文、英文、日文等多种语言，让您的产品触达全球用户。",
-            "highlights": [
-              "多语言支持",
-              "RTL 支持",
-              "动态语言切换",
-              "SEO 优化"
-            ]
+            "highlights": {
+              "0": "多语言支持",
+              "1": "RTL 支持",
+              "2": "动态语言切换",
+              "3": "SEO 优化"
+            }
           }
-        ]
+        }
       },
       "techStack": {
         "title": "技术栈",
         "subtitle": "基于业界最佳实践和最新技术构建，确保您的应用具有最佳的性能、安全性和可扩展性",
-        "technologies": [
-          {
+        "technologies": {
+          "0": {
             "name": "Next.js 14+",
             "description": "React 全栈框架"
           },
-          {
+          "1": {
             "name": "React 19",
             "description": "用户界面库"
           },
-          {
+          "2": {
             "name": "TypeScript",
             "description": "类型安全的 JavaScript"
           },
-          {
+          "3": {
             "name": "Tailwind CSS",
             "description": "实用优先的 CSS 框架"
           },
-          {
+          "4": {
             "name": "Shadcn/UI",
             "description": "现代组件库"
           },
-          {
+          "5": {
             "name": "Better Auth",
             "description": "身份验证解决方案"
           },
-          {
+          "6": {
             "name": "Stripe",
             "description": "支付处理平台"
           },
-          {
+          "7": {
             "name": "Supabase",
             "description": "后端即服务"
           },
-          {
+          "8": {
             "name": "Vercel",
             "description": "部署平台"
           }
-        ]
+        }
       },
       "comparison": {
         "title": "为什么选择 DaTools",
         "subtitle": "与传统开发方式相比，DaTools 让您节省 90% 的开发时间",
         "traditional": {
           "title": "传统开发",
-          "items": [
-            {
+          "items": {
+            "0": {
               "text": "需要 3-6 个月搭建基础设施"
             },
-            {
+            "1": {
               "text": "需要学习多种技术栈"
             },
-            {
+            "2": {
               "text": "需要处理复杂的部署流程"
             },
-            {
+            "3": {
               "text": "需要自己实现身份验证和支付"
             },
-            {
+            "4": {
               "text": "需要大量时间调试和优化"
             }
-          ]
+          }
         },
         "datools": {
           "title": "使用 DaTools",
-          "items": [
-            {
+          "items": {
+            "0": {
               "text": "5 分钟内完成基础设置"
             },
-            {
+            "1": {
               "text": "开箱即用的完整解决方案"
             },
-            {
+            "2": {
               "text": "一键部署到生产环境"
             },
-            {
+            "3": {
               "text": "预配置的身份验证和支付"
             },
-            {
+            "4": {
               "text": "专注于产品功能开发"
             }
-          ]
+          }
         }
       },
       "cta": {
@@ -1887,66 +1887,66 @@
           "description": "年付优惠 20%"
         }
       },
-      "plans": [
-        {
+      "plans": {
+        "0": {
           "name": "免费版",
           "price": "¥0",
           "period": "永久免费",
           "description": "适合个人开发者和小型项目",
-          "features": [
-            "基础 Next.js 模板",
-            "GitHub 集成",
-            "社区支持",
-            "基础文档",
-            "个人使用许可"
-          ],
-          "limitations": [
-            "不支持商业使用",
-            "无技术支持",
-            "功能有限"
-          ],
+          "features": {
+            "0": "基础 Next.js 模板",
+            "1": "GitHub 集成",
+            "2": "社区支持",
+            "3": "基础文档",
+            "4": "个人使用许可"
+          },
+          "limitations": {
+            "0": "不支持商业使用",
+            "1": "无技术支持",
+            "2": "功能有限"
+          },
           "cta": "开始使用",
-          "popular": false
+          "popular": "false"
         },
-        {
+        "1": {
           "name": "专业版",
           "price": "¥299",
           "period": "一次性付费",
           "description": "适合初创公司和中小企业",
-          "features": [
-            "完整功能模板",
-            "身份验证系统",
-            "支付集成",
-            "数据库设置",
-            "AI 集成",
-            "一键部署",
-            "邮件支持",
-            "商业使用许可",
-            "源码访问"
-          ],
+          "features": {
+            "0": "完整功能模板",
+            "1": "身份验证系统",
+            "2": "支付集成",
+            "3": "数据库设置",
+            "4": "AI 集成",
+            "5": "一键部署",
+            "6": "邮件支持",
+            "7": "商业使用许可",
+            "8": "源码访问"
+          },
           "cta": "立即购买",
-          "popular": true
+          "popular": "true"
         },
-        {
+        "2": {
           "name": "企业版",
           "price": "¥999",
           "period": "一次性付费",
           "description": "适合大型企业和团队",
-          "features": [
-            "专业版所有功能",
-            "高级 AI 功能",
-            "多租户支持",
-            "高级分析",
-            "优先技术支持",
-            "定制开发服务",
-            "团队协作功能",
-            "SLA 保障",
-            "培训服务"
-          ],
+          "features": {
+            "0": "专业版所有功能",
+            "1": "高级 AI 功能",
+            "2": "多租户支持",
+            "3": "高级分析",
+            "4": "优先技术支持",
+            "5": "定制开发服务",
+            "6": "团队协作功能",
+            "7": "SLA 保障",
+            "8": "培训服务"
+          },
           "cta": "联系销售",
-          "popular": false
+          "popular": "false"
         }
-      ],
+      },
       "cta": {
         "getStarted": "开始使用",
         "buyNow": "立即购买",
@@ -1969,36 +1969,36 @@
       },
       "faqTitle": "常见问题",
       "faqSubtitle": "还有其他问题？我们很乐意为您解答",
-      "faqs": [
-        {
+      "faqs": {
+        "0": {
           "question": "免费版和付费版有什么区别？",
           "answer": "免费版提供基础功能，适合学习和个人项目。付费版包含完整的商业功能，如身份验证、支付集成、AI 功能等，适合商业项目。"
         },
-        {
+        "1": {
           "question": "支持哪些付费方式？",
           "answer": "我们支持一次性付费、按月付费和按年付费三种方式。年付享受 20% 的优惠折扣，一次性付费永久使用。"
         },
-        {
+        "2": {
           "question": "支持退款吗？",
           "answer": "我们提供 30 天无条件退款保证。如果您在购买后 30 天内不满意，可以申请全额退款。"
         },
-        {
+        "3": {
           "question": "可以用于商业项目吗？",
           "answer": "专业版和企业版支持商业使用。免费版仅限个人学习和非商业项目使用。"
         },
-        {
+        "4": {
           "question": "包含技术支持吗？",
           "answer": "专业版提供邮件支持，企业版提供优先技术支持。我们会在 24 小时内回复您的问题。"
         },
-        {
+        "5": {
           "question": "如何升级到更高版本？",
           "answer": "您可以随时升级到更高版本，只需支付差价即可。升级后立即享受新版本的所有功能。"
         },
-        {
+        "6": {
           "question": "年付有什么优势？",
           "answer": "年付享受 20% 的优惠折扣，相比月付可以节省更多费用，同时减少续费频率，更加便捷。"
         }
-      ]
+      }
     },
     "docs": {
       "title": "文档",
@@ -2007,172 +2007,172 @@
       "quickStart": {
         "title": "快速开始",
         "subtitle": "只需几个简单步骤，您就可以开始使用 DaTools 构建您的 AI SaaS 应用",
-        "steps": [
-          {
+        "steps": {
+          "0": {
             "step": "1",
             "title": "安装 DaTools",
             "description": "克隆仓库并安装依赖",
             "code": "git clone https://github.com/your-repo/datools\\ncd datools\\npnpm install"
           },
-          {
+          "1": {
             "step": "2",
             "title": "配置环境变量",
             "description": "设置必要的 API 密钥和配置",
             "code": "cp .env.example .env.local\\n# 编辑 .env.local 文件"
           },
-          {
+          "2": {
             "step": "3",
             "title": "启动开发服务器",
             "description": "在本地运行项目",
             "code": "pnpm dev\\n# 访问 http://localhost:3000"
           },
-          {
+          "3": {
             "step": "4",
             "title": "部署到生产环境",
             "description": "一键部署到 Vercel",
             "code": "pnpm build\\nvercel deploy"
           }
-        ]
+        }
       },
       "navigation": {
         "title": "文档导航",
         "subtitle": "浏览我们的完整文档，找到您需要的所有信息",
-        "sections": [
-          {
+        "sections": {
+          "0": {
             "title": "快速开始",
             "description": "5 分钟快速上手 DaTools",
             "icon": "火箭",
-            "links": [
-              {
+            "links": {
+              "0": {
                 "name": "安装指南",
                 "href": "#"
               },
-              {
+              "1": {
                 "name": "环境配置",
                 "href": "#"
               },
-              {
+              "2": {
                 "name": "第一个应用",
                 "href": "#"
               }
-            ]
+            }
           },
-          {
+          "1": {
             "title": "核心功能",
             "description": "了解 DaTools 的核心功能",
             "icon": "代码",
-            "links": [
-              {
+            "links": {
+              "0": {
                 "name": "身份验证",
                 "href": "#"
               },
-              {
+              "1": {
                 "name": "支付集成",
                 "href": "#"
               },
-              {
+              "2": {
                 "name": "数据库设置",
                 "href": "#"
               },
-              {
+              "3": {
                 "name": "AI 集成",
                 "href": "#"
               }
-            ]
+            }
           },
-          {
+          "2": {
             "title": "API 参考",
             "description": "完整的 API 文档和示例",
             "icon": "数据库",
-            "links": [
-              {
+            "links": {
+              "0": {
                 "name": "REST API",
                 "href": "#"
               },
-              {
+              "1": {
                 "name": "GraphQL",
                 "href": "#"
               },
-              {
+              "2": {
                 "name": "Webhook",
                 "href": "#"
               },
-              {
+              "3": {
                 "name": "SDK",
                 "href": "#"
               }
-            ]
+            }
           },
-          {
+          "3": {
             "title": "部署指南",
             "description": "将您的应用部署到生产环境",
             "icon": "地球",
-            "links": [
-              {
+            "links": {
+              "0": {
                 "name": "Vercel 部署",
                 "href": "#"
               },
-              {
+              "1": {
                 "name": "Cloudflare 页面",
                 "href": "#"
               },
-              {
+              "2": {
                 "name": "Docker 部署",
                 "href": "#"
               },
-              {
+              "3": {
                 "name": "环境配置",
                 "href": "#"
               }
-            ]
+            }
           },
-          {
+          "4": {
             "title": "最佳实践",
             "description": "开发和生产环境的最佳实践",
             "icon": "盾牌",
-            "links": [
-              {
+            "links": {
+              "0": {
                 "name": "安全指南",
                 "href": "#"
               },
-              {
+              "1": {
                 "name": "性能优化",
                 "href": "#"
               },
-              {
+              "2": {
                 "name": "监控和日志",
                 "href": "#"
               },
-              {
+              "3": {
                 "name": "错误处理",
                 "href": "#"
               }
-            ]
+            }
           },
-          {
+          "5": {
             "title": "故障排除",
             "description": "常见问题和解决方案",
             "icon": "Zap",
-            "links": [
-              {
+            "links": {
+              "0": {
                 "name": "常见问题",
                 "href": "#"
               },
-              {
+              "1": {
                 "name": "错误代码",
                 "href": "#"
               },
-              {
+              "2": {
                 "name": "调试技巧",
                 "href": "#"
               },
-              {
+              "3": {
                 "name": "社区支持",
                 "href": "#"
               }
-            ]
+            }
           }
-        ]
+        }
       },
       "support": {
         "title": "需要帮助？",
@@ -2186,319 +2186,319 @@
       "title": "集成",
       "subtitle": "与您喜爱的工具连接",
       "description": "将DaTools与您现有的工作流程和第三方服务无缝集成。",
-      "categories": [
-        {
+      "categories": {
+        "0": {
           "name": "身份验证与安全",
           "description": "安全可靠的用户身份验证解决方案",
           "icon": "Shield",
-          "integrations": [
-            {
+          "integrations": {
+            "0": {
               "name": "Google OAuth",
               "description": "使用Google账户快速登录",
               "logo": "/api/placeholder/40/40",
               "status": "available",
-              "features": [
-                "一键登录",
-                "用户信息同步",
-                "安全可靠"
-              ],
+              "features": {
+                "0": "一键登录",
+                "1": "用户信息同步",
+                "2": "安全可靠"
+              },
               "documentation": "/docs/auth/google"
             },
-            {
+            "1": {
               "name": "GitHub OAuth",
               "description": "开发者友好的GitHub登录",
               "logo": "/api/placeholder/40/40",
               "status": "available",
-              "features": [
-                "开发者认证",
-                "仓库信息访问",
-                "团队协作"
-              ],
+              "features": {
+                "0": "开发者认证",
+                "1": "仓库信息访问",
+                "2": "团队协作"
+              },
               "documentation": "/docs/auth/github"
             },
-            {
+            "2": {
               "name": "Magic Link",
               "description": "无密码登录体验",
               "logo": "/api/placeholder/40/40",
               "status": "available",
-              "features": [
-                "邮件验证",
-                "无密码登录",
-                "安全便捷"
-              ],
+              "features": {
+                "0": "邮件验证",
+                "1": "无密码登录",
+                "2": "安全便捷"
+              },
               "documentation": "/docs/auth/magic-link"
             }
-          ]
+          }
         },
-        {
+        "1": {
           "name": "支付与计费",
           "description": "完整的支付和订阅管理解决方案",
           "icon": "CreditCard",
-          "integrations": [
-            {
+          "integrations": {
+            "0": {
               "name": "Stripe",
               "description": "全球领先的支付处理平台",
               "logo": "/api/placeholder/40/40",
               "status": "available",
-              "features": [
-                "订阅管理",
-                "一次性支付",
-                "发票系统",
-                "Webhook支持"
-              ],
+              "features": {
+                "0": "订阅管理",
+                "1": "一次性支付",
+                "2": "发票系统",
+                "3": "Webhook支持"
+              },
               "documentation": "/docs/payments/stripe"
             },
-            {
+            "1": {
               "name": "PayPal",
               "description": "全球用户信赖的支付方式",
               "logo": "/api/placeholder/40/40",
               "status": "coming-soon",
-              "features": [
-                "PayPal支付",
-                "订阅管理",
-                "退款处理"
-              ]
+              "features": {
+                "0": "PayPal支付",
+                "1": "订阅管理",
+                "2": "退款处理"
+              }
             }
-          ]
+          }
         },
-        {
+        "2": {
           "name": "数据库与存储",
           "description": "可靠的数据存储和管理服务",
           "icon": "Database",
-          "integrations": [
-            {
+          "integrations": {
+            "0": {
               "name": "Supabase",
               "description": "开源的Firebase替代方案",
               "logo": "/api/placeholder/40/40",
               "status": "available",
-              "features": [
-                "PostgreSQL数据库",
-                "实时订阅",
-                "文件存储",
-                "行级安全"
-              ],
+              "features": {
+                "0": "PostgreSQL数据库",
+                "1": "实时订阅",
+                "2": "文件存储",
+                "3": "行级安全"
+              },
               "documentation": "/docs/database/supabase"
             },
-            {
+            "1": {
               "name": "PlanetScale",
               "description": "无服务器MySQL数据库",
               "logo": "/api/placeholder/40/40",
               "status": "beta",
-              "features": [
-                "无服务器架构",
-                "分支管理",
-                "自动扩缩容"
-              ]
+              "features": {
+                "0": "无服务器架构",
+                "1": "分支管理",
+                "2": "自动扩缩容"
+              }
             }
-          ]
+          }
         },
-        {
+        "3": {
           "name": "AI与机器学习",
           "description": "强大的AI服务集成",
           "icon": "Bot",
-          "integrations": [
-            {
+          "integrations": {
+            "0": {
               "name": "OpenAI",
               "description": "领先的AI语言模型服务",
               "logo": "/api/placeholder/40/40",
               "status": "available",
-              "features": [
-                "GPT模型",
-                "嵌入向量",
-                "图像生成",
-                "API管理"
-              ],
+              "features": {
+                "0": "GPT模型",
+                "1": "嵌入向量",
+                "2": "图像生成",
+                "3": "API管理"
+              },
               "documentation": "/docs/ai/openai"
             },
-            {
+            "1": {
               "name": "Anthropic",
               "description": "Claude AI模型服务",
               "logo": "/api/placeholder/40/40",
               "status": "available",
-              "features": [
-                "Claude模型",
-                "长文本处理",
-                "安全对话"
-              ],
+              "features": {
+                "0": "Claude模型",
+                "1": "长文本处理",
+                "2": "安全对话"
+              },
               "documentation": "/docs/ai/anthropic"
             },
-            {
+            "2": {
               "name": "Hugging Face",
               "description": "开源AI模型平台",
               "logo": "/api/placeholder/40/40",
               "status": "beta",
-              "features": [
-                "开源模型",
-                "模型托管",
-                "推理API"
-              ]
+              "features": {
+                "0": "开源模型",
+                "1": "模型托管",
+                "2": "推理API"
+              }
             }
-          ]
+          }
         },
-        {
+        "4": {
           "name": "分析与监控",
           "description": "深入了解用户行为和系统性能",
           "icon": "BarChart3",
-          "integrations": [
-            {
+          "integrations": {
+            "0": {
               "name": "Google Analytics",
               "description": "全面的网站分析工具",
               "logo": "/api/placeholder/40/40",
               "status": "available",
-              "features": [
-                "用户行为分析",
-                "转化跟踪",
-                "实时报告",
-                "自定义事件"
-              ],
+              "features": {
+                "0": "用户行为分析",
+                "1": "转化跟踪",
+                "2": "实时报告",
+                "3": "自定义事件"
+              },
               "documentation": "/docs/analytics/google"
             },
-            {
+            "1": {
               "name": "Mixpanel",
               "description": "产品分析平台",
               "logo": "/api/placeholder/40/40",
               "status": "coming-soon",
-              "features": [
-                "事件跟踪",
-                "用户画像",
-                "漏斗分析"
-              ]
+              "features": {
+                "0": "事件跟踪",
+                "1": "用户画像",
+                "2": "漏斗分析"
+              }
             },
-            {
+            "2": {
               "name": "Sentry",
               "description": "错误监控和性能追踪",
               "logo": "/api/placeholder/40/40",
               "status": "测试版",
-              "features": [
-                "错误监控",
-                "性能追踪",
-                "发布跟踪"
-              ]
+              "features": {
+                "0": "错误监控",
+                "1": "性能追踪",
+                "2": "发布跟踪"
+              }
             }
-          ]
+          }
         },
-        {
+        "5": {
           "name": "通信与通知",
           "description": "多渠道用户沟通解决方案",
           "icon": "邮件",
-          "integrations": [
-            {
+          "integrations": {
+            "0": {
               "name": "SendGrid",
               "description": "可靠的邮件发送服务",
               "logo": "/api/placeholder/40/40",
               "status": "可用",
-              "features": [
-                "邮件发送",
-                "模板管理",
-                "投递统计",
-                "Webhook支持"
-              ],
+              "features": {
+                "0": "邮件发送",
+                "1": "模板管理",
+                "2": "投递统计",
+                "3": "Webhook支持"
+              },
               "documentation": "/docs/email/sendgrid"
             },
-            {
+            "1": {
               "name": "Twilio",
               "description": "全球通信平台",
               "logo": "/api/placeholder/40/40",
               "status": "即将推出",
-              "features": [
-                "短信发送",
-                "语音通话",
-                "视频通话"
-              ]
+              "features": {
+                "0": "短信发送",
+                "1": "语音通话",
+                "2": "视频通话"
+              }
             },
-            {
+            "2": {
               "name": "Slack",
               "description": "团队协作和通知",
               "logo": "/api/placeholder/40/40",
               "status": "测试版",
-              "features": [
-                "消息发送",
-                "频道集成",
-                "工作流自动化"
-              ]
+              "features": {
+                "0": "消息发送",
+                "1": "频道集成",
+                "2": "工作流自动化"
+              }
             }
-          ]
+          }
         }
-      ],
+      },
       "popularIntegrations": {
         "title": "热门集成",
         "subtitle": "最受开发者欢迎的集成服务",
-        "items": [
-          {
+        "items": {
+          "0": {
             "name": "Stripe",
             "description": "全球领先的支付处理平台",
             "logo": "/api/placeholder/60/60",
             "status": "可用",
-            "features": [
-              "订阅管理",
-              "一次性支付",
-              "发票系统"
-            ]
+            "features": {
+              "0": "订阅管理",
+              "1": "一次性支付",
+              "2": "发票系统"
+            }
           },
-          {
+          "1": {
             "name": "OpenAI",
             "description": "领先的AI语言模型服务",
             "logo": "/api/placeholder/60/60",
             "status": "可用",
-            "features": [
-              "GPT模型",
-              "嵌入向量",
-              "图像生成"
-            ]
+            "features": {
+              "0": "GPT模型",
+              "1": "嵌入向量",
+              "2": "图像生成"
+            }
           },
-          {
+          "2": {
             "name": "Supabase",
             "description": "开源的Firebase替代方案",
             "logo": "/api/placeholder/60/60",
             "status": "可用",
-            "features": [
-              "PostgreSQL",
-              "实时订阅",
-              "文件存储"
-            ]
+            "features": {
+              "0": "PostgreSQL",
+              "1": "实时订阅",
+              "2": "文件存储"
+            }
           },
-          {
+          "3": {
             "name": "Google Analytics",
             "description": "全面的网站分析工具",
             "logo": "/api/placeholder/60/60",
             "status": "可用",
-            "features": [
-              "用户分析",
-              "转化跟踪",
-              "实时报告"
-            ]
+            "features": {
+              "0": "用户分析",
+              "1": "转化跟踪",
+              "2": "实时报告"
+            }
           }
-        ]
+        }
       },
       "gettingStarted": {
         "title": "快速开始",
         "subtitle": "只需几个步骤即可集成您需要的服务",
-        "steps": [
-          {
+        "steps": {
+          "0": {
             "step": "1",
             "title": "选择集成服务",
             "description": "浏览我们的集成目录，选择您需要的服务",
             "code": "# 查看可用集成\\nnpm run list-integrations"
           },
-          {
+          "1": {
             "step": "2",
             "title": "配置环境变量",
             "description": "添加必要的API密钥和配置",
             "code": "# 配置环境变量\\ncp .env.example .env.local\\n# 编辑 .env.local 文件"
           },
-          {
+          "2": {
             "step": "3",
             "title": "安装集成包",
             "description": "安装对应的集成包和依赖",
             "code": "# 安装集成包\\npnpm add @datools/integrations-stripe"
           },
-          {
+          "3": {
             "step": "4",
             "title": "初始化集成",
             "description": "在您的应用中初始化集成服务",
             "code": "# 初始化集成\\nimport { StripeIntegration } from '@datools/integrations-stripe'\\nconst stripe = new StripeIntegration()"
           }
-        ]
+        }
       },
       "cta": {
         "title": "准备开始集成？",
@@ -2515,270 +2515,270 @@
       "popularArticles": {
         "title": "热门文章",
         "subtitle": "最常被查看的帮助文章",
-        "articles": [
-          {
+        "articles": {
+          "0": {
             "title": "如何开始使用 DaTools",
             "description": "了解如何快速设置和部署您的第一个 AI SaaS 应用",
             "href": "#",
-            "tags": [
-              "快速开始",
-              "部署",
-              "设置"
-            ]
+            "tags": {
+              "0": "快速开始",
+              "1": "部署",
+              "2": "设置"
+            }
           },
-          {
+          "1": {
             "title": "身份验证配置指南",
             "description": "详细说明如何配置 Google OAuth、GitHub OAuth 和 Magic Link",
             "href": "#",
-            "tags": [
-              "身份验证",
-              "OAuth",
-              "配置"
-            ]
+            "tags": {
+              "0": "身份验证",
+              "1": "OAuth",
+              "2": "配置"
+            }
           },
-          {
+          "2": {
             "title": "Stripe 支付集成",
             "description": "如何设置订阅、一次性支付和发票管理",
             "href": "#",
-            "tags": [
-              "支付",
-              "Stripe",
-              "订阅"
-            ]
+            "tags": {
+              "0": "支付",
+              "1": "Stripe",
+              "2": "订阅"
+            }
           },
-          {
+          "3": {
             "title": "AI 功能集成",
             "description": "集成 OpenAI、Anthropic 等 AI 服务的完整指南",
             "href": "#",
-            "tags": [
-              "人工智能",
-              "OpenAI",
-              "集成"
-            ]
+            "tags": {
+              "0": "人工智能",
+              "1": "OpenAI",
+              "2": "集成"
+            }
           },
-          {
+          "4": {
             "title": "数据库设置和迁移",
             "description": "Supabase 数据库配置和数据迁移最佳实践",
             "href": "#",
-            "tags": [
-              "数据库",
-              "Supabase",
-              "迁移"
-            ]
+            "tags": {
+              "0": "数据库",
+              "1": "Supabase",
+              "2": "迁移"
+            }
           },
-          {
+          "5": {
             "title": "部署到生产环境",
             "description": "Vercel 和 Cloudflare 部署的详细步骤",
             "href": "#",
-            "tags": [
-              "部署",
-              "Vercel",
-              "生产环境"
-            ]
+            "tags": {
+              "0": "部署",
+              "1": "Vercel",
+              "2": "生产环境"
+            }
           }
-        ]
+        }
       },
       "categoriesTitle": "帮助分类",
       "categoriesSubtitle": "按类别浏览帮助文章",
-      "categories": [
-        {
+      "categories": {
+        "0": {
           "title": "快速开始",
           "description": "新用户入门指南",
           "icon": "火箭",
-          "articles": [
-            {
+          "articles": {
+            "0": {
               "title": "安装和设置",
               "description": "从零开始设置 DaTools 项目",
               "href": "#",
-              "tags": [
-                "安装",
-                "设置",
-                "环境"
-              ]
+              "tags": {
+                "0": "安装",
+                "1": "设置",
+                "2": "环境"
+              }
             },
-            {
+            "1": {
               "title": "第一个应用",
               "description": "创建您的第一个 AI SaaS 应用",
               "href": "#",
-              "tags": [
-                "教程",
-                "应用",
-                "开发"
-              ]
+              "tags": {
+                "0": "教程",
+                "1": "应用",
+                "2": "开发"
+              }
             },
-            {
+            "2": {
               "title": "环境变量配置",
               "description": "正确配置所有必要的环境变量",
               "href": "#",
-              "tags": [
-                "配置",
-                "环境变量",
-                "API 密钥"
-              ]
+              "tags": {
+                "0": "配置",
+                "1": "环境变量",
+                "2": "API 密钥"
+              }
             }
-          ]
+          }
         },
-        {
+        "1": {
           "title": "核心功能",
           "description": "DaTools 主要功能的使用指南",
           "icon": "代码",
-          "articles": [
-            {
+          "articles": {
+            "0": {
               "title": "身份验证系统",
               "description": "用户登录、注册和会话管理",
               "href": "#",
-              "tags": [
-                "身份验证",
-                "用户管理",
-                "会话"
-              ]
+              "tags": {
+                "0": "身份验证",
+                "1": "用户管理",
+                "2": "会话"
+              }
             },
-            {
+            "1": {
               "title": "支付处理",
               "description": "订阅管理和支付流程",
               "href": "#",
-              "tags": [
-                "支付",
-                "订阅",
-                "计费"
-              ]
+              "tags": {
+                "0": "支付",
+                "1": "订阅",
+                "2": "计费"
+              }
             },
-            {
+            "2": {
               "title": "数据库操作",
               "description": "数据存储和查询最佳实践",
               "href": "#",
-              "tags": [
-                "数据库",
-                "查询",
-                "存储"
-              ]
+              "tags": {
+                "0": "数据库",
+                "1": "查询",
+                "2": "存储"
+              }
             },
-            {
+            "3": {
               "title": "AI 集成",
               "description": "AI 服务的集成和使用",
               "href": "#",
-              "tags": [
-                "人工智能",
-                "机器学习",
-                "API"
-              ]
+              "tags": {
+                "0": "人工智能",
+                "1": "机器学习",
+                "2": "API"
+              }
             }
-          ]
+          }
         },
-        {
+        "2": {
           "title": "部署和运维",
           "description": "生产环境部署和运维指南",
           "icon": "地球",
-          "articles": [
-            {
+          "articles": {
+            "0": {
               "title": "Vercel 部署",
               "description": "使用 Vercel 部署您的应用",
               "href": "#",
-              "tags": [
-                "Vercel",
-                "部署",
-                "CDN"
-              ]
+              "tags": {
+                "0": "Vercel",
+                "1": "部署",
+                "2": "CDN"
+              }
             },
-            {
+            "1": {
               "title": "Cloudflare Pages",
               "description": "Cloudflare Pages 部署指南",
               "href": "#",
-              "tags": [
-                "Cloudflare",
-                "部署",
-                "边缘计算"
-              ]
+              "tags": {
+                "0": "Cloudflare",
+                "1": "部署",
+                "2": "边缘计算"
+              }
             },
-            {
+            "2": {
               "title": "环境管理",
               "description": "开发、测试和生产环境管理",
               "href": "#",
-              "tags": [
-                "环境",
-                "配置",
-                "管理"
-              ]
+              "tags": {
+                "0": "环境",
+                "1": "配置",
+                "2": "管理"
+              }
             },
-            {
+            "3": {
               "title": "监控和日志",
               "description": "应用监控和日志记录",
               "href": "#",
-              "tags": [
-                "监控",
-                "日志",
-                "分析"
-              ]
+              "tags": {
+                "0": "监控",
+                "1": "日志",
+                "2": "分析"
+              }
             }
-          ]
+          }
         },
-        {
+        "3": {
           "title": "故障排除",
           "description": "常见问题和解决方案",
           "icon": "Zap",
-          "articles": [
-            {
+          "articles": {
+            "0": {
               "title": "常见错误",
               "description": "解决常见的部署和运行错误",
               "href": "#",
-              "tags": [
-                "错误",
-                "调试",
-                "解决"
-              ]
+              "tags": {
+                "0": "错误",
+                "1": "调试",
+                "2": "解决"
+              }
             },
-            {
+            "1": {
               "title": "性能优化",
               "description": "提升应用性能的技巧",
               "href": "#",
-              "tags": [
-                "性能",
-                "优化",
-                "速度"
-              ]
+              "tags": {
+                "0": "性能",
+                "1": "优化",
+                "2": "速度"
+              }
             },
-            {
+            "2": {
               "title": "安全最佳实践",
               "description": "保护您的应用和数据安全",
               "href": "#",
-              "tags": [
-                "安全",
-                "最佳实践",
-                "保护"
-              ]
+              "tags": {
+                "0": "安全",
+                "1": "最佳实践",
+                "2": "保护"
+              }
             }
-          ]
+          }
         }
-      ],
+      },
       "faq": {
         "title": "常见问题",
         "subtitle": "快速找到您需要的答案",
-        "faqs": [
-          {
+        "faqs": {
+          "0": {
             "question": "DaTools 支持哪些 AI 服务？",
             "answer": "DaTools 支持 OpenAI、Anthropic、Google AI 等主流 AI 服务，并提供了统一的接口来管理不同的 AI 提供商。"
           },
-          {
+          "1": {
             "question": "如何自定义 DaTools 的界面？",
             "answer": "DaTools 使用 Tailwind CSS 和 Shadcn/UI，您可以轻松自定义样式。所有组件都是可定制的，支持主题切换。"
           },
-          {
+          "2": {
             "question": "DaTools 是否支持多语言？",
             "answer": "是的，DaTools 内置了国际化支持，目前支持中文、英文和日文，您可以轻松添加更多语言。"
           },
-          {
+          "3": {
             "question": "如何升级 DaTools 版本？",
             "answer": "您可以通过 Git 拉取最新代码来升级 DaTools。我们建议在升级前备份您的自定义代码。"
           },
-          {
+          "4": {
             "question": "DaTools 的性能如何？",
             "answer": "DaTools 基于 Next.js 14+ 构建，支持 Server Components 和 Edge Runtime，具有出色的性能表现。"
           },
-          {
+          "5": {
             "question": "如何获得技术支持？",
             "answer": "您可以通过邮件联系我们，或者加入我们的 Discord 社区获得实时帮助。"
           }
-        ]
+        }
       },
       "contact": {
         "title": "需要更多帮助？",
@@ -2798,70 +2798,70 @@
       "teamSubtitle": "根据您的需求联系相应的团队",
       "responseTimeTitle": "响应时间",
       "responseTimeSubtitle": "我们承诺快速响应您的请求",
-      "contactMethods": [
-        {
+      "contactMethods": {
+        "0": {
           "icon": "Users",
           "title": "Discord 社区",
           "description": "加入我们的 Discord 社区，与其他开发者交流",
           "action": "加入 Discord",
           "href": "#"
         },
-        {
+        "1": {
           "icon": "Zap",
           "title": "邮件支持",
           "description": "发送邮件到 support@datools.org",
           "action": "发送邮件",
           "href": "mailto:support@datools.org"
         },
-        {
+        "2": {
           "icon": "Shield",
           "title": "GitHub 议题",
           "description": "在 GitHub 上报告问题或提出建议",
           "action": "查看 Issues",
           "href": "#"
         },
-        {
+        "3": {
           "icon": "Rocket",
           "title": "企业合作",
           "description": "企业级支持和定制开发服务",
           "action": "联系销售",
           "href": "mailto:sales@datools.org"
         }
-      ],
-      "team": [
-        {
+      },
+      "team": {
+        "0": {
           "name": "技术支持",
           "email": "support@datools.org",
           "description": "技术问题和故障排除"
         },
-        {
+        "1": {
           "name": "销售团队",
           "email": "sales@datools.org",
           "description": "商业合作和定制服务"
         },
-        {
+        "2": {
           "name": "产品反馈",
           "email": "feedback@datools.org",
           "description": "产品建议和功能请求"
         }
-      ],
-      "responseTimes": [
-        {
+      },
+      "responseTimes": {
+        "0": {
           "time": "< 1 小时",
           "title": "Discord 支持",
           "description": "社区支持，快速响应"
         },
-        {
+        "1": {
           "time": "< 24 小时",
           "title": "邮件支持",
           "description": "专业团队，详细回复"
         },
-        {
+        "2": {
           "time": "< 48 小时",
           "title": "企业支持",
           "description": "定制解决方案"
         }
-      ]
+      }
     },
     "status": {
       "title": "服务状态",
@@ -2960,11 +2960,11 @@
       "informationSharing": {
         "title": "信息共享和披露",
         "content": "我们不会向外部方出售、交易或以其他方式转让您的个人信息，除非在以下情况下：",
-        "circumstances": [
-          "遵守法律义务或响应公共当局的合法请求。",
-          "保护我们的权利、财产或安全，或保护我们的用户或他人的权利、财产或安全。",
-          "通过协助我们运营网站或开展业务的受信任第三方合作伙伴提供服务，但需遵守保密协议。"
-        ]
+        "circumstances": {
+          "0": "遵守法律义务或响应公共当局的合法请求。",
+          "1": "保护我们的权利、财产或安全，或保护我们的用户或他人的权利、财产或安全。",
+          "2": "通过协助我们运营网站或开展业务的受信任第三方合作伙伴提供服务，但需遵守保密协议。"
+        }
       },
       "policyChanges": {
         "title": "政策变更",
@@ -3000,42 +3000,42 @@
       "intellectualProperty": {
         "title": "内容和知识产权",
         "content": "通过 DaTools 提供的所有内容，包括但不限于模板、代码、基础设施设置和文档，均受版权法保护。DaTools 的版权所有者是 **datools.ai**。",
-        "points": [
-          "您承认您不拥有构成 DaTools 服务的基础技术或知识产权，您同意尊重 datools.ai 和任何第三方的知识产权。",
-          "虽然您保留对自定义实现和修改的所有权，但 DaTools 核心平台和模板仍然是 datools.ai 的财产。"
-        ]
+        "points": {
+          "0": "您承认您不拥有构成 DaTools 服务的基础技术或知识产权，您同意尊重 datools.ai 和任何第三方的知识产权。",
+          "1": "虽然您保留对自定义实现和修改的所有权，但 DaTools 核心平台和模板仍然是 datools.ai 的财产。"
+        }
       },
       "prohibitedActivities": {
         "title": "禁止活动",
         "content": "您同意在使用 DaTools 时不从事以下任何禁止活动：",
-        "activities": [
-          "未经授权访问或分发我们的专有代码和模板",
-          "未经授权转售或重新分发 DaTools 模板",
-          "干扰或破坏服务的安全性或性能",
-          "将服务用于任何非法或未经授权的目的",
-          "试图绕过服务的任何安全功能"
-        ]
+        "activities": {
+          "0": "未经授权访问或分发我们的专有代码和模板",
+          "1": "未经授权转售或重新分发 DaTools 模板",
+          "2": "干扰或破坏服务的安全性或性能",
+          "3": "将服务用于任何非法或未经授权的目的",
+          "4": "试图绕过服务的任何安全功能"
+        }
       },
       "privacyData": {
         "title": "隐私和数据收集",
         "content": "DaTools 收集以下类型的数据：",
-        "dataTypes": [
-          "账户信息：您在创建账户时提供的信息",
-          "使用详情：与您在我们服务上的活动相关的数据",
-          "设备信息：关于您用于访问我们服务的设备的信息",
-          "Cookie：帮助我们增强您服务体验的数据",
-          "支付和账单信息：处理支付所需的数据"
-        ],
+        "dataTypes": {
+          "0": "账户信息：您在创建账户时提供的信息",
+          "1": "使用详情：与您在我们服务上的活动相关的数据",
+          "2": "设备信息：关于您用于访问我们服务的设备的信息",
+          "3": "Cookie：帮助我们增强您服务体验的数据",
+          "4": "支付和账单信息：处理支付所需的数据"
+        },
         "privacyPolicy": "有关数据收集实践的更多详细信息，请参阅我们单独的隐私政策。"
       },
       "pricingPayments": {
         "title": "定价和支付",
-        "points": [
-          "除非法律另有要求，否则所有购买都是最终且不可退款的",
-          "价格可能会在通知用户后发生变化",
-          "您同意支付与您选择的计划相关的所有费用",
-          "支付条款基于您选择的支付方式和计划"
-        ]
+        "points": {
+          "0": "除非法律另有要求，否则所有购买都是最终且不可退款的",
+          "1": "价格可能会在通知用户后发生变化",
+          "2": "您同意支付与您选择的计划相关的所有费用",
+          "3": "支付条款基于您选择的支付方式和计划"
+        }
       },
       "termination": {
         "title": "终止",
@@ -3084,38 +3084,38 @@
         "essential": {
           "title": "必要Cookie",
           "description": "这些Cookie对于网站的正常运行是必需的，无法关闭。它们通常仅响应您所做的操作而设置，相当于请求服务，例如设置隐私偏好、登录或填写表单。",
-          "examples": [
-            "保持您的登录状态",
-            "记住您的语言偏好",
-            "确保网站安全"
-          ]
+          "examples": {
+            "0": "保持您的登录状态",
+            "1": "记住您的语言偏好",
+            "2": "确保网站安全"
+          }
         },
         "analytics": {
           "title": "分析Cookie",
           "description": "这些Cookie帮助我们了解访问者如何与网站互动，通过匿名收集和报告信息。",
-          "examples": [
-            "Google Analytics - 分析网站使用情况",
-            "页面访问统计",
-            "用户行为分析"
-          ]
+          "examples": {
+            "0": "Google Analytics - 分析网站使用情况",
+            "1": "页面访问统计",
+            "2": "用户行为分析"
+          }
         },
         "functional": {
           "title": "功能Cookie",
           "description": "这些Cookie使网站能够提供增强的功能和个性化。它们可能由我们或第三方设置。",
-          "examples": [
-            "记住您的偏好设置",
-            "个性化内容推荐",
-            "社交媒体集成"
-          ]
+          "examples": {
+            "0": "记住您的偏好设置",
+            "1": "个性化内容推荐",
+            "2": "社交媒体集成"
+          }
         },
         "marketing": {
           "title": "营销Cookie",
           "description": "这些Cookie用于跟踪访问者在网站上的活动。目的是显示相关和个性化的广告。",
-          "examples": [
-            "广告个性化",
-            "转化跟踪",
-            "再营销活动"
-          ]
+          "examples": {
+            "0": "广告个性化",
+            "1": "转化跟踪",
+            "2": "再营销活动"
+          }
         }
       },
       "cookieTypes": {
@@ -3145,21 +3145,21 @@
         "browserSettings": {
           "title": "浏览器设置",
           "description": "大多数浏览器允许您控制Cookie。您可以在浏览器的设置或首选项中找到Cookie选项。",
-          "instructions": [
-            "Chrome: 设置 > 隐私和安全 > Cookie和其他网站数据",
-            "Firefox: 选项 > 隐私和安全 > Cookie和网站数据",
-            "Safari: 偏好设置 > 隐私 > Cookie和网站数据",
-            "Edge: 设置 > Cookie和网站权限"
-          ]
+          "instructions": {
+            "0": "Chrome: 设置 > 隐私和安全 > Cookie和其他网站数据",
+            "1": "Firefox: 选项 > 隐私和安全 > Cookie和网站数据",
+            "2": "Safari: 偏好设置 > 隐私 > Cookie和网站数据",
+            "3": "Edge: 设置 > Cookie和网站权限"
+          }
         },
         "optOut": {
           "title": "选择退出",
           "description": "您可以选择退出某些第三方Cookie，特别是用于广告目的的Cookie。",
-          "links": [
-            "Google Analytics 选择退出",
-            "Facebook 广告偏好",
-            "其他广告网络选择退出"
-          ]
+          "links": {
+            "0": "Google Analytics 选择退出",
+            "1": "Facebook 广告偏好",
+            "2": "其他广告网络选择退出"
+          }
         }
       },
       "dataRetention": {
@@ -3265,55 +3265,55 @@
           "refunded": "已退款"
         }
       },
-      "plans": [
-        {
+      "plans": {
+        "0": {
           "id": "free",
           "name": "免费版",
-          "price": 0,
+          "price": "0",
           "period": "永久",
           "description": "适合个人用户和小型项目",
-          "features": [
-            "每月 1,000 次 API 调用",
-            "最多 3 个项目",
-            "基础支持",
-            "标准模板库"
-          ],
-          "current": false
+          "features": {
+            "0": "每月 1,000 次 API 调用",
+            "1": "最多 3 个项目",
+            "2": "基础支持",
+            "3": "标准模板库"
+          },
+          "current": "false"
         },
-        {
+        "1": {
           "id": "pro",
           "name": "专业版",
-          "price": 29,
+          "price": "29",
           "period": "每月",
           "description": "适合中小型团队",
-          "features": [
-            "每月 50,000 次 API 调用",
-            "无限项目",
-            "优先支持",
-            "高级模板库",
-            "高级分析",
-            "团队协作"
-          ],
-          "current": false
+          "features": {
+            "0": "每月 50,000 次 API 调用",
+            "1": "无限项目",
+            "2": "优先支持",
+            "3": "高级模板库",
+            "4": "高级分析",
+            "5": "团队协作"
+          },
+          "current": "false"
         },
-        {
+        "2": {
           "id": "enterprise",
           "name": "企业版",
-          "price": 99,
+          "price": "99",
           "period": "每月",
           "description": "适合大型企业",
-          "features": [
-            "无限 API 调用",
-            "无限项目",
-            "24/7 专属支持",
-            "所有模板库",
-            "企业级分析",
-            "自定义集成",
-            "SLA 保证"
-          ],
-          "current": false
+          "features": {
+            "0": "无限 API 调用",
+            "1": "无限项目",
+            "2": "24/7 专属支持",
+            "3": "所有模板库",
+            "4": "企业级分析",
+            "5": "自定义集成",
+            "6": "SLA 保证"
+          },
+          "current": "false"
         }
-      ]
+      }
     },
     "orders": {
       "title": "订单中心",
@@ -3428,74 +3428,74 @@
       "stats": {
         "title": "统计概览",
         "subtitle": "您的账户数据",
-        "cards": [
-          {
+        "cards": {
+          "0": {
             "title": "总订单",
             "value": "0",
             "change": "0% 与上月相比",
             "trend": "中性"
           },
-          {
+          "1": {
             "title": "总收入",
             "value": "¥0",
             "change": "0% 与上月相比",
             "trend": "中性"
           },
-          {
+          "2": {
             "title": "待处理订单",
             "value": "0",
             "change": "查看详情",
             "trend": "中性"
           },
-          {
+          "3": {
             "title": "账户状态",
             "value": "活跃",
             "change": "正常使用",
             "trend": "上升"
           }
-        ]
+        }
       },
       "recentActivity": {
         "title": "最近活动",
         "subtitle": "您的账户动态",
         "noActivity": "暂无活动记录",
-        "activities": [
-          {
+        "activities": {
+          "0": {
             "action": "账户已创建",
             "time": "刚刚",
             "icon": "UserPlus"
           }
-        ]
+        }
       },
       "quickActions": {
         "title": "快速操作",
         "subtitle": "常用功能入口",
-        "actions": [
-          {
+        "actions": {
+          "0": {
             "title": "创建订单",
             "description": "立即创建新订单",
             "icon": "ShoppingCart",
             "href": "/pricing"
           },
-          {
+          "1": {
             "title": "查看订单",
             "description": "管理您的订单",
             "icon": "Package",
             "href": "/orders"
           },
-          {
+          "2": {
             "title": "账户设置",
             "description": "编辑个人信息",
             "icon": "Settings",
             "href": "/profile"
           },
-          {
+          "3": {
             "title": "查看会员",
             "description": "升级您的计划",
             "icon": "Crown",
             "href": "/membership"
           }
-        ]
+        }
       }
     },
     "blogs": {

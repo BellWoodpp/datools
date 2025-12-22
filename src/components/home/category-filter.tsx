@@ -14,6 +14,11 @@ import {
   Landmark,
   PackageOpen,
   Server,
+  Loader,
+  Blocks,
+  Kayak,
+  Handshake,
+  ClipboardPen,
 } from "lucide-react";
 
 type Category = NonNullable<HomeFeedDictionary["categories"]>[number];
@@ -70,10 +75,31 @@ export function CategoryFilter({ categories, active, onChange }: CategoryFilterP
       </span>
     ),
     product: () => <PackageSearch className={iconClass} />,
-    etl: () => <Pipette className={iconClass} />,
-    warehouse: () => <Warehouse className={iconClass} />,
-    notebook: () => <NotebookPen className={iconClass} />,
-    experiment: () => <FlaskConical className={iconClass} />,
+    etl: () => (
+      <span className="flex items-center gap-1">
+        <Pipette className={iconClass} />
+        <Loader className={iconClass} />
+        <Blocks className={iconClass} />
+      </span>
+    ),
+    warehouse: () => (
+      <span className="flex items-center gap-1">
+        <Warehouse className={iconClass} />
+        <Kayak className={iconClass} />
+      </span>
+    ),
+    notebook: () => (
+      <span className="flex items-center gap-1">
+        <NotebookPen className={iconClass} />
+        <Handshake className={iconClass} />
+      </span>
+    ),
+    experiment: () => (
+      <span className="flex items-center gap-1">
+        <FlaskConical className={iconClass} />
+        <ClipboardPen className={iconClass} />
+      </span>
+    ),
     governance: () => (
       <span className="flex items-center gap-1 text-[#12c2e9]">
         <TextSearch className={iconLarge} />

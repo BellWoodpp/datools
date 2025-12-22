@@ -66,7 +66,7 @@ function unflatten(flat: Record<string, string>) {
 
 async function translateText(text: string, target: string, source: string) {
   const prompt = `You are a professional translator. Translate the following JSON values from ${source} to ${target}, preserving placeholders like {name} and markdown. Return JSON only.`;
-  const messages = [
+  const messages: OpenAI.Chat.ChatCompletionMessageParam[] = [
     { role: 'system', content: prompt },
     { role: 'user', content: text },
   ];

@@ -10,6 +10,11 @@
     "resultsLabel": "results",
     "viewDetailsLabel": "View details",
     "visitSiteLabel": "Visit site",
+    "trafficLabel": "Traffic",
+    "trafficLoginUnlockLabel": "Login untuk membuka",
+    "trafficUpgradeUnlockLabel": "Upgrade untuk membuka",
+    "trafficNotConfiguredLabel": "Belum dikonfigurasi",
+    "trafficPerMonthSuffix": "/ bln",
     "collectionsTitle": "Curated collections",
     "latestTitle": "Latest",
     "categories": [

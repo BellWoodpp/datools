@@ -85,6 +85,11 @@ export interface HomeFeedDictionary {
   searchPlaceholder?: string;
   viewDetailsLabel: string;
   visitSiteLabel: string;
+  trafficLabel?: string;
+  trafficLoginUnlockLabel?: string;
+  trafficUpgradeUnlockLabel?: string;
+  trafficNotConfiguredLabel?: string;
+  trafficPerMonthSuffix?: string;
   resultsLabel?: string;
   collectionsTitle: string;
   latestTitle: string;

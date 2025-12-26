@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, ExternalLink, MessageSquare } from "lucide-react";
+import { ArrowRight, ExternalLink, Lock, MessageSquare, TrendingUp } from "lucide-react";
 import type { HomeFeedTool } from "@/i18n/types";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useLocale, usePayment } from "@/hooks";
+import { authClient } from "@/lib/auth-server/client";
 
 function highlightText(text: string, term: string) {
   if (!term) return text;
@@ -43,7 +45,24 @@ export function ToolCard({
   const [logoError, setLogoError] = useState(false);
   const [fallbackError, setFallbackError] = useState(false);
   const router = useRouter();
+  const { locale, dictionary } = useLocale();
+  const { createCheckout, isLoading: isCheckoutLoading } = usePayment();
+  const session = authClient.useSession();
+  const isAuthenticated = Boolean(session.data?.user);
   const showDetailLink = detailHref && detailHref !== "#";
+  const homeFeedCopy = dictionary.homeFeed;
+  const trafficLabel = homeFeedCopy?.trafficLabel ?? (locale === "zh" ? "访问量" : "Traffic");
+  const trafficLoginUnlockLabel =
+    homeFeedCopy?.trafficLoginUnlockLabel ?? (locale === "zh" ? "登录解锁" : "Log in to unlock");
+  const trafficUpgradeUnlockLabel =
+    homeFeedCopy?.trafficUpgradeUnlockLabel ?? (locale === "zh" ? "升级解锁" : "Upgrade to unlock");
+  const trafficNotConfiguredLabel =
+    homeFeedCopy?.trafficNotConfiguredLabel ?? (locale === "zh" ? "未配置" : "Not configured");
+  const trafficPerMonthSuffix = homeFeedCopy?.trafficPerMonthSuffix ?? (locale === "zh" ? "/ 月" : "/ mo");
+  const loginHref = useMemo(
+    () => (locale === "en" ? "/login" : `/${locale}/login`),
+    [locale],
+  );
 
   const renderLogo = () => {
     const defaultLogo = "https://r2.datools.org/logo_light.svg";
@@ -93,6 +112,151 @@ export function ToolCard({
   const handleNavigateDetail = () => {
     if (!detailHref || detailHref === "#") return;
     router.push(detailHref);
+  };
+
+  type TrafficState =
+    | { status: "loading" }
+    | { status: "unauth" }
+    | { status: "locked"; productId: string }
+    | { status: "available"; label: string }
+    | { status: "not_configured"; message: string }
+    | { status: "error"; message: string };
+
+  const [traffic, setTraffic] = useState<TrafficState>({ status: "loading" });
+  const trafficUrl = useMemo(() => (isExternal ? officialHref : null), [isExternal, officialHref]);
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      setTraffic({ status: "unauth" });
+      return;
+    }
+
+    if (!trafficUrl || trafficUrl === "#") {
+      setTraffic({ status: "error", message: "no url" });
+      return;
+    }
+
+    const controller = new AbortController();
+    setTraffic({ status: "loading" });
+
+    fetch(`/api/traffic?url=${encodeURIComponent(trafficUrl)}&locale=${encodeURIComponent(locale)}`, {
+      signal: controller.signal,
+    })
+      .then(async (res) => {
+        const payload = (await res.json().catch(() => null)) as
+          | {
+              ok?: boolean;
+              message?: string;
+              code?: string;
+              productId?: string;
+              data?: {
+                status: string;
+                visits?: number;
+                period?: string;
+                source?: string;
+                updatedAt?: string;
+                message?: string;
+              };
+            }
+          | null;
+
+        if (!res.ok) {
+          if (res.status === 401) {
+            setTraffic({ status: "unauth" });
+            return;
+          }
+          if (res.status === 402) {
+            setTraffic({ status: "locked", productId: payload?.productId ?? "professional" });
+            return;
+          }
+          setTraffic({ status: "error", message: payload?.message ?? "load failed" });
+          return;
+        }
+
+        const data = payload?.data;
+        if (!data || !data.status) {
+          setTraffic({ status: "error", message: "invalid data" });
+          return;
+        }
+
+        if (data.status === "available" && typeof data.visits === "number") {
+          setTraffic({ status: "available", label: `${data.visits.toLocaleString(locale)} ${trafficPerMonthSuffix}` });
+          return;
+        }
+
+        if (data.status === "not_configured") {
+          setTraffic({ status: "not_configured", message: data.message ?? "not configured" });
+          return;
+        }
+
+        setTraffic({ status: "error", message: data.message ?? "unknown status" });
+      })
+      .catch((error) => {
+        if (error instanceof DOMException && error.name === "AbortError") return;
+        setTraffic({ status: "error", message: (error as Error)?.message ?? "load failed" });
+      });
+
+    return () => controller.abort();
+  }, [trafficUrl, isAuthenticated]);
+
+  const handleTrafficClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (traffic.status === "unauth") {
+      router.push(loginHref);
+      return;
+    }
+
+    if (traffic.status === "locked") {
+      await createCheckout(traffic.productId);
+      return;
+    }
+
+    if (trafficUrl) {
+      setTraffic({ status: "loading" });
+      const controller = new AbortController();
+      fetch(`/api/traffic?url=${encodeURIComponent(trafficUrl)}&locale=${encodeURIComponent(locale)}`, { signal: controller.signal })
+        .then(async (res) => {
+          const payload = (await res.json().catch(() => null)) as
+            | {
+                ok?: boolean;
+                message?: string;
+                productId?: string;
+                data?: {
+                  status: string;
+                  visits?: number;
+                  message?: string;
+                };
+              }
+            | null;
+
+          if (!res.ok) {
+            if (res.status === 401) {
+              setTraffic({ status: "unauth" });
+              return;
+            }
+            if (res.status === 402) {
+              setTraffic({ status: "locked", productId: payload?.productId ?? "professional" });
+              return;
+            }
+            setTraffic({ status: "error", message: payload?.message ?? "load failed" });
+            return;
+          }
+
+          const data = payload?.data;
+          if (data?.status === "available" && typeof data.visits === "number") {
+            setTraffic({ status: "available", label: `${data.visits.toLocaleString(locale)} ${trafficPerMonthSuffix}` });
+            return;
+          }
+          if (data?.status === "not_configured") {
+            setTraffic({ status: "not_configured", message: data.message ?? "not configured" });
+            return;
+          }
+          setTraffic({ status: "error", message: data?.message ?? "unknown status" });
+        })
+        .catch(() => setTraffic({ status: "error", message: "load failed" }));
+    }
   };
 
   return (
@@ -146,6 +310,42 @@ export function ToolCard({
             <div className="text-sm font-semibold text-[#12c2e9]">
               {highlightText(tool.pricing, highlightTerm)}
             </div>
+            <button
+              type="button"
+              onClick={handleTrafficClick}
+              disabled={isCheckoutLoading}
+              className="group inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-semibold text-slate-200/90 transition hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-[#1e5bff]/60 focus:ring-offset-2 focus:ring-offset-[#0b162e] disabled:opacity-60"
+              aria-label={trafficLabel}
+              title={
+                traffic.status === "not_configured"
+                  ? traffic.message
+                : traffic.status === "error"
+                    ? traffic.message
+                    : undefined
+              }
+            >
+              <TrendingUp className="h-3.5 w-3.5 text-[#12c2e9]" />
+              <span className="text-slate-300">{trafficLabel}</span>
+              {traffic.status === "loading" ? (
+                <span className="text-slate-400">…</span>
+              ) : traffic.status === "available" ? (
+                <span className="text-[#f8a13c]">{traffic.label}</span>
+              ) : traffic.status === "unauth" ? (
+                <span className="inline-flex items-center gap-1 text-slate-400">
+                  <Lock className="h-3.5 w-3.5" />
+                  {trafficLoginUnlockLabel}
+                </span>
+              ) : traffic.status === "locked" ? (
+                <span className="inline-flex items-center gap-1 text-slate-400">
+                  <Lock className="h-3.5 w-3.5" />
+                  {trafficUpgradeUnlockLabel}
+                </span>
+              ) : traffic.status === "not_configured" ? (
+                <span className="text-slate-400">{trafficNotConfiguredLabel}</span>
+              ) : (
+                <span className="text-slate-400">—</span>
+              )}
+            </button>
             <div className="text-sm font-semibold text-slate-100">
               <div className="text-[#f8a13c]">▲ {tool.votes}</div>
               <div className="text-xs text-slate-400">

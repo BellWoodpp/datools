@@ -10,6 +10,11 @@
     "resultsLabel": "results",
     "viewDetailsLabel": "View details",
     "visitSiteLabel": "Visit site",
+    "trafficLabel": "Tráfico",
+    "trafficLoginUnlockLabel": "Inicia sesión para desbloquear",
+    "trafficUpgradeUnlockLabel": "Mejora para desbloquear",
+    "trafficNotConfiguredLabel": "Sin configurar",
+    "trafficPerMonthSuffix": "/ mes",
     "collectionsTitle": "Curated collections",
     "latestTitle": "Latest",
     "categories": [

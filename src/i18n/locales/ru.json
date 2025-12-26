@@ -10,6 +10,11 @@
     "resultsLabel": "results",
     "viewDetailsLabel": "View details",
     "visitSiteLabel": "Visit site",
+    "trafficLabel": "Трафик",
+    "trafficLoginUnlockLabel": "Войти, чтобы открыть",
+    "trafficUpgradeUnlockLabel": "Обновить, чтобы открыть",
+    "trafficNotConfiguredLabel": "Не настроено",
+    "trafficPerMonthSuffix": "/ мес.",
     "collectionsTitle": "Curated collections",
     "latestTitle": "Latest",
     "categories": [

@@ -10,6 +10,11 @@
     "resultsLabel": "results",
     "viewDetailsLabel": "View details",
     "visitSiteLabel": "Visit site",
+    "trafficLabel": "حركة المرور",
+    "trafficLoginUnlockLabel": "سجّل الدخول للفتح",
+    "trafficUpgradeUnlockLabel": "قم بالترقية للفتح",
+    "trafficNotConfiguredLabel": "غير مهيأ",
+    "trafficPerMonthSuffix": "/ شهر",
     "collectionsTitle": "Curated collections",
     "latestTitle": "Latest",
     "categories": [

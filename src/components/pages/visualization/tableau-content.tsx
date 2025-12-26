@@ -1,8 +1,9 @@
- "use client";
+"use client";
 
 import Link from "next/link";
 import { defaultLocale, locales, type Locale } from "@/i18n";
 import { usePathname } from "next/navigation";
+import { SiteSnapshot } from "@/components/ui/site-snapshot";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -186,6 +187,8 @@ export function TableauPageContent({ locale }: { locale?: string }) {
           <p className="text-lg text-slate-200">{copy.subtitle}</p>
           <p className="text-sm text-slate-300/90">{copy.description}</p>
         </header>
+
+        <SiteSnapshot url={OFFICIAL_URL} title={copy.title} locale={(locale as string) ?? defaultLocale} />
 
         <section className="grid gap-4 md:grid-cols-2">
           {copy.highlights.map((item) => (

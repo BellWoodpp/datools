@@ -10,6 +10,11 @@
     "resultsLabel": "results",
     "viewDetailsLabel": "View details",
     "visitSiteLabel": "Visit site",
+    "trafficLabel": "Traffic",
+    "trafficLoginUnlockLabel": "Anmelden zum Freischalten",
+    "trafficUpgradeUnlockLabel": "Upgrade zum Freischalten",
+    "trafficNotConfiguredLabel": "Nicht konfiguriert",
+    "trafficPerMonthSuffix": "/ Monat",
     "collectionsTitle": "Curated collections",
     "latestTitle": "Latest",
     "categories": [

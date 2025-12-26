@@ -7,6 +7,11 @@
     "resultsLabel": "件",
     "viewDetailsLabel": "詳細を見る",
     "visitSiteLabel": "公式サイトへ",
+    "trafficLabel": "トラフィック",
+    "trafficLoginUnlockLabel": "ログインして解除",
+    "trafficUpgradeUnlockLabel": "アップグレードして解除",
+    "trafficNotConfiguredLabel": "未設定",
+    "trafficPerMonthSuffix": "/ 月",
     "categories": [
       {
         "title": "BI / 可視化",

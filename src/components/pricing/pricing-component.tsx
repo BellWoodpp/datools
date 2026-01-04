@@ -68,6 +68,7 @@ export function PricingComponent({
             key={plan.id}
             plan={plan}
             period={selectedPeriod}
+            locale={locale}
             copy={pricingCopy.card}
             onSelect={handlePlanSelect}
             className={cn(

@@ -8,10 +8,14 @@ import { Badge } from "@/components/ui/badge";
 import { formatPrice, type PricingPlan, type PricingPeriod } from "@/lib/pricing/i18n-config";
 import { usePayment } from "@/hooks/use-payment";
 import type { PricingCopy } from "@/i18n/components/pricing";
+import type { Locale } from "@/i18n/types";
+import Link from "next/link";
+import { useId, useState } from "react";
 
 interface PricingCardProps {
   plan: PricingPlan;
   period: PricingPeriod;
+  locale: Locale;
   copy: PricingCopy["card"];
   onSelect?: (planId: string, period: PricingPeriod) => void;
   className?: string;
@@ -20,6 +24,7 @@ interface PricingCardProps {
 export function PricingCard({
   plan,
   period,
+  locale,
   copy,
   onSelect,
   className
@@ -27,6 +32,9 @@ export function PricingCard({
   const pricing = plan.pricing[period];
   const hasDiscount = pricing.discount && pricing.originalPrice;
   const { isLoading, error, createCheckout } = usePayment();
+  const [acceptedPolicies, setAcceptedPolicies] = useState(false);
+  const [policyError, setPolicyError] = useState<string | null>(null);
+  const checkboxId = useId();
 
   const handleSelect = async () => {
     // 如果是免费计划，直接调用原有的回调
@@ -41,6 +49,15 @@ export function PricingCard({
       return;
     }
 
+    if (!acceptedPolicies) {
+      setPolicyError(
+        locale === "zh"
+          ? "请先勾选同意《服务条款》和《退款政策》"
+          : "Please agree to the Terms of Service and Refund Policy",
+      );
+      return;
+    }
+
     // 其他付费计划，调用支付接口
     await createCheckout(plan.id, { period });
   };
@@ -50,6 +67,24 @@ export function PricingCard({
     if (plan.id === 'enterprise') return copy.contactSales;
     return copy.buyNow;
   };
+
+  const hrefPrefix = locale === "en" ? "" : `/${locale}`;
+  const legalCopy =
+    locale === "zh"
+      ? {
+          prefix: "购买即表示同意",
+          terms: "服务条款",
+          refund: "退款政策",
+          and: "和",
+          checkbox: "我已阅读并同意",
+        }
+      : {
+          prefix: "By purchasing, you agree to the",
+          terms: "Terms of Service",
+          refund: "Refund Policy",
+          and: "and",
+          checkbox: "I agree to the",
+        };
 
   return (
     <Card
@@ -155,6 +190,60 @@ export function PricingCard({
               {error}
             </div>
           )}
+
+          {plan.id !== "free" && plan.id !== "enterprise" ? (
+            <div className="space-y-2">
+              <div className="flex items-start gap-2">
+                <input
+                  id={checkboxId}
+                  type="checkbox"
+                  checked={acceptedPolicies}
+                  onChange={(event) => {
+                    setAcceptedPolicies(event.target.checked);
+                    if (event.target.checked) setPolicyError(null);
+                  }}
+                  className="mt-0.5 h-4 w-4 rounded border-neutral-300 text-neutral-900 dark:border-neutral-700 dark:text-neutral-100"
+                />
+                <label htmlFor={checkboxId} className="text-xs text-muted-foreground">
+                  {legalCopy.checkbox}{" "}
+                  <Link className="underline underline-offset-4" href={`${hrefPrefix}/terms`}>
+                    {legalCopy.terms}
+                  </Link>{" "}
+                  {legalCopy.and}{" "}
+                  <Link className="underline underline-offset-4" href={`${hrefPrefix}/refund-policy`}>
+                    {legalCopy.refund}
+                  </Link>
+                </label>
+              </div>
+              {policyError ? (
+                <p className="text-center text-xs text-red-600 dark:text-red-400">
+                  {policyError}
+                </p>
+              ) : (
+                <p className="text-center text-xs text-muted-foreground">
+                  {legalCopy.prefix}{" "}
+                  <Link className="underline underline-offset-4" href={`${hrefPrefix}/terms`}>
+                    {legalCopy.terms}
+                  </Link>{" "}
+                  {legalCopy.and}{" "}
+                  <Link className="underline underline-offset-4" href={`${hrefPrefix}/refund-policy`}>
+                    {legalCopy.refund}
+                  </Link>
+                </p>
+              )}
+            </div>
+          ) : plan.id !== "free" ? (
+            <p className="text-center text-xs text-muted-foreground">
+              {legalCopy.prefix}{" "}
+              <Link className="underline underline-offset-4" href={`${hrefPrefix}/terms`}>
+                {legalCopy.terms}
+              </Link>{" "}
+              {legalCopy.and}{" "}
+              <Link className="underline underline-offset-4" href={`${hrefPrefix}/refund-policy`}>
+                {legalCopy.refund}
+              </Link>
+            </p>
+          ) : null}
         </div>
       </CardFooter>
     </Card>

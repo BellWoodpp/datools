@@ -241,6 +241,7 @@ export interface FooterDictionary {
   legal: string;
   privacyPolicy: string;
   termsOfService: string;
+  refundPolicy: string;
   cookiePolicy: string;
   copyright: string;
   madeWithLove: string;

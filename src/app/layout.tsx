@@ -95,6 +95,12 @@ export default function RootLayout({
             plausible.init();
           `}
         </Script>
+        {/* Umami Analytics */}
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="959ce417-4394-4685-aec9-f3b1f0b01004"
+        ></script>
         {/* 显式声明远程 favicon，避免浏览器回退到 Next 默认图标 */}
         <link rel="icon" href="https://r2.datools.org/data-a-tools.ico" sizes="any" />
         <link rel="shortcut icon" href="https://r2.datools.org/data-a-tools.ico" />

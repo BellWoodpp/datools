@@ -182,6 +182,14 @@ export function Footer({ dictionary, currentLocale }: FooterProps) {
               </li>
               <li>
                 <Link
+                  href={currentLocale === 'en' ? '/refund-policy' : `/${currentLocale}/refund-policy`}
+                  className="text-sm text-slate-300 hover:text-[#12c2e9] transition-colors"
+                >
+                  {dictionary.refundPolicy}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={currentLocale === 'en' ? '/cookies' : `/${currentLocale}/cookies`}
                   className="text-sm text-slate-300 hover:text-[#12c2e9] transition-colors"
                 >

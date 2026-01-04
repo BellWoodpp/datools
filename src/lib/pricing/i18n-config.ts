@@ -219,15 +219,15 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
             period: 'One-time payment'
           },
           'monthly': {
-            price: 6,
+            price: 9.99,
             currency: 'USD',
             period: 'per month'
           },
           'yearly': {
-            price: 58,
+            price: 95.88,
             currency: 'USD',
             period: 'per year',
-            originalPrice: 72,
+            originalPrice: 119.88,
             discount: 20
           }
         }
@@ -469,15 +469,15 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
             period: 'Pago único'
           },
           'monthly': {
-            price: 6,
+            price: 9.99,
             currency: 'EUR',
             period: 'Mensual'
           },
           'yearly': {
-            price: 58,
+            price: 95.88,
             currency: 'EUR',
             period: 'Anual',
-            originalPrice: 72,
+            originalPrice: 119.88,
             discount: 20
           }
         }
@@ -597,15 +597,15 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
             period: 'Einmalzahlung'
           },
           'monthly': {
-            price: 6,
+            price: 9.99,
             currency: 'EUR',
             period: 'Monatlich'
           },
           'yearly': {
-            price: 58,
+            price: 95.88,
             currency: 'EUR',
             period: 'Jährlich',
-            originalPrice: 72,
+            originalPrice: 119.88,
             discount: 20
           }
         }
@@ -725,15 +725,15 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
             period: 'Paiement unique'
           },
           'monthly': {
-            price: 6,
+            price: 9.99,
             currency: 'EUR',
             period: 'Mensuel'
           },
           'yearly': {
-            price: 58,
+            price: 95.88,
             currency: 'EUR',
             period: 'Annuel',
-            originalPrice: 72,
+            originalPrice: 119.88,
             discount: 20
           }
         }

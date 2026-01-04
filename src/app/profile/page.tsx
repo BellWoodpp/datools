@@ -62,6 +62,7 @@ export default async function ProfileRootPage() {
                       width={48}
                       height={48}
                       className="h-12 w-12 rounded-full object-cover"
+                      unoptimized
                     />
                   ) : (
                     <span className="text-white font-semibold text-lg">

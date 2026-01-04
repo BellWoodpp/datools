@@ -89,6 +89,7 @@ export function ToolCard({
             fill
             sizes="36px"
             className="object-contain p-1.5"
+            unoptimized
             onError={() => {
               // 失败时切换到默认图，默认图再失败则用内置 SVG
               if (logoSrc !== defaultLogo) {
@@ -281,6 +282,7 @@ export function ToolCard({
             sizes="(min-width: 1024px) 33vw, 100vw"
             className="object-cover"
             priority={false}
+            unoptimized
           />
         </div>
       ) : null}

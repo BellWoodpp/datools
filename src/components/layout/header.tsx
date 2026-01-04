@@ -59,6 +59,7 @@ export function Header() {
               height={40}
               className="h-10 w-10 rounded-lg object-cover"
               priority
+              unoptimized
             />
             <span className="text-xl font-bold bg-gradient-to-r from-[#12c2e9] via-[#1e5bff] to-[#f8a13c] bg-clip-text text-transparent">
               DaTools

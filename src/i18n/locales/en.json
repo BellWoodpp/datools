@@ -8,7 +8,7 @@
     "watchDemo": "Watch Demo",
     "viewDetails": "View Details",
     "promotionText": "🎁 $100 off for the first 1000 customers",
-    "userCount": "from 250+ happy users",
+    "userCount": "Early access — welcome feedback",
     "techStackTitle": "DaTools is built on the shoulders of giants",
     "techStackItems": [
       {
@@ -1663,7 +1663,7 @@
     }
   },
   "footer": {
-    "description": "A modern SaaS platform that helps you quickly build and deploy applications.",
+    "description": "An independent directory of data analysis tools. Not affiliated with the tools listed.",
     "product": "Product",
     "features": "Features",
     "pricing": "Pricing",
@@ -1683,105 +1683,83 @@
   "pages": {
     "features": {
       "title": "Features",
-      "subtitle": "Powerful features to accelerate your development",
-      "description": "Discover the comprehensive set of tools and features that make DaTools the perfect platform for modern SaaS applications.",
+      "subtitle": "A faster way to research data tools",
+      "description": "DaTools is an independent directory to help you discover, compare, and track data analysis tools.",
       "coreFeatures": {
-        "title": "Core Features",
-        "subtitle": "Complete solution tailored for modern SaaS applications, letting you focus on product innovation rather than infrastructure setup",
+        "title": "What you can do",
+        "subtitle": "Browse the directory for free, and upgrade only when you need advanced data.",
         "features": [
           {
+            "icon": "Globe",
+            "title": "Curated directory",
+            "description": "Explore data analysis tools by category, deployment, and pricing model.",
+            "highlights": [
+              "Categories",
+              "Tags & filters",
+              "Official links",
+              "Regular updates"
+            ]
+          },
+          {
             "icon": "Code",
-            "title": "Next.js Full-Stack Framework",
-            "description": "Built on the latest Next.js 14+ with App Router, Server Components, and Edge Runtime support, providing optimal performance and development experience.",
+            "title": "Fast search & filtering",
+            "description": "Quickly narrow down tools by name, tags, pricing, and deployment options.",
             "highlights": [
-              "App Router",
-              "Server Components",
-              "Edge Runtime",
-              "TypeScript Support"
-            ]
-          },
-          {
-            "icon": "Shield",
-            "title": "Enterprise-Grade Authentication",
-            "description": "Integrated Better Auth supporting multiple login methods including Google OAuth, GitHub OAuth, and Magic Link, ensuring security and reliability.",
-            "highlights": [
-              "Google OAuth",
-              "GitHub OAuth",
-              "Magic Link",
-              "Session Management"
-            ]
-          },
-          {
-            "icon": "CreditCard",
-            "title": "Stripe Payment Integration",
-            "description": "Complete payment solution supporting subscriptions, one-time payments, and invoice management, making commercialization easy.",
-            "highlights": [
-              "Subscription Management",
-              "One-time Payments",
-              "Invoice System",
-              "Webhook Handling"
-            ]
-          },
-          {
-            "icon": "Database",
-            "title": "Supabase Database",
-            "description": "Powerful PostgreSQL database with built-in real-time features, authentication, and storage, providing reliable data foundation for your application.",
-            "highlights": [
-              "PostgreSQL",
-              "Real-time Subscriptions",
-              "File Storage",
-              "Row Level Security"
-            ]
-          },
-          {
-            "icon": "Bot",
-            "title": "AI-Ready Infrastructure",
-            "description": "Pre-configured AI integration supporting mainstream AI services like OpenAI, Anthropic, with built-in credit system and API sales functionality.",
-            "highlights": [
-              "OpenAI Integration",
-              "Credit System",
-              "API Sales",
-              "Multi-model Support"
-            ]
-          },
-          {
-            "icon": "Rocket",
-            "title": "One-Click Deployment",
-            "description": "One-click deployment support for mainstream platforms like Vercel, Cloudflare, with automated CI/CD processes, making publishing simple.",
-            "highlights": [
-              "Vercel Deployment",
-              "Cloudflare Pages",
-              "CI/CD Automation",
-              "Environment Management"
+              "Keyword search",
+              "Category filters",
+              "Pricing labels",
+              "Deployment tags"
             ]
           },
           {
             "icon": "BarChart3",
-            "title": "Business Analytics",
-            "description": "Integrated Google Analytics, Search Console, and other analytics tools to help you understand user behavior and business growth.",
+            "title": "Traffic estimates (Pro)",
+            "description": "Unlock estimated monthly traffic for supported sites using third‑party data sources (for reference only).",
             "highlights": [
-              "Google Analytics",
-              "Search Console",
-              "User Behavior Analysis",
-              "Conversion Tracking"
+              "Third‑party estimates",
+              "May be unavailable",
+              "Clear disclaimers",
+              "Cost‑controlled queries"
+            ]
+          },
+          {
+            "icon": "Shield",
+            "title": "Account & billing",
+            "description": "Log in to manage your plan, view billing history, and cancel subscriptions in the customer portal.",
+            "highlights": [
+              "Membership center",
+              "Billing history",
+              "Cancel anytime",
+              "Email support"
+            ]
+          },
+          {
+            "icon": "Rocket",
+            "title": "Tool detail pages",
+            "description": "Open official sites, review summaries, and compare options without losing context.",
+            "highlights": [
+              "Quick overview",
+              "Pricing & deployment",
+              "Links & tags",
+              "Save time researching"
             ]
           },
           {
             "icon": "Globe",
-            "title": "Internationalization Support",
-            "description": "Built-in multi-language support for Chinese, English, Japanese, and other languages, helping your product reach global users.",
+            "title": "Multi-language UI",
+            "description": "Built-in i18n support so users can browse in their preferred language.",
             "highlights": [
-              "Multi-language Support",
-              "RTL Support",
-              "Dynamic Language Switching",
-              "SEO Optimization"
+              "Locale routing",
+              "SEO-friendly URLs",
+              "Language switcher",
+              "Consistent navigation"
             ]
           }
         ]
       },
       "techStack": {
         "title": "Technology Stack",
-        "subtitle": "Built on industry best practices and latest technologies, ensuring your application has optimal performance, security, and scalability",
+        "subtitle": "Built on modern web tooling for speed and maintainability",
         "technologies": [
           {
             "name": "Next.js 14+",
@@ -1808,10 +1786,6 @@
             "description": "Authentication Solution"
           },
           {
-            "name": "Stripe",
-            "description": "Payment Processing Platform"
-          },
-          {
             "name": "Supabase",
             "description": "Backend as a Service"
           },
@@ -1822,60 +1796,60 @@
         ]
       },
       "comparison": {
-        "title": "Why Choose DaTools",
-        "subtitle": "Compared to traditional development methods, DaTools saves you 90% of development time",
+        "title": "Why use DaTools",
+        "subtitle": "Spend less time switching tabs, and more time evaluating tools.",
         "traditional": {
-          "title": "Traditional Development",
+          "title": "Manual research",
           "items": [
             {
-              "text": "Requires 3-6 months to build infrastructure"
+              "text": "Open dozens of sites and docs in parallel"
             },
             {
-              "text": "Need to learn multiple technology stacks"
+              "text": "Hard to compare pricing and deployment"
             },
             {
-              "text": "Need to handle complex deployment processes"
+              "text": "No consistent tagging across tools"
             },
             {
-              "text": "Need to implement authentication and payments yourself"
+              "text": "Traffic numbers are unclear or inconsistent"
             },
             {
-              "text": "Need significant time for debugging and optimization"
+              "text": "Takes longer to shortlist candidates"
             }
           ]
         },
         "datools": {
-          "title": "Using DaTools",
+          "title": "With DaTools",
           "items": [
             {
-              "text": "Complete basic setup in 5 minutes"
+              "text": "Curated categories and consistent tags"
             },
             {
-              "text": "Complete solution out of the box"
+              "text": "Fast search and filters"
             },
             {
-              "text": "One-click deployment to production"
+              "text": "Tool detail pages with official links"
             },
             {
-              "text": "Pre-configured authentication and payments"
+              "text": "Pro unlocks traffic estimates when needed"
             },
             {
-              "text": "Focus on product feature development"
+              "text": "Shortlist tools faster"
             }
           ]
         }
       },
       "cta": {
-        "title": "Ready to Build Your AI SaaS?",
-        "subtitle": "Get DaTools now and launch your next project in minutes",
-        "primaryButton": "Get DaTools",
-        "secondaryButton": "View Documentation"
+        "title": "Explore data tools",
+        "subtitle": "Start free. Upgrade only if you need advanced data like traffic estimates.",
+        "primaryButton": "Browse tools",
+        "secondaryButton": "View pricing"
       }
     },
     "pricing": {
       "title": "Pricing",
       "subtitle": "Simple, transparent pricing",
-      "description": "Choose the plan that fits your needs. Start free and scale as you grow.",
+      "description": "Browse the directory for free; upgrade to unlock traffic and other advanced data (third‑party estimates, for reference only).",
       "plansTitle": "Choose Your Plan",
       "plansSubtitle": "Simple, transparent pricing with no hidden fees. Choose the plan that best fits your needs and upgrade anytime.",
       "billingCycles": {
@@ -1897,18 +1871,14 @@
           "name": "Free",
           "price": "$0",
           "period": "Forever",
-          "description": "Perfect for individual developers and small projects",
+          "description": "For casual browsing and basic research",
           "features": [
-            "Basic Next.js templates",
-            "GitHub integration",
-            "Community support",
-            "Basic documentation",
-            "Personal use license"
+            "Browse the tools directory and detail pages",
+            "Basic search and filters",
+            "Log in to access basic features"
           ],
           "limitations": [
-            "No commercial use",
-            "No technical support",
-            "Limited features"
+            "No access to traffic and other advanced data"
           ],
           "cta": "Get Started",
           "popular": false
@@ -1917,17 +1887,11 @@
           "name": "Professional",
           "price": "$299",
           "period": "One-time payment",
-          "description": "Perfect for startups and small businesses",
+          "description": "Unlock traffic and advanced data (third‑party estimates)",
           "features": [
-            "Complete feature templates",
-            "Authentication system",
-            "Payment integration",
-            "Database setup",
-            "AI integration",
-            "One-click deployment",
-            "Email support",
-            "Commercial use license",
-            "Source code access"
+            "Traffic data unlocked (estimates; may be unavailable for some sites)",
+            "Higher usage limits",
+            "Email support"
           ],
           "limitations": [],
           "cta": "Buy Now",
@@ -1937,17 +1901,11 @@
           "name": "Enterprise",
           "price": "$999",
           "period": "One-time payment",
-          "description": "Perfect for large enterprises and teams",
+          "description": "For teams and custom needs",
           "features": [
             "All Professional features",
-            "Advanced AI features",
-            "Multi-tenant support",
-            "Advanced analytics",
-            "Priority technical support",
-            "Custom development services",
-            "Team collaboration features",
-            "SLA guarantee",
-            "Training services"
+            "Higher limits and custom data needs",
+            "Priority support and onboarding"
           ],
           "limitations": [],
           "cta": "Contact Sales",
@@ -1979,27 +1937,27 @@
       "faqs": [
         {
           "question": "What's the difference between Free and Paid plans?",
-          "answer": "The Free plan provides basic features suitable for learning and personal projects. Paid plans include complete commercial features like authentication, payment integration, AI features, etc., suitable for commercial projects."
+          "answer": "Free lets you browse the directory with basic search and filters. Paid plans unlock traffic and other advanced data (third‑party estimates, for reference only; some sites may have no data)."
         },
         {
           "question": "What payment options do you support?",
-          "answer": "We support one-time payment, monthly billing, and yearly billing. Yearly billing offers 20% discount, and one-time payment gives you lifetime access."
+          "answer": "We support monthly and yearly subscriptions (auto‑renew, cancel anytime) and may also offer one‑time purchases depending on the plan. See the checkout page for details."
         },
         {
-          "question": "Do you offer refunds?",
-          "answer": "We offer a 30-day unconditional refund guarantee. If you're not satisfied within 30 days of purchase, you can apply for a full refund."
+          "question": "How do I cancel my subscription?",
+          "answer": "You can cancel auto‑renewal in the Membership Center. After cancellation, you’ll keep access until the end of the current billing period."
         },
         {
-          "question": "Can I use it for commercial projects?",
-          "answer": "Professional and Enterprise plans support commercial use. The Free plan is limited to personal learning and non-commercial projects."
+          "question": "Where does the traffic number come from? Is it accurate?",
+          "answer": "Traffic is an estimate from third‑party data sources and may be inaccurate or unavailable for some sites. It does not represent a site’s first‑party analytics."
         },
         {
           "question": "Does it include technical support?",
-          "answer": "Professional plan provides email support, Enterprise plan provides priority technical support. We respond to your questions within 24 hours."
+          "answer": "Paid plans include email support. Response times depend on current workload."
         },
         {
-          "question": "How do I upgrade to a higher plan?",
-          "answer": "You can upgrade to a higher plan anytime by paying the price difference. After upgrade, you'll immediately enjoy all features of the new plan."
+          "question": "Do you offer refunds?",
+          "answer": "Digital services typically do not include automatic refunds. If you were charged in error or cannot access paid features due to a technical issue, contact support@datools.org and we’ll review and help."
         },
         {
           "question": "What are the benefits of yearly billing?",
@@ -2010,183 +1968,106 @@
     "docs": {
       "title": "Documentation",
       "subtitle": "Everything you need to get started",
-      "description": "Comprehensive guides, API references, and tutorials to help you build amazing applications.",
+      "description": "Guides on using the directory, traffic estimates, and billing.",
       "quickStart": {
         "title": "Quick Start",
-        "subtitle": "Get started with DaTools in just a few simple steps to build your AI SaaS application",
+        "subtitle": "Get started with DaTools in a few simple steps",
         "steps": [
           {
             "step": "1",
-            "title": "Install DaTools",
-            "description": "Clone the repository and install dependencies",
-            "code": "git clone https://github.com/your-repo/datools\\ncd datools\\npnpm install"
+            "title": "Browse the directory",
+            "description": "Explore tools by category, deployment, and pricing model",
+            "code": "Go to /data-analysis-tools and pick a category"
           },
           {
             "step": "2",
-            "title": "Configure Environment",
-            "description": "Set up necessary API keys and configuration",
-            "code": "cp .env.example .env.local\\n# Edit .env.local file"
+            "title": "Search and filter",
+            "description": "Use keywords, tags, pricing, and deployment filters",
+            "code": "Use the search box and category filters on the home page"
           },
           {
             "step": "3",
-            "title": "Start Development Server",
-            "description": "Run the project locally",
-            "code": "pnpm dev\\n# Visit http://localhost:3000"
+            "title": "Unlock traffic estimates (Pro)",
+            "description": "Get estimated monthly traffic for supported sites (third‑party estimates)",
+            "code": "Click the Traffic button on a tool card (login + Pro required)"
           },
           {
             "step": "4",
-            "title": "Deploy to Production",
-            "description": "One-click deployment to Vercel",
-            "code": "pnpm build\\nvercel deploy"
+            "title": "Manage billing",
+            "description": "Upgrade, view billing history, or cancel a subscription",
+            "code": "Go to /pricing and /membership"
           }
         ]
       },
       "navigation": {
         "title": "Documentation Navigation",
-        "subtitle": "Browse our complete documentation to find all the information you need",
+        "subtitle": "Common topics and links",
         "sections": [
           {
-            "title": "Quick Start",
-            "description": "Get up and running with DaTools in 5 minutes",
+            "title": "Using the directory",
+            "description": "Browse, search, and compare tools",
             "icon": "Rocket",
             "links": [
               {
-                "name": "Installation Guide",
+                "name": "Browse categories",
                 "href": "#"
               },
               {
-                "name": "Environment Setup",
+                "name": "Search and filters",
                 "href": "#"
               },
               {
-                "name": "First Application",
+                "name": "Tool detail pages",
                 "href": "#"
               }
             ]
           },
           {
-            "title": "Core Features",
-            "description": "Learn about DaTools's core functionality",
-            "icon": "Code",
+            "title": "Traffic estimates",
+            "description": "What the traffic number means and its limitations",
+            "icon": "BarChart3",
             "links": [
               {
-                "name": "Authentication",
+                "name": "Data source",
                 "href": "#"
               },
               {
-                "name": "Payment Integration",
+                "name": "Accuracy & disclaimers",
                 "href": "#"
               },
               {
-                "name": "Database Setup",
-                "href": "#"
-              },
-              {
-                "name": "AI Integration",
+                "name": "No data cases",
                 "href": "#"
               }
             ]
           },
           {
-            "title": "API Reference",
-            "description": "Complete API documentation and examples",
-            "icon": "Database",
+            "title": "Billing & account",
+            "description": "Plans, cancellation, and invoices",
+            "icon": "CreditCard",
             "links": [
               {
-                "name": "REST API",
-                "href": "#"
+                "name": "Pricing",
+                "href": "/pricing"
               },
               {
-                "name": "GraphQL",
-                "href": "#"
+                "name": "Membership Center",
+                "href": "/membership"
               },
               {
-                "name": "Webhooks",
-                "href": "#"
-              },
-              {
-                "name": "SDK",
-                "href": "#"
-              }
-            ]
-          },
-          {
-            "title": "Deployment Guide",
-            "description": "Deploy your application to production",
-            "icon": "Globe",
-            "links": [
-              {
-                "name": "Vercel Deployment",
-                "href": "#"
-              },
-              {
-                "name": "Cloudflare Pages",
-                "href": "#"
-              },
-              {
-                "name": "Docker Deployment",
-                "href": "#"
-              },
-              {
-                "name": "Environment Config",
-                "href": "#"
-              }
-            ]
-          },
-          {
-            "title": "Best Practices",
-            "description": "Best practices for development and production",
-            "icon": "Shield",
-            "links": [
-              {
-                "name": "Security Guide",
-                "href": "#"
-              },
-              {
-                "name": "Performance Optimization",
-                "href": "#"
-              },
-              {
-                "name": "Monitoring & Logging",
-                "href": "#"
-              },
-              {
-                "name": "Error Handling",
-                "href": "#"
-              }
-            ]
-          },
-          {
-            "title": "Troubleshooting",
-            "description": "Common issues and solutions",
-            "icon": "Zap",
-            "links": [
-              {
-                "name": "FAQ",
-                "href": "#"
-              },
-              {
-                "name": "Error Codes",
-                "href": "#"
-              },
-              {
-                "name": "Debugging Tips",
-                "href": "#"
-              },
-              {
-                "name": "Community Support",
-                "href": "#"
+                "name": "Terms",
+                "href": "/terms"
               }
             ]
           }
         ]
       },
       "support": {
-        "title": "Need Help?",
-        "subtitle": "Our community and support team are here to help",
-        "description": "Join our Discord community or check out the FAQ.",
-        "discordButton": "Join Discord",
-        "faqButton": "View FAQ"
+        "title": "Support",
+        "subtitle": "Need help?",
+        "description": "Email support@datools.org for billing issues or product questions.",
+        "discordButton": "Contact support",
+        "faqButton": "Membership Center"
       }
     },
     "integrations": {
@@ -2762,28 +2643,28 @@
         "subtitle": "Quickly find the answers you need",
         "faqs": [
           {
-            "question": "Which AI services does DaTools support?",
-            "answer": "DaTools supports mainstream AI services like OpenAI, Anthropic, Google AI, and provides a unified interface to manage different AI providers."
+            "question": "Where does the traffic number come from? Is it accurate?",
+            "answer": "Traffic is an estimate from third‑party data sources. It may be inaccurate or unavailable for some sites and does not represent a site’s first‑party analytics."
           },
           {
-            "question": "How can I customize DaTools's interface?",
-            "answer": "DaTools uses Tailwind CSS and Shadcn/UI, making it easy to customize styles. All components are customizable and support theme switching."
+            "question": "Why do some sites show no traffic data?",
+            "answer": "Some domains may have insufficient coverage in third‑party datasets or may be blocked/unsupported, so no estimate is returned."
           },
           {
-            "question": "Does DaTools support multiple languages?",
-            "answer": "Yes, DaTools has built-in internationalization support. Currently supports Chinese, English, and Japanese, and you can easily add more languages."
+            "question": "What do I get with Pro?",
+            "answer": "Pro unlocks traffic estimates and higher usage limits. The free plan lets you browse the directory with basic search and filters."
           },
           {
-            "question": "How do I upgrade DaTools versions?",
-            "answer": "You can upgrade DaTools by pulling the latest code via Git. We recommend backing up your custom code before upgrading."
+            "question": "How do I cancel my subscription?",
+            "answer": "You can cancel auto‑renewal in the Membership Center. After cancellation, you’ll keep access until the end of the current billing period."
           },
           {
-            "question": "How is DaTools's performance?",
-            "answer": "DaTools is built on Next.js 14+ with Server Components and Edge Runtime support, delivering excellent performance."
+            "question": "Do you offer refunds?",
+            "answer": "Digital services typically do not include automatic refunds. If you were charged in error or cannot access paid features due to a technical issue, contact support@datools.org and we’ll review and help."
           },
           {
-            "question": "How can I get technical support?",
-            "answer": "You can contact us via email or join our Discord community for real-time assistance."
+            "question": "How can I get support?",
+            "answer": "Email us at support@datools.org. Response times depend on current workload."
           }
         ]
       },
@@ -2792,27 +2673,20 @@
         "subtitle": "Contact our support team",
         "description": "If you can't find the answer in our documentation, our support team is here to help.",
         "emailButton": "Send Email",
-        "discordButton": "Join Discord"
+        "discordButton": "Membership Center"
       }
     },
     "contact": {
       "title": "Contact Us",
       "subtitle": "We're here to help",
-      "description": "Get in touch with our team for support, partnerships, or general inquiries.",
+      "description": "Get in touch for support, partnerships, or general inquiries.",
       "contactMethodsTitle": "Contact Us",
       "contactMethodsSubtitle": "We'd love to hear from you. Choose the contact method that works best for you",
       "teamTitle": "Direct Team Contact",
       "teamSubtitle": "Contact the appropriate team based on your needs",
       "responseTimeTitle": "Response Times",
-      "responseTimeSubtitle": "We promise to respond quickly to your requests",
+      "responseTimeSubtitle": "We’ll reply as soon as possible (times may vary)",
       "contactMethods": [
-        {
-          "icon": "Users",
-          "title": "Discord Community",
-          "description": "Join our Discord community to connect with other developers",
-          "action": "Join Discord",
-          "href": "#"
-        },
         {
           "icon": "Zap",
           "title": "Email Support",
@@ -2821,17 +2695,10 @@
           "href": "mailto:support@datools.org"
         },
         {
-          "icon": "Shield",
-          "title": "GitHub Issues",
-          "description": "Report issues or suggestions on GitHub",
-          "action": "View Issues",
-          "href": "#"
-        },
-        {
           "icon": "Rocket",
-          "title": "Enterprise Partnership",
-          "description": "Enterprise-level support and custom development services",
-          "action": "Contact Sales",
+          "title": "Partnerships / Sponsorship",
+          "description": "Business partnerships and sponsorship inquiries",
+          "action": "Contact",
           "href": "mailto:sales@datools.org"
         }
       ],
@@ -2854,19 +2721,14 @@
       ],
       "responseTimes": [
         {
-          "time": "< 1 hour",
-          "title": "Discord Support",
-          "description": "Community support with quick response"
+          "time": "1–3 business days",
+          "title": "Email support",
+          "description": "Response time depends on current workload"
         },
         {
-          "time": "< 24 hours",
-          "title": "Email Support",
-          "description": "Professional team with detailed responses"
-        },
-        {
-          "time": "< 48 hours",
-          "title": "Enterprise Support",
-          "description": "Custom solutions and dedicated support"
+          "time": "Varies",
+          "title": "Partnerships",
+          "description": "We’ll follow up after reviewing the request"
         }
       ]
     },
@@ -2893,7 +2755,7 @@
         },
         "payments": {
           "name": "Payment Processing",
-          "description": "Stripe payment processing services"
+          "description": "Creem payment processing services"
         },
         "database": {
           "name": "Database",
@@ -2981,7 +2843,7 @@
         "title": "Contact Us",
         "content": "If you have any questions or concerns about this privacy policy or our data practices, please contact us at:",
         "copyrightOwner": "Copyright Owner: datools.ai",
-        "email": "Email: support@datools.ai"
+        "email": "Email: support@datools.org"
       },
       "consent": {
         "content": "By using DaTools, you consent to our privacy policy and agree to its terms. Thank you for trusting us with your information!"
@@ -2994,11 +2856,11 @@
       "lastUpdated": "Last updated: January 1, 2024",
       "introduction": {
         "title": "Introduction and Acceptance of Terms",
-        "content": "Welcome to **DaTools**, a NextJS boilerplate designed for building AI SaaS startups quickly and efficiently. By accessing or using our service, you agree to be bound by these Terms of Service. If you do not agree with any of these terms, please do not use our service."
+        "content": "Welcome to **DaTools**. DaTools is a directory for discovering and comparing data tools. By accessing or using our service, you agree to be bound by these Terms of Service. If you do not agree with any of these terms, please do not use our service."
       },
       "serviceUse": {
         "title": "Use of the Service",
-        "content": "DaTools provides users with a comprehensive platform to build and launch AI SaaS startups using our pre-built templates and infrastructure. You agree to use the service in accordance with all applicable local, state, national, and international laws and regulations."
+        "content": "DaTools provides a tools directory, search and filtering, and reference information powered by third‑party sources. You agree to use the service in accordance with all applicable laws and to make your own judgment about third‑party information."
       },
       "userAccounts": {
         "title": "User Accounts and Registration",
@@ -3038,7 +2900,8 @@
       "pricingPayments": {
         "title": "Pricing and Payments",
         "points": [
-          "All purchases are final and non-refundable unless otherwise required by law",
+          "Subscriptions renew automatically until canceled; you can cancel auto‑renewal in the Membership Center and keep access until the end of the billing period",
+          "Digital services typically do not include automatic refunds; if you were charged in error or cannot access paid features due to a technical issue, contact support@datools.org",
           "Prices are subject to change with notice to users",
           "You agree to pay all charges associated with your selected plan",
           "Payment terms are based on your selected payment method and plan"
@@ -3050,7 +2913,7 @@
       },
       "warranties": {
         "title": "Disclaimer of Warranties",
-        "content": "The service is provided on an as is and  as available basis. We make no warranties or representations about the accuracy, reliability, or availability of the service and disclaim all warranties to the fullest extent permitted by law."
+        "content": "The service is provided on an as is and as available basis. We make no warranties or representations about the accuracy, reliability, or availability of the service and disclaim all warranties to the fullest extent permitted by law. Information shown on the site (including traffic and other metrics) may be sourced from public information or third‑party estimates and may be inaccurate or unavailable. Third‑party names and trademarks belong to their respective owners; DaTools is not affiliated with or endorsed by any third‑party provider unless explicitly stated."
       },
       "liability": {
         "title": "Limitation of Liability",
@@ -3070,7 +2933,7 @@
       },
       "contact": {
         "title": "Contact Information",
-        "content": "If you have any questions about these Terms, please contact us at support@datools.ai."
+        "content": "If you have any questions about these Terms, please contact us at support@datools.org."
       },
       "acknowledgment": {
         "content": "By using DaTools, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. Thank you for choosing DaTools!"
@@ -3180,7 +3043,7 @@
       "contact": {
         "title": "Contact Us",
         "content": "If you have any questions about this Cookie Policy or need more information, please contact us at:",
-        "email": "Email: support@datools.ai"
+        "email": "Email: support@datools.org"
       },
       "consent": {
         "content": "By continuing to use our website, you consent to our use of cookies in accordance with this Cookie Policy."
@@ -3288,7 +3151,7 @@
           "current": false
         },
         {
-          "id": "pro",
+          "id": "professional",
           "name": "Professional",
           "price": 29,
           "period": "per month",
@@ -3312,11 +3175,9 @@
           "features": [
             "Unlimited API calls",
             "Unlimited projects",
-            "24/7 dedicated support",
             "All template libraries",
             "Enterprise-level analytics",
-            "Custom integrations",
-            "SLA guarantee"
+            "Custom integrations"
           ],
           "current": false
         }

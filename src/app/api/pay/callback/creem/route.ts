@@ -6,13 +6,16 @@ import { NextRequest, NextResponse } from "next/server";
 // 一样 → 是真的通知，可以发货、改订单状态
 // 不一样 → 假的！直接丢掉，防止黑客伪造支付成功
 // 生活比喻：就像快递员送货时要你签收 + 核对身份证。
-import { createHmac } from "crypto";
+import { createHmac, randomUUID } from "crypto";
 // 这是一个你项目自己写的“订单服务层”
 // 里面通常有这些方法：TypeScriptfulfillOrder(orderId)        // 发货、送虚拟商品、开通会员
 // updateOrderStatus(orderId, "paid")
 // sendThankYouEmail(orderId)
 // 一旦签名验证通过，就会调用这些方法真正“完成订单”
 import { OrderService } from "@/lib/orders/service";
+import { db } from "@/lib/db/client";
+import { subscriptions } from "@/lib/db/schema/subscriptions";
+import { eq } from "drizzle-orm";
 
 // Creem 事件类型定义
 // interface:类型结构定义，接口
@@ -238,6 +241,49 @@ async function handleSubscriptionActive(data: CreemSubscriptionData) {
     metadata 
   } = data;
 
+  const userId = (metadata?.user_id as string | undefined) ?? undefined;
+  const planId = (metadata?.plan_id as string | undefined) ?? undefined;
+
+  if (!userId || !planId) {
+    console.warn("订阅激活缺少 user_id 或 plan_id，无法写入订阅表:", {
+      subscriptionId,
+      customerEmail: customer?.email,
+      productId: product?.id,
+      metadata,
+    });
+    return {
+      status: "error",
+      action: "subscription_active",
+      subscriptionId,
+      message: "missing user_id or plan_id in metadata",
+    };
+  }
+
+  await db
+    .insert(subscriptions)
+    .values({
+      id: randomUUID(),
+      userId,
+      planId,
+      provider: "creem",
+      providerSubscriptionId: subscriptionId,
+      status: "active",
+      metadata: metadata ?? null,
+      updatedAt: new Date(),
+    })
+    .onConflictDoUpdate({
+      target: subscriptions.providerSubscriptionId,
+      set: {
+        userId,
+        planId,
+        status: "active",
+        metadata: metadata ?? null,
+        updatedAt: new Date(),
+        cancelledAt: null,
+        expiredAt: null,
+      },
+    });
+
   // 对于订阅激活，我们可能需要查找相关的订单
   // 这里可以根据订阅ID或其他标识符来更新订单状态
   console.log('订阅激活:', {
@@ -265,8 +311,14 @@ async function handleSubscriptionCancelled(data: CreemSubscriptionData) {
     reason 
   } = data;
 
-  // TODO: 这里可以添加订阅取消逻辑
-  // 例如：更新用户订阅状态、发送取消确认邮件等
+  await db
+    .update(subscriptions)
+    .set({
+      status: "cancelled",
+      cancelledAt: new Date(),
+      updatedAt: new Date(),
+    })
+    .where(eq(subscriptions.providerSubscriptionId, subscriptionId));
   
   console.log('订阅取消:', {
     subscriptionId,
@@ -291,8 +343,14 @@ async function handleSubscriptionExpired(data: CreemSubscriptionData) {
     customer 
   } = data;
 
-  // TODO: 这里可以添加订阅过期逻辑
-  // 例如：更新用户订阅状态、发送续费提醒等
+  await db
+    .update(subscriptions)
+    .set({
+      status: "expired",
+      expiredAt: new Date(),
+      updatedAt: new Date(),
+    })
+    .where(eq(subscriptions.providerSubscriptionId, subscriptionId));
   
   console.log('订阅过期:', {
     subscriptionId,

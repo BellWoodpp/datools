@@ -67,10 +67,93 @@ function getNotConfiguredMessage(locale: string) {
 }
 
 async function getTrafficData(origin: string, locale: string): Promise<TrafficData> {
-  void origin;
+  const login = process.env.DATAFORSEO_LOGIN;
+  const password = process.env.DATAFORSEO_PASSWORD;
+
+  if (!login || !password) {
+    return {
+      status: "not_configured",
+      message: getNotConfiguredMessage(locale),
+    };
+  }
+
+  let hostname: string;
+  try {
+    hostname = new URL(origin).hostname;
+  } catch {
+    return {
+      status: "error",
+      message: "invalid url",
+    };
+  }
+
+  const locationCode = Number(process.env.DATAFORSEO_LOCATION_CODE ?? 2840);
+  const languageCode = process.env.DATAFORSEO_LANGUAGE_CODE ?? "en";
+  const includePaid = (process.env.DATAFORSEO_INCLUDE_PAID ?? "true") === "true";
+
+  const basicAuth = Buffer.from(`${login}:${password}`).toString("base64");
+  const response = await fetch("https://api.dataforseo.com/v3/dataforseo_labs/google/bulk_traffic_estimation/live", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Basic ${basicAuth}`,
+    },
+    body: JSON.stringify([
+      {
+        targets: [hostname],
+        location_code: locationCode,
+        language_code: languageCode,
+        item_types: includePaid ? ["organic", "paid"] : ["organic"],
+      },
+    ]),
+  });
+
+  if (!response.ok) {
+    return {
+      status: "error",
+      message: `traffic provider error: ${response.status}`,
+    };
+  }
+
+  const payload = (await response.json().catch(() => null)) as
+    | {
+        status_code?: number;
+        status_message?: string;
+        tasks?: Array<{
+          status_code?: number;
+          status_message?: string;
+          result?: Array<{
+            items?: Array<{
+              target?: string;
+              metrics?: {
+                organic?: { etv?: number };
+                paid?: { etv?: number };
+              };
+            }>;
+          }>;
+        }>;
+      }
+    | null;
+
+  const task = payload?.tasks?.[0];
+  const item = task?.result?.[0]?.items?.find((candidate) => candidate.target === hostname);
+  const organicEtv = item?.metrics?.organic?.etv ?? 0;
+  const paidEtv = includePaid ? item?.metrics?.paid?.etv ?? 0 : 0;
+  const visits = Math.max(0, Math.round(organicEtv + paidEtv));
+
+  if (!visits) {
+    return {
+      status: "error",
+      message: payload?.status_message ?? task?.status_message ?? "no traffic data",
+    };
+  }
+
   return {
-    status: "not_configured",
-    message: getNotConfiguredMessage(locale),
+    status: "available",
+    visits,
+    period: "monthly",
+    source: "dataforseo_labs_google_etv",
+    updatedAt: new Date().toISOString(),
   };
 }
 
@@ -110,7 +193,7 @@ export async function GET(req: NextRequest) {
   const data = await getTrafficData(origin, locale);
   cache.set(origin, {
     data,
-    expiresAt: Date.now() + 1000 * 60 * 60 * 24,
+    expiresAt: Date.now() + 1000 * 60 * 60 * 24 * 7,
   });
 
   return respData(data);

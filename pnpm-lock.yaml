@@ -21,6 +21,9 @@ importers:
       '@aws-sdk/s3-request-presigner':
         specifier: ^3.958.0
         version: 3.958.0
+      '@creem_io/nextjs':
+        specifier: ^0.4.0
+        version: 0.4.0(next@16.0.7(@babel/core@7.28.5)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react@19.2.1)
       '@iconify-json/logos':
         specifier: ^1.2.10
         version: 1.2.10
@@ -429,6 +432,12 @@ packages:
 
   '@better-fetch/fetch@1.1.18':
     resolution: {integrity: sha512-rEFOE1MYIsBmoMJtQbl32PGHHXuG2hDxvEd7rUHE0vCBoFQVSDqaVs9hkZEtHCxRoY+CljXKFCOuJ8uxqw1LcA==}
+
+  '@creem_io/nextjs@0.4.0':
+    resolution: {integrity: sha512-sJMHNu5gtehFI+y0IKHEYt3wrIxmCfRlNKOzH0340suy7fqNLKijAJ3m3338/GnSD71V1/t0wNNMtOtKniopjQ==}
+    peerDependencies:
+      next: '>=13.0.0'
+      react: '>=18.0.0'
 
   '@drizzle-team/brocli@0.10.2':
     resolution: {integrity: sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==}
@@ -2407,6 +2416,15 @@ packages:
     peerDependencies:
       '@modelcontextprotocol/sdk': '>=1.5.0 <1.10.0'
       zod: '>= 3'
+    peerDependenciesMeta:
+      '@modelcontextprotocol/sdk':
+        optional: true
+
+  creem@0.4.0:
+    resolution: {integrity: sha512-1RENze+vqUSq478DzisYaFuHmHt24QKg2zASuThQ9GqXi1XnW1KQa6ekuO0rA2RGqiDSYyfR6+DxaGJBYuVghg==}
+    hasBin: true
+    peerDependencies:
+      '@modelcontextprotocol/sdk': '>=1.5.0 <1.10.0'
     peerDependenciesMeta:
       '@modelcontextprotocol/sdk':
         optional: true
@@ -5004,6 +5022,14 @@ snapshots:
 
   '@better-fetch/fetch@1.1.18': {}
 
+  '@creem_io/nextjs@0.4.0(next@16.0.7(@babel/core@7.28.5)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react@19.2.1)':
+    dependencies:
+      creem: 0.4.0
+      next: 16.0.7(@babel/core@7.28.5)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      react: 19.2.1
+    transitivePeerDependencies:
+      - '@modelcontextprotocol/sdk'
+
   '@drizzle-team/brocli@0.10.2': {}
 
   '@emnapi/core@1.7.1':
@@ -6779,6 +6805,10 @@ snapshots:
   convert-source-map@2.0.0: {}
 
   creem@0.3.37(zod@3.25.76):
+    dependencies:
+      zod: 3.25.76
+
+  creem@0.4.0:
     dependencies:
       zod: 3.25.76
 

@@ -8,6 +8,11 @@ import { auth } from "@/lib/auth-server/auth";
 import { getDictionary, defaultLocale } from "@/i18n";
 import { BillingHistory } from "@/components/membership";
 import { buildCanonicalPath } from "@/lib/seo";
+import { db } from "@/lib/db/client";
+import { orders } from "@/lib/db/schema/orders";
+import { subscriptions } from "@/lib/db/schema/subscriptions";
+import { and, eq, inArray } from "drizzle-orm";
+import { ManageSubscriptionButton } from "@/components/membership/manage-subscription-button";
 
 const dictionary = getDictionary(defaultLocale);
 
@@ -27,15 +32,56 @@ export default async function MembershipRootPage() {
     redirect("/login");
   }
 
-  // 模拟会员状态 - 在实际应用中，这应该从数据库获取
+  const userId = session.user.id;
+  const paidPlans = new Set<string>();
+
+  const paidOneTimeOrders = await db
+    .select({ productId: orders.productId })
+    .from(orders)
+    .where(
+      and(
+        eq(orders.userId, userId),
+        eq(orders.status, "paid"),
+        eq(orders.productType, "one_time"),
+        inArray(orders.productId, ["professional", "enterprise"]),
+      ),
+    );
+
+  for (const order of paidOneTimeOrders) {
+    paidPlans.add(order.productId);
+  }
+
+  const activeSubscriptions = await db
+    .select({ planId: subscriptions.planId })
+    .from(subscriptions)
+    .where(
+      and(
+        eq(subscriptions.userId, userId),
+        eq(subscriptions.status, "active"),
+        inArray(subscriptions.planId, ["professional", "enterprise"]),
+      ),
+    );
+
+  for (const subscription of activeSubscriptions) {
+    paidPlans.add(subscription.planId);
+  }
+
+  const currentPlan = paidPlans.has("enterprise")
+    ? "enterprise"
+    : paidPlans.has("professional")
+      ? "professional"
+      : "free";
+
+  const hasActiveSubscription = activeSubscriptions.length > 0;
+
   const membershipStatus = {
-    plan: "free" as const, // free, pro, enterprise
+    plan: currentPlan as "free" | "professional" | "enterprise",
     expiresAt: null as null | string,
     features: {
-      apiCalls: 1000,
-      maxProjects: 3,
-      prioritySupport: false,
-      advancedAnalytics: false,
+      apiCalls: currentPlan === "enterprise" ? 100000 : currentPlan === "professional" ? 50000 : 1000,
+      maxProjects: currentPlan === "free" ? 3 : 999,
+      prioritySupport: currentPlan !== "free",
+      advancedAnalytics: currentPlan !== "free",
     },
   };
 
@@ -84,6 +130,12 @@ export default async function MembershipRootPage() {
                   : dictionary.pages.membership.currentPlan.paidVersion}
               </Badge>
             </div>
+
+            {hasActiveSubscription ? (
+              <div className="mt-6">
+                <ManageSubscriptionButton label="Manage subscription / cancel" />
+              </div>
+            ) : null}
             
             <div className="mt-6 grid gap-4 md:grid-cols-3">
               <div className="rounded-lg border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900">

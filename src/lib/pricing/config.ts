@@ -56,18 +56,14 @@ export const pricingConfig: PricingConfig = {
     {
       id: 'free',
       name: '免费版',
-      description: '适合个人开发者和小型项目',
+      description: '适合个人使用与轻度检索',
       features: [
-        '基础 Next.js 模板',
-        'GitHub 集成',
-        '社区支持',
-        '基础文档',
-        '个人使用许可'
+        '浏览工具目录与详情页',
+        '基础搜索与筛选',
+        '登录后解锁基础功能'
       ],
       limitations: [
-        '不支持商业使用',
-        '无技术支持',
-        '功能有限'
+        '不包含访问量等高级数据'
       ],
       popular: false,
       pricing: {
@@ -91,17 +87,11 @@ export const pricingConfig: PricingConfig = {
     {
       id: 'professional',
       name: '专业版',
-      description: '适合初创公司和中小企业',
+      description: '解锁访问量等高级数据（第三方估算）',
       features: [
-        '完整功能模板',
-        '身份验证系统',
-        '支付集成',
-        '数据库设置',
-        'AI 集成',
-        '一键部署',
-        '邮件支持',
-        '商业使用许可',
-        '源码访问'
+        '访问量数据解锁（估算值，可能无数据）',
+        '更高的查询与使用额度',
+        '邮件支持'
       ],
       limitations: [],
       popular: true,
@@ -128,17 +118,11 @@ export const pricingConfig: PricingConfig = {
     {
       id: 'enterprise',
       name: '企业版',
-      description: '适合大型企业和团队',
+      description: '适合团队与定制需求',
       features: [
         '专业版所有功能',
-        '高级 AI 功能',
-        '多租户支持',
-        '高级分析',
-        '优先技术支持',
-        '定制开发服务',
-        '团队协作功能',
-        'SLA 保障',
-        '培训服务'
+        '更高额度与定制数据需求',
+        '优先支持与对接'
       ],
       limitations: [],
       popular: false,

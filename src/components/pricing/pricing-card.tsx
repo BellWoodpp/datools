@@ -42,7 +42,7 @@ export function PricingCard({
     }
 
     // 其他付费计划，调用支付接口
-    await createCheckout(plan.id);
+    await createCheckout(plan.id, { period });
   };
 
   const getCtaText = () => {

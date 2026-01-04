@@ -1381,7 +1381,7 @@
     "watchDemo": "Tonton Demo",
     "viewDetails": "Lihat Detail",
     "promotionText": "🎁 Diskon $100 untuk 1000 pelanggan pertama",
-    "userCount": "dari 250+ pengguna puas",
+    "userCount": "Early access — welcome feedback",
     "techStackTitle": "DaTools dibangun di atas pundak para raksasa",
     "techStackItems": [
       {
@@ -2981,7 +2981,7 @@
         "title": "Hubungi Kami",
         "content": "Jika Anda memiliki pertanyaan atau kekhawatiran tentang kebijakan privasi ini atau praktik data kami, hubungi kami di:",
         "copyrightOwner": "Pemilik Hak Cipta: datools.ai",
-        "email": "Email: [support@datools.ai](mailto:support@datools.ai)"
+        "email": "Email: support@datools.org"
       },
       "consent": {
         "content": "Dengan menggunakan DaTools, Anda menyetujui kebijakan privasi kami dan menyetujui ketentuannya. Terima kasih telah mempercayakan informasi Anda kepada kami!"
@@ -3070,7 +3070,7 @@
       },
       "contact": {
         "title": "Informasi Kontak",
-        "content": "Jika Anda memiliki pertanyaan tentang Ketentuan ini, hubungi kami di [support@datools.ai](mailto:support@datools.ai)."
+        "content": "Jika Anda memiliki pertanyaan tentang Ketentuan ini, hubungi kami di support@datools.org."
       },
       "acknowledgment": {
         "content": "Dengan menggunakan DaTools, Anda mengakui telah membaca, memahami, dan setuju untuk terikat oleh Ketentuan Layanan ini. Terima kasih telah memilih DaTools!"
@@ -3180,7 +3180,7 @@
       "contact": {
         "title": "Hubungi Kami",
         "content": "Jika Anda memiliki pertanyaan tentang Kebijakan Cookie ini atau membutuhkan informasi lebih lanjut, hubungi kami di:",
-        "email": "Email: [support@datools.ai](mailto:support@datools.ai)"
+        "email": "Email: support@datools.org"
       },
       "consent": {
         "content": "Dengan terus menggunakan situs kami, Anda menyetujui penggunaan cookie sesuai Kebijakan Cookie ini."
@@ -3288,7 +3288,7 @@
           "current": false
         },
         {
-          "id": "pro",
+          "id": "professional",
           "name": "Profesional",
           "price": 29,
           "period": "per bulan",

@@ -37,7 +37,11 @@
 # Creem 支付配置
 CREEM_API_KEY=your_creem_api_key
 CREEM_ENV=test  # 或 production
-CREEM_PRODUCTS={"professional":"prod_xxx","enterprise":"prod_yyy"}
+# CREEM_PRODUCTS 支持按「计划ID:周期」映射到 Creem Product ID（推荐）
+# 周期：one-time / monthly / yearly
+# 也兼容旧写法（仅计划ID），会作为兜底。
+CREEM_PRODUCTS={"professional:monthly":"prod_xxx","professional:yearly":"prod_yyy","professional:one-time":"prod_zzz"}
+CREEM_WEBHOOK_SECRET=your_creem_webhook_secret
 
 # 应用配置
 NEXT_PUBLIC_WEB_URL=http://localhost:3000
@@ -74,7 +78,6 @@ PAY_PROVIDER=creem
 
 ## 下一步
 
-1. 创建支付回调处理页面 `/api/pay/callback/creem`
-2. 添加支付成功/失败页面
-3. 集成用户订阅状态管理
-4. 添加支付历史记录功能
+1. 在 Creem 控制台配置 Webhook 指向：`/api/pay/callback/creem`
+2. 确保 `CREEM_WEBHOOK_SECRET` 与控制台一致（用于签名校验）
+3. 根据站点需求实现“权益判定”（例如：访问量解锁、收藏/提醒等）并绑定到 `professional`/`enterprise`

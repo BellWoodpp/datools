@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, Shield, Rocket, Code, Database, Globe, BarChart3, Bot, CreditCard, Users } from "lucide-react";
 import { PricingComponent } from "@/components/pricing";
+import Link from "next/link";
 
 interface PageTemplateProps {
   dictionary: PageDictionary | FeaturesPageDictionary | PricingPageDictionary | DocsPageDictionary | IntegrationsPageDictionary | HelpPageDictionary | ContactPageDictionary | StatusPageDictionary | PrivacyPageDictionary | TermsPageDictionary | CookiesPageDictionary;
@@ -15,13 +16,13 @@ export function PageTemplate({ dictionary, locale }: PageTemplateProps) {
   const renderPageContent = () => {
     // 使用类型判断而不是title字符串
     if ('coreFeatures' in dictionary) {
-      return <FeaturesContent dictionary={dictionary as FeaturesPageDictionary} />;
+      return <FeaturesContent dictionary={dictionary as FeaturesPageDictionary} locale={locale} />;
     }
     if ('plans' in dictionary) {
       return <PricingContent dictionary={dictionary as PricingPageDictionary} locale={locale} />;
     }
     if ('quickStart' in dictionary) {
-      return <DocsContent dictionary={dictionary as DocsPageDictionary} />;
+      return <DocsContent dictionary={dictionary as DocsPageDictionary} locale={locale} />;
     }
     if ('categories' in dictionary && 'popularIntegrations' in dictionary) {
       return <IntegrationsContent dictionary={dictionary as IntegrationsPageDictionary} locale={locale} />;
@@ -33,7 +34,7 @@ export function PageTemplate({ dictionary, locale }: PageTemplateProps) {
       return <ContactContent dictionary={dictionary as ContactPageDictionary} />;
     }
     if ('overview' in dictionary || 'services' in dictionary) {
-      return <StatusContent dictionary={dictionary as StatusPageDictionary} />;
+      return <StatusContent dictionary={dictionary as StatusPageDictionary} locale={locale} />;
     }
     if ('informationCollection' in dictionary) {
       return <PrivacyContent dictionary={dictionary as PrivacyPageDictionary} locale={locale} />;
@@ -73,12 +74,15 @@ export function PageTemplate({ dictionary, locale }: PageTemplateProps) {
           <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-6xl">
+                {/* Pricing */}
                 {dictionary.title}
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600 dark:text-neutral-300">
+                {/* Simple, transparent pricing */}
                 {dictionary.subtitle}
               </p>
               <p className="mt-4 text-base text-neutral-500 dark:text-neutral-400 max-w-2xl mx-auto">
+                {/* Choose the plan that fits your needs. Start free and scale as you grow. */}
                 {dictionary.description}
               </p>
             </div>
@@ -125,7 +129,8 @@ function getCategoryIcon(iconName: string) {
 }
 
 // 功能特性页面内容
-function FeaturesContent({ dictionary }: { dictionary: FeaturesPageDictionary }) {
+function FeaturesContent({ dictionary, locale }: { dictionary: FeaturesPageDictionary; locale: Locale }) {
+  const hrefPrefix = locale === "en" ? "" : `/${locale}`;
 
   return (
       <div className="space-y-16">
@@ -244,6 +249,7 @@ function FeaturesContent({ dictionary }: { dictionary: FeaturesPageDictionary })
             </Card>
           </div>
         </div>
+        
 
         {/* CTA */}
         <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-12">
@@ -254,11 +260,15 @@ function FeaturesContent({ dictionary }: { dictionary: FeaturesPageDictionary })
             {dictionary.cta.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">
-              {dictionary.cta.primaryButton}
+            <Button asChild size="lg" className="px-8">
+              <Link href={`${hrefPrefix}/data-analysis-tools`}>
+                {dictionary.cta.primaryButton}
+              </Link>
             </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              {dictionary.cta.secondaryButton}
+            <Button asChild variant="outline" size="lg" className="px-8">
+              <Link href={`${hrefPrefix}/pricing`}>
+                {dictionary.cta.secondaryButton}
+              </Link>
             </Button>
           </div>
         </div>
@@ -305,7 +315,8 @@ function PricingContent({ dictionary, locale }: { dictionary: PricingPageDiction
 }
 
 // 文档页面内容
-function DocsContent({ dictionary }: { dictionary: DocsPageDictionary }) {
+function DocsContent({ dictionary, locale }: { dictionary: DocsPageDictionary; locale: Locale }) {
+  const hrefPrefix = locale === "en" ? "" : `/${locale}`;
   const quickStart = dictionary.quickStart.steps;
 
   const docSections = dictionary.navigation.sections.map(section => ({
@@ -401,11 +412,15 @@ function DocsContent({ dictionary }: { dictionary: DocsPageDictionary }) {
             {dictionary.support.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">
-              {dictionary.support.discordButton}
+            <Button asChild size="lg" className="px-8">
+              <Link href={`${hrefPrefix}/contact`}>
+                {dictionary.support.discordButton}
+              </Link>
             </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              {dictionary.support.faqButton}
+            <Button asChild variant="outline" size="lg" className="px-8">
+              <Link href={`${hrefPrefix}/membership`}>
+                {dictionary.support.faqButton}
+              </Link>
             </Button>
           </div>
         </div>
@@ -415,6 +430,8 @@ function DocsContent({ dictionary }: { dictionary: DocsPageDictionary }) {
 
 // 集成页面内容
 function IntegrationsContent({ dictionary, locale }: { dictionary: IntegrationsPageDictionary; locale: Locale }) {
+  const hrefPrefix = locale === "en" ? "" : `/${locale}`;
+
   // 图标映射函数
   const getCategoryIcon = (iconName: string) => {
     const iconMap = {
@@ -638,11 +655,15 @@ function IntegrationsContent({ dictionary, locale }: { dictionary: IntegrationsP
             {dictionary.cta.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">
-              {dictionary.cta.primaryButton}
+            <Button asChild size="lg" className="px-8">
+              <Link href={`${hrefPrefix}/pricing`}>
+                {dictionary.cta.primaryButton}
+              </Link>
             </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              {dictionary.cta.secondaryButton}
+            <Button asChild variant="outline" size="lg" className="px-8">
+              <Link href={`${hrefPrefix}/docs`}>
+                {dictionary.cta.secondaryButton}
+              </Link>
             </Button>
           </div>
         </div>
@@ -787,6 +808,16 @@ function HelpContent({ dictionary }: { dictionary: HelpPageDictionary }) {
 
 // 联系我们页面内容
 function ContactContent({ dictionary }: { dictionary: ContactPageDictionary }) {
+  const normalizeHref = (href?: string) => {
+    const trimmed = href?.trim();
+    if (!trimmed || trimmed === "#") {
+      return null;
+    }
+    return trimmed;
+  };
+
+  const isExternalHref = (href: string) => /^https?:\/\//i.test(href);
+
   const getContactIcon = (iconName: string) => {
     switch (iconName) {
       case "Users":
@@ -827,9 +858,21 @@ function ContactContent({ dictionary }: { dictionary: ContactPageDictionary }) {
                   <p className="text-neutral-600 dark:text-neutral-300 mb-4">
                     {method.description}
                   </p>
-                  <Button variant="outline" className="w-full">
-                    {method.action}
-                  </Button>
+                  {normalizeHref(method.href) ? (
+                    <Button asChild variant="outline" className="w-full">
+                      <a
+                        href={normalizeHref(method.href)!}
+                        target={isExternalHref(normalizeHref(method.href)!) ? "_blank" : undefined}
+                        rel={isExternalHref(normalizeHref(method.href)!) ? "noreferrer noopener" : undefined}
+                      >
+                        {method.action}
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button variant="outline" className="w-full" disabled>
+                      {method.action}
+                    </Button>
+                  )}
                 </Card>
             ))}
           </div>
@@ -895,48 +938,49 @@ function ContactContent({ dictionary }: { dictionary: ContactPageDictionary }) {
 }
 
 // 服务状态页面内容
-function StatusContent({ dictionary }: { dictionary: StatusPageDictionary }) {
+function StatusContent({ dictionary, locale }: { dictionary: StatusPageDictionary; locale: Locale }) {
+  const hrefPrefix = locale === "en" ? "" : `/${locale}`;
   const services = [
     {
       name: dictionary.services.api.name,
       description: dictionary.services.api.description,
       status: "operational",
-      uptime: "99.9%",
+      uptime: dictionary.services.none,
       lastIncident: dictionary.services.none
     },
     {
       name: dictionary.services.auth.name,
       description: dictionary.services.auth.description,
       status: "operational",
-      uptime: "99.8%",
-      lastIncident: "2 days ago"
+      uptime: dictionary.services.none,
+      lastIncident: dictionary.services.none
     },
     {
       name: dictionary.services.payments.name,
       description: dictionary.services.payments.description,
       status: "operational",
-      uptime: "99.9%",
+      uptime: dictionary.services.none,
       lastIncident: dictionary.services.none
     },
     {
       name: dictionary.services.database.name,
       description: dictionary.services.database.description,
       status: "operational",
-      uptime: "99.7%",
-      lastIncident: "1 week ago"
+      uptime: dictionary.services.none,
+      lastIncident: dictionary.services.none
     },
     {
       name: dictionary.services.cdn.name,
       description: dictionary.services.cdn.description,
       status: "operational",
-      uptime: "99.9%",
+      uptime: dictionary.services.none,
       lastIncident: dictionary.services.none
     },
     {
       name: dictionary.services.monitoring.name,
       description: dictionary.services.monitoring.description,
       status: "operational",
-      uptime: "99.9%",
+      uptime: dictionary.services.none,
       lastIncident: dictionary.services.none
     }
   ];
@@ -1001,11 +1045,15 @@ function StatusContent({ dictionary }: { dictionary: StatusPageDictionary }) {
             {dictionary.subscribe.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">
-              {dictionary.subscribe.emailSubscribe}
+            <Button asChild size="lg" className="px-8">
+              <a href="mailto:support@datools.org?subject=DaTools%20Status%20Updates">
+                {dictionary.subscribe.emailSubscribe}
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              {dictionary.subscribe.rssSubscribe}
+            <Button asChild variant="outline" size="lg" className="px-8">
+              <Link href={`${hrefPrefix}/contact`}>
+                {dictionary.subscribe.rssSubscribe}
+              </Link>
             </Button>
           </div>
         </div>

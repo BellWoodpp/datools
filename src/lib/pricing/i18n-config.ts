@@ -61,18 +61,14 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'free',
         name: '免费版',
-        description: '适合个人开发者和小型项目',
+        description: '适合个人使用与轻度检索',
         features: [
-          '基础 Next.js 模板',
-          'GitHub 集成',
-          '社区支持',
-          '基础文档',
-          '个人使用许可'
+          '浏览工具目录与详情页',
+          '基础搜索与筛选',
+          '登录后解锁基础功能'
         ],
         limitations: [
-          '不支持商业使用',
-          '无技术支持',
-          '功能有限'
+          '不包含访问量等高级数据'
         ],
         popular: false,
         pricing: {
@@ -96,17 +92,11 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'professional',
         name: '专业版',
-        description: '适合初创公司和中小企业',
+        description: '解锁访问量等高级数据（第三方估算）',
         features: [
-          '完整功能模板',
-          '身份验证系统',
-          '支付集成',
-          '数据库设置',
-          'AI 集成',
-          '一键部署',
-          '邮件支持',
-          '商业使用许可',
-          '源码访问'
+          '访问量数据解锁（估算值，可能无数据）',
+          '更高的查询与使用额度',
+          '邮件支持'
         ],
         limitations: [],
         popular: true,
@@ -133,17 +123,11 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'enterprise',
         name: '企业版',
-        description: '适合大型企业和团队',
+        description: '适合团队与定制需求',
         features: [
           '专业版所有功能',
-          '高级 AI 功能',
-          '多租户支持',
-          '高级分析',
-          '优先技术支持',
-          '定制开发服务',
-          '团队协作功能',
-          'SLA 保障',
-          '培训服务'
+          '更高额度与定制数据需求',
+          '优先支持与对接'
         ],
         limitations: [],
         popular: false,
@@ -189,18 +173,14 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'free',
         name: 'Free',
-        description: 'Perfect for individual developers and small projects',
+        description: 'For casual browsing and basic research',
         features: [
-          'Basic Next.js template',
-          'GitHub integration',
-          'Community support',
-          'Basic documentation',
-          'Personal use license'
+          'Browse the tools directory and detail pages',
+          'Basic search and filters',
+          'Log in to access basic features'
         ],
         limitations: [
-          'No commercial use',
-          'No technical support',
-          'Limited features'
+          'No access to traffic and other advanced data'
         ],
         popular: false,
         pricing: {
@@ -224,17 +204,11 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'professional',
         name: 'Professional',
-        description: 'Perfect for startups and small businesses',
+        description: 'Unlock traffic and advanced data (third‑party estimates)',
         features: [
-          'Complete feature templates',
-          'Authentication system',
-          'Payment integration',
-          'Database setup',
-          'AI integration',
-          'One-click deployment',
-          'Email support',
-          'Commercial use license',
-          'Source code access'
+          'Traffic data unlocked (estimates; may be unavailable for some sites)',
+          'Higher usage limits',
+          'Email support'
         ],
         limitations: [],
         popular: true,
@@ -261,17 +235,11 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'enterprise',
         name: 'Enterprise',
-        description: 'Perfect for large enterprises and teams',
+        description: 'For teams and custom needs',
         features: [
           'All Professional features',
-          'Advanced AI features',
-          'Multi-tenant support',
-          'Advanced analytics',
-          'Priority technical support',
-          'Custom development services',
-          'Team collaboration features',
-          'SLA guarantee',
-          'Training services'
+          'Higher limits and custom data needs',
+          'Priority support and onboarding'
         ],
         limitations: [],
         popular: false,

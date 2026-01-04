@@ -3,6 +3,7 @@ import { getDictionary, defaultLocale } from "@/i18n";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 
+
 export default function RootPage() {
   const dictionary = getDictionary(defaultLocale);
   return (

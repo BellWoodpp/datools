@@ -209,7 +209,7 @@ export function ToolCard({
     }
 
     if (traffic.status === "locked") {
-      await createCheckout(traffic.productId);
+      await createCheckout(traffic.productId, { period: "monthly", locale });
       return;
     }
 

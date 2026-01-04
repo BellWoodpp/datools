@@ -8,7 +8,7 @@
     "watchDemo": "观看演示",
     "viewDetails": "查看详情",
     "promotionText": "🎁 前1000名客户享受$100优惠",
-    "userCount": "来自250+满意用户",
+    "userCount": "早期版本，欢迎反馈",
     "techStackTitle": "DaTools 建立在巨人的肩膀上",
     "techStackItems": [
       {
@@ -1663,7 +1663,7 @@
     }
   },
   "footer": {
-    "description": "现代化的SaaS平台，帮助您快速构建和部署应用程序。",
+    "description": "独立的数据工具导航站；与所列工具/品牌无隶属或合作关系（除非另行说明）。",
     "product": "产品",
     "features": "功能特性",
     "pricing": "价格方案",
@@ -1683,105 +1683,83 @@
   "pages": {
     "features": {
       "title": "功能特性",
-      "subtitle": "强大的功能加速您的开发",
-      "description": "发现全面的工具和功能集，让DaTools成为现代SaaS应用程序的完美平台。",
+      "subtitle": "更快完成数据工具选型",
+      "description": "DaTools 是一个独立的数据工具导航站，帮助你发现、对比并跟踪数据分析工具。",
       "coreFeatures": {
-        "title": "核心特性",
-        "subtitle": "为现代 SaaS 应用量身定制的完整解决方案，让您专注于产品创新而非基础设施搭建",
+        "title": "你可以做什么",
+        "subtitle": "免费浏览与检索；需要高级数据时再升级解锁。",
         "features": [
           {
-            "icon": "代码",
-            "title": "Next.js 全栈框架",
-            "description": "基于最新的 Next.js 14+ 构建，支持 App Router、Server Components 和 Edge Runtime，提供最佳的性能和开发体验。",
+            "icon": "Globe",
+            "title": "分类导航",
+            "description": "按类别、部署方式、价格模型快速浏览数据分析工具。",
             "highlights": [
-              "应用路由器",
-              "服务器组件",
-              "边缘运行时",
-              "TypeScript 支持"
+              "分类浏览",
+              "标签体系",
+              "官方链接",
+              "持续更新"
             ]
           },
           {
-            "icon": "盾牌",
-            "title": "企业级身份验证",
-            "description": "集成 Better Auth，支持多种登录方式，包括 Google OAuth、GitHub OAuth 和 Magic Link，确保安全可靠。",
+            "icon": "Code",
+            "title": "搜索与筛选",
+            "description": "按名称、标签、价格、部署等维度快速筛选并定位工具。",
             "highlights": [
-              "谷歌 OAuth",
-              "GitHub OAuth",
-              "魔术链接",
-              "会话管理"
+              "关键词搜索",
+              "分类筛选",
+              "价格标签",
+              "部署标签"
             ]
           },
           {
-            "icon": "信用卡",
-            "title": "Stripe 支付集成",
-            "description": "完整的支付解决方案，支持订阅、一次性支付和发票管理，让您轻松实现商业化。",
+            "icon": "BarChart3",
+            "title": "访问量估算（Pro）",
+            "description": "为部分站点提供预估的月访问量（第三方估算，仅供参考）。",
             "highlights": [
-              "订阅管理",
-              "一次性支付",
-              "发票系统",
-              "Webhook 处理"
+              "第三方估算",
+              "可能无数据",
+              "明确免责声明",
+              "可控成本查询"
             ]
           },
           {
-            "icon": "数据库",
-            "title": "Supabase 数据库",
-            "description": "强大的 PostgreSQL 数据库，内置实时功能、身份验证和存储，为您的应用提供可靠的数据基础。",
+            "icon": "Shield",
+            "title": "账号与订阅管理",
+            "description": "登录后可查看账单记录，并在客户门户管理/取消订阅。",
             "highlights": [
-              "PostgreSQL",
-              "实时订阅",
-              "文件存储",
-              "行级安全"
+              "会员中心",
+              "账单历史",
+              "随时取消",
+              "邮件支持"
             ]
           },
           {
-            "icon": "机器人",
-            "title": "AI 就绪基础设施",
-            "description": "预配置的 AI 集成，支持 OpenAI、Anthropic 等主流 AI 服务，内置积分系统和 API 销售功能。",
+            "icon": "Rocket",
+            "title": "工具详情页",
+            "description": "查看摘要、标签、价格/部署信息，并跳转到官方站点。",
             "highlights": [
-              "OpenAI 集成",
-              "积分系统",
-              "API 销售",
-              "多模型支持"
+              "快速概览",
+              "价格与部署",
+              "链接与标签",
+              "更快做决策"
             ]
           },
           {
-            "icon": "火箭",
-            "title": "一键部署",
-            "description": "支持 Vercel、Cloudflare 等主流平台的一键部署，自动化 CI/CD 流程，让发布变得简单。",
+            "icon": "Globe",
+            "title": "多语言界面",
+            "description": "内置国际化路由与语言切换，方便不同语言用户浏览。",
             "highlights": [
-              "Vercel 部署",
-              "Cloudflare 页面",
-              "CI/CD 自动化",
-              "环境管理"
-            ]
-          },
-          {
-            "icon": "柱状图3",
-            "title": "业务分析",
-            "description": "集成 Google Analytics、Search Console 等分析工具，帮助您了解用户行为和业务增长。",
-            "highlights": [
-              "谷歌分析",
-              "搜索控制台",
-              "用户行为分析",
-              "转化跟踪"
-            ]
-          },
-          {
-            "icon": "地球",
-            "title": "国际化支持",
-            "description": "内置多语言支持，支持中文、英文、日文等多种语言，让您的产品触达全球用户。",
-            "highlights": [
-              "多语言支持",
-              "RTL 支持",
-              "动态语言切换",
-              "SEO 优化"
+              "多语言路由",
+              "SEO 友好",
+              "一键切换",
+              "导航一致"
             ]
           }
         ]
       },
       "techStack": {
         "title": "技术栈",
-        "subtitle": "基于业界最佳实践和最新技术构建，确保您的应用具有最佳的性能、安全性和可扩展性",
+        "subtitle": "基于现代 Web 技术栈构建，保证速度与可维护性",
         "technologies": [
           {
             "name": "Next.js 14+",
@@ -1808,10 +1786,6 @@
             "description": "身份验证解决方案"
           },
           {
-            "name": "Stripe",
-            "description": "支付处理平台"
-          },
-          {
             "name": "Supabase",
             "description": "后端即服务"
           },
@@ -1822,25 +1796,25 @@
         ]
       },
       "comparison": {
-        "title": "为什么选择 DaTools",
-        "subtitle": "与传统开发方式相比，DaTools 让您节省 90% 的开发时间",
+        "title": "为什么用 DaTools",
+        "subtitle": "少开标签页，多花时间评估工具本身。",
         "traditional": {
-          "title": "传统开发",
+          "title": "手动选型",
           "items": [
             {
-              "text": "需要 3-6 个月搭建基础设施"
+              "text": "同时打开大量官网/文档"
             },
             {
-              "text": "需要学习多种技术栈"
+              "text": "难以快速对比价格与部署方式"
             },
             {
-              "text": "需要处理复杂的部署流程"
+              "text": "缺少统一的标签体系"
             },
             {
-              "text": "需要自己实现身份验证和支付"
+              "text": "访问量等指标来源不清晰"
             },
             {
-              "text": "需要大量时间调试和优化"
+              "text": "候选列表整理耗时"
             }
           ]
         },
@@ -1848,34 +1822,34 @@
           "title": "使用 DaTools",
           "items": [
             {
-              "text": "5 分钟内完成基础设置"
+              "text": "清晰分类与统一标签"
             },
             {
-              "text": "开箱即用的完整解决方案"
+              "text": "快速搜索与筛选"
             },
             {
-              "text": "一键部署到生产环境"
+              "text": "详情页快速对比与跳转"
             },
             {
-              "text": "预配置的身份验证和支付"
+              "text": "需要时再升级解锁访问量估算"
             },
             {
-              "text": "专注于产品功能开发"
+              "text": "更快筛选出候选工具"
             }
           ]
         }
       },
       "cta": {
-        "title": "准备开始构建您的 AI SaaS？",
-        "subtitle": "立即获取 DaTools，在几分钟内启动您的下一个项目",
-        "primaryButton": "获取 DaTools",
-        "secondaryButton": "查看文档"
+        "title": "开始浏览数据工具",
+        "subtitle": "免费使用；只有你需要高级数据时才需要付费升级。",
+        "primaryButton": "浏览工具",
+        "secondaryButton": "查看定价"
       }
     },
     "pricing": {
       "title": "价格方案",
       "subtitle": "简单透明的定价",
-      "description": "选择适合您需求的方案。免费开始，随需扩展。",
+      "description": "免费浏览工具目录；升级解锁访问量等高级数据（第三方估算，仅供参考）。",
       "plansTitle": "选择适合您的方案",
       "plansSubtitle": "简单透明的定价，没有隐藏费用。选择最适合您需求的方案，随时可以升级。",
       "billingCycles": {
@@ -1897,18 +1871,14 @@
           "name": "免费版",
           "price": "¥0",
           "period": "永久免费",
-          "description": "适合个人开发者和小型项目",
+          "description": "适合个人使用与轻度检索",
           "features": [
-            "基础 Next.js 模板",
-            "GitHub 集成",
-            "社区支持",
-            "基础文档",
-            "个人使用许可"
+            "浏览工具目录与详情页",
+            "基础搜索与筛选",
+            "登录后解锁基础功能"
           ],
           "limitations": [
-            "不支持商业使用",
-            "无技术支持",
-            "功能有限"
+            "不包含访问量等高级数据"
           ],
           "cta": "开始使用",
           "popular": false
@@ -1917,17 +1887,11 @@
           "name": "专业版",
           "price": "¥299",
           "period": "一次性付费",
-          "description": "适合初创公司和中小企业",
+          "description": "解锁访问量等高级数据（第三方估算）",
           "features": [
-            "完整功能模板",
-            "身份验证系统",
-            "支付集成",
-            "数据库设置",
-            "AI 集成",
-            "一键部署",
-            "邮件支持",
-            "商业使用许可",
-            "源码访问"
+            "访问量数据解锁（估算值，可能无数据）",
+            "更高的查询与使用额度",
+            "邮件支持"
           ],
           "cta": "立即购买",
           "popular": true
@@ -1936,17 +1900,11 @@
           "name": "企业版",
           "price": "¥999",
           "period": "一次性付费",
-          "description": "适合大型企业和团队",
+          "description": "适合团队与定制需求",
           "features": [
             "专业版所有功能",
-            "高级 AI 功能",
-            "多租户支持",
-            "高级分析",
-            "优先技术支持",
-            "定制开发服务",
-            "团队协作功能",
-            "SLA 保障",
-            "培训服务"
+            "更高额度与定制数据需求",
+            "优先支持与对接"
           ],
           "cta": "联系销售",
           "popular": false
@@ -1977,27 +1935,27 @@
       "faqs": [
         {
           "question": "免费版和付费版有什么区别？",
-          "answer": "免费版提供基础功能，适合学习和个人项目。付费版包含完整的商业功能，如身份验证、支付集成、AI 功能等，适合商业项目。"
+          "answer": "免费版可以浏览工具目录并进行基础筛选；专业版解锁访问量等高级数据（第三方估算，仅供参考，且部分站点可能无数据）。"
         },
         {
           "question": "支持哪些付费方式？",
-          "answer": "我们支持一次性付费、按月付费和按年付费三种方式。年付享受 20% 的优惠折扣，一次性付费永久使用。"
+          "answer": "我们支持按月/按年订阅（自动续费，可随时取消）以及一次性购买（如该方案可用）。具体以结账页展示为准。"
         },
         {
-          "question": "支持退款吗？",
-          "answer": "我们提供 30 天无条件退款保证。如果您在购买后 30 天内不满意，可以申请全额退款。"
+          "question": "如何取消订阅？",
+          "answer": "您可以在会员中心取消自动续费。取消后，已支付的周期内仍可继续使用，到期后不再续费。"
         },
         {
-          "question": "可以用于商业项目吗？",
-          "answer": "专业版和企业版支持商业使用。免费版仅限个人学习和非商业项目使用。"
+          "question": "访问量数据从哪里来？准确吗？",
+          "answer": "访问量为第三方数据源提供的估算值，不等同于网站自身统计，可能存在误差或无数据情况，仅供参考。"
         },
         {
           "question": "包含技术支持吗？",
-          "answer": "专业版提供邮件支持，企业版提供优先技术支持。我们会在 24 小时内回复您的问题。"
+          "answer": "专业版提供邮件支持，企业版提供优先支持。具体响应时间以实际情况为准。"
         },
         {
-          "question": "如何升级到更高版本？",
-          "answer": "您可以随时升级到更高版本，只需支付差价即可。升级后立即享受新版本的所有功能。"
+          "question": "支持退款吗？",
+          "answer": "数字服务通常不提供自动退款。如出现重复扣费或因技术原因无法正常使用，请联系 support@datools.org，我们会核实并协助处理。"
         },
         {
           "question": "年付有什么优势？",
@@ -2008,34 +1966,34 @@
     "docs": {
       "title": "文档",
       "subtitle": "开始所需的一切",
-      "description": "全面的指南、API参考和教程，帮助您构建出色的应用程序。",
+      "description": "关于如何使用导航、访问量估算与订阅计费的说明。",
       "quickStart": {
         "title": "快速开始",
-        "subtitle": "只需几个简单步骤，您就可以开始使用 DaTools 构建您的 AI SaaS 应用",
+        "subtitle": "只需几个简单步骤即可开始使用 DaTools",
         "steps": [
           {
             "step": "1",
-            "title": "安装 DaTools",
-            "description": "克隆仓库并安装依赖",
-            "code": "git clone https://github.com/your-repo/datools\\ncd datools\\npnpm install"
+            "title": "浏览工具目录",
+            "description": "按分类浏览，并查看工具详情与官方链接",
+            "code": "进入 /data-analysis-tools 选择分类"
           },
           {
             "step": "2",
-            "title": "配置环境变量",
-            "description": "设置必要的 API 密钥和配置",
-            "code": "cp .env.example .env.local\\n# 编辑 .env.local 文件"
+            "title": "搜索与筛选",
+            "description": "使用关键词、标签、价格与部署方式快速筛选",
+            "code": "在首页使用搜索框与分类筛选"
           },
           {
             "step": "3",
-            "title": "启动开发服务器",
-            "description": "在本地运行项目",
-            "code": "pnpm dev\\n# 访问 http://localhost:3000"
+            "title": "解锁访问量估算（Pro）",
+            "description": "为支持的站点展示预估月访问量（第三方估算，仅供参考）",
+            "code": "点击工具卡片上的访问量入口（需登录 + Pro）"
           },
           {
             "step": "4",
-            "title": "部署到生产环境",
-            "description": "一键部署到 Vercel",
-            "code": "pnpm build\\nvercel deploy"
+            "title": "管理订阅与账单",
+            "description": "升级、查看账单记录，或在客户门户取消订阅",
+            "code": "进入 /pricing 与 /membership"
           }
         ]
       },
@@ -2181,10 +2139,10 @@
       },
       "support": {
         "title": "需要帮助？",
-        "subtitle": "我们的社区和支持团队随时为您提供帮助",
-        "description": "加入我们的 Discord 社区或查看常见问题。",
-        "discordButton": "加入 Discord",
-        "faqButton": "查看 FAQ"
+        "subtitle": "遇到问题欢迎联系我们",
+        "description": "账单/订阅或产品问题请邮件联系 support@datools.org。",
+        "discordButton": "联系支持",
+        "faqButton": "会员中心"
       }
     },
     "integrations": {
@@ -2760,28 +2718,28 @@
         "subtitle": "快速找到您需要的答案",
         "faqs": [
           {
-            "question": "DaTools 支持哪些 AI 服务？",
-            "answer": "DaTools 支持 OpenAI、Anthropic、Google AI 等主流 AI 服务，并提供了统一的接口来管理不同的 AI 提供商。"
+            "question": "访问量数据从哪里来？准确吗？",
+            "answer": "访问量为第三方数据源提供的估算值，不等同于网站自身统计，可能存在误差或无数据情况，仅供参考。"
           },
           {
-            "question": "如何自定义 DaTools 的界面？",
-            "answer": "DaTools 使用 Tailwind CSS 和 Shadcn/UI，您可以轻松自定义样式。所有组件都是可定制的，支持主题切换。"
+            "question": "为什么有些站点没有访问量数据？",
+            "answer": "第三方数据源对不同域名的覆盖程度不同，部分域名可能无法返回估算值（或被限制/不支持）。"
           },
           {
-            "question": "DaTools 是否支持多语言？",
-            "answer": "是的，DaTools 内置了国际化支持，目前支持中文、英文和日文，您可以轻松添加更多语言。"
+            "question": "Pro 版本包含什么？",
+            "answer": "Pro 解锁访问量等高级数据与更高使用额度；免费版可浏览目录并进行基础搜索与筛选。"
           },
           {
-            "question": "如何升级 DaTools 版本？",
-            "answer": "您可以通过 Git 拉取最新代码来升级 DaTools。我们建议在升级前备份您的自定义代码。"
+            "question": "如何取消订阅？",
+            "answer": "您可以在会员中心取消自动续费。取消后，已支付的周期内仍可继续使用，到期后不再续费。"
           },
           {
-            "question": "DaTools 的性能如何？",
-            "answer": "DaTools 基于 Next.js 14+ 构建，支持 Server Components 和 Edge Runtime，具有出色的性能表现。"
+            "question": "支持退款吗？",
+            "answer": "数字服务通常不提供自动退款。如出现重复扣费或因技术原因无法正常使用，请联系 support@datools.org，我们会核实并协助处理。"
           },
           {
             "question": "如何获得技术支持？",
-            "answer": "您可以通过邮件联系我们，或者加入我们的 Discord 社区获得实时帮助。"
+            "answer": "您可以通过邮件联系我们（support@datools.org）。响应时间会因当前工作量而有所不同。"
           }
         ]
       },
@@ -2790,7 +2748,7 @@
         "subtitle": "联系我们的支持团队",
         "description": "如果您在文档中找不到答案，我们的支持团队随时为您提供帮助。",
         "emailButton": "发送邮件",
-        "discordButton": "加入 Discord"
+        "discordButton": "会员中心"
       }
     },
     "contact": {
@@ -2802,15 +2760,8 @@
       "teamTitle": "直接联系团队",
       "teamSubtitle": "根据您的需求联系相应的团队",
       "responseTimeTitle": "响应时间",
-      "responseTimeSubtitle": "我们承诺快速响应您的请求",
+      "responseTimeSubtitle": "我们会尽快回复（时间可能因工作量不同而变化）",
       "contactMethods": [
-        {
-          "icon": "Users",
-          "title": "Discord 社区",
-          "description": "加入我们的 Discord 社区，与其他开发者交流",
-          "action": "加入 Discord",
-          "href": "#"
-        },
         {
           "icon": "Zap",
           "title": "邮件支持",
@@ -2819,17 +2770,10 @@
           "href": "mailto:support@datools.org"
         },
         {
-          "icon": "Shield",
-          "title": "GitHub 议题",
-          "description": "在 GitHub 上报告问题或提出建议",
-          "action": "查看 Issues",
-          "href": "#"
-        },
-        {
           "icon": "Rocket",
-          "title": "企业合作",
-          "description": "企业级支持和定制开发服务",
-          "action": "联系销售",
+          "title": "合作 / 赞助",
+          "description": "商业合作与赞助咨询",
+          "action": "联系",
           "href": "mailto:sales@datools.org"
         }
       ],
@@ -2852,19 +2796,14 @@
       ],
       "responseTimes": [
         {
-          "time": "< 1 小时",
-          "title": "Discord 支持",
-          "description": "社区支持，快速响应"
-        },
-        {
-          "time": "< 24 小时",
           "title": "邮件支持",
-          "description": "专业团队，详细回复"
+          "time": "1–3 个工作日",
+          "description": "响应时间取决于当前工作量"
         },
         {
-          "time": "< 48 小时",
-          "title": "企业支持",
-          "description": "定制解决方案"
+          "title": "合作 / 赞助",
+          "time": "视情况而定",
+          "description": "我们会在评估需求后跟进"
         }
       ]
     },
@@ -2891,7 +2830,7 @@
         },
         "payments": {
           "name": "支付处理",
-          "description": "Stripe支付处理服务"
+          "description": "Creem 支付处理服务"
         },
         "database": {
           "name": "数据库",
@@ -2979,7 +2918,7 @@
         "title": "联系我们",
         "content": "如果您对此隐私政策或我们的数据实践有任何疑问或担忧，请通过以下方式联系我们：",
         "copyrightOwner": "版权所有者：datools.ai",
-        "email": "邮箱：support@datools.ai"
+        "email": "邮箱：support@datools.org"
       },
       "consent": {
         "content": "通过使用 DaTools，您同意我们的隐私政策并同意其条款。感谢您信任我们处理您的信息！"
@@ -2992,11 +2931,11 @@
       "lastUpdated": "最后更新：2024年1月1日",
       "introduction": {
         "title": "条款介绍和接受",
-        "content": "欢迎使用 **DaTools**，这是一个专为帮助您快速高效构建 AI SaaS 初创公司而设计的 NextJS 模板。通过访问或使用我们的服务，您同意受本服务条款的约束。如果您不同意这些条款中的任何内容，请不要使用我们的服务。"
+        "content": "欢迎使用 **DaTools**。DaTools 是一个数据工具导航与发现平台，帮助用户浏览、筛选并了解各类数据工具。通过访问或使用我们的服务，您同意受本服务条款的约束。如果您不同意这些条款中的任何内容，请不要使用我们的服务。"
       },
       "serviceUse": {
         "title": "服务使用",
-        "content": "DaTools 为用户提供全面的平台，使用我们预构建的模板和基础设施来构建和启动 AI SaaS 初创公司。您同意按照所有适用的地方、州、国家和国际法律法规使用服务。"
+        "content": "DaTools 为用户提供工具目录、搜索与筛选、以及与第三方数据相关的参考信息。您同意按照所有适用的法律法规使用服务，并自行判断第三方信息的适用性。"
       },
       "userAccounts": {
         "title": "用户账户和注册",
@@ -3036,7 +2975,8 @@
       "pricingPayments": {
         "title": "定价和支付",
         "points": [
-          "除非法律另有要求，否则所有购买都是最终且不可退款的",
+          "订阅为自动续费，您可在会员中心随时取消自动续费；取消后仍可使用至当前计费周期结束",
+          "数字服务通常不提供自动退款；如出现重复扣费或因技术原因无法使用，请联系 support@datools.org 处理",
           "价格可能会在通知用户后发生变化",
           "您同意支付与您选择的计划相关的所有费用",
           "支付条款基于您选择的支付方式和计划"
@@ -3048,7 +2988,7 @@
       },
       "warranties": {
         "title": "免责声明",
-        "content": "服务按 现状 和 可用 基础提供。我们对服务的准确性、可靠性或可用性不作任何保证或陈述，并在法律允许的最大范围内免除所有保证。"
+        "content": "服务按“现状”和“可用”基础提供。我们对服务的准确性、可靠性或可用性不作任何保证或陈述，并在法律允许的最大范围内免除所有保证。站内展示的第三方工具信息与访问量等数据可能为公开信息或第三方估算值，可能不准确或不可用，仅供参考。第三方名称与商标归其各自所有，DaTools 与任何第三方服务提供商不存在隶属、合作或背书关系（除非另有明确说明）。"
       },
       "liability": {
         "title": "责任限制",
@@ -3068,7 +3008,7 @@
       },
       "contact": {
         "title": "联系信息",
-        "content": "如果您对这些条款有任何疑问，请通过 support@datools.ai 联系我们。"
+        "content": "如果您对这些条款有任何疑问，请通过 support@datools.org 联系我们。"
       },
       "acknowledgment": {
         "content": "通过使用 DaTools，您承认您已阅读、理解并同意受这些服务条款的约束。感谢您选择 DaTools！"
@@ -3178,7 +3118,7 @@
       "contact": {
         "title": "联系我们",
         "content": "如果您对此Cookie政策有任何疑问或需要更多信息，请通过以下方式联系我们：",
-        "email": "邮箱：support@datools.ai"
+        "email": "邮箱：support@datools.org"
       },
       "consent": {
         "content": "通过继续使用我们的网站，您同意我们按照此Cookie政策使用Cookie。"
@@ -3286,7 +3226,7 @@
           "current": false
         },
         {
-          "id": "pro",
+          "id": "professional",
           "name": "专业版",
           "price": 29,
           "period": "每月",
@@ -3310,11 +3250,9 @@
           "features": [
             "无限 API 调用",
             "无限项目",
-            "24/7 专属支持",
             "所有模板库",
             "企业级分析",
-            "自定义集成",
-            "SLA 保证"
+            "自定义集成"
           ],
           "current": false
         }

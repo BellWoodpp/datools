@@ -1381,7 +1381,7 @@
     "watchDemo": "Demo ansehen",
     "viewDetails": "Details anzeigen",
     "promotionText": "🎁 100 $ Rabatt für die ersten 1000 Kund:innen",
-    "userCount": "von 250+ zufriedenen Nutzer:innen",
+    "userCount": "Early access — welcome feedback",
     "techStackTitle": "DaTools steht auf den Schultern von Giganten",
     "techStackItems": [
       {
@@ -2981,7 +2981,7 @@
         "title": "Kontakt",
         "content": "Bei Fragen oder Anliegen zur Datenschutzerklärung oder zu unseren Datenpraktiken kontaktiere uns unter:",
         "copyrightOwner": "Urheberrecht: datools.ai",
-        "email": "E-Mail: [support@datools.ai](mailto:support@datools.ai)"
+        "email": "E-Mail: support@datools.org"
       },
       "consent": {
         "content": "Durch die Nutzung von DaTools stimmst du dieser Datenschutzerklärung zu. Danke für dein Vertrauen!"
@@ -3070,7 +3070,7 @@
       },
       "contact": {
         "title": "Kontakt",
-        "content": "Fragen zu diesen Bedingungen? Kontaktiere uns unter [support@datools.ai](mailto:support@datools.ai)."
+        "content": "Fragen zu diesen Bedingungen? Kontaktiere uns unter support@datools.org."
       },
       "acknowledgment": {
         "content": "Durch die Nutzung von DaTools bestätigst du, diese Bedingungen gelesen und verstanden zu haben und ihnen zuzustimmen. Danke, dass du DaTools wählst!"
@@ -3180,7 +3180,7 @@
       "contact": {
         "title": "Kontakt",
         "content": "Fragen zur Cookie-Richtlinie? Kontaktiere uns unter:",
-        "email": "E-Mail: [support@datools.ai](mailto:support@datools.ai)"
+        "email": "E-Mail: support@datools.org"
       },
       "consent": {
         "content": "Durch die weitere Nutzung unserer Website stimmst du der Verwendung von Cookies gemäß dieser Richtlinie zu."
@@ -3288,7 +3288,7 @@
           "current": false
         },
         {
-          "id": "pro",
+          "id": "professional",
           "name": "Professional",
           "price": 29,
           "period": "pro Monat",

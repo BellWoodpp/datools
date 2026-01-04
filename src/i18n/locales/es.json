@@ -1381,7 +1381,7 @@
     "watchDemo": "Ver demo",
     "viewDetails": "Ver detalles",
     "promotionText": "🎁 $100 de descuento para los primeros 1000 clientes",
-    "userCount": "de 250+ usuarios satisfechos",
+    "userCount": "Early access — welcome feedback",
     "techStackTitle": "DaTools se apoya en hombros de gigantes",
     "techStackItems": [
       {
@@ -2981,7 +2981,7 @@
         "title": "Contacto",
         "content": "Si tienes preguntas o inquietudes sobre esta política o nuestras prácticas de datos, contáctanos en:",
         "copyrightOwner": "Titular de copyright: datools.ai",
-        "email": "Email: [support@datools.ai](mailto:support@datools.ai)"
+        "email": "Email: support@datools.org"
       },
       "consent": {
         "content": "Al usar DaTools, aceptas nuestra política de privacidad y sus términos. ¡Gracias por confiar en nosotros!"
@@ -3070,7 +3070,7 @@
       },
       "contact": {
         "title": "Información de contacto",
-        "content": "Si tienes preguntas sobre estos Términos, contáctanos en [support@datools.ai](mailto:support@datools.ai)."
+        "content": "Si tienes preguntas sobre estos Términos, contáctanos en support@datools.org."
       },
       "acknowledgment": {
         "content": "Al usar DaTools, reconoces que has leído, entendido y aceptas estos Términos del servicio. ¡Gracias por elegir DaTools!"
@@ -3180,7 +3180,7 @@
       "contact": {
         "title": "Contacto",
         "content": "Si tienes preguntas sobre esta Política de cookies o necesitas más información, contáctanos en:",
-        "email": "Email: [support@datools.ai](mailto:support@datools.ai)"
+        "email": "Email: support@datools.org"
       },
       "consent": {
         "content": "Al seguir usando nuestro sitio, aceptas el uso de cookies conforme a esta Política."
@@ -3288,7 +3288,7 @@
           "current": false
         },
         {
-          "id": "pro",
+          "id": "professional",
           "name": "Profesional",
           "price": 29,
           "period": "al mes",

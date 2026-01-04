@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import type { PricingPeriod } from "@/lib/pricing/types";
 
 interface PaymentRequest {
   product_id: string;
+  period?: PricingPeriod;
   locale?: string;
 }
 
@@ -30,7 +32,13 @@ export function usePayment() {
     checkoutUrl: null,
   });
 
-  const createCheckout = async (productId: string): Promise<boolean> => {
+  const createCheckout = async (
+    productId: string,
+    options?: {
+      period?: PricingPeriod;
+      locale?: string;
+    }
+  ): Promise<boolean> => {
     setState({
       isLoading: true,
       error: null,
@@ -38,6 +46,8 @@ export function usePayment() {
     });
 
     try {
+      const period = options?.period;
+      const locale = options?.locale;
       const response = await fetch("/api/payments", {
         method: "POST",
         headers: {
@@ -45,6 +55,8 @@ export function usePayment() {
         },
         body: JSON.stringify({
           product_id: productId,
+          period,
+          locale,
         } as PaymentRequest),
       });
 

@@ -13,6 +13,7 @@ import { OrderService } from "@/lib/orders/service";
 
 // locale:本地化/地域设置
 type Locale = Parameters<typeof getPricingConfig>[0];
+type CheckoutPeriod = PricingPeriod;
 
 function respErr(message: string, status = 400) {
   return NextResponse.json({ ok: false, message }, { status });
@@ -24,15 +25,19 @@ function respData<T>(data: T, status = 200) {
 
 export async function POST(req: NextRequest) {
   try {
-    const { product_id }: { product_id?: string } = await req.json();
-
-    // as:类型断言,"en" 这个值的类型是 Locale
-    const locale = ("en") as Locale;
+    const payload = (await req.json().catch(() => ({}))) as {
+      product_id?: string;
+      period?: CheckoutPeriod;
+      locale?: string;
+    };
+    const product_id = payload.product_id;
+    const period = payload.period ?? "one-time";
+    const requestLocale = (payload.locale ?? "en") as Locale;
 
     // cancel:取消，process:过程，env:env.local环境变量。 ||：逻辑运算符‘或’
     let cancel_url = `${process.env.NEXT_PUBLIC_PAY_CANCEL_URL || process.env.NEXT_PUBLIC_WEB_URL}`;
     if (cancel_url && cancel_url.startsWith("/")) {
-      cancel_url = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}${cancel_url}`;
+      cancel_url = `${process.env.NEXT_PUBLIC_WEB_URL}/${requestLocale}${cancel_url}`;
     }
 
     if (!product_id) {
@@ -40,7 +45,7 @@ export async function POST(req: NextRequest) {
     }
 
     // 使用当前系统的定价配置校验 plan 是否存在
-    const pricingConfig = getPricingConfig(locale);
+    const pricingConfig = getPricingConfig(requestLocale);
     const plan = pricingConfig.plans.find((p) => p.id === product_id);
     if (!plan) {
       return respErr("invalid product_id");
@@ -63,9 +68,10 @@ export async function POST(req: NextRequest) {
       return respErr("unsupported provider");
     }
 
-    // 获取价格信息（这里需要根据period获取，暂时使用one-time） period:定价周期
-    const period: PricingPeriod = "one-time";
     const pricing = plan.pricing[period];
+    if (!pricing) {
+      return respErr("invalid params: period");
+    }
     
     // 创建订单
     const order = await OrderService.createOrder({
@@ -78,7 +84,7 @@ export async function POST(req: NextRequest) {
       paymentProvider: provider,
       customerEmail: userEmail,
       metadata: {
-        locale,
+        locale: requestLocale,
         project: process.env.NEXT_PUBLIC_PROJECT_NAME || "",
         plan_id: plan.id,
         plan_period: period,
@@ -100,19 +106,22 @@ export async function POST(req: NextRequest) {
       metadata: Record<string, string>;
     } = {
       productKey: product_id,
-      locale,
+      locale: requestLocale,
       requestId,
       customerEmail: userEmail,
       metadata: {
         project: process.env.NEXT_PUBLIC_PROJECT_NAME || "",
         product_name: plan.name,
         user_email: userEmail,
+        user_id: userId,
+        plan_id: plan.id,
+        plan_period: period,
         order_id: order.id,
         order_number: order.orderNumber,
       },
     }
     console.log('creemCheckout', param)
-    const result = await creemCheckout(param);
+    const result = await creemCheckout({ ...param, period });
 
     return respData(result);
   } catch (e: unknown) {
@@ -125,12 +134,14 @@ export async function POST(req: NextRequest) {
 
 async function creemCheckout({
   productKey,
+  period,
   locale,
   requestId,
   customerEmail,
   metadata,
 }: {
   productKey: string;
+  period: PricingPeriod;
   locale: string;
   requestId: string;
   customerEmail: string;
@@ -149,7 +160,8 @@ async function creemCheckout({
   }
   console.log("creem products: ", products);
 
-  const providerProductId = products[productKey || ""] || "";
+  const compositeKey = `${productKey}:${period}`;
+  const providerProductId = products[compositeKey] || products[productKey || ""] || "";
   if (!providerProductId) {
     throw new Error("invalid product_id mapping");
   }

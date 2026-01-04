@@ -1381,7 +1381,7 @@
     "watchDemo": "Assistir à Demo",
     "viewDetails": "Ver Detalhes",
     "promotionText": "🎁 US$100 de desconto para os primeiros 1000 clientes",
-    "userCount": "de 250+ usuários satisfeitos",
+    "userCount": "Early access — welcome feedback",
     "techStackTitle": "DaTools é construído sobre os ombros de gigantes",
     "techStackItems": [
       {
@@ -2981,7 +2981,7 @@
         "title": "Fale Conosco",
         "content": "Se tiver dúvidas ou preocupações sobre esta política ou nossas práticas de dados, entre em contato:",
         "copyrightOwner": "Detentor dos Direitos Autorais: datools.ai",
-        "email": "E-mail: [support@datools.ai](mailto:support@datools.ai)"
+        "email": "E-mail: support@datools.org"
       },
       "consent": {
         "content": "Ao usar o DaTools, você concorda com nossa política de privacidade e seus termos. Obrigado por confiar suas informações a nós!"
@@ -3070,7 +3070,7 @@
       },
       "contact": {
         "title": "Informações de Contato",
-        "content": "Se você tiver dúvidas sobre estes Termos, entre em contato em [support@datools.ai](mailto:support@datools.ai)."
+        "content": "Se você tiver dúvidas sobre estes Termos, entre em contato em support@datools.org."
       },
       "acknowledgment": {
         "content": "Ao usar o DaTools, você reconhece que leu, entendeu e concorda com estes Termos de Serviço. Obrigado por escolher o DaTools!"
@@ -3180,7 +3180,7 @@
       "contact": {
         "title": "Contato",
         "content": "Se tiver dúvidas sobre esta Política de Cookies ou precisar de mais informações, fale conosco:",
-        "email": "E-mail: [support@datools.ai](mailto:support@datools.ai)"
+        "email": "E-mail: support@datools.org"
       },
       "consent": {
         "content": "Ao continuar usando nosso site, você concorda com o uso de cookies conforme esta Política."
@@ -3288,7 +3288,7 @@
           "current": false
         },
         {
-          "id": "pro",
+          "id": "professional",
           "name": "Professional",
           "price": 29,
           "period": "por mês",

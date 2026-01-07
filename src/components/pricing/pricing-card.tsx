@@ -10,7 +10,7 @@ import { usePayment } from "@/hooks/use-payment";
 import type { PricingCopy } from "@/i18n/components/pricing";
 import type { Locale } from "@/i18n/types";
 import Link from "next/link";
-import { useId, useState } from "react";
+import { useId, useMemo, useState } from "react";
 
 interface PricingCardProps {
   plan: PricingPlan;
@@ -59,7 +59,9 @@ export function PricingCard({
     }
 
     // 其他付费计划，调用支付接口
-    await createCheckout(plan.id, { period });
+    await createCheckout(plan.id, {
+      period,
+    });
   };
 
   const getCtaText = () => {
@@ -85,6 +87,21 @@ export function PricingCard({
           and: "and",
           checkbox: "I agree to the",
         };
+
+  const legalSummary = useMemo(() => {
+    return (
+      <>
+        {legalCopy.prefix}{" "}
+        <Link className="underline underline-offset-4" href={`${hrefPrefix}/terms`}>
+          {legalCopy.terms}
+        </Link>{" "}
+        {legalCopy.and}{" "}
+        <Link className="underline underline-offset-4" href={`${hrefPrefix}/refund-policy`}>
+          {legalCopy.refund}
+        </Link>
+      </>
+    );
+  }, [hrefPrefix, legalCopy]);
 
   return (
     <Card
@@ -221,27 +238,13 @@ export function PricingCard({
                 </p>
               ) : (
                 <p className="text-center text-xs text-muted-foreground">
-                  {legalCopy.prefix}{" "}
-                  <Link className="underline underline-offset-4" href={`${hrefPrefix}/terms`}>
-                    {legalCopy.terms}
-                  </Link>{" "}
-                  {legalCopy.and}{" "}
-                  <Link className="underline underline-offset-4" href={`${hrefPrefix}/refund-policy`}>
-                    {legalCopy.refund}
-                  </Link>
+                  {legalSummary}
                 </p>
               )}
             </div>
           ) : plan.id !== "free" ? (
             <p className="text-center text-xs text-muted-foreground">
-              {legalCopy.prefix}{" "}
-              <Link className="underline underline-offset-4" href={`${hrefPrefix}/terms`}>
-                {legalCopy.terms}
-              </Link>{" "}
-              {legalCopy.and}{" "}
-              <Link className="underline underline-offset-4" href={`${hrefPrefix}/refund-policy`}>
-                {legalCopy.refund}
-              </Link>
+              {legalSummary}
             </p>
           ) : null}
         </div>

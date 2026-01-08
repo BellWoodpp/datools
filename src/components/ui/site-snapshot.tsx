@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { WsrvImage } from "@/components/WsrvImage";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
@@ -106,14 +106,15 @@ export function SiteSnapshot({
               : fallbackText}
           </div>
         ) : (
-          <Image
+          <WsrvImage
             src={snapshotSrc}
             alt={title}
-            fill
-            className="object-cover"
+            layout="fullWidth"
+            aspectRatio={16 / 9}
+            unstyled
+            className="absolute inset-0 h-full w-full object-cover"
             sizes="(min-width: 1024px) 896px, 100vw"
             loading="lazy"
-            unoptimized
             onError={() => setErrored(true)}
           />
         )}

@@ -1,6 +1,6 @@
 'use client'
 
-import Image from "next/image";
+import { WsrvImage } from "@/components/WsrvImage";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -76,24 +76,26 @@ export function ToolCard({
       typeof primaryLogo === "string" &&
       /thoughtspot/i.test(primaryLogo);
 
-    if (logoSrc && !logoError) {
-      return (
-        <div
-          className={`relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-lg border border-[#1e5bff]/40 ${
-            needsLightBg ? "bg-white" : "bg-[#0f1f3f]"
-          }`}
-        >
-          <Image
-            src={logoSrc}
-            alt={tool.name}
-            fill
-            sizes="36px"
-            className="object-contain p-1.5"
-            unoptimized
-            onError={() => {
-              // 失败时切换到默认图，默认图再失败则用内置 SVG
-              if (logoSrc !== defaultLogo) {
-                setLogoError(true);
+	    if (logoSrc && !logoError) {
+	      return (
+	        <div
+	          className={`relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-lg border border-[#1e5bff]/40 ${
+	            needsLightBg ? "bg-white" : "bg-[#0f1f3f]"
+	          }`}
+	        >
+	          <WsrvImage
+	            src={logoSrc}
+	            alt={tool.name}
+	            width={36}
+	            height={36}
+	            layout="fixed"
+	            sizes="36px"
+	            unstyled
+	            className="absolute inset-0 h-full w-full object-contain p-1.5"
+	            onError={() => {
+	              // 失败时切换到默认图，默认图再失败则用内置 SVG
+	              if (logoSrc !== defaultLogo) {
+	                setLogoError(true);
                 return;
               }
               setFallbackError(true);
@@ -261,7 +263,7 @@ export function ToolCard({
   };
 
   return (
-    <Card
+	    <Card
       role="button"
       tabIndex={0}
       onClick={handleNavigateDetail}
@@ -273,19 +275,20 @@ export function ToolCard({
       }}
       className="overflow-hidden border border-[#1e5bff]/30 bg-[#0b162e]/90 shadow-[0_15px_40px_-18px_rgba(30,91,255,0.65)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(18,194,233,0.7)] focus:outline-none focus:ring-2 focus:ring-[#1e5bff]/60 focus:ring-offset-2 focus:ring-offset-[#0b162e] cursor-pointer"
     >
-      {tool.image ? (
-        <div className="relative h-40 w-full bg-neutral-100 dark:bg-neutral-900">
-          <Image
-            src={tool.image}
-            alt={tool.name}
-            fill
-            sizes="(min-width: 1024px) 33vw, 100vw"
-            className="object-cover"
-            priority={false}
-            unoptimized
-          />
-        </div>
-      ) : null}
+	      {tool.image ? (
+	        <div className="relative h-40 w-full bg-neutral-100 dark:bg-neutral-900">
+	          <WsrvImage
+	            src={tool.image}
+	            alt={tool.name}
+	            layout="fullWidth"
+	            aspectRatio={16 / 9}
+	            unstyled
+	            sizes="(min-width: 1024px) 33vw, 100vw"
+	            className="absolute inset-0 h-full w-full object-cover"
+	            loading="lazy"
+	          />
+	        </div>
+	      ) : null}
       <CardHeader className="space-y-2">
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-start gap-3">

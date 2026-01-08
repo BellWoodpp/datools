@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { WsrvImage } from "@/components/WsrvImage";
 import { useState } from "react";
 import { LanguageSwitcher } from "./language-switcher";
 import { UserMenu } from "./user-menu";
@@ -52,14 +52,14 @@ export function Header() {
         {/* 首页图标 */}
         <div className="flex items-center flex-1">
           <Link href={locale === 'en' ? '/' : `/${locale}/`} className="flex items-center space-x-2">
-            <Image
+            <WsrvImage
               src="https://r2.datools.org/data-a-tools.webp"
               alt="DaTools"
               width={40}
               height={40}
               className="h-10 w-10 rounded-lg object-cover"
               priority
-              unoptimized
+              layout="fixed"
             />
             <span className="text-xl font-bold bg-gradient-to-r from-[#12c2e9] via-[#1e5bff] to-[#f8a13c] bg-clip-text text-transparent">
               DaTools

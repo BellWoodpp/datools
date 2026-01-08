@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
-import Image from "next/image";
+import { WsrvImage } from "@/components/WsrvImage";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { User, Mail, Calendar, Shield } from "lucide-react";
@@ -56,13 +56,13 @@ export default async function ProfileRootPage() {
               <div className="flex items-center gap-3">
                 <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
                   {user.image ? (
-                    <Image
+                    <WsrvImage
                       src={user.image}
                       alt={user.name || user.email || "User"}
                       width={48}
                       height={48}
                       className="h-12 w-12 rounded-full object-cover"
-                      unoptimized
+                      layout="fixed"
                     />
                   ) : (
                     <span className="text-white font-semibold text-lg">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getDictionary, defaultLocale } from "@/i18n";
-import { buildCanonicalPath } from "@/lib/seo";
+import { buildCanonicalPath, buildCanonicalUrl } from "@/lib/seo";
 
 const dictionary = getDictionary(defaultLocale);
 
@@ -31,20 +31,20 @@ export default function DataAnalysisToolsPage() {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: buildCanonicalPath(),
+      item: buildCanonicalUrl(),
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Data Analysis Tools",
-      item: buildCanonicalPath(undefined, "data-analysis-tools"),
+      item: buildCanonicalUrl(undefined, "data-analysis-tools"),
     },
   ];
   const itemList = tools.map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.name,
-    url: buildCanonicalPath(undefined, tool.link?.replace(/^\//, "") ?? ""),
+    item: buildCanonicalUrl(undefined, tool.link?.replace(/^\//, "") ?? ""),
   }));
 
   return (

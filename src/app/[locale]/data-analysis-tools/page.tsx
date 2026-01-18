@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary, locales } from "@/i18n";
-import { buildCanonicalPath } from "@/lib/seo";
+import { buildCanonicalPath, buildCanonicalUrl } from "@/lib/seo";
 
 interface LocaleToolsPageProps {
   params: Promise<{
@@ -71,20 +71,20 @@ export default async function LocaleDataAnalysisToolsPage({ params }: LocaleTool
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: buildCanonicalPath(normalizedLocale),
+      item: buildCanonicalUrl(normalizedLocale),
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Data Analysis Tools",
-      item: buildCanonicalPath(normalizedLocale, "data-analysis-tools"),
+      item: buildCanonicalUrl(normalizedLocale, "data-analysis-tools"),
     },
   ];
   const itemList = tools.map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.name,
-    url: buildCanonicalPath(
+    item: buildCanonicalUrl(
       normalizedLocale,
       tool.link?.replace(/^\//, "") ?? ""
     ),

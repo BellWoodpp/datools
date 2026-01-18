@@ -102,7 +102,7 @@ export const auth = betterAuth({
   plugins: [
     nextCookies(),
     magicLink({
-      sendMagicLink: async ({ email, url, token }, ctx) => {
+      sendMagicLink: async ({ email, url, token }) => {
         const webhookUrl = process.env.MAGIC_LINK_WEBHOOK_URL;
 
         // 1) 可选 webhook：成功与否都记录，但不再阻断 Resend

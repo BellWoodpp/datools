@@ -22,21 +22,27 @@ const client = new OpenAI({
 
 const MODEL = process.env.OPENAI_TRANSLATE_MODEL || 'gpt-4o-mini';
 
-function readJson(filePath: string) {
-  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+type JsonValue = string | number | boolean | null | JsonValue[] | JsonObject;
+type JsonObject = { [key: string]: JsonValue };
+
+const isJsonObject = (value: JsonValue): value is JsonObject =>
+  Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+
+function readJson(filePath: string): JsonValue {
+  return JSON.parse(fs.readFileSync(filePath, 'utf8')) as JsonValue;
 }
 
-function writeJson(filePath: string, data: any) {
+function writeJson(filePath: string, data: JsonValue) {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
-function flatten(obj: any, prefix = ''): Record<string, string> {
+function flatten(obj: JsonValue, prefix = ''): Record<string, string> {
   const out: Record<string, string> = {};
   if (Array.isArray(obj)) {
     obj.forEach((item, idx) => {
       Object.assign(out, flatten(item, `${prefix}${idx}.`));
     });
-  } else if (obj && typeof obj === 'object') {
+  } else if (isJsonObject(obj)) {
     for (const [k, v] of Object.entries(obj)) {
       Object.assign(out, flatten(v, prefix ? `${prefix}${k}.` : `${k}.`));
     }
@@ -46,18 +52,18 @@ function flatten(obj: any, prefix = ''): Record<string, string> {
   return out;
 }
 
-function unflatten(flat: Record<string, string>) {
-  const root: any = {};
+function unflatten(flat: Record<string, string>): JsonObject {
+  const root: JsonObject = {};
   for (const [key, value] of Object.entries(flat)) {
     const parts = key.split('.');
-    let cur = root;
+    let cur: JsonObject = root;
     parts.forEach((part, idx) => {
       const isLast = idx === parts.length - 1;
       if (isLast) {
         cur[part] = value;
       } else {
-        if (!cur[part]) cur[part] = {};
-        cur = cur[part];
+        if (!isJsonObject(cur[part])) cur[part] = {};
+        cur = cur[part] as JsonObject;
       }
     });
   }
@@ -107,7 +113,7 @@ async function main() {
     process.exit(1);
   }
   const source = readJson(sourcePath);
-  const target = fs.existsSync(targetPath) ? readJson(targetPath) : {};
+  const target = fs.existsSync(targetPath) ? readJson(targetPath) : ({} as JsonObject);
 
   const flatSource = flatten(source);
   const flatTarget = flatten(target);
@@ -147,8 +153,8 @@ async function main() {
     let translated: Record<string, string> = {};
     try {
       translated = parseJsonLoose(translatedJson);
-    } catch (e) {
-      console.error('Failed to parse translation result, raw output:', translatedJson);
+    } catch (error) {
+      console.error('Failed to parse translation result, raw output:', translatedJson, error);
       process.exit(1);
     }
     for (const [k, v] of Object.entries(translated)) {

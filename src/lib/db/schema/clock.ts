@@ -1,5 +1,5 @@
 // schema.ts 最后加上这段
-import { pgTable, bigint, timestamp, index } from 'drizzle-orm/pg-core';
+import { pgTable, bigint, timestamp } from 'drizzle-orm/pg-core';
 
 // 验证码冷却表（防刷新、防多设备）
 export const verificationCooldown = pgTable(

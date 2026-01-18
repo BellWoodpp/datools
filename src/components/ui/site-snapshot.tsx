@@ -29,13 +29,19 @@ export function SiteSnapshot({
 
   useEffect(() => {
     if (!validUrl) {
-      setSnapshotSrc(null);
+      queueMicrotask(() => {
+        setSnapshotSrc(null);
+        setLoading(false);
+        setErrored(false);
+      });
       return;
     }
 
     const controller = new AbortController();
-    setLoading(true);
-    setErrored(false);
+    queueMicrotask(() => {
+      setLoading(true);
+      setErrored(false);
+    });
 
     fetch(`/api/snapshot?url=${encodeURIComponent(url)}&w=1200&h=675&locale=${encodeURIComponent(locale)}`, {
       signal: controller.signal,
@@ -65,7 +71,7 @@ export function SiteSnapshot({
         setSnapshotSrc(null);
         setErrored(true);
       })
-      .finally(() => setLoading(false));
+      .finally(() => queueMicrotask(() => setLoading(false)));
 
     return () => controller.abort();
   }, [locale, url, validUrl]);

@@ -2,11 +2,13 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-function readJson(filePath: string) {
-  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+type JsonValue = string | number | boolean | null | JsonValue[] | { [key: string]: JsonValue };
+
+function readJson(filePath: string): JsonValue {
+  return JSON.parse(fs.readFileSync(filePath, 'utf8')) as JsonValue;
 }
 
-function writeJson(filePath: string, data: any) {
+function writeJson(filePath: string, data: JsonValue) {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 

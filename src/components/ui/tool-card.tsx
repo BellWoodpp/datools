@@ -125,22 +125,28 @@ export function ToolCard({
     | { status: "not_configured"; message: string }
     | { status: "error"; message: string };
 
-  const [traffic, setTraffic] = useState<TrafficState>({ status: "loading" });
+  const [trafficSnapshot, setTrafficSnapshot] = useState<{ key: string; state: TrafficState } | null>(null);
   const trafficUrl = useMemo(() => (isExternal ? officialHref : null), [isExternal, officialHref]);
+  const trafficKey = useMemo(() => {
+    if (!isAuthenticated) return null;
+    if (!trafficUrl || trafficUrl === "#") return null;
+    return `${trafficUrl}|${locale}`;
+  }, [isAuthenticated, trafficUrl, locale]);
+  const trafficState = useMemo<TrafficState>(() => {
+    if (!isAuthenticated) return { status: "unauth" };
+    if (!trafficUrl || trafficUrl === "#") return { status: "error", message: "no url" };
+    if (!trafficKey) return { status: "error", message: "no url" };
+    if (!trafficSnapshot || trafficSnapshot.key !== trafficKey) return { status: "loading" };
+    return trafficSnapshot.state;
+  }, [isAuthenticated, trafficKey, trafficSnapshot, trafficUrl]);
 
   useEffect(() => {
-    if (!isAuthenticated) {
-      setTraffic({ status: "unauth" });
-      return;
-    }
-
-    if (!trafficUrl || trafficUrl === "#") {
-      setTraffic({ status: "error", message: "no url" });
-      return;
-    }
+    if (!trafficKey || !trafficUrl) return;
 
     const controller = new AbortController();
-    setTraffic({ status: "loading" });
+    const applyState = (state: TrafficState) => {
+      setTrafficSnapshot({ key: trafficKey, state });
+    };
 
     fetch(`/api/traffic?url=${encodeURIComponent(trafficUrl)}&locale=${encodeURIComponent(locale)}`, {
       signal: controller.signal,
@@ -165,59 +171,59 @@ export function ToolCard({
 
         if (!res.ok) {
           if (res.status === 401) {
-            setTraffic({ status: "unauth" });
+            applyState({ status: "unauth" });
             return;
           }
           if (res.status === 402) {
-            setTraffic({ status: "locked", productId: payload?.productId ?? "professional" });
+            applyState({ status: "locked", productId: payload?.productId ?? "professional" });
             return;
           }
-          setTraffic({ status: "error", message: payload?.message ?? "load failed" });
+          applyState({ status: "error", message: payload?.message ?? "load failed" });
           return;
         }
 
         const data = payload?.data;
         if (!data || !data.status) {
-          setTraffic({ status: "error", message: "invalid data" });
+          applyState({ status: "error", message: "invalid data" });
           return;
         }
 
         if (data.status === "available" && typeof data.visits === "number") {
-          setTraffic({ status: "available", label: `${data.visits.toLocaleString(locale)} ${trafficPerMonthSuffix}` });
+          applyState({ status: "available", label: `${data.visits.toLocaleString(locale)} ${trafficPerMonthSuffix}` });
           return;
         }
 
         if (data.status === "not_configured") {
-          setTraffic({ status: "not_configured", message: data.message ?? "not configured" });
+          applyState({ status: "not_configured", message: data.message ?? "not configured" });
           return;
         }
 
-        setTraffic({ status: "error", message: data.message ?? "unknown status" });
+        applyState({ status: "error", message: data.message ?? "unknown status" });
       })
       .catch((error) => {
         if (error instanceof DOMException && error.name === "AbortError") return;
-        setTraffic({ status: "error", message: (error as Error)?.message ?? "load failed" });
+        applyState({ status: "error", message: (error as Error)?.message ?? "load failed" });
       });
 
     return () => controller.abort();
-  }, [trafficUrl, isAuthenticated]);
+  }, [trafficKey, trafficPerMonthSuffix, trafficUrl, locale]);
 
   const handleTrafficClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     e.stopPropagation();
 
-    if (traffic.status === "unauth") {
+    if (trafficState.status === "unauth") {
       router.push(loginHref);
       return;
     }
 
-    if (traffic.status === "locked") {
-      await createCheckout(traffic.productId, { period: "monthly", locale });
+    if (trafficState.status === "locked") {
+      await createCheckout(trafficState.productId, { period: "monthly", locale });
       return;
     }
 
-    if (trafficUrl) {
-      setTraffic({ status: "loading" });
+    if (trafficUrl && trafficKey) {
+      setTrafficSnapshot({ key: trafficKey, state: { status: "loading" } });
       const controller = new AbortController();
       fetch(`/api/traffic?url=${encodeURIComponent(trafficUrl)}&locale=${encodeURIComponent(locale)}`, { signal: controller.signal })
         .then(async (res) => {
@@ -236,29 +242,29 @@ export function ToolCard({
 
           if (!res.ok) {
             if (res.status === 401) {
-              setTraffic({ status: "unauth" });
+              setTrafficSnapshot({ key: trafficKey, state: { status: "unauth" } });
               return;
             }
             if (res.status === 402) {
-              setTraffic({ status: "locked", productId: payload?.productId ?? "professional" });
+              setTrafficSnapshot({ key: trafficKey, state: { status: "locked", productId: payload?.productId ?? "professional" } });
               return;
             }
-            setTraffic({ status: "error", message: payload?.message ?? "load failed" });
+            setTrafficSnapshot({ key: trafficKey, state: { status: "error", message: payload?.message ?? "load failed" } });
             return;
           }
 
           const data = payload?.data;
           if (data?.status === "available" && typeof data.visits === "number") {
-            setTraffic({ status: "available", label: `${data.visits.toLocaleString(locale)} ${trafficPerMonthSuffix}` });
+            setTrafficSnapshot({ key: trafficKey, state: { status: "available", label: `${data.visits.toLocaleString(locale)} ${trafficPerMonthSuffix}` } });
             return;
           }
           if (data?.status === "not_configured") {
-            setTraffic({ status: "not_configured", message: data.message ?? "not configured" });
+            setTrafficSnapshot({ key: trafficKey, state: { status: "not_configured", message: data.message ?? "not configured" } });
             return;
           }
-          setTraffic({ status: "error", message: data?.message ?? "unknown status" });
+          setTrafficSnapshot({ key: trafficKey, state: { status: "error", message: data?.message ?? "unknown status" } });
         })
-        .catch(() => setTraffic({ status: "error", message: "load failed" }));
+        .catch(() => setTrafficSnapshot({ key: trafficKey, state: { status: "error", message: "load failed" } }));
     }
   };
 
@@ -322,30 +328,30 @@ export function ToolCard({
               className="group inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-semibold text-slate-200/90 transition hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-[#1e5bff]/60 focus:ring-offset-2 focus:ring-offset-[#0b162e] disabled:opacity-60"
               aria-label={trafficLabel}
               title={
-                traffic.status === "not_configured"
-                  ? traffic.message
-                : traffic.status === "error"
-                    ? traffic.message
+                trafficState.status === "not_configured"
+                  ? trafficState.message
+                : trafficState.status === "error"
+                    ? trafficState.message
                     : undefined
               }
             >
               <TrendingUp className="h-3.5 w-3.5 text-[#12c2e9]" />
               <span className="text-slate-300">{trafficLabel}</span>
-              {traffic.status === "loading" ? (
+              {trafficState.status === "loading" ? (
                 <span className="text-slate-400">…</span>
-              ) : traffic.status === "available" ? (
-                <span className="text-[#f8a13c]">{traffic.label}</span>
-              ) : traffic.status === "unauth" ? (
+              ) : trafficState.status === "available" ? (
+                <span className="text-[#f8a13c]">{trafficState.label}</span>
+              ) : trafficState.status === "unauth" ? (
                 <span className="inline-flex items-center gap-1 text-slate-400">
                   <Lock className="h-3.5 w-3.5" />
                   {trafficLoginUnlockLabel}
                 </span>
-              ) : traffic.status === "locked" ? (
+              ) : trafficState.status === "locked" ? (
                 <span className="inline-flex items-center gap-1 text-slate-400">
                   <Lock className="h-3.5 w-3.5" />
                   {trafficUpgradeUnlockLabel}
                 </span>
-              ) : traffic.status === "not_configured" ? (
+              ) : trafficState.status === "not_configured" ? (
                 <span className="text-slate-400">{trafficNotConfiguredLabel}</span>
               ) : (
                 <span className="text-slate-400">—</span>

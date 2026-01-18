@@ -21,7 +21,7 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
   const [oauthError, setOauthError] = useState<string | null>(null);
   const [magicEmail, setMagicEmail] = useState("");
   const [magicStatus, setMagicStatus] = useState<
-    "idle" | "sending" | "sent" | "error"
+    "idle" | "sending" | "success" | "error"
   >("idle");
   const [magicMessage, setMagicMessage] = useState<string | null>(null);
 
@@ -147,6 +147,7 @@ export function AuthPanel({ dictionary }: AuthPanelProps) {
                 <MagicLinkButton
                   dictionary={dictionary}
                   magicEmail={magicEmail}
+                  setMagicStatus={setMagicStatus}
                   setMagicMessage={setMagicMessage}
                 />
               </form>

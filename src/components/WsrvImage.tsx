@@ -2,9 +2,11 @@ import { Image, type ImageProps } from "@unpic/react";
 
 type DistributiveOmit<T, K extends PropertyKey> = T extends unknown ? Omit<T, K> : never;
 
-type WsrvImageProps = DistributiveOmit<ImageProps, "cdn" | "fallback">;
+type WsrvImageProps = DistributiveOmit<ImageProps, "cdn" | "fallback" | "alt"> & {
+  alt: string;
+};
 
-export function WsrvImage({ operations, ...props }: WsrvImageProps) {
+export function WsrvImage({ operations, alt, ...props }: WsrvImageProps) {
   const layout = props.layout ?? "constrained";
   const breakpoints =
     props.breakpoints ??
@@ -25,6 +27,7 @@ export function WsrvImage({ operations, ...props }: WsrvImageProps) {
   return (
     <Image
       cdn="wsrv"
+      alt={alt}
       operations={{
         ...operations,
         wsrv: { q: 75, we: true, ...(operations?.wsrv ?? {}) },

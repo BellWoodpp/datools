@@ -71,22 +71,25 @@ export function PricingCard({
   };
 
   const hrefPrefix = locale === "en" ? "" : `/${locale}`;
-  const legalCopy =
-    locale === "zh"
-      ? {
-          prefix: "购买即表示同意",
-          terms: "服务条款",
-          refund: "退款政策",
-          and: "和",
-          checkbox: "我已阅读并同意",
-        }
-      : {
-          prefix: "By purchasing, you agree to the",
-          terms: "Terms of Service",
-          refund: "Refund Policy",
-          and: "and",
-          checkbox: "I agree to the",
-        };
+  const legalCopy = useMemo(
+    () =>
+      locale === "zh"
+        ? {
+            prefix: "购买即表示同意",
+            terms: "服务条款",
+            refund: "退款政策",
+            and: "和",
+            checkbox: "我已阅读并同意",
+          }
+        : {
+            prefix: "By purchasing, you agree to the",
+            terms: "Terms of Service",
+            refund: "Refund Policy",
+            and: "and",
+            checkbox: "I agree to the",
+          },
+    [locale],
+  );
 
   const legalSummary = useMemo(() => {
     return (

@@ -126,10 +126,11 @@ export default function MagicLinkButton({
     setMagicMessage?.("魔法链接已发送，请查收邮件！");
     // 可选：成功提示
     // toast.success("魔法链接已发送！");
-  } catch (err: any) {
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "发送失败，请稍后重试";
     setMagicStatus?.("error");
-    setMagicMessage?.(err.message || "发送失败，请稍后重试");
-    console.error(err);
+    setMagicMessage?.(message || "发送失败，请稍后重试");
+    console.error(error);
   } finally {
     setIsPending(false);
     // 成功 or 失败都开始倒计时，防止刷接口

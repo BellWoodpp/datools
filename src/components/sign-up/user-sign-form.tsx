@@ -121,7 +121,7 @@ export default function UserSignForm({ locale = "en" }: UserSignFormProps) {
           throw new Error(data.error || "验证邮件发送失败，请稍后重试。");
         }
         setMessage("注册成功，验证邮件已发送到您的邮箱，请打开邮件中的链接完成登录。");
-      } catch (mailErr) {
+      } catch {
         setMessage(
           "注册成功，但发送验证邮件失败，请稍后在登录页使用邮箱获取魔法链接。",
         );

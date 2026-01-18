@@ -18,19 +18,18 @@ interface ThemeSwitcherProps {
 }
 
 export function ThemeSwitcher({ dictionary }: ThemeSwitcherProps) {
-  const [theme, setTheme] = useState<Theme>("system");
-
-  useEffect(() => {
-    // 从localStorage读取保存的主题设置
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === "undefined") return "system";
     try {
       const savedTheme = localStorage.getItem("theme") as Theme;
       if (savedTheme && ["light", "dark", "system"].includes(savedTheme)) {
-        setTheme(savedTheme);
+        return savedTheme;
       }
     } catch (error) {
       console.error('Error reading theme from localStorage:', error);
     }
-  }, []);
+    return "system";
+  });
 
   useEffect(() => {
     try {

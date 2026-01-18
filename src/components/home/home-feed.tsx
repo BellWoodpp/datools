@@ -223,7 +223,7 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   const { replace } = useRouter();
   const { locale } = useLocale();
   const query = (searchParams.get("query") ?? "").toLowerCase().trim();
-  const [activeCategory, setActiveCategory] = useState<string | null>(() => searchParams.get("category"));
+  const activeCategory = searchParams.get("category");
   const [showSkeleton, setShowSkeleton] = useState(false);
   const [isPending, startTransition] = useTransition();
 
@@ -274,7 +274,6 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
 
   const handleCategoryChange = (category: string | null) => {
     startTransition(() => {
-      setActiveCategory(category);
       // 切换分类时清空搜索词并回到第一页，避免 query + page 残留导致列表为空
       const params = new URLSearchParams(searchParams);
       if (params.has("query")) params.delete("query");
@@ -358,21 +357,17 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   }, []);
 
   useEffect(() => {
-    // 同步 URL 上的 category 参数到状态，保证返回时保留选择
-    const urlCategory = searchParams.get("category");
-    setActiveCategory(urlCategory);
-
     let timer: NodeJS.Timeout | undefined;
     if (isPending) {
       // 仅在加载感知明显时才显示骨架，避免强制延迟
       timer = setTimeout(() => setShowSkeleton(true), 350);
     } else {
-      setShowSkeleton(false);
+      queueMicrotask(() => setShowSkeleton(false));
     }
     return () => {
       if (timer) clearTimeout(timer);
     };
-  }, [isPending, searchParams]);
+  }, [isPending]);
 
   const renderSkeletons = () =>
     Array.from({ length: PAGE_SIZE }).map((_, idx) => (

@@ -11,3 +11,8 @@ export function buildCanonicalPath(locale?: Locale, ...segments: string[]): stri
   const path = [localeSegment, ...normalizedSegments].filter(Boolean).join("/");
   return path ? `/${path}` : "/";
 }
+
+export function buildCanonicalUrl(locale?: Locale, ...segments: string[]): string {
+  const path = buildCanonicalPath(locale, ...segments);
+  return new URL(path, metadataBase).toString();
+}

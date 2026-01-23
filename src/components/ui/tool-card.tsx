@@ -218,7 +218,7 @@ export function ToolCard({
     }
 
     if (trafficState.status === "locked") {
-      await createCheckout(trafficState.productId, { period: "monthly", locale });
+      await createCheckout(trafficState.productId, "monthly", locale);
       return;
     }
 

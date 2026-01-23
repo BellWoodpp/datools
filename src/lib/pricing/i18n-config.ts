@@ -1,6 +1,6 @@
 /**
  * 国际化价格配置文件
- * 支持一次性付费、按月付费、按年付费
+ * 支持订阅（月付/年付）与单次支付（积分充值）
  */
 
 import { type Locale } from "@/i18n/types";
@@ -16,15 +16,18 @@ export interface PricingPlan {
   features: string[];
   limitations?: string[];
   popular?: boolean;
-  pricing: {
-    [K in PricingPeriod]: {
-      price: number;
-      currency: string;
-      period: string;
-      originalPrice?: number; // 用于显示折扣
-      discount?: number; // 折扣百分比
-    };
-  };
+  pricing: Partial<
+    Record<
+      PricingPeriod,
+      {
+        price: number;
+        currency: string;
+        period: string;
+        originalPrice?: number; // 用于显示折扣
+        discount?: number; // 折扣百分比
+      }
+    >
+  >;
 }
 
 export interface PricingConfig {
@@ -42,11 +45,11 @@ export interface PricingConfig {
 // 国际化价格配置
 export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
   zh: {
-    currency: 'CNY',
+    currency: 'USD',
     billingCycles: {
       'one-time': {
-        label: '一次性付费',
-        description: '永久使用，无需续费'
+        label: '单次支付',
+        description: '一次性支付（用于积分充值）'
       },
       'monthly': {
         label: '按月付费',
@@ -61,30 +64,32 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'free',
         name: '免费版',
-        description: '适合个人使用与轻度检索',
+        description: '适合体验 RTVox 的标准音色与基础功能',
         features: [
-          '浏览工具目录与详情页',
-          '基础搜索与筛选',
-          '登录后解锁基础功能'
+          '标准音色（Standard）',
+          '语气/语速/音量基础控制',
+          'MP3 导出与分享',
+          '生成历史记录'
         ],
         limitations: [
-          '不包含访问量等高级数据'
+          '高级音色（WaveNet/Neural2/Chirp3-HD/Studio）需付费会员',
+          '语音克隆仅对付费会员开放（功能开启时）'
         ],
         popular: false,
         pricing: {
           'one-time': {
             price: 0,
-            currency: 'CNY',
+            currency: 'USD',
             period: '永久免费'
           },
           'monthly': {
             price: 0,
-            currency: 'CNY',
+            currency: 'USD',
             period: '永久免费'
           },
           'yearly': {
             price: 0,
-            currency: 'CNY',
+            currency: 'USD',
             period: '永久免费'
           }
         }
@@ -92,65 +97,65 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'professional',
         name: '专业版',
-        description: '解锁访问量等高级数据（第三方估算）',
+        description: '适合创作者与团队，解锁高级音色与更高质量',
         features: [
-          '访问量数据解锁（估算值，可能无数据）',
-          '更高的查询与使用额度',
-          '邮件支持'
+          '包含免费版全部功能',
+          '解锁高级音色：WaveNet / Neural2 / Chirp3-HD / Studio',
+          '[[pro_tokens]] [[coins]]',
+          '专属会员样式（徽章/身份标识） [[crown]]',
+          '可商用使用',
+          '优先支持（邮件）'
         ],
         limitations: [],
         popular: true,
         pricing: {
-          'one-time': {
-            price: 299,
-            currency: 'CNY',
-            period: '一次性付费'
-          },
           'monthly': {
-            price: 39,
-            currency: 'CNY',
+            price: 6,
+            currency: 'USD',
             period: '每月'
           },
           'yearly': {
-            price: 374,
-            currency: 'CNY',
+            price: 58,
+            currency: 'USD',
             period: '每年',
-            originalPrice: 468,
+            originalPrice: 72,
             discount: 20
           }
         }
       },
       {
-        id: 'enterprise',
-        name: '企业版',
-        description: '适合团队与定制需求',
+        id: 'points',
+        name: '积分加油站',
+        description: '购买 Token（积分）用于语音生成，按量扣减，用完再充',
         features: [
-          '专业版所有功能',
-          '更高额度与定制数据需求',
-          '优先支持与对接'
+          '每 $3 增加 100,000 Tokens [[coins]]',
+          '多档位 Token（积分）包可选',
+          '适用于 Standard / 高级音色生成',
+          '可与会员叠加使用',
+          '查看余额与消耗明细'
         ],
-        limitations: [],
+        limitations: [
+          '不包含高级音色解锁（高级音色需会员）'
+        ],
         popular: false,
         pricing: {
           'one-time': {
-            price: 999,
-            currency: 'CNY',
-            period: '一次性付费'
+            price: 3,
+            currency: 'USD',
+            period: '起'
           },
           'monthly': {
-            price: 129,
-            currency: 'CNY',
-            period: '每月'
+            price: 3,
+            currency: 'USD',
+            period: '起'
           },
           'yearly': {
-            price: 1238,
-            currency: 'CNY',
-            period: '每年',
-            originalPrice: 1548,
-            discount: 20
+            price: 3,
+            currency: 'USD',
+            period: '起'
           }
         }
-      }
+      },
     ]
   },
   en: {
@@ -158,7 +163,7 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
     billingCycles: {
       'one-time': {
         label: 'One-time Payment',
-        description: 'Pay once, use forever'
+        description: 'Single payment (credits top-up)'
       },
       'monthly': {
         label: 'Monthly',
@@ -173,14 +178,16 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'free',
         name: 'Free',
-        description: 'For casual browsing and basic research',
+        description: 'Try RTVox with Standard voices and essential controls',
         features: [
-          'Browse the tools directory and detail pages',
-          'Basic search and filters',
-          'Log in to access basic features'
+          'Standard voice tier',
+          'Tone/speed/volume basics',
+          'MP3 export & sharing',
+          'Generation history'
         ],
         limitations: [
-          'No access to traffic and other advanced data'
+          'Premium tiers (WaveNet/Neural2/Chirp3-HD/Studio) require paid membership',
+          'Voice cloning is paid-only (when enabled)'
         ],
         popular: false,
         pricing: {
@@ -204,73 +211,73 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'professional',
         name: 'Professional',
-        description: 'Unlock traffic and advanced data (third‑party estimates)',
+        description: 'Unlock premium voice tiers for creators and teams',
         features: [
-          'Traffic data unlocked (estimates; may be unavailable for some sites)',
-          'Higher usage limits',
-          'Email support'
+          'Everything in Free',
+          'Premium tiers: WaveNet / Neural2 / Chirp3-HD / Studio',
+          '[[pro_tokens]] [[coins]]',
+          'Exclusive member style [[crown]]',
+          'Commercial use',
+          'Priority email support'
         ],
         limitations: [],
         popular: true,
         pricing: {
-          'one-time': {
-            price: 49,
-            currency: 'USD',
-            period: 'One-time payment'
-          },
           'monthly': {
-            price: 9.99,
+            price: 6,
             currency: 'USD',
             period: 'per month'
           },
           'yearly': {
-            price: 95.88,
+            price: 58,
             currency: 'USD',
             period: 'per year',
-            originalPrice: 119.88,
+            originalPrice: 72,
             discount: 20
           }
         }
       },
       {
-        id: 'enterprise',
-        name: 'Enterprise',
-        description: 'For teams and custom needs',
+        id: 'points',
+        name: 'Credits Station',
+        description: 'Top up credits for speech generation. Pay as you go and refill anytime.',
         features: [
-          'All Professional features',
-          'Higher limits and custom data needs',
-          'Priority support and onboarding'
+          'Every $3 adds 100,000 Tokens [[coins]]',
+          'Multiple credit packs available',
+          'Works with Standard & premium voices',
+          'Can be used together with membership',
+          'Track balance and usage history'
         ],
-        limitations: [],
+        limitations: [
+          'Does not unlock premium voice tiers (membership required)'
+        ],
         popular: false,
         pricing: {
           'one-time': {
-            price: 199,
+            price: 3,
             currency: 'USD',
-            period: 'One-time payment'
+            period: '+'
           },
           'monthly': {
-            price: 19,
+            price: 3,
             currency: 'USD',
-            period: 'per month'
+            period: '+'
           },
           'yearly': {
-            price: 182,
+            price: 3,
             currency: 'USD',
-            period: 'per year',
-            originalPrice: 228,
-            discount: 20
+            period: '+'
           }
         }
-      }
+      },
     ]
   },
   ja: {
-    currency: 'JPY',
+    currency: 'USD',
     billingCycles: {
       'one-time': {
         label: '一回払い',
-        description: '一度支払えば永久に利用可能'
+        description: '単発の支払い（クレジットチャージ用）'
       },
       'monthly': {
         label: '月払い',
@@ -285,34 +292,32 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'free',
         name: '無料版',
-        description: '個人開発者や小規模プロジェクトに最適',
+        description: 'RTVoxを標準音声と基本機能でお試し',
         features: [
-          '基本的なNext.jsテンプレート',
-          'GitHub統合',
-          'コミュニティサポート',
-          '基本ドキュメント',
-          '個人利用ライセンス'
+          '標準音声（Standard）',
+          'トーン/速度/音量の基本調整',
+          'MP3書き出し・共有',
+          '生成履歴'
         ],
         limitations: [
-          '商用利用不可',
-          '技術サポートなし',
-          '機能制限あり'
+          'プレミアム音声（WaveNet/Neural2/Chirp3-HD/Studio）は有料',
+          '音声クローンは有料（機能有効時）'
         ],
         popular: false,
         pricing: {
           'one-time': {
             price: 0,
-            currency: 'JPY',
+            currency: 'USD',
             period: '永久無料'
           },
           'monthly': {
             price: 0,
-            currency: 'JPY',
+            currency: 'USD',
             period: '永久無料'
           },
           'yearly': {
             price: 0,
-            currency: 'JPY',
+            currency: 'USD',
             period: '永久無料'
           }
         }
@@ -320,973 +325,65 @@ export const pricingConfigs: Partial<Record<Locale, PricingConfig>> = {
       {
         id: 'professional',
         name: 'プロフェッショナル版',
-        description: 'スタートアップや中小企業に最適',
+        description: 'プレミアム音声ティアを解放し、高品質な読み上げに',
         features: [
-          '完全な機能テンプレート',
-          '認証システム',
-          '決済統合',
-          'データベース設定',
-          'AI統合',
-          'ワンクリックデプロイ',
-          'メールサポート',
-          '商用利用ライセンス',
-          'ソースコードアクセス'
+          '無料版のすべて',
+          'プレミアム音声：WaveNet / Neural2 / Chirp3-HD / Studio',
+          '毎月 200,000 トークン付与 [[coins]]',
+          '会員限定スタイル（バッジ/表示） [[crown]]',
+          '商用利用',
+          '優先サポート（メール）'
         ],
         limitations: [],
         popular: true,
         pricing: {
-          'one-time': {
-            price: 7200,
-            currency: 'JPY',
-            period: '一回払い'
-          },
           'monthly': {
-            price: 900,
-            currency: 'JPY',
+            price: 6,
+            currency: 'USD',
             period: '月額'
           },
           'yearly': {
-            price: 8640,
-            currency: 'JPY',
+            price: 58,
+            currency: 'USD',
             period: '年額',
-            originalPrice: 10800,
+            originalPrice: 72,
             discount: 20
           }
         }
       },
       {
-        id: 'enterprise',
-        name: 'エンタープライズ版',
-        description: '大企業やチームに最適',
+        id: 'points',
+        name: 'ポイント補給所',
+        description: '音声生成に使えるクレジットをチャージ。使った分だけ消費し、いつでも追加できます。',
         features: [
-          'プロフェッショナル版の全機能',
-          '高度なAI機能',
-          'マルチテナントサポート',
-          '高度な分析',
-          '優先技術サポート',
-          'カスタム開発サービス',
-          'チームコラボレーション機能',
-          'SLA保証',
-          'トレーニングサービス'
-        ],
-        limitations: [],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 24000,
-            currency: 'JPY',
-            period: '一回払い'
-          },
-          'monthly': {
-            price: 2400,
-            currency: 'JPY',
-            period: '月額'
-          },
-          'yearly': {
-            price: 23040,
-            currency: 'JPY',
-            period: '年額',
-            originalPrice: 28800,
-            discount: 20
-          }
-        }
-      }
-    ]
-  },
-  es: {
-    currency: 'EUR',
-    billingCycles: {
-      'one-time': {
-        label: 'Pago único',
-        description: 'Paga una vez, úsalo para siempre'
-      },
-      'monthly': {
-        label: 'Mensual',
-        description: 'Facturación flexible, cancela cuando quieras'
-      },
-      'yearly': {
-        label: 'Anual',
-        description: 'Ahorra un 20% con pago anual'
-      }
-    },
-    plans: [
-      {
-        id: 'free',
-        name: 'Gratis',
-        description: 'Perfecto para desarrolladores individuales y proyectos pequeños',
-        features: [
-          'Plantillas básicas de Next.js',
-          'Integración con GitHub',
-          'Soporte de la comunidad',
-          'Documentación básica',
-          'Licencia de uso personal'
+          '$3 ごとに 100,000 トークン追加 [[coins]]',
+          '複数のクレジットパックを用意',
+          '標準/プレミアム音声の生成に対応',
+          '会員プランと併用可能',
+          '残高と利用履歴を確認'
         ],
         limitations: [
-          'Sin uso comercial',
-          'Sin soporte técnico',
-          'Funciones limitadas'
+          'プレミアム音声ティアの解放は含まれません（会員が必要）'
         ],
         popular: false,
         pricing: {
           'one-time': {
-            price: 0,
-            currency: 'EUR',
-            period: 'Para siempre'
+            price: 3,
+            currency: 'USD',
+            period: '〜'
           },
           'monthly': {
-            price: 0,
-            currency: 'EUR',
-            period: 'Para siempre'
+            price: 3,
+            currency: 'USD',
+            period: '〜'
           },
           'yearly': {
-            price: 0,
-            currency: 'EUR',
-            period: 'Para siempre'
+            price: 3,
+            currency: 'USD',
+            period: '〜'
           }
         }
       },
-      {
-        id: 'professional',
-        name: 'Profesional',
-        description: 'Perfecto para startups y pequeñas empresas',
-        features: [
-          'Plantillas con funciones completas',
-          'Sistema de autenticación',
-          'Integración de pagos',
-          'Configuración de base de datos',
-          'Integración de IA',
-          'Despliegue en un clic',
-          'Soporte por email',
-          'Licencia de uso comercial',
-          'Acceso al código fuente'
-        ],
-        limitations: [],
-        popular: true,
-        pricing: {
-          'one-time': {
-            price: 49,
-            currency: 'EUR',
-            period: 'Pago único'
-          },
-          'monthly': {
-            price: 9.99,
-            currency: 'EUR',
-            period: 'Mensual'
-          },
-          'yearly': {
-            price: 95.88,
-            currency: 'EUR',
-            period: 'Anual',
-            originalPrice: 119.88,
-            discount: 20
-          }
-        }
-      },
-      {
-        id: 'enterprise',
-        name: 'Enterprise',
-        description: 'Perfecto para grandes empresas y equipos',
-        features: [
-          'Todas las funciones de Profesional',
-          'Funciones avanzadas de IA',
-          'Soporte multi-tenant',
-          'Analítica avanzada',
-          'Soporte técnico prioritario',
-          'Servicios de desarrollo a medida',
-          'Colaboración en equipo',
-          'SLA garantizado',
-          'Servicios de formación'
-        ],
-        limitations: [],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 199,
-            currency: 'EUR',
-            period: 'Pago único'
-          },
-          'monthly': {
-            price: 19,
-            currency: 'EUR',
-            period: 'Mensual'
-          },
-          'yearly': {
-            price: 182,
-            currency: 'EUR',
-            period: 'Anual',
-            originalPrice: 228,
-            discount: 20
-          }
-        }
-      }
-    ]
-  },
-  de: {
-    currency: 'EUR',
-    billingCycles: {
-      'one-time': {
-        label: 'Einmalzahlung',
-        description: 'Einmal zahlen, für immer nutzen'
-      },
-      'monthly': {
-        label: 'Monatlich',
-        description: 'Flexibel, jederzeit kündbar'
-      },
-      'yearly': {
-        label: 'Jährlich',
-        description: 'Spare 20 % mit Jahresabrechnung'
-      }
-    },
-    plans: [
-      {
-        id: 'free',
-        name: 'Free',
-        description: 'Ideal für einzelne Entwickler:innen und kleine Projekte',
-        features: [
-          'Basis-Next.js-Vorlagen',
-          'GitHub-Integration',
-          'Community-Support',
-          'Basisdokumentation',
-          'Lizenz für private Nutzung'
-        ],
-        limitations: [
-          'Keine kommerzielle Nutzung',
-          'Kein technischer Support',
-          'Eingeschränkte Funktionen'
-        ],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 0,
-            currency: 'EUR',
-            period: 'Für immer'
-          },
-          'monthly': {
-            price: 0,
-            currency: 'EUR',
-            period: 'Für immer'
-          },
-          'yearly': {
-            price: 0,
-            currency: 'EUR',
-            period: 'Für immer'
-          }
-        }
-      },
-      {
-        id: 'professional',
-        name: 'Professional',
-        description: 'Ideal für Startups und kleine Unternehmen',
-        features: [
-          'Vollständige Feature-Vorlagen',
-          'Authentifizierungssystem',
-          'Zahlungsintegration',
-          'Datenbank-Setup',
-          'AI-Integration',
-          'One-Click-Deployment',
-          'E-Mail-Support',
-          'Kommerzielle Lizenz',
-          'Source-Code-Zugriff'
-        ],
-        limitations: [],
-        popular: true,
-        pricing: {
-          'one-time': {
-            price: 49,
-            currency: 'EUR',
-            period: 'Einmalzahlung'
-          },
-          'monthly': {
-            price: 9.99,
-            currency: 'EUR',
-            period: 'Monatlich'
-          },
-          'yearly': {
-            price: 95.88,
-            currency: 'EUR',
-            period: 'Jährlich',
-            originalPrice: 119.88,
-            discount: 20
-          }
-        }
-      },
-      {
-        id: 'enterprise',
-        name: 'Enterprise',
-        description: 'Ideal für Großunternehmen und Teams',
-        features: [
-          'Alle Professional-Features',
-          'Erweiterte AI-Funktionen',
-          'Multi-Tenant-Support',
-          'Erweiterte Analysen',
-          'Priorisierter technischer Support',
-          'Individuelle Entwicklungsservices',
-          'Team-Kollaboration',
-          'SLA-Garantie',
-          'Schulungen'
-        ],
-        limitations: [],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 199,
-            currency: 'EUR',
-            period: 'Einmalzahlung'
-          },
-          'monthly': {
-            price: 19,
-            currency: 'EUR',
-            period: 'Monatlich'
-          },
-          'yearly': {
-            price: 182,
-            currency: 'EUR',
-            period: 'Jährlich',
-            originalPrice: 228,
-            discount: 20
-          }
-        }
-      }
-    ]
-  },
-  fr: {
-    currency: 'EUR',
-    billingCycles: {
-      'one-time': {
-        label: 'Paiement unique',
-        description: 'Payez une fois, utilisez toujours'
-      },
-      'monthly': {
-        label: 'Mensuel',
-        description: 'Facturation flexible, résiliable à tout moment'
-      },
-      'yearly': {
-        label: 'Annuel',
-        description: 'Économisez 20 % avec la facturation annuelle'
-      }
-    },
-    plans: [
-      {
-        id: 'free',
-        name: 'Gratuit',
-        description: 'Idéal pour les développeurs individuels et les petits projets',
-        features: [
-          'Modèles Next.js de base',
-          'Intégration GitHub',
-          'Support communautaire',
-          'Documentation de base',
-          'Licence d’usage personnel'
-        ],
-        limitations: [
-          'Pas d’usage commercial',
-          'Pas de support technique',
-          'Fonctionnalités limitées'
-        ],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 0,
-            currency: 'EUR',
-            period: 'À vie'
-          },
-          'monthly': {
-            price: 0,
-            currency: 'EUR',
-            period: 'À vie'
-          },
-          'yearly': {
-            price: 0,
-            currency: 'EUR',
-            period: 'À vie'
-          }
-        }
-      },
-      {
-        id: 'professional',
-        name: 'Professionnel',
-        description: 'Parfait pour les startups et petites entreprises',
-        features: [
-          'Modèles complets',
-          'Système d’authentification',
-          'Intégration des paiements',
-          'Configuration de la base de données',
-          'Intégration IA',
-          'Déploiement en un clic',
-          'Support par e-mail',
-          'Licence d’usage commercial',
-          'Accès au code source'
-        ],
-        limitations: [],
-        popular: true,
-        pricing: {
-          'one-time': {
-            price: 49,
-            currency: 'EUR',
-            period: 'Paiement unique'
-          },
-          'monthly': {
-            price: 9.99,
-            currency: 'EUR',
-            period: 'Mensuel'
-          },
-          'yearly': {
-            price: 95.88,
-            currency: 'EUR',
-            period: 'Annuel',
-            originalPrice: 119.88,
-            discount: 20
-          }
-        }
-      },
-      {
-        id: 'enterprise',
-        name: 'Entreprise',
-        description: 'Idéal pour les grandes entreprises et équipes',
-        features: [
-          'Toutes les fonctionnalités Professionnel',
-          'Fonctionnalités IA avancées',
-          'Support multi-locataires',
-          'Analytique avancée',
-          'Support technique prioritaire',
-          'Services de développement sur mesure',
-          'Fonctionnalités de collaboration d’équipe',
-          'Garantie SLA',
-          'Services de formation'
-        ],
-        limitations: [],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 199,
-            currency: 'EUR',
-            period: 'Paiement unique'
-          },
-          'monthly': {
-            price: 19,
-            currency: 'EUR',
-            period: 'Mensuel'
-          },
-          'yearly': {
-            price: 182,
-            currency: 'EUR',
-            period: 'Annuel',
-            originalPrice: 228,
-            discount: 20
-          }
-        }
-      }
-    ]
-  },
-  pt: {
-    currency: 'BRL',
-    billingCycles: {
-      'one-time': {
-        label: 'Pagamento Único',
-        description: 'Pague uma vez, use para sempre'
-      },
-      'monthly': {
-        label: 'Mensal',
-        description: 'Cobrança flexível, cancele quando quiser'
-      },
-      'yearly': {
-        label: 'Anual',
-        description: 'Economize 20% no faturamento anual'
-      }
-    },
-    plans: [
-      {
-        id: 'free',
-        name: 'Gratuito',
-        description: 'Perfeito para desenvolvedores individuais e projetos pequenos',
-        features: [
-          'Templates básicos de Next.js',
-          'Integração com GitHub',
-          'Suporte da comunidade',
-          'Documentação básica',
-          'Licença para uso pessoal'
-        ],
-        limitations: [
-          'Sem uso comercial',
-          'Sem suporte técnico',
-          'Recursos limitados'
-        ],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 0,
-            currency: 'BRL',
-            period: 'Para sempre'
-          },
-          'monthly': {
-            price: 0,
-            currency: 'BRL',
-            period: 'Para sempre'
-          },
-          'yearly': {
-            price: 0,
-            currency: 'BRL',
-            period: 'Para sempre'
-          }
-        }
-      },
-      {
-        id: 'professional',
-        name: 'Professional',
-        description: 'Perfeito para startups e pequenos negócios',
-        features: [
-          'Templates com recursos completos',
-          'Sistema de autenticação',
-          'Integração de pagamentos',
-          'Configuração de banco de dados',
-          'Integração de IA',
-          'Deploy com um clique',
-          'Suporte por e-mail',
-          'Licença para uso comercial',
-          'Acesso ao código-fonte'
-        ],
-        limitations: [],
-        popular: true,
-        pricing: {
-          'one-time': {
-            price: 249,
-            currency: 'BRL',
-            period: 'Pagamento único'
-          },
-          'monthly': {
-            price: 30,
-            currency: 'BRL',
-            period: 'Mensal'
-          },
-          'yearly': {
-            price: 288,
-            currency: 'BRL',
-            period: 'Anual',
-            originalPrice: 360,
-            discount: 20
-          }
-        }
-      },
-      {
-        id: 'enterprise',
-        name: 'Enterprise',
-        description: 'Perfeito para grandes empresas e times',
-        features: [
-          'Todos os recursos do Professional',
-          'Recursos avançados de IA',
-          'Suporte a multi-tenant',
-          'Analytics avançado',
-          'Suporte técnico prioritário',
-          'Serviços de desenvolvimento sob medida',
-          'Recursos de colaboração em equipe',
-          'Garantia de SLA',
-          'Serviços de treinamento'
-        ],
-        limitations: [],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 999,
-            currency: 'BRL',
-            period: 'Pagamento único'
-          },
-          'monthly': {
-            price: 95,
-            currency: 'BRL',
-            period: 'Mensal'
-          },
-          'yearly': {
-            price: 912,
-            currency: 'BRL',
-            period: 'Anual',
-            originalPrice: 1140,
-            discount: 20
-          }
-        }
-      }
-    ]
-  },
-  ru: {
-    currency: 'RUB',
-    billingCycles: {
-      'one-time': {
-        label: 'Единоразовый платёж',
-        description: 'Платите один раз — пользуйтесь всегда'
-      },
-      'monthly': {
-        label: 'Ежемесячно',
-        description: 'Гибкая оплата, отмена в любое время'
-      },
-      'yearly': {
-        label: 'Ежегодно',
-        description: 'Экономия 20% при оплате за год'
-      }
-    },
-    plans: [
-      {
-        id: 'free',
-        name: 'Free',
-        description: 'Идеально для отдельных разработчиков и небольших проектов',
-        features: [
-          'Базовые шаблоны Next.js',
-          'Интеграция с GitHub',
-          'Сообщество-поддержка',
-          'Базовая документация',
-          'Лицензия для личного использования'
-        ],
-        limitations: [
-          'Без коммерческого использования',
-          'Без технической поддержки',
-          'Ограниченный функционал'
-        ],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 0,
-            currency: 'RUB',
-            period: 'Навсегда'
-          },
-          'monthly': {
-            price: 0,
-            currency: 'RUB',
-            period: 'Навсегда'
-          },
-          'yearly': {
-            price: 0,
-            currency: 'RUB',
-            period: 'Навсегда'
-          }
-        }
-      },
-      {
-        id: 'professional',
-        name: 'Professional',
-        description: 'Идеально для стартапов и небольших компаний',
-        features: [
-          'Полные функциональные шаблоны',
-          'Система аутентификации',
-          'Интеграция платежей',
-          'Настройка базы данных',
-          'AI-интеграция',
-          'Деплой в один клик',
-          'Поддержка по email',
-          'Коммерческая лицензия',
-          'Доступ к исходному коду'
-        ],
-        limitations: [],
-        popular: true,
-        pricing: {
-          'one-time': {
-            price: 4400,
-            currency: 'RUB',
-            period: 'Единоразовый платёж'
-          },
-          'monthly': {
-            price: 540,
-            currency: 'RUB',
-            period: 'Ежемесячно'
-          },
-          'yearly': {
-            price: 5184,
-            currency: 'RUB',
-            period: 'Ежегодно',
-            originalPrice: 6480,
-            discount: 20
-          }
-        }
-      },
-      {
-        id: 'enterprise',
-        name: 'Enterprise',
-        description: 'Идеально для крупных компаний и команд',
-        features: [
-          'Все возможности Professional',
-          'Продвинутые AI-фичи',
-          'Мульти-тенантность',
-          'Расширенная аналитика',
-          'Приоритетная поддержка',
-          'Кастомная разработка',
-          'Командные функции',
-          'SLA-гарантия',
-          'Обучение'
-        ],
-        limitations: [],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 17900,
-            currency: 'RUB',
-            period: 'Единоразовый платёж'
-          },
-          'monthly': {
-            price: 1710,
-            currency: 'RUB',
-            period: 'Ежемесячно'
-          },
-          'yearly': {
-            price: 16416,
-            currency: 'RUB',
-            period: 'Ежегодно',
-            originalPrice: 20520,
-            discount: 20
-          }
-        }
-      }
-    ]
-  },
-  id: {
-    currency: 'IDR',
-    billingCycles: {
-      'one-time': {
-        label: 'Pembayaran Sekali',
-        description: 'Bayar sekali, gunakan selamanya'
-      },
-      'monthly': {
-        label: 'Bulanan',
-        description: 'Penagihan fleksibel, bisa batal kapan saja'
-      },
-      'yearly': {
-        label: 'Tahunan',
-        description: 'Hemat 20% dengan penagihan tahunan'
-      }
-    },
-    plans: [
-      {
-        id: 'free',
-        name: 'Gratis',
-        description: 'Sempurna untuk developer individu dan proyek kecil',
-        features: [
-          'Template Next.js dasar',
-          'Integrasi GitHub',
-          'Dukungan komunitas',
-          'Dokumentasi dasar',
-          'Lisensi penggunaan personal'
-        ],
-        limitations: [
-          'Tidak untuk komersial',
-          'Tanpa dukungan teknis',
-          'Fitur terbatas'
-        ],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 0,
-            currency: 'IDR',
-            period: 'Selamanya'
-          },
-          'monthly': {
-            price: 0,
-            currency: 'IDR',
-            period: 'Selamanya'
-          },
-          'yearly': {
-            price: 0,
-            currency: 'IDR',
-            period: 'Selamanya'
-          }
-        }
-      },
-      {
-        id: 'professional',
-        name: 'Profesional',
-        description: 'Sempurna untuk startup dan bisnis kecil',
-        features: [
-          'Template fitur lengkap',
-          'Sistem autentikasi',
-          'Integrasi pembayaran',
-          'Penyiapan basis data',
-          'Integrasi AI',
-          'Deploy satu klik',
-          'Dukungan email',
-          'Lisensi penggunaan komersial',
-          'Akses kode sumber'
-        ],
-        limitations: [],
-        popular: true,
-        pricing: {
-          'one-time': {
-            price: 750000,
-            currency: 'IDR',
-            period: 'Pembayaran sekali'
-          },
-          'monthly': {
-            price: 90000,
-            currency: 'IDR',
-            period: 'Bulanan'
-          },
-          'yearly': {
-            price: 864000,
-            currency: 'IDR',
-            period: 'Tahunan',
-            originalPrice: 1080000,
-            discount: 20
-          }
-        }
-      },
-      {
-        id: 'enterprise',
-        name: 'Enterprise',
-        description: 'Sempurna untuk perusahaan besar dan tim',
-        features: [
-          'Semua fitur Profesional',
-          'Fitur AI lanjutan',
-          'Dukungan multi-tenant',
-          'Analitik lanjutan',
-          'Dukungan teknis prioritas',
-          'Layanan pengembangan kustom',
-          'Fitur kolaborasi tim',
-          'Jaminan SLA',
-          'Layanan pelatihan'
-        ],
-        limitations: [],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 2990000,
-            currency: 'IDR',
-            period: 'Pembayaran sekali'
-          },
-          'monthly': {
-            price: 285000,
-            currency: 'IDR',
-            period: 'Bulanan'
-          },
-          'yearly': {
-            price: 2736000,
-            currency: 'IDR',
-            period: 'Tahunan',
-            originalPrice: 3420000,
-            discount: 20
-          }
-        }
-      }
-    ]
-  },
-  ar: {
-    currency: 'SAR',
-    billingCycles: {
-      'one-time': {
-        label: 'دفع لمرة واحدة',
-        description: 'ادفع مرة واحدة، استخدم للأبد'
-      },
-      'monthly': {
-        label: 'شهريًا',
-        description: 'فوترة مرنة، ألغِ في أي وقت'
-      },
-      'yearly': {
-        label: 'سنويًا',
-        description: 'وفر 20% مع الفوترة السنوية'
-      }
-    },
-    plans: [
-      {
-        id: 'free',
-        name: 'مجاني',
-        description: 'مثالي للمطورين الأفراد والمشاريع الصغيرة',
-        features: [
-          'قوالب Next.js الأساسية',
-          'تكامل GitHub',
-          'دعم المجتمع',
-          'الوثائق الأساسية',
-          'ترخيص للاستخدام الشخصي'
-        ],
-        limitations: [
-          'لا الاستخدام التجاري',
-          'لا دعم فني',
-          'ميزات محدودة'
-        ],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 0,
-            currency: 'SAR',
-            period: 'للأبد'
-          },
-          'monthly': {
-            price: 0,
-            currency: 'SAR',
-            period: 'للأبد'
-          },
-          'yearly': {
-            price: 0,
-            currency: 'SAR',
-            period: 'للأبد'
-          }
-        }
-      },
-      {
-        id: 'professional',
-        name: 'احترافي',
-        description: 'مثالي للشركات الناشئة والمؤسسات الصغيرة',
-        features: [
-          'قوالب الميزات الكاملة',
-          'نظام المصادقة',
-          'تكامل المدفوعات',
-          'إعداد قاعدة البيانات',
-          'تكامل الذكاء الاصطناعي',
-          'نشر بنقرة واحدة',
-          'دعم البريد الإلكتروني',
-          'ترخيص الاستخدام التجاري',
-          'الوصول إلى الكود المصدري'
-        ],
-        limitations: [],
-        popular: true,
-        pricing: {
-          'one-time': {
-            price: 184,
-            currency: 'SAR',
-            period: 'دفع لمرة واحدة'
-          },
-          'monthly': {
-            price: 23,
-            currency: 'SAR',
-            period: 'شهريًا'
-          },
-          'yearly': {
-            price: 220,
-            currency: 'SAR',
-            period: 'سنويًا',
-            originalPrice: 276,
-            discount: 20
-          }
-        }
-      },
-      {
-        id: 'enterprise',
-        name: 'المؤسسة',
-        description: 'مثالي للمؤسسات الكبيرة والفرق',
-        features: [
-          'جميع ميزات الاحترافي',
-          'ميزات الذكاء الاصطناعي المتقدمة',
-          'دعم متعدد المستأجرين',
-          'التحليلات المتقدمة',
-          'دعم فني ذو أولوية',
-          'خدمات التطوير المخصصة',
-          'ميزات تعاون الفريق',
-          'ضمان SLA',
-          'خدمات التدريب'
-        ],
-        limitations: [],
-        popular: false,
-        pricing: {
-          'one-time': {
-            price: 746,
-            currency: 'SAR',
-            period: 'دفع لمرة واحدة'
-          },
-          'monthly': {
-            price: 71,
-            currency: 'SAR',
-            period: 'شهريًا'
-          },
-          'yearly': {
-            price: 682,
-            currency: 'SAR',
-            period: 'سنويًا',
-            originalPrice: 852,
-            discount: 20
-          }
-        }
-      }
     ]
   }
 };
@@ -1314,7 +411,8 @@ export function getAllPricingForPlan(planId: string, locale: Locale = 'en') {
 
 // 获取推荐的价格周期（年付优先）
 export function getRecommendedPeriod(): PricingPeriod {
-  return 'yearly';
+  // Temporarily disable one-time payments in UI; default to monthly.
+  return 'monthly';
 }
 
 // 计算年付节省金额
@@ -1327,15 +425,9 @@ export function calculateYearlySavings(monthlyPrice: number): number {
 // 格式化价格显示
 export function formatPrice(price: number, currency: string): string {
   const symbols: Record<string, string> = {
-    'CNY': '¥',
     'USD': '$',
     'EUR': '€',
     'GBP': '£',
-    'JPY': '¥',
-    'BRL': 'R$',
-    'RUB': '₽',
-    'IDR': 'Rp',
-    'SAR': '﷼'
   };
   
   const symbol = symbols[currency] || currency;

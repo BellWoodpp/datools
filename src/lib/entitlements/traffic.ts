@@ -4,7 +4,7 @@ import { db } from "@/lib/db/client";
 import { orders } from "@/lib/db/schema/orders";
 import { subscriptions } from "@/lib/db/schema/subscriptions";
 
-export const TRAFFIC_ENTITLEMENT_PRODUCTS = ["professional", "enterprise"] as const;
+export const TRAFFIC_ENTITLEMENT_PRODUCTS = ["professional"] as const;
 export const TRAFFIC_CHECKOUT_PRODUCT_ID = "professional";
 
 export async function hasTrafficEntitlement(userId: string): Promise<boolean> {

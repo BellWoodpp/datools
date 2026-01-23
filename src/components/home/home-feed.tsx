@@ -3,7 +3,7 @@
 import type { HomeFeedDictionary, HomeFeedTool, Locale } from "@/i18n/types";
 import { ToolCard } from "@/components/ui/tool-card";
 import Search from "@/components/ui/search";
-import { CategoryFilter } from "@/components/home/category-filter";
+import { CategoryFilter, CategoryIconRow } from "@/components/home/category-filter";
 import { useEffect, useMemo, useState, useTransition } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useLocale } from "@/hooks";
@@ -402,25 +402,9 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
 
   return (
     <main className="bg-gradient-to-b from-[#0a0f1f] via-[#0c1e3c] to-[#0a0f1f]">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 lg:flex-row lg:gap-10">
-        {/* 左侧导航：分类按钮 */}
-        {localizedCategories.length ? (
-          <aside className="hidden lg:block fixed left-6 top-28 z-40 w-64">
-            <div className="space-y-3">
-              <p className="text-sm font-semibold text-slate-100 uppercase tracking-wide">
-                {copy.categoriesLabel}
-              </p>
-              <CategoryFilter
-                categories={localizedCategories}
-                active={activeCategory}
-                onChange={handleCategoryChange}
-              />
-            </div>
-          </aside>
-        ) : null}
-
+      <div className="mx-auto flex max-w-screen-2xl flex-col gap-8 px-4 py-10 lg:flex-row lg:gap-10">
         {/* 右侧：工具列表 */}
-        <div className="flex-1 space-y-4 lg:pl-72">
+        <div className="flex-1 space-y-4">
           <div className="flex flex-col items-center gap-1 text-center">
             <p className="text-sm font-semibold text-neutral-500 dark:text-neutral-400">
               {data.subheading}
@@ -430,15 +414,22 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
             </h1>
           </div>
 
-          <div className="flex flex-col gap-3 rounded-xl border border-[#1e5bff]/30 bg-[#0f172a]/80 p-4 shadow-[0_15px_40px_-20px_rgba(18,194,233,0.55)]">
+          <div className="mt-6 flex flex-col gap-3 rounded-xl border border-[#1e5bff]/30 bg-[#0f172a]/80 p-4 shadow-[0_15px_40px_-20px_rgba(18,194,233,0.55)]">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
               <Search placeholder={data.searchPlaceholder ?? copy.searchPlaceholder} />
             </div>
-            <div className="flex items-center justify-between text-xs text-slate-300">
-              <span>{data.filterHint ?? copy.filterHint}</span>
-              <span>
-                {filteredTools.length} {data.resultsLabel ?? copy.resultsLabel}
-              </span>
+            <div className="space-y-3 text-xs text-slate-300">
+              <div className="flex items-start justify-between gap-3">
+                <span>{data.filterHint ?? copy.filterHint}</span>
+                <span>
+                  {filteredTools.length} {data.resultsLabel ?? copy.resultsLabel}
+                </span>
+              </div>
+              <CategoryIconRow
+                categories={localizedCategories}
+                active={activeCategory}
+                onChange={handleCategoryChange}
+              />
             </div>
             {localizedCategories.length ? (
               <div className="lg:hidden">
@@ -451,7 +442,7 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
             ) : null}
           </div>
 
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {showSkeleton
               ? renderSkeletons()
               : paginatedTools.map((tool) => (

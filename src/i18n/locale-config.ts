@@ -19,3 +19,6 @@ export function resolveIntlLocale(locale: string | Locale | undefined): string {
   }
   return intlLocaleMap.en;
 }
+
+// Backward-compatible alias used by migrated modules.
+export const resolveIntlNumberLocale = resolveIntlLocale;

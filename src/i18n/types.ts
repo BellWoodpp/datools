@@ -888,6 +888,31 @@ export interface MembershipPageDictionary extends PageDictionary {
   plans: MembershipPlan[];
 }
 
+export interface PointsPageDictionary extends PageDictionary {
+  balance: {
+    title: string;
+    description: string;
+    creditsLabel: string;
+  };
+  packs: {
+    title: string;
+    description: string;
+    buy: string;
+    processing: string;
+  };
+  actions: {
+    backToMembership: string;
+  };
+  status: {
+    loadingBalance: string;
+    pendingPaymentHint: string;
+  };
+  errors: {
+    dbRequired: string;
+    generic: string;
+  };
+}
+
 export interface OrderDetailsDictionary {
   title: string;
   subtitle: string;
@@ -1070,6 +1095,7 @@ export interface PagesDictionary {
   signup: PageDictionary;
   profile: ProfilePageDictionary;
   membership: MembershipPageDictionary;
+  points: PointsPageDictionary;
   orders: OrdersPageDictionary;
   dashboard: DashboardPageDictionary;
   blogs: BlogsPageDictionary;

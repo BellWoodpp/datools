@@ -4,7 +4,6 @@ import { redirect } from "next/navigation";
 import { DashboardPage } from "@/components/dashboard";
 import { getDictionary } from "@/i18n";
 import { type Locale } from "@/i18n/types";
-import { buildCanonicalPath } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const resolvedParams = await params;
@@ -13,8 +12,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   return {
     title: dictionary.pages.dashboard.title,
     description: dictionary.pages.dashboard.description,
-    alternates: {
-      canonical: buildCanonicalPath(resolvedParams.locale, "dashboard"),
+    robots: {
+      index: false,
+      follow: false,
     },
   };
 }
@@ -32,5 +32,11 @@ export default async function DashboardPageRoute({ params }: { params: Promise<{
   const user = session.user;
   const dictionary = getDictionary(resolvedParams.locale);
 
-  return <DashboardPage dictionary={dictionary.pages.dashboard} userName={user.name || undefined} />;
+  return (
+    <DashboardPage
+      dictionary={dictionary.pages.dashboard}
+      locale={resolvedParams.locale}
+      userName={user.name || undefined}
+    />
+  );
 }

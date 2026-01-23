@@ -3091,23 +3091,23 @@
     },
     "membership": {
       "title": "Membership Center - DaTools",
-      "subtitle": "Manage your membership subscription and benefits",
-      "description": "Manage your subscription plan and membership benefits",
+      "subtitle": "Manage your plan and tokens",
+      "description": "View your token balance, plan status, and billing history",
       "currentPlan": {
         "title": "Current Plan",
-        "description": "Your current subscription status and usage",
-        "freeVersion": "Free Version",
-        "paidVersion": "Paid Version"
+        "description": "Your current plan and usage summary",
+        "freeVersion": "Free",
+        "paidVersion": "Professional"
       },
       "usage": {
-        "apiCalls": "API Calls",
-        "projectCount": "Project Count",
-        "supportLevel": "Support Level",
-        "remainingThisMonth": "Remaining this month",
-        "maxLimit": "Maximum limit",
-        "responseTime": "Response time",
-        "priority": "Priority",
-        "standard": "Standard"
+        "apiCalls": "Token Balance",
+        "projectCount": "Total Generations",
+        "supportLevel": "Plan",
+        "remainingThisMonth": "Available tokens",
+        "maxLimit": "From your TTS history",
+        "responseTime": "Billing status",
+        "priority": "Professional",
+        "standard": "Free"
       },
       "upgradePlan": {
         "title": "Upgrade Your Plan",
@@ -3142,12 +3142,12 @@
           "name": "Free",
           "price": 0,
           "period": "Forever",
-          "description": "Perfect for individual users and small projects",
+          "description": "Get started with tokens and standard voices",
           "features": [
-            "1,000 API calls per month",
-            "Up to 3 projects",
-            "Basic support",
-            "Standard template library"
+            "Starter token balance",
+            "Standard voices",
+            "Basic TTS history",
+            "Community support"
           ],
           "current": false
         },
@@ -3156,33 +3156,43 @@
           "name": "Professional",
           "price": 29,
           "period": "per month",
-          "description": "Perfect for small and medium teams",
+          "description": "More tokens and premium features for creators",
           "features": [
-            "50,000 API calls per month",
-            "Unlimited projects",
-            "Priority support",
-            "Advanced template library",
-            "Advanced analytics",
-            "Team collaboration"
-          ],
-          "current": false
-        },
-        {
-          "id": "enterprise",
-          "name": "Enterprise",
-          "price": 99,
-          "period": "per month",
-          "description": "Perfect for large enterprises",
-          "features": [
-            "Unlimited API calls",
-            "Unlimited projects",
-            "All template libraries",
-            "Enterprise-level analytics",
-            "Custom integrations"
+            "Higher token allowance",
+            "Premium voices",
+            "Extended TTS history",
+            "Priority support"
           ],
           "current": false
         }
       ]
+    },
+    "points": {
+      "title": "Credits Top-up - RTVox",
+      "subtitle": "Top up your credits for generation",
+      "description": "Buy credits packs and refill anytime",
+      "balance": {
+        "title": "Your Balance",
+        "description": "Credits available for text-to-speech generation",
+        "creditsLabel": "Credits"
+      },
+      "packs": {
+        "title": "Choose a pack",
+        "description": "Credits work with both Standard and premium voices",
+        "buy": "Buy",
+        "processing": "Redirecting..."
+      },
+      "actions": {
+        "backToMembership": "Back to Membership"
+      },
+      "status": {
+        "loadingBalance": "Loading balance...",
+        "pendingPaymentHint": "If your payment is still processing, refresh in a moment."
+      },
+      "errors": {
+        "dbRequired": "This feature requires a database connection.",
+        "generic": "Something went wrong. Please try again."
+      }
     },
     "orders": {
       "title": "Order Center",
@@ -3292,28 +3302,28 @@
     "dashboard": {
       "title": "Dashboard",
       "subtitle": "Overview",
-      "description": "Quick access to your account information and actions",
+      "description": "Quick access to your tokens and account actions",
       "welcomeMessage": "Welcome back!",
       "stats": {
-        "title": "Statistics Overview",
-        "subtitle": "Your account data",
+        "title": "Account Overview",
+        "subtitle": "Tokens and usage",
         "cards": [
           {
-            "title": "Total Orders",
-            "value": "0",
-            "change": "0% from last month",
+            "title": "Tokens Used Today",
+            "value": "—",
+            "change": "Available tokens",
             "trend": "neutral"
           },
           {
-            "title": "Total Revenue",
-            "value": "$0",
-            "change": "0% from last month",
+            "title": "Plan",
+            "value": "Free",
+            "change": "Professional",
             "trend": "neutral"
           },
           {
-            "title": "Pending Orders",
-            "value": "0",
-            "change": "View details",
+            "title": "Generations Today",
+            "value": "—",
+            "change": "From your TTS history",
             "trend": "neutral"
           },
           {
@@ -3328,27 +3338,27 @@
         "title": "Recent Activity",
         "subtitle": "Your account activity",
         "noActivity": "No activity records",
-        "activities": [
-          {
-            "action": "Account created",
-            "time": "Just now",
-            "icon": "UserPlus"
-          }
-        ]
+        "activities": []
       },
       "quickActions": {
         "title": "Quick Actions",
         "subtitle": "Common features",
         "actions": [
           {
-            "title": "Create Order",
-            "description": "Create a new order now",
-            "icon": "ShoppingCart",
-            "href": "/pricing"
+            "title": "Generate Voice",
+            "description": "Go to text-to-speech",
+            "icon": "Activity",
+            "href": "/podcast-mvp"
           },
           {
-            "title": "View Orders",
-            "description": "Manage your orders",
+            "title": "Membership",
+            "description": "Manage your plan",
+            "icon": "Crown",
+            "href": "/membership"
+          },
+          {
+            "title": "Orders",
+            "description": "View your orders",
             "icon": "Package",
             "href": "/orders"
           },
@@ -3357,12 +3367,6 @@
             "description": "Edit your profile",
             "icon": "Settings",
             "href": "/profile"
-          },
-          {
-            "title": "View Membership",
-            "description": "Upgrade your plan",
-            "icon": "Crown",
-            "href": "/membership"
           }
         ]
       }

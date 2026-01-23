@@ -3166,23 +3166,23 @@
     },
     "membership": {
       "title": "会员中心 - DaTools",
-      "subtitle": "管理您的会员订阅和权益",
-      "description": "管理您的订阅计划和会员权益",
+      "subtitle": "管理您的方案与积分",
+      "description": "查看积分余额、方案状态与账单记录",
       "currentPlan": {
         "title": "当前计划",
-        "description": "您当前的订阅状态和使用情况",
+        "description": "您的当前方案与使用概览",
         "freeVersion": "免费版",
-        "paidVersion": "付费版"
+        "paidVersion": "专业版"
       },
       "usage": {
-        "apiCalls": "API 调用",
-        "projectCount": "项目数量",
-        "supportLevel": "支持级别",
-        "remainingThisMonth": "本月剩余",
-        "maxLimit": "最大限制",
-        "responseTime": "响应时间",
-        "priority": "优先",
-        "standard": "标准"
+        "apiCalls": "积分余额",
+        "projectCount": "累计生成",
+        "supportLevel": "当前方案",
+        "remainingThisMonth": "可用积分",
+        "maxLimit": "来自生成历史",
+        "responseTime": "订阅状态",
+        "priority": "专业版",
+        "standard": "免费版"
       },
       "upgradePlan": {
         "title": "升级您的计划",
@@ -3217,12 +3217,12 @@
           "name": "免费版",
           "price": 0,
           "period": "永久",
-          "description": "适合个人用户和小型项目",
+          "description": "适合个人体验与轻量使用",
           "features": [
-            "每月 1,000 次 API 调用",
-            "最多 3 个项目",
-            "基础支持",
-            "标准模板库"
+            "新用户赠送积分",
+            "标准音色",
+            "基础生成历史",
+            "社区支持"
           ],
           "current": false
         },
@@ -3231,33 +3231,43 @@
           "name": "专业版",
           "price": 29,
           "period": "每月",
-          "description": "适合中小型团队",
+          "description": "适合内容创作者与高频使用",
           "features": [
-            "每月 50,000 次 API 调用",
-            "无限项目",
-            "优先支持",
-            "高级模板库",
-            "高级分析",
-            "团队协作"
-          ],
-          "current": false
-        },
-        {
-          "id": "enterprise",
-          "name": "企业版",
-          "price": 99,
-          "period": "每月",
-          "description": "适合大型企业",
-          "features": [
-            "无限 API 调用",
-            "无限项目",
-            "所有模板库",
-            "企业级分析",
-            "自定义集成"
+            "更高积分额度",
+            "高级音色",
+            "更长生成历史",
+            "优先支持"
           ],
           "current": false
         }
       ]
+    },
+    "points": {
+      "title": "积分充值 - RTVox",
+      "subtitle": "为生成补充积分",
+      "description": "购买积分包，随用随充",
+      "balance": {
+        "title": "当前余额",
+        "description": "可用于文字转语音生成的积分",
+        "creditsLabel": "积分"
+      },
+      "packs": {
+        "title": "选择充值包",
+        "description": "积分可用于标准音色与高级音色",
+        "buy": "购买",
+        "processing": "正在跳转..."
+      },
+      "actions": {
+        "backToMembership": "返回会员中心"
+      },
+      "status": {
+        "loadingBalance": "余额加载中...",
+        "pendingPaymentHint": "若支付仍在处理中，请稍后刷新页面。"
+      },
+      "errors": {
+        "dbRequired": "该功能需要数据库连接。",
+        "generic": "出错了，请稍后再试。"
+      }
     },
     "orders": {
       "title": "订单中心",
@@ -3367,35 +3377,35 @@
     "dashboard": {
       "title": "仪表板",
       "subtitle": "概览",
-      "description": "快速访问您的账户信息和操作",
+      "description": "快速查看积分、方案与常用入口",
       "welcomeMessage": "欢迎回来！",
       "stats": {
-        "title": "统计概览",
-        "subtitle": "您的账户数据",
+        "title": "账户概览",
+        "subtitle": "积分与使用情况",
         "cards": [
           {
-            "title": "总订单",
-            "value": "0",
-            "change": "0% 与上月相比",
-            "trend": "中性"
+            "title": "今天已用积分",
+            "value": "—",
+            "change": "可用积分",
+            "trend": "neutral"
           },
           {
-            "title": "总收入",
-            "value": "¥0",
-            "change": "0% 与上月相比",
-            "trend": "中性"
+            "title": "当前方案",
+            "value": "免费版",
+            "change": "专业版",
+            "trend": "neutral"
           },
           {
-            "title": "待处理订单",
-            "value": "0",
-            "change": "查看详情",
-            "trend": "中性"
+            "title": "今天累计生成",
+            "value": "—",
+            "change": "来自生成历史",
+            "trend": "neutral"
           },
           {
             "title": "账户状态",
-            "value": "活跃",
-            "change": "正常使用",
-            "trend": "上升"
+            "value": "正常",
+            "change": "运行正常",
+            "trend": "up"
           }
         ]
       },
@@ -3403,27 +3413,27 @@
         "title": "最近活动",
         "subtitle": "您的账户动态",
         "noActivity": "暂无活动记录",
-        "activities": [
-          {
-            "action": "账户已创建",
-            "time": "刚刚",
-            "icon": "UserPlus"
-          }
-        ]
+        "activities": []
       },
       "quickActions": {
         "title": "快速操作",
         "subtitle": "常用功能入口",
         "actions": [
           {
-            "title": "创建订单",
-            "description": "立即创建新订单",
-            "icon": "ShoppingCart",
-            "href": "/pricing"
+            "title": "生成配音",
+            "description": "进入文本转语音",
+            "icon": "Activity",
+            "href": "/podcast-mvp"
           },
           {
-            "title": "查看订单",
-            "description": "管理您的订单",
+            "title": "会员与方案",
+            "description": "查看/升级您的计划",
+            "icon": "Crown",
+            "href": "/membership"
+          },
+          {
+            "title": "订单记录",
+            "description": "查看您的订单",
             "icon": "Package",
             "href": "/orders"
           },
@@ -3432,12 +3442,6 @@
             "description": "编辑个人信息",
             "icon": "Settings",
             "href": "/profile"
-          },
-          {
-            "title": "查看会员",
-            "description": "升级您的计划",
-            "icon": "Crown",
-            "href": "/membership"
           }
         ]
       }

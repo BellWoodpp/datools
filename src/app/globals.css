@@ -167,6 +167,7 @@ color: var(--foreground);*/
     @apply bg-background text-foreground;
   }
 }
+
 /*  总结
 @import	载入 Tailwind + 动画插件
 @custom-variant	定义 dark: 的作用方式

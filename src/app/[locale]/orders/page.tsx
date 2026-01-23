@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { getDictionary, locales } from "@/i18n";
 import { OrdersPage } from "@/components/orders/orders-page";
-import { buildCanonicalPath } from "@/lib/seo";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({
@@ -15,10 +14,11 @@ export async function generateMetadata({
   
   if (!normalizedLocale) {
     return {
-      title: "Orders - DaTools",
+      title: "Orders",
       description: "View your orders",
-      alternates: {
-        canonical: buildCanonicalPath(undefined, "orders"),
+      robots: {
+        index: false,
+        follow: false,
       },
     };
   }
@@ -28,8 +28,9 @@ export async function generateMetadata({
   return {
     title: dict.pages.orders.title,
     description: dict.pages.orders.subtitle,
-    alternates: {
-      canonical: buildCanonicalPath(normalizedLocale, "orders"),
+    robots: {
+      index: false,
+      follow: false,
     },
   };
 }
@@ -49,5 +50,5 @@ export default async function OrdersPageRoute({
   
   const dict = await getDictionary(normalizedLocale);
   
-  return <OrdersPage dict={dict.pages.orders} />;
+  return <OrdersPage dict={dict.pages.orders} locale={normalizedLocale} />;
 }

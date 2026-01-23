@@ -1,0 +1,1 @@
+ALTER TABLE "users" ADD COLUMN "tokens" bigint DEFAULT 500 NOT NULL;

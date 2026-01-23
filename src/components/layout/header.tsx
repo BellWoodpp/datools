@@ -147,7 +147,7 @@ export function Header() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Github 语言选择 明亮选择 登陆 免费试用 */}
+        {/* Github 语言选择 明亮选择 免费试用 */}
         <div className="hidden md:flex items-center space-x-2 flex-1 justify-end">
           <a
             href="https://github.com"
@@ -161,16 +161,11 @@ export function Header() {
           {/* 语言切换器 currentLocale={locale}：给LanguageSwitcher传递一个props(属性)，名字叫LanguageSwitcher，值是locale*/}
           <LanguageSwitcher currentLocale={locale} />
           {/* 登陆认证 */}
-          {/* 如果isAuthenticated为真则用UserMenu,否则继续显示登陆按钮 */}
+          {/* 如果isAuthenticated为真则用UserMenu,否则仅显示免费试用 */}
           {isAuthenticated ? (
             <UserMenu dictionary={dictionary.header} locale={locale} />
           ) : (
             <>
-              <Button variant="ghost" className="text-slate-100 hover:text-[#f8a13c]" asChild>
-                <Link href={locale === 'en' ? '/login' : `/${locale}/login`}>
-                  {dictionary.header.login}
-                </Link>
-              </Button>
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-[#12c2e9] to-[#1e5bff] text-white shadow-[0_10px_30px_-12px_rgba(30,91,255,0.65)] hover:from-[#1e5bff] hover:to-[#12c2e9]"
@@ -275,15 +270,7 @@ export function Header() {
                   </div>
                 </div>
               ) : (
-                <div className="flex gap-2">
-                  <Button variant="ghost" asChild className="flex-1">
-                    <Link
-                      href={locale === 'en' ? '/login' : `/${locale}/login`}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {dictionary.header.login}
-                    </Link>
-                  </Button>
+                <div className="flex">
                   <Button asChild className="flex-1">
                     <Link
                       href={locale === 'en' ? '/signup' : `/${locale}/signup`}

@@ -1,18 +1,11 @@
-import { Metadata } from "next";
-import { OrdersPage } from "@/components/orders/orders-page";
-import { getDictionary, defaultLocale } from "@/i18n";
-import { buildCanonicalPath } from "@/lib/seo";
+import LocaleOrdersPage, { generateMetadata as generateLocaleMetadata } from "@/app/[locale]/orders/page";
+import { defaultLocale } from "@/i18n/types";
 
-const dictionary = getDictionary(defaultLocale);
-
-export const metadata: Metadata = {
-  title: dictionary.pages.orders.title,
-  description: dictionary.pages.orders.subtitle,
-  alternates: {
-    canonical: buildCanonicalPath(undefined, "orders"),
-  },
-};
-
-export default async function OrdersRootPage() {
-  return <OrdersPage dict={dictionary.pages.orders} />;
+export default function OrdersPage() {
+  return <LocaleOrdersPage params={Promise.resolve({ locale: defaultLocale })} />;
 }
+
+export async function generateMetadata() {
+  return generateLocaleMetadata({ params: Promise.resolve({ locale: defaultLocale }) });
+}
+

@@ -1,30 +1,24 @@
 'use client';
 
-import { useSearchParams, usePathname, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
 
+interface SearchProps {
+  placeholder: string;
+  value?: string;
+  onSearch: (term: string) => void;
+}
 
-export default function Search({ placeholder }: { placeholder: string }) {
-  const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const { replace } = useRouter();
+export default function Search({ placeholder, value = "", onSearch }: SearchProps) {
+  const [inputValue, setInputValue] = useState(value);
+
+  useEffect(() => {
+    setInputValue(value);
+  }, [value]);
 
   // 等待300毫秒
-  const handleSearch = useDebouncedCallback((term) => {
-    
-    console.log(`Searching... ${term}`);
-    const params = new URLSearchParams(searchParams);
-    params.set('page', '1');
-
-    
-    if (term) {
-      params.set('query', term);
-    } else {
-      params.delete('query');
-    }
-    replace(`${pathname}?${params.toString()}`);
-
-    console.log(term);
+  const handleSearch = useDebouncedCallback((term: string) => {
+    onSearch(term);
   }, 300);
 
   return (
@@ -35,11 +29,12 @@ export default function Search({ placeholder }: { placeholder: string }) {
       <input
         className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
         placeholder={placeholder}
+        value={inputValue}
         onChange={(e) => {
-          handleSearch(e.target.value);
+          const nextValue = e.target.value;
+          setInputValue(nextValue);
+          handleSearch(nextValue);
         }}
-        // 刷新搜索不会消失
-        defaultValue={searchParams.get('query')?.toString()}
       />
     </div>
   );

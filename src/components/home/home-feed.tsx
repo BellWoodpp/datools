@@ -5,7 +5,7 @@ import { ToolCard } from "@/components/ui/tool-card";
 import Search from "@/components/ui/search";
 import { CategoryFilter, CategoryIconRow } from "@/components/home/category-filter";
 import { useEffect, useMemo, useState, useTransition } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "@/hooks";
 import { defaultLocale } from "@/i18n";
 import {
@@ -21,6 +21,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 
 const normalize = (value: string) => value.toLowerCase();
 const PAGE_SIZE = 5;
+type SearchParams = Record<string, string | string[] | undefined>;
 
 const CATEGORY_LABELS: Record<string, Partial<Record<Locale, string>>> = {
   "BI / Visualization": {
@@ -216,16 +217,49 @@ const HOME_FEED_TEXT: Record<
 };
 
 type HomeFeedContent = HomeFeedDictionary;
-export function HomeFeed({ content }: { content: HomeFeedContent }) {
+
+function getSingleParamValue(searchParams: SearchParams | undefined, key: string) {
+  const value = searchParams?.[key];
+  if (Array.isArray(value)) {
+    return value[0] ?? "";
+  }
+  return value ?? "";
+}
+
+function parsePageValue(value: string) {
+  const page = Number(value);
+  return Number.isFinite(page) && page > 0 ? Math.floor(page) : 1;
+}
+
+function createInitialSearchState(searchParams: SearchParams | undefined) {
+  const query = getSingleParamValue(searchParams, "query").trim();
+  const category = getSingleParamValue(searchParams, "category").trim();
+  const page = parsePageValue(getSingleParamValue(searchParams, "page"));
+
+  return {
+    query,
+    category: category || null,
+    page,
+  };
+}
+
+interface HomeFeedProps {
+  content: HomeFeedContent;
+  initialSearchParams?: SearchParams;
+}
+
+export function HomeFeed({ content, initialSearchParams }: HomeFeedProps) {
   const data = content;
-  const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
   const { locale } = useLocale();
-  const query = (searchParams.get("query") ?? "").toLowerCase().trim();
-  const activeCategory = searchParams.get("category");
+  const initialState = useMemo(() => createInitialSearchState(initialSearchParams), [initialSearchParams]);
+  const [query, setQuery] = useState(initialState.query);
+  const [activeCategory, setActiveCategory] = useState<string | null>(initialState.category);
+  const [requestedPage, setRequestedPage] = useState(initialState.page);
   const [showSkeleton, setShowSkeleton] = useState(false);
   const [isPending, startTransition] = useTransition();
+  const normalizedQuery = normalize(query.trim());
 
   const copy = HOME_FEED_TEXT[locale] ?? HOME_FEED_TEXT.en;
 
@@ -272,19 +306,70 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
     return list;
   }, [localizedCategories, data.tools]);
 
-  const handleCategoryChange = (category: string | null) => {
-    startTransition(() => {
-      // 切换分类时清空搜索词并回到第一页，避免 query + page 残留导致列表为空
-      const params = new URLSearchParams(searchParams);
-      if (params.has("query")) params.delete("query");
-      params.delete("page");
-      if (category) {
-        params.set("category", category);
-      } else {
-        params.delete("category");
+  const createParams = useMemo(() => {
+    return (nextQuery: string, nextCategory: string | null, nextPage: number) => {
+      const params = new URLSearchParams();
+      const trimmedQuery = nextQuery.trim();
+
+      if (trimmedQuery) {
+        params.set("query", trimmedQuery);
       }
+
+      if (nextCategory) {
+        params.set("category", nextCategory);
+      }
+
+      if (nextPage > 1) {
+        params.set("page", String(nextPage));
+      }
+
+      return params;
+    };
+  }, []);
+
+  const syncStateWithUrl = useMemo(() => {
+    return (nextQuery: string, nextCategory: string | null, nextPage: number) => {
+      setQuery(nextQuery);
+      setActiveCategory(nextCategory);
+      setRequestedPage(nextPage);
+
+      const params = createParams(nextQuery, nextCategory, nextPage);
       const next = params.toString();
       replace(next ? `${pathname}?${next}` : pathname);
+    };
+  }, [createParams, pathname, replace]);
+
+  useEffect(() => {
+    setQuery(initialState.query);
+    setActiveCategory(initialState.category);
+    setRequestedPage(initialState.page);
+  }, [initialState]);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const nextQuery = (params.get("query") ?? "").trim();
+      const nextCategory = (params.get("category") ?? "").trim() || null;
+      const nextPage = parsePageValue(params.get("page") ?? "1");
+
+      setQuery(nextQuery);
+      setActiveCategory(nextCategory);
+      setRequestedPage(nextPage);
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  const handleCategoryChange = (category: string | null) => {
+    startTransition(() => {
+      syncStateWithUrl("", category, 1);
+    });
+  };
+
+  const handleSearch = (term: string) => {
+    startTransition(() => {
+      syncStateWithUrl(term, activeCategory, 1);
     });
   };
 
@@ -305,16 +390,14 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   // 这段 useMemo 定义并缓存按搜索词 query 过滤后的工具列表 filteredTools
   const filteredTools = useMemo(() => {
     // 如果没有搜索词（!query），直接用上一步按分类得到的 filteredByCategory。
-    if (!query) return filteredByCategory;
+    if (!normalizedQuery) return filteredByCategory;
     return filteredByCategory.filter((tool) =>
-      `${tool.name} ${tool.summary} ${tool.tags.join(" ")}`.toLowerCase().includes(query),
+      `${tool.name} ${tool.summary} ${tool.tags.join(" ")}`.toLowerCase().includes(normalizedQuery),
     );
-  }, [filteredByCategory, query]);
+  }, [filteredByCategory, normalizedQuery]);
 
   const totalPages = useMemo(() => Math.max(1, Math.ceil(filteredTools.length / PAGE_SIZE)), [filteredTools]);
-  const pageParam = Number(searchParams.get("page") ?? "1");
-  const parsedPage = Number.isFinite(pageParam) && pageParam > 0 ? Math.floor(pageParam) : 1;
-  const currentPage = Math.min(parsedPage, totalPages);
+  const currentPage = Math.min(requestedPage, totalPages);
 
   const paginatedTools = useMemo(() => {
     const start = (currentPage - 1) * PAGE_SIZE;
@@ -322,12 +405,7 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   }, [filteredTools, currentPage]);
 
   const makePageHref = (page: number) => {
-    const params = new URLSearchParams(searchParams);
-    if (page <= 1) {
-      params.delete("page");
-    } else {
-      params.set("page", String(page));
-    }
+    const params = createParams(query, activeCategory, page);
     const next = params.toString();
     return next ? `${pathname}?${next}` : pathname;
   };
@@ -335,7 +413,7 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
   const goToPage = (page: number) => {
     if (page < 1 || page > totalPages) return;
     startTransition(() => {
-      replace(makePageHref(page));
+      syncStateWithUrl(query, activeCategory, page);
     });
   };
 
@@ -416,7 +494,11 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
 
           <div className="mt-6 flex flex-col gap-3 rounded-xl border border-[#1e5bff]/30 bg-[#0f172a]/80 p-4 shadow-[0_15px_40px_-20px_rgba(18,194,233,0.55)]">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
-              <Search placeholder={data.searchPlaceholder ?? copy.searchPlaceholder} />
+              <Search
+                placeholder={data.searchPlaceholder ?? copy.searchPlaceholder}
+                value={query}
+                onSearch={handleSearch}
+              />
             </div>
             <div className="space-y-3 text-xs text-slate-300">
               <div className="flex items-start justify-between gap-3">
@@ -449,7 +531,7 @@ export function HomeFeed({ content }: { content: HomeFeedContent }) {
                   <ToolCard
                     key={tool.name}
                     tool={tool}
-                    highlightTerm={query}
+                    highlightTerm={normalizedQuery}
                     detailHref={buildDetailHref(tool)}
                     officialHref={buildOfficialHref(tool)}
                     detailLabel={data.viewDetailsLabel ?? copy.viewDetails}

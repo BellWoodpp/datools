@@ -2,16 +2,19 @@ import { notFound } from "next/navigation";
 import { HomeFeed } from "@/components/home/home-feed";
 import { getDictionary, locales } from "@/i18n";
 import { buildCanonicalPath } from "@/lib/seo";
-import { Suspense } from "react";
+
+type SearchParams = Record<string, string | string[] | undefined>;
 
 interface LocalePageProps {
   params: Promise<{
     locale: string;
   }>;
+  searchParams?: Promise<SearchParams>;
 }
 
-export default async function LocaleHome({ params }: LocalePageProps) {
+export default async function LocaleHome({ params, searchParams }: LocalePageProps) {
   const resolvedParams = await params;
+  const resolvedSearchParams = (await searchParams) ?? {};
   const locale = resolvedParams.locale;
 
   const normalizedLocale = locales.find((l) => l === locale);
@@ -22,19 +25,7 @@ export default async function LocaleHome({ params }: LocalePageProps) {
 
   const dictionary = getDictionary(normalizedLocale);
 
-  return (
-    <Suspense
-      fallback={
-        <main className="bg-gradient-to-b from-[#0a0f1f] via-[#0c1e3c] to-[#0a0f1f]">
-          <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-300">
-            Loading page...
-          </div>
-        </main>
-      }
-    >
-      <HomeFeed content={dictionary.homeFeed} />
-    </Suspense>
-  );
+  return <HomeFeed content={dictionary.homeFeed} initialSearchParams={resolvedSearchParams} />;
 }
 
 export function generateStaticParams() {

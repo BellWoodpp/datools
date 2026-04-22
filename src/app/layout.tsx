@@ -1,10 +1,10 @@
 // 导入元数据
-// 导入Geist, Geist_Mono字体
+// 导入Geist字体
 // 导入全局css
 // 导入Header,FooterWrapper
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { Header, FooterWrapper } from "@/components/layout";
@@ -13,12 +13,6 @@ import { metadataBase } from "@/lib/seo";
 // 声明常量geistSans
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-// 声明常量geistMono
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -107,7 +101,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="https://r2.datools.org/data-a-tools.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
         {/* Google Tag Manager (noscript) */}
         <noscript>

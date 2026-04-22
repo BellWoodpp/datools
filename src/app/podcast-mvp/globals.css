@@ -1,4 +1,21 @@
-@import "tailwindcss";
+@import "tailwindcss" source(none);
+
+@source "./**";
+@source "../[locale]/podcast-mvp/**";
+@source "../voice-cloning/**";
+@source "../[locale]/voice-cloning/**";
+@source "../../components/TTSPage.tsx";
+@source "../../components/PlayButton.tsx";
+@source "../../components/GoogleVoicePicker.tsx";
+@source "../../components/ShareButton.tsx";
+@source "../../components/ShareDialog.tsx";
+@source "../../components/voice-cloning-client.tsx";
+@source "../../components/voice-cloning-skeleton.tsx";
+@source "../../components/VoiceCloningPanel.tsx";
+@source "../../components/ClientDynamicTTS.tsx";
+@source "../../components/ClientDynamicPodcastHistory.tsx";
+@source "../../components/podcast-mvp/**";
+@source "../../components/ui/BrowserNotSupported.tsx";
 
 @custom-variant dark (&:is(html.dark *));
 

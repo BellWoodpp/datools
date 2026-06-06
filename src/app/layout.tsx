@@ -95,6 +95,16 @@ export default function RootLayout({
           src="https://cloud.umami.is/script.js"
           data-website-id="959ce417-4394-4685-aec9-f3b1f0b01004"
         ></script>
+        {/* Microsoft Clarity */}
+        <Script id="clarity-init" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "x2ngb93qoq");
+          `}
+        </Script>
         {/* 显式声明远程 favicon，避免浏览器回退到 Next 默认图标 */}
         <link rel="icon" href="https://r2.datools.org/data-a-tools.ico" sizes="any" />
         <link rel="shortcut icon" href="https://r2.datools.org/data-a-tools.ico" />
